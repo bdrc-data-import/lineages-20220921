@@ -1,0 +1,39 @@
+@base          <bdg:L3JT13532> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:L3JT13532 {
+    bda:L3JT13532  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:L3JT13532 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "9e/L3JT13532.trig" ;
+        adm:gitRepo         bda:GR0004 ;
+        adm:graphId         bdg:L3JT13532 ;
+        adm:logEntry        bda:LG6A82CC2A5D16A3A0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG6A82CC2A5D16A3A0
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-08-29T12:48:49.358Z"^^xsd:dateTime ;
+        adm:logMessage      "changed topics"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bdr:CLD4868D6A89DE459F
+        a                   :ContentLocation .
+    
+    bdr:L3JT13532  a        :Lineage ;
+        :contentLocation    bdr:CLD4868D6A89DE459F ;
+        :isRoot             true ;
+        :lineageType        bdr:LineageNotSpecified .
+}

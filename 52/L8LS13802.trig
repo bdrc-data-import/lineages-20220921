@@ -1,0 +1,75 @@
+@base          <bdg:L8LS13802> .
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:L8LS13802 {
+    bda:L8LS13802  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:L8LS13802 ;
+        adm:facetIndex      8 ;
+        adm:gitPath         "52/L8LS13802.trig" ;
+        adm:gitRepo         bda:GR0004 ;
+        adm:graphId         bdg:L8LS13802 ;
+        adm:logEntry        bda:LG5F225F46B9C1EBF3 , bda:LG74A63A816CEFE39D , bda:LG989B4305FC93ECD9 , bda:LGA3865E268AE1588D , bda:LGBD9FF171D4EF424C , bda:LGE271DB597D58884B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bda:LG5F225F46B9C1EBF3
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logWho          bdr:U00006 .
+    
+    bda:LG74A63A816CEFE39D
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-07-30T12:27:46.93Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted note"@en ;
+        adm:logWho          bdr:U00013 .
+    
+    bda:LG989B4305FC93ECD9
+        a                   adm:LogEntry ;
+        adm:logDate         "2013-05-21T09:45:59.329Z"^^xsd:dateTime ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGA3865E268AE1588D
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logWho          bdr:U00006 .
+    
+    bda:LGBD9FF171D4EF424C
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-06-11T10:00:23.111Z"^^xsd:dateTime ;
+        adm:logMessage      "added object"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bda:LGE271DB597D58884B
+        a                   adm:LogEntry ;
+        adm:logDate         "2014-04-22T11:33:57.479Z"^^xsd:dateTime ;
+        adm:logMessage      "added type and location"@en ;
+        adm:logWho          bdr:U00019 .
+    
+    bdr:CLB6F2B3F3D5446B22
+        a                   :ContentLocation ;
+        :contentLocationInstance  bdr:W1PD107937 ;
+        :contentLocationPage  109 ;
+        :contentLocationVolume  1 .
+    
+    bdr:L8LS13802  a        :Lineage ;
+        rdfs:comment        "transmission of tara sadhana" ;
+        skos:altLabel       "sgrol ma'i man ngag lha mo shra ma Na'i sgrub thabs kun mkhyen bkra shis rnam rgyal gyis mdzad pa'i brgyud pa/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma'i sgrub thabs kyi brgyud pa/"@bo-x-ewts ;
+        :contentLocation    bdr:CLB6F2B3F3D5446B22 ;
+        :isRoot             true ;
+        :lineageObject      bdr:T1 , bdr:T619 ;
+        :lineageType        bdr:LineageDbang .
+}
