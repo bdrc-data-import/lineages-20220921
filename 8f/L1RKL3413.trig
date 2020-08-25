@@ -15,11 +15,11 @@ bdg:L1RKL3413 {
     bda:L1RKL3413  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:L1RKL3413 ;
-        adm:facetIndex      20 ;
+        adm:facetIndex      21 ;
         adm:gitPath         "8f/L1RKL3413.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL3413 ;
-        adm:logEntry        bda:LG08F71DFE8C7CF70C , bda:LG26E6BB673407F875 , bda:LG58FD824F6E8418FE , bda:LG78091DDA8ECA69F0 , bda:LG8B31CB401193AFD5 , bda:LGAEBC97A8E9276019 , bda:LGB9D2330E6221E5C6 , bda:LGBABED69BE5587420 ;
+        adm:logEntry        bda:LG08F71DFE8C7CF70C , bda:LG2588D9BE5CCA8C77 , bda:LG26E6BB673407F875 , bda:LG58FD824F6E8418FE , bda:LG78091DDA8ECA69F0 , bda:LG8B31CB401193AFD5 , bda:LGAEBC97A8E9276019 , bda:LGB9D2330E6221E5C6 , bda:LGBABED69BE5587420 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,6 +28,10 @@ bdg:L1RKL3413 {
         adm:logDate         "2014-07-25T16:41:00.888Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG2588D9BE5CCA8C77
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00023 .
+    
     bda:LG26E6BB673407F875
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
@@ -35,7 +39,7 @@ bdg:L1RKL3413 {
         adm:logWho          bdu:U00006 .
     
     bda:LG58FD824F6E8418FE
-        a                   adm:InitialDataCreation ;
+        a                   adm:InitialDataImport ;
         adm:logDate         "2007-07-12T13:50:32.394Z"^^xsd:dateTime ;
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
@@ -69,44 +73,44 @@ bdg:L1RKL3413 {
         adm:logMessage      "change name add lin ref"@en ;
         adm:logWho          bdu:U00063 .
     
-    bdr:CL2588D9BE5CCA8C77
+    bdr:CLE00C63BF2A8D3BD9
         a                   :ContentLocation ;
         :contentLocationInstance  bdr:W29307 ;
         :contentLocationPage  416 ;
         :contentLocationVolume  "kha" .
     
-    bdr:EV928D38C464413173
+    bdr:EV27EB24C96B1C1723
         a                   :LineageEvent ;
         :lineageFrom        bdr:P406 .
     
-    bdr:EVA17C23C0482A6DE5
+    bdr:EVC51AB93507320320
         a                   :LineageEvent ;
         :lineageFrom        bdr:P3730 .
     
     bdr:L1RKL3413  a        :Lineage ;
         skos:prefLabel      "dgyes pa rdo rje rgyud gsum gyi bshad bka' thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL2588D9BE5CCA8C77 ;
+        :contentLocation    bdr:CLE00C63BF2A8D3BD9 ;
         :isRoot             true ;
-        :lineageHolder      bdr:LH833DD4B218622CE1 , bdr:LHC0F9DA447D4A8E7E , bdr:LHE00C63BF2A8D3BD9 ;
+        :lineageHolder      bdr:LH274500A0B5766787 , bdr:LH833DD4B218622CE1 , bdr:LHAF95236BE724C1DE ;
         :lineageObject      bdr:T130 ;
         :lineageRef         bdr:L1RKL3411 ;
         :lineageType        bdr:LineageDbang ;
         :note               bdr:NT065C6385A4D18898 , bdr:NT35253BDA33ECF769 , bdr:NT7BB8BB77AB212765 , bdr:NTB4BE495B29A60D09 , bdr:NTCF8E749075172D91 .
     
-    bdr:LH833DD4B218622CE1
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV928D38C464413173 ;
-        :lineageWho         bdr:P3730 .
-    
-    bdr:LHC0F9DA447D4A8E7E
+    bdr:LH274500A0B5766787
         a                   :LineageHolder ;
         :lineageDownFrom    bdr:L1RKL3411 ;
-        :lineageReceived    bdr:EVA17C23C0482A6DE5 ;
+        :lineageReceived    bdr:EVC51AB93507320320 ;
         :lineageWho         bdr:P1615 .
     
-    bdr:LHE00C63BF2A8D3BD9
+    bdr:LH833DD4B218622CE1
         a                   :LineageHolder ;
         :lineageWho         bdr:P406 .
+    
+    bdr:LHAF95236BE724C1DE
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV27EB24C96B1C1723 ;
+        :lineageWho         bdr:P3730 .
     
     bdr:NT065C6385A4D18898
         a                   :Note ;

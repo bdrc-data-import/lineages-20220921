@@ -15,13 +15,17 @@ bdg:L1RKL3222 {
     bda:L1RKL3222  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:L1RKL3222 ;
-        adm:facetIndex      21 ;
+        adm:facetIndex      22 ;
         adm:gitPath         "eb/L1RKL3222.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL3222 ;
-        adm:logEntry        bda:LG31E8297C0C6C9EA2 , bda:LG33A9D4844E5A62E2 , bda:LG63614D4A3E635476 , bda:LG83C16746B23E2576 , bda:LGB5C3DE307A425244 , bda:LGB690A7DA998A1E23 , bda:LGB9CFF679C0FA9588 , bda:LGBA1EBC1F1BA9CB70 , bda:LGBFB50A8D4C1A8D9F , bda:LGD5DD654691C4DAE9 , bda:LGD68FD52615FA8537 , bda:LGE53A07627CCD5246 ;
+        adm:logEntry        bda:LG1F3FEDABCFE81598 , bda:LG31E8297C0C6C9EA2 , bda:LG33A9D4844E5A62E2 , bda:LG63614D4A3E635476 , bda:LG83C16746B23E2576 , bda:LGB5C3DE307A425244 , bda:LGB690A7DA998A1E23 , bda:LGB9CFF679C0FA9588 , bda:LGBA1EBC1F1BA9CB70 , bda:LGBFB50A8D4C1A8D9F , bda:LGD5DD654691C4DAE9 , bda:LGD68FD52615FA8537 , bda:LGE53A07627CCD5246 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bda:LG1F3FEDABCFE81598
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00023 .
     
     bda:LG31E8297C0C6C9EA2
         a                   adm:UpdateData ;
@@ -81,7 +85,7 @@ bdg:L1RKL3222 {
         adm:logWho          bdu:U00017 .
     
     bda:LGD68FD52615FA8537
-        a                   adm:InitialDataCreation ;
+        a                   adm:InitialDataImport ;
         adm:logDate         "2007-07-12T13:49:48.613Z"^^xsd:dateTime ;
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
@@ -91,44 +95,44 @@ bdg:L1RKL3222 {
         adm:logDate         "2013-09-28T05:39:52.307Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00063 .
     
-    bdr:CL1F3FEDABCFE81598
+    bdr:CL771A462D8108E0A6
         a                   :ContentLocation ;
         :contentLocationInstance  bdr:W29307 ;
         :contentLocationPage  409 ;
         :contentLocationVolume  "kha" .
     
-    bdr:EV4F3C27A42C4D6D7C
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P0RK123 .
-    
-    bdr:EVDFCACE2F625CA7C7
+    bdr:EV1530BFC1035D7897
         a                   :LineageEvent ;
         :lineageFrom        bdr:P0RK122 .
     
+    bdr:EVF8D671AEFFF0D4C1
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P0RK123 .
+    
     bdr:L1RKL3222  a        :Lineage ;
         skos:prefLabel      "bdag med lha mo bco lnga'i dkyil 'khor du dbang bskur ba thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL1F3FEDABCFE81598 ;
+        :contentLocation    bdr:CL771A462D8108E0A6 ;
         :isRoot             true ;
-        :lineageHolder      bdr:LH7301691426F8A2E3 , bdr:LH771A462D8108E0A6 , bdr:LHC81DDE334C8EF512 ;
+        :lineageHolder      bdr:LH0323B2B7C5766299 , bdr:LH7DA777656408D741 , bdr:LHC81DDE334C8EF512 ;
         :lineageObject      bdr:T2150 ;
         :lineageRef         bdr:L1RKL3221 ;
         :lineageType        bdr:LineageDbang ;
         :note               bdr:NT0DEA8E87A5924939 , bdr:NT5C2800B290CFDAEE .
     
-    bdr:LH7301691426F8A2E3
+    bdr:LH0323B2B7C5766299
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV1530BFC1035D7897 ;
+        :lineageWho         bdr:P0RK123 .
+    
+    bdr:LH7DA777656408D741
         a                   :LineageHolder ;
         :lineageDownFrom    bdr:L1RKL3221 ;
-        :lineageReceived    bdr:EV4F3C27A42C4D6D7C ;
+        :lineageReceived    bdr:EVF8D671AEFFF0D4C1 ;
         :lineageWho         bdr:P10624 .
-    
-    bdr:LH771A462D8108E0A6
-        a                   :LineageHolder ;
-        :lineageWho         bdr:P1062 .
     
     bdr:LHC81DDE334C8EF512
         a                   :LineageHolder ;
-        :lineageReceived    bdr:EVDFCACE2F625CA7C7 ;
-        :lineageWho         bdr:P0RK123 .
+        :lineageWho         bdr:P1062 .
     
     bdr:NT0DEA8E87A5924939
         a                   :Note ;

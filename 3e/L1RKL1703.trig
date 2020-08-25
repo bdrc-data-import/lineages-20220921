@@ -15,11 +15,11 @@ bdg:L1RKL1703 {
     bda:L1RKL1703  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:L1RKL1703 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "3e/L1RKL1703.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL1703 ;
-        adm:logEntry        bda:LG03DA1023E71C9F3F , bda:LG18F6FD730BC416BA , bda:LG368A6FA02E99A4D1 , bda:LG77FE92445F5655FA , bda:LG9F7F776D8B4915BE , bda:LGB989F9BF99BDD7C2 , bda:LGC1C2C43B1BE9CCA6 , bda:LGC826FB7369AAB501 , bda:LGDB46816FB0A0FF82 ;
+        adm:logEntry        bda:LG03DA1023E71C9F3F , bda:LG18F6FD730BC416BA , bda:LG368A6FA02E99A4D1 , bda:LG77FE92445F5655FA , bda:LG9F7F776D8B4915BE , bda:LGB134E5D19546D173 , bda:LGB989F9BF99BDD7C2 , bda:LGC1C2C43B1BE9CCA6 , bda:LGC826FB7369AAB501 , bda:LGDB46816FB0A0FF82 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -52,6 +52,10 @@ bdg:L1RKL1703 {
         adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGB134E5D19546D173
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00023 .
+    
     bda:LGB989F9BF99BDD7C2
         a                   adm:UpdateData ;
         adm:logDate         "2013-12-06T10:14:03.604Z"^^xsd:dateTime ;
@@ -59,7 +63,7 @@ bdg:L1RKL1703 {
         adm:logWho          bdu:U00019 .
     
     bda:LGC1C2C43B1BE9CCA6
-        a                   adm:InitialDataCreation ;
+        a                   adm:InitialDataImport ;
         adm:logDate         "2007-07-12T13:34:12.789Z"^^xsd:dateTime ;
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
@@ -76,40 +80,40 @@ bdg:L1RKL1703 {
         adm:logMessage      "removed note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bdr:CLB134E5D19546D173
+    bdr:CL6DE30F0763702991
         a                   :ContentLocation ;
         :contentLocationInstance  bdr:W29307 ;
         :contentLocationPage  90 ;
         :contentLocationVolume  "kha" .
     
-    bdr:EV06E18CE1523C288A
+    bdr:EV359AD82DE19D3245
         a                   :LineageEvent ;
         :lineageFrom        bdr:T386 .
     
-    bdr:EV64A333C50F19336E
+    bdr:EV43CF5351C818E752
         a                   :LineageEvent ;
         :lineageFrom        bdr:T40 .
     
     bdr:L1RKL1703  a        :Lineage ;
         skos:altLabel       "skye med do pa chos shes nas brgyud pa'i shes rab kyi pha rol tu phyin pa'i nyams len gcod skor gsum gyi khrid thob pa'i brgyud pa la/ mo brgyud che ba ni/"@bo-x-ewts ;
         skos:prefLabel      "pha rol tu phyin pa'i nyams len gcod skor gsum gyi khrid thob pa'i brgyud pa la/ mo brgyud che ba ni/"@bo-x-ewts ;
-        :contentLocation    bdr:CLB134E5D19546D173 ;
+        :contentLocation    bdr:CL6DE30F0763702991 ;
         :isRoot             true ;
-        :lineageHolder      bdr:LH3A7A09BDC7796D79 , bdr:LH6DE30F0763702991 , bdr:LH91B2FBB8D21BC71A ;
+        :lineageHolder      bdr:LH0E42EE2C68918B56 , bdr:LH3A7A09BDC7796D79 , bdr:LH514CF7F29B97A23C ;
         :lineageObject      bdr:T194 ;
         :lineageType        bdr:LineageKhrid .
     
-    bdr:LH3A7A09BDC7796D79
+    bdr:LH0E42EE2C68918B56
         a                   :LineageHolder ;
-        :lineageReceived    bdr:EV06E18CE1523C288A ;
-        :lineageWho         bdr:T40 .
+        :lineageReceived    bdr:EV43CF5351C818E752 ;
+        :lineageWho         bdr:P7401 .
     
-    bdr:LH6DE30F0763702991
+    bdr:LH3A7A09BDC7796D79
         a                   :LineageHolder ;
         :lineageWho         bdr:T386 .
     
-    bdr:LH91B2FBB8D21BC71A
+    bdr:LH514CF7F29B97A23C
         a                   :LineageHolder ;
-        :lineageReceived    bdr:EV64A333C50F19336E ;
-        :lineageWho         bdr:P7401 .
+        :lineageReceived    bdr:EV359AD82DE19D3245 ;
+        :lineageWho         bdr:T40 .
 }

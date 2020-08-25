@@ -15,11 +15,11 @@ bdg:L1RKL2591 {
     bda:L1RKL2591  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:L1RKL2591 ;
-        adm:facetIndex      20 ;
+        adm:facetIndex      21 ;
         adm:gitPath         "c4/L1RKL2591.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL2591 ;
-        adm:logEntry        bda:LG088EEA91759CB31E , bda:LG6FCDDAC2A393B8CD , bda:LG844E0EEA8604E9CB , bda:LG9130CF33BCC6E185 , bda:LG92FBBB462BA6B761 , bda:LGDFB0C65FE442673B , bda:LGE16B8B7B36C2DE92 , bda:LGE8FD01FBB8F0FC37 ;
+        adm:logEntry        bda:LG088EEA91759CB31E , bda:LG3EA4C54C9F9BA0B4 , bda:LG6FCDDAC2A393B8CD , bda:LG844E0EEA8604E9CB , bda:LG9130CF33BCC6E185 , bda:LG92FBBB462BA6B761 , bda:LGDFB0C65FE442673B , bda:LGE16B8B7B36C2DE92 , bda:LGE8FD01FBB8F0FC37 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,6 +28,10 @@ bdg:L1RKL2591 {
         adm:logDate         "2014-03-19T11:48:42.791Z"^^xsd:dateTime ;
         adm:logMessage      "added object and location"@en ;
         adm:logWho          bdu:U00019 .
+    
+    bda:LG3EA4C54C9F9BA0B4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00023 .
     
     bda:LG6FCDDAC2A393B8CD
         a                   adm:UpdateData ;
@@ -53,7 +57,7 @@ bdg:L1RKL2591 {
         adm:logWho          bdu:U00006 .
     
     bda:LGDFB0C65FE442673B
-        a                   adm:InitialDataCreation ;
+        a                   adm:InitialDataImport ;
         adm:logDate         "2007-07-12T13:43:07.38Z"^^xsd:dateTime ;
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
@@ -70,62 +74,62 @@ bdg:L1RKL2591 {
         adm:logMessage      "change name add lin ref"@en ;
         adm:logWho          bdu:U00063 .
     
-    bdr:CL3EA4C54C9F9BA0B4
+    bdr:CL69CF65AA5DC402C6
         a                   :ContentLocation ;
         :contentLocationInstance  bdr:W29307 ;
         :contentLocationPage  "9b2ff." ;
         :contentLocationVolume  "kha" .
     
-    bdr:EV56CD802114998170
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P0RK1184 .
-    
-    bdr:EV6961454498283353
+    bdr:EV54C7CE936124B1A9
         a                   :LineageEvent ;
         :lineageFrom        bdr:P8483 .
     
-    bdr:EVFB709D849237B693
+    bdr:EV769BB9604BC3D0C3
         a                   :LineageEvent ;
         :lineageFrom        bdr:P0RK220 .
     
-    bdr:EVFEB84EDFB273322C
+    bdr:EVA0E28A79D596D31B
         a                   :LineageEvent ;
         :lineageFrom        bdr:P782 .
+    
+    bdr:EVB1E805C6A83477AE
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P0RK1184 .
     
     bdr:L1RKL2591  a        :Lineage ;
         rdfs:comment        "glo bo mkhan chen's collected works"@en ;
         skos:altLabel       "mkhyen rab kyi dbang phyug mkhan chen bsod nams lhun grub kyi bka' 'bum dkar chag nang bzhin thob pa'i rnam grangs la ... (fols. 9b3-12b7 omitted) ... la ru ba bsod nams seng ge'i rnam thar sogs bka' 'bum dkar chag nang bzhin/"@bo-x-ewts ;
         skos:prefLabel      "mkhan chen bsod nams lhun grub kyi bka' 'bum dkar chag nang bzhin thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL3EA4C54C9F9BA0B4 ;
+        :contentLocation    bdr:CL69CF65AA5DC402C6 ;
         :isRoot             true ;
-        :lineageHolder      bdr:LH5B1E2D3A660B5B2A , bdr:LH69CF65AA5DC402C6 , bdr:LH73C216A8C8258D73 , bdr:LHAF96A9C3EFB121C9 , bdr:LHD332F03787FBC0E5 ;
+        :lineageHolder      bdr:LH1176BE0CA921ED5E , bdr:LH20C943BD93AFA185 , bdr:LH39ABD3806DEC8778 , bdr:LH5B1E2D3A660B5B2A , bdr:LH88E70AF5052EF360 ;
         :lineageObject      bdr:T208 ;
         :lineageRef         bdr:L1RKL2592 ;
         :lineageType        bdr:LineageLung ;
         :note               bdr:NTEE05C87E00EBC381 .
     
-    bdr:LH5B1E2D3A660B5B2A
+    bdr:LH1176BE0CA921ED5E
         a                   :LineageHolder ;
-        :lineageReceived    bdr:EVFEB84EDFB273322C ;
+        :lineageReceived    bdr:EVB1E805C6A83477AE ;
+        :lineageWho         bdr:P0RK220 .
+    
+    bdr:LH20C943BD93AFA185
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV769BB9604BC3D0C3 ;
+        :lineageWho         bdr:P8483 .
+    
+    bdr:LH39ABD3806DEC8778
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVA0E28A79D596D31B ;
         :lineageWho         bdr:P0RK1184 .
     
-    bdr:LH69CF65AA5DC402C6
+    bdr:LH5B1E2D3A660B5B2A
         a                   :LineageHolder ;
         :lineageWho         bdr:P782 .
     
-    bdr:LH73C216A8C8258D73
+    bdr:LH88E70AF5052EF360
         a                   :LineageHolder ;
-        :lineageReceived    bdr:EVFB709D849237B693 ;
-        :lineageWho         bdr:P8483 .
-    
-    bdr:LHAF96A9C3EFB121C9
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV56CD802114998170 ;
-        :lineageWho         bdr:P0RK220 .
-    
-    bdr:LHD332F03787FBC0E5
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV6961454498283353 ;
+        :lineageReceived    bdr:EV54C7CE936124B1A9 ;
         :lineageWho         bdr:P791 .
     
     bdr:NTEE05C87E00EBC381

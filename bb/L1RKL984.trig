@@ -15,11 +15,11 @@ bdg:L1RKL984 {
     bda:L1RKL984  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:L1RKL984 ;
-        adm:facetIndex      27 ;
+        adm:facetIndex      28 ;
         adm:gitPath         "bb/L1RKL984.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL984 ;
-        adm:logEntry        bda:LG09142FE44BB58AC1 , bda:LG19BE16A86579F8D9 , bda:LG1A31E768EB034C79 , bda:LG2158EBDCE37735AF , bda:LG40B7A46EAAE832A2 , bda:LG45599C956805EB20 , bda:LG5D0943CD000CDE3D , bda:LGA7E9757145D5822F , bda:LGB17E1E6A75299281 ;
+        adm:logEntry        bda:LG09142FE44BB58AC1 , bda:LG19BE16A86579F8D9 , bda:LG1A31E768EB034C79 , bda:LG2158EBDCE37735AF , bda:LG354B802E85B8B39D , bda:LG40B7A46EAAE832A2 , bda:LG45599C956805EB20 , bda:LG5D0943CD000CDE3D , bda:LGA7E9757145D5822F , bda:LGB17E1E6A75299281 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -47,8 +47,12 @@ bdg:L1RKL984 {
         adm:logMessage      "removed note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG40B7A46EAAE832A2
+    bda:LG354B802E85B8B39D
         a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00023 .
+    
+    bda:LG40B7A46EAAE832A2
+        a                   adm:InitialDataImport ;
         adm:logDate         "2007-07-12T14:01:35.521Z"^^xsd:dateTime ;
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
@@ -76,79 +80,79 @@ bdg:L1RKL984 {
         adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL354B802E85B8B39D
+    bdr:CL098A2A40813472BA
         a                   :ContentLocation ;
         :contentLocationInstance  bdr:W29307 ;
         :contentLocationPage  36 ;
         :contentLocationVolume  "kha" .
     
-    bdr:EV16B50A5A77DDC8E5
+    bdr:EV1D9B41BA625287B5
         a                   :LineageEvent ;
         :lineageFrom        bdr:P776 .
     
-    bdr:EV6555F3D46A3B9365
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P782 .
-    
-    bdr:EVB2C1586496DB4EE3
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P1040 .
-    
-    bdr:EVD80CD58BF83576F4
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P783 .
-    
-    bdr:EVEF37C8EE8EF6E744
+    bdr:EV1E240EF56665CBB0
         a                   :LineageEvent ;
         :lineageFrom        bdr:P461 .
     
-    bdr:EVF798A596A1B86EAF
+    bdr:EV66644D412D9B8AAA
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P783 .
+    
+    bdr:EV814533A5A520EA06
         a                   :LineageEvent ;
         :lineageFrom        bdr:P8481 .
     
+    bdr:EV95DCFFE1126E2AE6
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P1040 .
+    
+    bdr:EV9D116B6D1CB2327D
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P782 .
+    
     bdr:L1RKL984  a         :Lineage ;
         skos:prefLabel      "bir bsrung thun mongs ma yin pa'i byin rlabs man ngag dang bcas pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL354B802E85B8B39D ;
+        :contentLocation    bdr:CL098A2A40813472BA ;
         :isRoot             true ;
-        :lineageHolder      bdr:LH098A2A40813472BA , bdr:LH8E3152A590093E22 , bdr:LH8E3930067B59DA5B , bdr:LH9AE35B95F49FB037 , bdr:LHA28C8801F6C787D4 , bdr:LHCD7082DDFA162360 , bdr:LHF88BA3FA3DAD62AC ;
+        :lineageHolder      bdr:LH4DCC6491E5D5732A , bdr:LH65A3835A4AEEF708 , bdr:LH8593808B4DF1347C , bdr:LH90FF2940371C4F50 , bdr:LHA79BB7DB23A3376F , bdr:LHEFA2FC0684FF8DBC , bdr:LHF88BA3FA3DAD62AC ;
         :lineageObject      bdr:T00KG02676 ;
         :lineageRef         bdr:L1RKL981 ;
         :lineageType        bdr:LineageKhrid ;
         :note               bdr:NT2BEC1E22B5D0F02A , bdr:NTB34C3BA4B49F7125 , bdr:NTFE13C0ED428B8349 .
     
-    bdr:LH098A2A40813472BA
+    bdr:LH4DCC6491E5D5732A
         a                   :LineageHolder ;
-        :lineageWho         bdr:P1040 .
+        :lineageReceived    bdr:EV95DCFFE1126E2AE6 ;
+        :lineageWho         bdr:P782 .
     
-    bdr:LH8E3152A590093E22
+    bdr:LH65A3835A4AEEF708
         a                   :LineageHolder ;
-        :lineageReceived    bdr:EVEF37C8EE8EF6E744 ;
-        :lineageWho         bdr:P783 .
-    
-    bdr:LH8E3930067B59DA5B
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV16B50A5A77DDC8E5 ;
-        :lineageWho         bdr:P791 .
-    
-    bdr:LH9AE35B95F49FB037
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EVD80CD58BF83576F4 ;
-        :lineageWho         bdr:P8481 .
-    
-    bdr:LHA28C8801F6C787D4
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV6555F3D46A3B9365 ;
+        :lineageReceived    bdr:EV9D116B6D1CB2327D ;
         :lineageWho         bdr:P461 .
     
-    bdr:LHCD7082DDFA162360
+    bdr:LH8593808B4DF1347C
         a                   :LineageHolder ;
-        :lineageReceived    bdr:EVF798A596A1B86EAF ;
+        :lineageReceived    bdr:EV814533A5A520EA06 ;
         :lineageWho         bdr:P776 .
+    
+    bdr:LH90FF2940371C4F50
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV1D9B41BA625287B5 ;
+        :lineageWho         bdr:P791 .
+    
+    bdr:LHA79BB7DB23A3376F
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV1E240EF56665CBB0 ;
+        :lineageWho         bdr:P783 .
+    
+    bdr:LHEFA2FC0684FF8DBC
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EV66644D412D9B8AAA ;
+        :lineageWho         bdr:P8481 .
     
     bdr:LHF88BA3FA3DAD62AC
         a                   :LineageHolder ;
-        :lineageReceived    bdr:EVB2C1586496DB4EE3 ;
-        :lineageWho         bdr:P782 .
+        :lineageWho         bdr:P1040 .
     
     bdr:NT2BEC1E22B5D0F02A
         a                   :Note ;

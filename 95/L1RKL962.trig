@@ -15,11 +15,11 @@ bdg:L1RKL962 {
     bda:L1RKL962  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:L1RKL962 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "95/L1RKL962.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL962 ;
-        adm:logEntry        bda:LG078966220EDA80EA , bda:LG117DA69797209E7E , bda:LG27822DEEC01A5DDF , bda:LG38F88EEF489C57A7 , bda:LG84C7C0492D18BD83 , bda:LG916127E85A30FFC2 , bda:LG94EDDD7CC0A9EC8F , bda:LGE2479F061D08E89A , bda:LGEED39E2BBF086105 ;
+        adm:logEntry        bda:LG078966220EDA80EA , bda:LG117DA69797209E7E , bda:LG27822DEEC01A5DDF , bda:LG38F88EEF489C57A7 , bda:LG84C7C0492D18BD83 , bda:LG916127E85A30FFC2 , bda:LG94EDDD7CC0A9EC8F , bda:LG9D9E4990EFC49CA6 , bda:LGE2479F061D08E89A , bda:LGEED39E2BBF086105 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -48,7 +48,7 @@ bdg:L1RKL962 {
         adm:logWho          bdu:U00055 .
     
     bda:LG84C7C0492D18BD83
-        a                   adm:InitialDataCreation ;
+        a                   adm:InitialDataImport ;
         adm:logDate         "2007-07-12T14:01:24.62Z"^^xsd:dateTime ;
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
@@ -64,6 +64,10 @@ bdg:L1RKL962 {
         adm:logMessage      "normalized names of who and received elements"@en ;
         adm:logWho          bdu:U00006 .
     
+    bda:LG9D9E4990EFC49CA6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00023 .
+    
     bda:LGE2479F061D08E89A
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-30T11:34:44.736Z"^^xsd:dateTime ;
@@ -76,21 +80,21 @@ bdg:L1RKL962 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL9D9E4990EFC49CA6
+    bdr:CL52DD0DC4EA8B7730
         a                   :ContentLocation ;
         :contentLocationInstance  bdr:W1PD107937 ;
         :contentLocationPage  36 ;
         :contentLocationVolume  "kha" .
     
-    bdr:EV6913798D9B8F8F8D
+    bdr:EVD7C24F6DD653E91D
         a                   :LineageEvent ;
         :lineageFrom        bdr:P1873 .
     
     bdr:L1RKL962  a         :Lineage ;
         skos:prefLabel      "bla ma rin 'byung gi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL9D9E4990EFC49CA6 ;
+        :contentLocation    bdr:CL52DD0DC4EA8B7730 ;
         :isRoot             true ;
-        :lineageHolder      bdr:LH024016775B2E7221 , bdr:LH52DD0DC4EA8B7730 ;
+        :lineageHolder      bdr:LH024016775B2E7221 , bdr:LHB1C8C356325100FF ;
         :lineageObject      bdr:T1 ;
         :lineageRef         bdr:L1RKL961 ;
         :lineageType        bdr:LineageLung ;
@@ -98,13 +102,13 @@ bdg:L1RKL962 {
     
     bdr:LH024016775B2E7221
         a                   :LineageHolder ;
-        :lineageDownFrom    bdr:L1RKL942 ;
-        :lineageReceived    bdr:EV6913798D9B8F8F8D ;
-        :lineageWho         bdr:P2509 .
-    
-    bdr:LH52DD0DC4EA8B7730
-        a                   :LineageHolder ;
         :lineageWho         bdr:P1873 .
+    
+    bdr:LHB1C8C356325100FF
+        a                   :LineageHolder ;
+        :lineageDownFrom    bdr:L1RKL942 ;
+        :lineageReceived    bdr:EVD7C24F6DD653E91D ;
+        :lineageWho         bdr:P2509 .
     
     bdr:NT1070D67C061313AB
         a                   :Note ;

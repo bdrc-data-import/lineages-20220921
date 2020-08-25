@@ -15,11 +15,11 @@ bdg:L1RKL2142 {
     bda:L1RKL2142  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:L1RKL2142 ;
-        adm:facetIndex      21 ;
+        adm:facetIndex      22 ;
         adm:gitPath         "7c/L1RKL2142.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL2142 ;
-        adm:logEntry        bda:LG1F270D898D917E34 , bda:LG404AAFDB4D8E17D7 , bda:LG4F06BE1B2D313CBC , bda:LG568843F1FD621F3A , bda:LG7C2E9B209A8A63DF , bda:LG937CF3F4F2C8D2B2 , bda:LGDEC527653C06D756 , bda:LGE00098F7DAEC0184 , bda:LGF761B8DBCB831378 ;
+        adm:logEntry        bda:LG1F270D898D917E34 , bda:LG404AAFDB4D8E17D7 , bda:LG4F06BE1B2D313CBC , bda:LG568843F1FD621F3A , bda:LG7C2E9B209A8A63DF , bda:LG937CF3F4F2C8D2B2 , bda:LGDEC527653C06D756 , bda:LGE00098F7DAEC0184 , bda:LGF761B8DBCB831378 , bda:LGFA831DACCEE508E4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -58,7 +58,7 @@ bdg:L1RKL2142 {
         adm:logWho          bdu:U00019 .
     
     bda:LGDEC527653C06D756
-        a                   adm:InitialDataCreation ;
+        a                   adm:InitialDataImport ;
         adm:logDate         "2007-07-12T13:38:19.659Z"^^xsd:dateTime ;
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
@@ -75,60 +75,64 @@ bdg:L1RKL2142 {
         adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CLFA831DACCEE508E4
+    bda:LGFA831DACCEE508E4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00023 .
+    
+    bdr:CL8CA98B2689F42605
         a                   :ContentLocation ;
         :contentLocationInstance  bdr:W29307 ;
         :contentLocationPage  251 ;
         :contentLocationVolume  "kha" .
     
-    bdr:EV6B0F0FFC94D87149
+    bdr:EV02285336394192B6
         a                   :LineageEvent ;
         :lineageFrom        bdr:P3898 .
     
-    bdr:EV82009880CC4ABE5F
+    bdr:EV264CC47E2AA78641
         a                   :LineageEvent ;
         :lineageFrom        bdr:P1027 .
     
-    bdr:EVED377185CD988957
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:P988 .
-    
-    bdr:EVF0AD1526F115BE85
+    bdr:EV6963B9AF3FEE22B1
         a                   :LineageEvent ;
         :lineageFrom        bdr:P777 .
     
+    bdr:EVD405DF9DF6BF78C5
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:P988 .
+    
     bdr:L1RKL2142  a        :Lineage ;
         skos:prefLabel      "ngan song sbyongs ba kun rig rtsa ba'i dkyil 'khor du dbang bskur ba/"@bo-x-ewts ;
-        :contentLocation    bdr:CLFA831DACCEE508E4 ;
+        :contentLocation    bdr:CL8CA98B2689F42605 ;
         :isRoot             true ;
-        :lineageHolder      bdr:LH8B92146FABD10B5D , bdr:LH8CA98B2689F42605 , bdr:LHAF133C2986231BC9 , bdr:LHAF2EFC060313B594 , bdr:LHF8B68AF72731A23C ;
+        :lineageHolder      bdr:LH2C5D41C0C20A95DB , bdr:LH5A110A2BC6C16167 , bdr:LH9A918373A684137E , bdr:LHAF133C2986231BC9 , bdr:LHFC41821E8950D8AF ;
         :lineageObject      bdr:T976 ;
         :lineageRef         bdr:L1RKL2141 ;
         :lineageType        bdr:LineageDbang ;
         :note               bdr:NT97D5390FEA87F408 .
     
-    bdr:LH8B92146FABD10B5D
+    bdr:LH2C5D41C0C20A95DB
         a                   :LineageHolder ;
-        :lineageReceived    bdr:EVED377185CD988957 ;
+        :lineageReceived    bdr:EV264CC47E2AA78641 ;
+        :lineageWho         bdr:P3898 .
+    
+    bdr:LH5A110A2BC6C16167
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVD405DF9DF6BF78C5 ;
         :lineageWho         bdr:P777 .
     
-    bdr:LH8CA98B2689F42605
+    bdr:LH9A918373A684137E
         a                   :LineageHolder ;
-        :lineageWho         bdr:P1027 .
+        :lineageReceived    bdr:EV6963B9AF3FEE22B1 ;
+        :lineageWho         bdr:P791 .
     
     bdr:LHAF133C2986231BC9
         a                   :LineageHolder ;
-        :lineageReceived    bdr:EV82009880CC4ABE5F ;
-        :lineageWho         bdr:P3898 .
+        :lineageWho         bdr:P1027 .
     
-    bdr:LHAF2EFC060313B594
+    bdr:LHFC41821E8950D8AF
         a                   :LineageHolder ;
-        :lineageReceived    bdr:EVF0AD1526F115BE85 ;
-        :lineageWho         bdr:P791 .
-    
-    bdr:LHF8B68AF72731A23C
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EV6B0F0FFC94D87149 ;
+        :lineageReceived    bdr:EV02285336394192B6 ;
         :lineageWho         bdr:P988 .
     
     bdr:NT97D5390FEA87F408

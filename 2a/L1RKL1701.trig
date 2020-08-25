@@ -15,16 +15,16 @@ bdg:L1RKL1701 {
     bda:L1RKL1701  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:L1RKL1701 ;
-        adm:facetIndex      20 ;
+        adm:facetIndex      21 ;
         adm:gitPath         "2a/L1RKL1701.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL1701 ;
-        adm:logEntry        bda:LG051B5596FF99EFD0 , bda:LG336A8FBA9663699E , bda:LG3E19BFFC507B0283 , bda:LG57E3FDDCA5F46C8E , bda:LG697A58BA1FEB466A , bda:LG71C97BAE9B648228 , bda:LG779E99196A5E011D , bda:LG852A8D9F9E573E5C , bda:LG8998AC2739591FEC , bda:LGBEF076E343F67D00 , bda:LGD3B9A00A7722215B , bda:LGDBFB44F9BC1205C6 ;
+        adm:logEntry        bda:LG051B5596FF99EFD0 , bda:LG336A8FBA9663699E , bda:LG3E19BFFC507B0283 , bda:LG57E3FDDCA5F46C8E , bda:LG697A58BA1FEB466A , bda:LG71C97BAE9B648228 , bda:LG779E99196A5E011D , bda:LG852A8D9F9E573E5C , bda:LG8998AC2739591FEC , bda:LGBDC68A200C161448 , bda:LGBEF076E343F67D00 , bda:LGD3B9A00A7722215B , bda:LGDBFB44F9BC1205C6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bda:LG051B5596FF99EFD0
-        a                   adm:InitialDataCreation ;
+        a                   adm:InitialDataImport ;
         adm:logDate         "2007-07-12T13:34:08.042Z"^^xsd:dateTime ;
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
@@ -75,6 +75,10 @@ bdg:L1RKL1701 {
         adm:logMessage      "chenged p record"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGBDC68A200C161448
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00023 .
+    
     bda:LGBEF076E343F67D00
         a                   adm:UpdateData ;
         adm:logDate         "2013-09-26T10:24:20.365Z"^^xsd:dateTime ;
@@ -93,43 +97,43 @@ bdg:L1RKL1701 {
         adm:logMessage      "replaced with the correct Topic (P7326) Associated Lineages"@en ;
         adm:logWho          bdu:U00017 .
     
-    bdr:CLBDC68A200C161448
+    bdr:CL41D272536E98B4A7
         a                   :ContentLocation ;
         :contentLocationInstance  bdr:W29307 ;
         :contentLocationPage  "46a6f." ;
         :contentLocationVolume  "kha" .
     
-    bdr:EV6843AEDC814F2F42
-        a                   :LineageEvent ;
-        :lineageFrom        bdr:T10MS11142 .
-    
-    bdr:EVAEECBB31A832DD6F
+    bdr:EV6357EA9F4797D6B6
         a                   :LineageEvent ;
         :lineageFrom        bdr:T69 .
     
+    bdr:EVDF88E1C92DE0AB03
+        a                   :LineageEvent ;
+        :lineageFrom        bdr:T10MS11142 .
+    
     bdr:L1RKL1701  a        :Lineage ;
         skos:prefLabel      "mo brgyud che ba/"@bo-x-ewts ;
-        :contentLocation    bdr:CLBDC68A200C161448 ;
+        :contentLocation    bdr:CL41D272536E98B4A7 ;
         :isRoot             true ;
-        :lineageHolder      bdr:LH41D272536E98B4A7 , bdr:LH692506E0C069ECFE , bdr:LHD98F525491749AD9 ;
+        :lineageHolder      bdr:LH08070B32C1984DBB , bdr:LH0C03C35FFF71F2C7 , bdr:LH692506E0C069ECFE ;
         :lineageObject      bdr:T194 ;
         :lineageRef         bdr:L1RKL1702 , bdr:L1RKL1703 ;
         :lineageType        bdr:LineageKhrid ;
         :note               bdr:NT88E358F0961AD965 .
     
-    bdr:LH41D272536E98B4A7
+    bdr:LH08070B32C1984DBB
         a                   :LineageHolder ;
-        :lineageWho         bdr:P7326 .
+        :lineageReceived    bdr:EV6357EA9F4797D6B6 ;
+        :lineageWho         bdr:P7401 .
+    
+    bdr:LH0C03C35FFF71F2C7
+        a                   :LineageHolder ;
+        :lineageReceived    bdr:EVDF88E1C92DE0AB03 ;
+        :lineageWho         bdr:T69 .
     
     bdr:LH692506E0C069ECFE
         a                   :LineageHolder ;
-        :lineageReceived    bdr:EV6843AEDC814F2F42 ;
-        :lineageWho         bdr:T69 .
-    
-    bdr:LHD98F525491749AD9
-        a                   :LineageHolder ;
-        :lineageReceived    bdr:EVAEECBB31A832DD6F ;
-        :lineageWho         bdr:P7401 .
+        :lineageWho         bdr:P7326 .
     
     bdr:NT88E358F0961AD965
         a                   :Note ;
