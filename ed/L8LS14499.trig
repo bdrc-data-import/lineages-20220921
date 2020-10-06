@@ -19,7 +19,7 @@ bdg:L8LS14499 {
         adm:gitPath         "ed/L8LS14499.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14499 ;
-        adm:logEntry        bda:LG0FF46CD2B95DB0C7 , bda:LG32F6A6EA4412F228 , bda:LG4F32FDFD99AAE7CE , bda:LG9DCDD917A500A6E3 , bda:LGF8BF9D0B124D9171 , bda:LGF99A91E3C247FE8C ;
+        adm:logEntry        bda:LG0FF46CD2B95DB0C7 , bda:LG32F6A6EA4412F228 , bda:LG4F32FDFD99AAE7CE , bda:LG9DCDD917A500A6E3 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -45,23 +45,19 @@ bdg:L8LS14499 {
         adm:logDate         "2014-05-14T09:02:41.393Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGF8BF9D0B124D9171
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LGF99A91E3C247FE8C
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL4086A139F1A269B6
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  528 ;
-        :contentLocationVolume  1 .
     
     bdr:EV4909C4F5DF55CACC
         a                   :LineageEvent ;
@@ -74,11 +70,11 @@ bdg:L8LS14499 {
     bdr:L8LS14499  a        :Lineage ;
         rdfs:comment        "oral transmission of mahakala panjaranath text marked as zha and zha with swastika"@en ;
         skos:prefLabel      "nag po chen po'i chos skor las zha dang zha g.yung drung can gyi lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL4086A139F1A269B6 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH82BE5CB3A528BADB , bdr:LH87F18EFB982D40EE , bdr:LHCA1D81D671B735C1 ;
         :lineageObject      bdr:T1599 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT4086A139F1A269B6 .
     
     bdr:LH82BE5CB3A528BADB
         a                   :LineageHolder ;
@@ -93,4 +89,9 @@ bdg:L8LS14499 {
     bdr:LHCA1D81D671B735C1
         a                   :LineageHolder ;
         :lineageWho         bdr:P792 .
+    
+    bdr:NT4086A139F1A269B6
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 528" ;
+        :noteSource         bdr:MW1PD107937 .
 }

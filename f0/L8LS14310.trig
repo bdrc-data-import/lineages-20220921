@@ -19,15 +19,9 @@ bdg:L8LS14310 {
         adm:gitPath         "f0/L8LS14310.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14310 ;
-        adm:logEntry        bda:LG2E96287E854A8674 , bda:LG6685DF2B0F8EDE4A , bda:LG789C03A23E9B0D99 , bda:LG81AA14B9E1F49A22 , bda:LG8747714D6E3F073C , bda:LGB0BEB4B060F30D08 , bda:LGB567AA770835EDDC ;
+        adm:logEntry        bda:LG6685DF2B0F8EDE4A , bda:LG789C03A23E9B0D99 , bda:LG81AA14B9E1F49A22 , bda:LG8747714D6E3F073C , bda:LGB0BEB4B060F30D08 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG2E96287E854A8674
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG6685DF2B0F8EDE4A
         a                   adm:UpdateData ;
@@ -58,17 +52,19 @@ bdg:L8LS14310 {
         adm:logMessage      "changed P#"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGB567AA770835EDDC
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL40E8428DDD169665
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  356 ;
-        :contentLocationVolume  1 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0F3D3E1B55C86E0E
         a                   :LineageEvent ;
@@ -145,11 +141,11 @@ bdg:L8LS14310 {
     bdr:L8LS14310  a        :Lineage ;
         rdfs:comment        "oral transmission of external birsung"@en ;
         skos:prefLabel      "bir bsrung phyi ma'i byin rlabs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL40E8428DDD169665 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0CA597BD525B90D8 , bdr:LH0CAA7429884DB6A4 , bdr:LH14A2E28CCF762583 , bdr:LH31276B4C2340E3F6 , bdr:LH388018B63C41DF8B , bdr:LH3E6C7F6A7E19A7FA , bdr:LH47C62C840360A8C1 , bdr:LH85998575CD499A0B , bdr:LH87F4D1293413E937 , bdr:LHA9AE2B9C13FB7509 , bdr:LHAB24227A692FB97F , bdr:LHB1B89C66616F4DDF , bdr:LHB1D9BD5FF4E86C82 , bdr:LHB1FE7318D56C6263 , bdr:LHB50DCCAAC1181577 , bdr:LHB86B0320D6367E37 , bdr:LHCEFEF5C182FFD28B , bdr:LHE72C53B968459937 , bdr:LHE8C51373D8D551AE ;
         :lineageObject      bdr:T00KG02676 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NT40E8428DDD169665 .
     
     bdr:LH0CA597BD525B90D8
         a                   :LineageHolder ;
@@ -244,4 +240,9 @@ bdg:L8LS14310 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV2FA1208743A6A47E ;
         :lineageWho         bdr:P1226 .
+    
+    bdr:NT40E8428DDD169665
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 356" ;
+        :noteSource         bdr:MW1PD107937 .
 }

@@ -19,15 +19,9 @@ bdg:L8LS13939 {
         adm:gitPath         "1d/L8LS13939.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13939 ;
-        adm:logEntry        bda:LG165EC2BC304BB993 , bda:LG18B113ECE868B01B , bda:LG21BE953555792393 , bda:LG31688FAB7C42E4E8 , bda:LG38DC356C9190A483 , bda:LG98316C43CC1CF32F , bda:LG9F4A518E67C6CB34 ;
+        adm:logEntry        bda:LG18B113ECE868B01B , bda:LG21BE953555792393 , bda:LG38DC356C9190A483 , bda:LG98316C43CC1CF32F , bda:LG9F4A518E67C6CB34 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG165EC2BC304BB993
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG18B113ECE868B01B
         a                   adm:UpdateData ;
@@ -40,12 +34,6 @@ bdg:L8LS13939 {
         adm:logDate         "2014-05-09T09:32:17.366Z"^^xsd:dateTime ;
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG31688FAB7C42E4E8
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG38DC356C9190A483
         a                   adm:UpdateData ;
@@ -63,11 +51,19 @@ bdg:L8LS13939 {
         adm:logDate         "2014-07-25T15:19:01.047Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLB9742DD41BCEFE54
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  163 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV18C2111CCF6867D6
         a                   :LineageEvent ;
@@ -141,12 +137,11 @@ bdg:L8LS13939 {
         rdfs:comment        "oral transmission of sixteen arahat sadhana text"@en ;
         skos:altLabel       "mchims nam mkha' grags kyis mdzad pa'i 'phags pa'i gnas brtan bcu drug gi sgrub yig rgyas pa'i lung nos pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "gnas brtan bcu drug gi sgrub yig lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CLB9742DD41BCEFE54 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH149D811A35F90B0C , bdr:LH198FDE624AE68DA5 , bdr:LH1C02AB193DF78C66 , bdr:LH37A85DD4E6D4B8CE , bdr:LH4A97D82812773F99 , bdr:LH6E07ECF8388047D5 , bdr:LH6E6F6B29D9D04D8B , bdr:LH7C056EF78387CD16 , bdr:LH7E87290F7837AC88 , bdr:LH9243A48A4623D19E , bdr:LHA5C501AEED9264C0 , bdr:LHB1E2F0B23273F8E8 , bdr:LHCA84A0D17D4656A5 , bdr:LHCCAA222CB24CA164 , bdr:LHDDC6D6056FD76A89 , bdr:LHE5F0A503E2D7398F , bdr:LHE5FDD44DEE6BA2FF , bdr:LHF0600A17E387221A , bdr:LHF0F68AA452853908 ;
         :lineageObject      bdr:T1 , bdr:T1154 ;
         :lineageType        bdr:LineageLung ;
-        :note               bdr:NT724B541BB6B9CE53 .
+        :note               bdr:NT724B541BB6B9CE53 , bdr:NTB9742DD41BCEFE54 .
     
     bdr:LH149D811A35F90B0C
         a                   :LineageHolder ;
@@ -245,4 +240,9 @@ bdg:L8LS13939 {
     bdr:NT724B541BB6B9CE53
         a                   :Note ;
         :noteText           "three or four lineage holder is missing after bsod nams grags pa"@en .
+    
+    bdr:NTB9742DD41BCEFE54
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 163" ;
+        :noteSource         bdr:MW1PD107937 .
 }

@@ -29,12 +29,6 @@ bdg:L8LS15381 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL4A8A9644E8DE1F72
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 80r5-6" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV2333F3F7C15EA74F
         a                   :LineageEvent ;
         :lineageFrom        bdr:P1064 .
@@ -90,11 +84,11 @@ bdg:L8LS15381 {
     bdr:L8LS15381  a        :Lineage ;
         skos:altLabel       "nor bu bzang po'i gzungs bidyA sid+h dang klu'i dbang po'i 'gyur gyi sgos brgyud/"@bo-x-ewts ;
         skos:prefLabel      "nor bu bzang po'i gzungs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL4A8A9644E8DE1F72 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH02F8DC2591AC5C17 , bdr:LH0D84FEB5812DABFA , bdr:LH2E74A4FBDE43FA6D , bdr:LH4F8C3AC577C6004D , bdr:LH625B44B0509E3B29 , bdr:LH65F2E1FD9F87CE5A , bdr:LH9317C2D55E1DD27A , bdr:LH94652BFDF96B74CA , bdr:LHA9731AC2F0DED8E7 , bdr:LHBE10AD91AF728A60 , bdr:LHC2A8FDC5E6FA1468 , bdr:LHE7FACD9DD28069C2 , bdr:LHEC070E4EC67E6F80 , bdr:LHF4EF81A6A370B761 ;
         :lineageObject      bdr:T752 , bdr:T933 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT4A8A9644E8DE1F72 .
     
     bdr:LH02F8DC2591AC5C17
         a                   :LineageHolder ;
@@ -165,4 +159,9 @@ bdg:L8LS15381 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV8080B96146D14A93 ;
         :lineageWho         bdr:P0RK1100 .
+    
+    bdr:NT4A8A9644E8DE1F72
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 80r5-6" ;
+        :noteSource         bdr:MW29706 .
 }

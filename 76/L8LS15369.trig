@@ -40,12 +40,6 @@ bdg:L8LS15369 {
         adm:logMessage      "changed p record"@en ;
         adm:logWho          bdu:U00017 .
     
-    bdr:CLF7493F557B69347C
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 77v4-5" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV2527FFBADC6B0E44
         a                   :LineageEvent ;
         :lineageFrom        bdr:P3090 .
@@ -97,11 +91,11 @@ bdg:L8LS15369 {
     bdr:L8LS15369  a        :Lineage ;
         skos:altLabel       "snang ba mtha' yas kyi gzungs/ snang mtha' rjes su dran pa'i gzungs/ yon tan bslab pa dpag tu med pa'i gzungs/ bde ldan snying po'i gzungs rnams 'gyur byang ma 'khod pa/ de dag las g.yung drung gi rtags can gsum gyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "snang ba mtha' yas/ snang mtha' rjes su dran pa/ yon tan bslab pa dpag tu med pa/ bde ldan snying po bcas kyi gzungs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLF7493F557B69347C ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0D93CCC457E01631 , bdr:LH19522578F22D8CC7 , bdr:LH234F989594A78981 , bdr:LH35FA4E3FBF08C8BD , bdr:LH37DA60C73FC09F01 , bdr:LH38677CC97DB90FBF , bdr:LH494F2BD3D1F14979 , bdr:LH4A4268301DBB45F8 , bdr:LH98974D6C6E6885FF , bdr:LHB39DA7A682BD502F , bdr:LHBADB45167B8EB5DC , bdr:LHBD64971D8EDFB9B3 , bdr:LHD68BFA51C31E8FAB ;
         :lineageObject      bdr:T720 , bdr:T933 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTF7493F557B69347C .
     
     bdr:LH0D93CCC457E01631
         a                   :LineageHolder ;
@@ -167,4 +161,9 @@ bdg:L8LS15369 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV722DD03BD7F3EC32 ;
         :lineageWho         bdr:P1064 .
+    
+    bdr:NTF7493F557B69347C
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 77v4-5" ;
+        :noteSource         bdr:MW29706 .
 }

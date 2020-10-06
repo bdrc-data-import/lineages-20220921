@@ -19,7 +19,7 @@ bdg:L2RKL879 {
         adm:gitPath         "78/L2RKL879.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L2RKL879 ;
-        adm:logEntry        bda:LG038209BEFB8123C3 , bda:LG37B48212EE01977E , bda:LG3AA9EA1C0A0F6E62 , bda:LG4C08C216DFA51CFA , bda:LG76A830681A45D3E5 , bda:LG7DCDF662E2147045 , bda:LGA2ABC381C560072E , bda:LGF233A30F281F5780 , bda:LGFEC7E9A83EC1162F ;
+        adm:logEntry        bda:LG038209BEFB8123C3 , bda:LG37B48212EE01977E , bda:LG3AA9EA1C0A0F6E62 , bda:LG4C08C216DFA51CFA , bda:LG7DCDF662E2147045 , bda:LGFEC7E9A83EC1162F , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -47,39 +47,36 @@ bdg:L2RKL879 {
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LG76A830681A45D3E5
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG7DCDF662E2147045
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-09T15:42:56.043Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LGA2ABC381C560072E
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LGF233A30F281F5780
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGFEC7E9A83EC1162F
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-25T16:26:44.39Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL3683DA03C8070055
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  21 ;
-        :contentLocationVolume  "kha" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0358E70EAC69C0B1
         a                   :LineageEvent ;
@@ -163,13 +160,12 @@ bdg:L2RKL879 {
     
     bdr:L2RKL879  a         :Lineage ;
         skos:prefLabel      "dbang byin rlabs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL3683DA03C8070055 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH01566870B2992285 , bdr:LH2955E76AAC6A7D9F , bdr:LH2972D8AC9233404C , bdr:LH2F05B61D56B079A4 , bdr:LH3B15773FAF8D1D38 , bdr:LH4A67CE3A1A09951C , bdr:LH4F673C0BD6F6CC2A , bdr:LH5D727C58FDE2EE55 , bdr:LH8DF685EF5946B8D0 , bdr:LH8E3A429E20D8A23F , bdr:LH8E71507AADD9FD33 , bdr:LH9852C8C8342BE80E , bdr:LHA34916F8559ED3D8 , bdr:LHAA59E3CA7915FBBF , bdr:LHD8177AF0A1544824 , bdr:LHDE70101BB216C79F ;
         :lineageObject      bdr:T130 ;
         :lineageRef         bdr:L2RKL871 ;
         :lineageType        bdr:LineageDbang ;
-        :note               bdr:NT0CDDAC031F52D1AB , bdr:NT0FB8E87D998FF8D9 , bdr:NT12B449877DD3F066 , bdr:NT13212D226E0D96F5 , bdr:NT20D1B4936BA4211E , bdr:NT40898DFEF0472339 , bdr:NT4DC17576D169B244 , bdr:NT5AAED38CA2A93D22 , bdr:NT5F31675F2410C68A , bdr:NT660656B9D5A98E8E , bdr:NT69A7A354B2B01100 , bdr:NT761000A8DDD38735 , bdr:NT7D89590372109A89 , bdr:NT8BCC4B1E652E8E34 , bdr:NT8D085590C6F36994 , bdr:NT9FCB7C328C40571E , bdr:NTA0AD6AAD66CD1B48 , bdr:NTA76A1520FB205B08 , bdr:NTBCD72B77D405F47A , bdr:NTC2035B62EB8BDC42 , bdr:NTC3EDAA2C4072E22A , bdr:NTCCE07910EF343994 , bdr:NTD5F919B81B555F61 , bdr:NTE6A99FFF9BC9E341 , bdr:NTEB17F02F40A440BB , bdr:NTF5FB1894C3C7B007 , bdr:NTFDE1B78027EDE166 .
+        :note               bdr:NT0CDDAC031F52D1AB , bdr:NT0FB8E87D998FF8D9 , bdr:NT12B449877DD3F066 , bdr:NT13212D226E0D96F5 , bdr:NT20D1B4936BA4211E , bdr:NT3683DA03C8070055 , bdr:NT40898DFEF0472339 , bdr:NT4DC17576D169B244 , bdr:NT5AAED38CA2A93D22 , bdr:NT5F31675F2410C68A , bdr:NT660656B9D5A98E8E , bdr:NT69A7A354B2B01100 , bdr:NT761000A8DDD38735 , bdr:NT7D89590372109A89 , bdr:NT8BCC4B1E652E8E34 , bdr:NT8D085590C6F36994 , bdr:NT9FCB7C328C40571E , bdr:NTA0AD6AAD66CD1B48 , bdr:NTA76A1520FB205B08 , bdr:NTBCD72B77D405F47A , bdr:NTC2035B62EB8BDC42 , bdr:NTC3EDAA2C4072E22A , bdr:NTCCE07910EF343994 , bdr:NTD5F919B81B555F61 , bdr:NTE6A99FFF9BC9E341 , bdr:NTEB17F02F40A440BB , bdr:NTF5FB1894C3C7B007 , bdr:NTFDE1B78027EDE166 .
     
     bdr:LH01566870B2992285
         a                   :LineageHolder ;
@@ -269,6 +265,11 @@ bdg:L2RKL879 {
     bdr:NT20D1B4936BA4211E
         a                   :Note ;
         :noteText           "alternative lineage: L87aa"@en .
+    
+    bdr:NT3683DA03C8070055
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, p. 21" ;
+        :noteSource         bdr:MW29307 .
     
     bdr:NT40898DFEF0472339
         a                   :Note ;

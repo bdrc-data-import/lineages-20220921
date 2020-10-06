@@ -19,7 +19,7 @@ bdg:L1RKL2182 {
         adm:gitPath         "e9/L1RKL2182.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL2182 ;
-        adm:logEntry        bda:LG1019D84C12D5CDBE , bda:LG2A36D23FBF36C6E6 , bda:LG2E4B0A53A99F5328 , bda:LG3D5B89231D7FD196 , bda:LG64FFB09468ACDE03 , bda:LG84B719AC0559A1E2 , bda:LG88FAA35C0C29238F , bda:LG89F28DD0E3EAAD86 , bda:LG8B17A2CCE64BF41B , bda:LG9EFE91167D9BF0BD , bda:LGE469499EAF58D849 ;
+        adm:logEntry        bda:LG1019D84C12D5CDBE , bda:LG2A36D23FBF36C6E6 , bda:LG3D5B89231D7FD196 , bda:LG64FFB09468ACDE03 , bda:LG88FAA35C0C29238F , bda:LG89F28DD0E3EAAD86 , bda:LG8B17A2CCE64BF41B , bda:LG9EFE91167D9BF0BD , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,12 +34,6 @@ bdg:L1RKL2182 {
         adm:logDate         "2014-02-25T11:33:01.324Z"^^xsd:dateTime ;
         adm:logMessage      "added object ref as cw"@en .
     
-    bda:LG2E4B0A53A99F5328
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG3D5B89231D7FD196
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00023 .
@@ -49,12 +43,6 @@ bdg:L1RKL2182 {
         adm:logDate         "2013-09-28T02:59:06.286Z"^^xsd:dateTime ;
         adm:logMessage      "chane name add lin ref"@en ;
         adm:logWho          bdu:U00063 .
-    
-    bda:LG84B719AC0559A1E2
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG88FAA35C0C29238F
         a                   adm:UpdateData ;
@@ -78,17 +66,26 @@ bdg:L1RKL2182 {
         adm:logDate         "2014-05-30T10:43:22.936Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGE469499EAF58D849
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CLF368A3C51E692390
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  256 ;
-        :contentLocationVolume  "kha" .
     
     bdr:EV37F87B84ED984116
         a                   :LineageEvent ;
@@ -104,13 +101,12 @@ bdg:L1RKL2182 {
     
     bdr:L1RKL2182  a        :Lineage ;
         skos:prefLabel      "shes rab kyi pha rol tu phyin pa'i bstan chos mngon par rtogs pa'i rgyan gyi lung thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLF368A3C51E692390 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH14690C8020EAC610 , bdr:LH2EFEE8B9C656A3DF , bdr:LHC00C2187EB796C54 , bdr:LHD0DE238959A560A0 ;
         :lineageObject      bdr:W19716 ;
         :lineageRef         bdr:L1RKL2181 ;
         :lineageType        bdr:LineageLung ;
-        :note               bdr:NTA29A8BC57D2172C2 .
+        :note               bdr:NTA29A8BC57D2172C2 , bdr:NTF368A3C51E692390 .
     
     bdr:LH14690C8020EAC610
         a                   :LineageHolder ;
@@ -134,4 +130,9 @@ bdg:L1RKL2182 {
     bdr:NTA29A8BC57D2172C2
         a                   :Note ;
         :noteText           "alternative lineage: L218a"@en .
+    
+    bdr:NTF368A3C51E692390
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, p. 256" ;
+        :noteSource         bdr:MW29307 .
 }

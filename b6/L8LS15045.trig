@@ -19,7 +19,7 @@ bdg:L8LS15045 {
         adm:gitPath         "b6/L8LS15045.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS15045 ;
-        adm:logEntry        bda:LG1568A333B82AFC6C , bda:LG1CF5375F58865509 , bda:LG97E157BE8925540A , bda:LGA070C24220167CC8 , bda:LGC71DBACB67611DFE , bda:LGCF2A9448F7AD43CC , bda:LGDF4096D39CFE553B ;
+        adm:logEntry        bda:LG1568A333B82AFC6C , bda:LG1CF5375F58865509 , bda:LG97E157BE8925540A , bda:LGA070C24220167CC8 , bda:LGC71DBACB67611DFE , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -52,24 +52,19 @@ bdg:L8LS15045 {
         adm:logDate         "2014-02-28T09:54:51.247Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGCF2A9448F7AD43CC
+    bda:LGIM88BD19A8AB
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LGDF4096D39CFE553B
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL9E959F29DC0A12D9
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationSide  "f. 24r5" ;
-        :contentLocationVolume  "e" .
     
     bdr:EV269CE997FF176597
         a                   :LineageEvent ;
@@ -102,11 +97,11 @@ bdg:L8LS15045 {
     bdr:L8LS15045  a        :Lineage ;
         skos:altLabel       "bstan pa'i gzhi ma sdom pa gsum ji ltar thob pa'i tshul las/ spyan ras gzigs dngos kar+ma chags med zhabs sogs bka' brgyud rin po che'i gsung rabs dang sbyar te theg pa chen po dbu ma lugs su grags pa'i smon pa dang 'jugs pa dang don dam pa byang chub mchog tu sems bskyed pa'i sdom pa pa lan gnyis su legs par thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "byang chub sems pa'i sdom pa thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL9E959F29DC0A12D9 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH197CA39EC728E1C1 , bdr:LH5B57F7B032CEAD1E , bdr:LH74FF3F394481518E , bdr:LH8B23B3EFC6D05FAC , bdr:LHA462979C3466F49E , bdr:LHBA651C19EFDDA815 , bdr:LHD1B6F518A158570A , bdr:LHD706E0FC48F49DFB ;
         :lineageObject      bdr:T1400 ;
-        :lineageType        bdr:LineageSdomBrgyud .
+        :lineageType        bdr:LineageSdomBrgyud ;
+        :note               bdr:NT9E959F29DC0A12D9 .
     
     bdr:LH197CA39EC728E1C1
         a                   :LineageHolder ;
@@ -146,4 +141,9 @@ bdg:L8LS15045 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV4523F993A514D0E7 ;
         :lineageWho         bdr:P8LS15047 .
+    
+    bdr:NT9E959F29DC0A12D9
+        a                   :Note ;
+        :contentLocationStatement  "vol. e" ;
+        :noteSource         bdr:MW29706 .
 }

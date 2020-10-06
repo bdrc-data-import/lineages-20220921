@@ -19,7 +19,7 @@ bdg:L1RKL481 {
         adm:gitPath         "cc/L1RKL481.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL481 ;
-        adm:logEntry        bda:LG1B3CC71BD3C51B2D , bda:LG25E32D6B7328397C , bda:LG66764327D0DD26AC , bda:LG69DF0E53D1A94E6B , bda:LG757A9FE9ED941378 , bda:LG87E1FD9C6491B357 , bda:LG99CD40D97BF657FC , bda:LGB3E58E6BBD4552E6 , bda:LGCBAC6E3386760415 , bda:LGED3B697F6FE94B5D ;
+        adm:logEntry        bda:LG1B3CC71BD3C51B2D , bda:LG25E32D6B7328397C , bda:LG66764327D0DD26AC , bda:LG757A9FE9ED941378 , bda:LG87E1FD9C6491B357 , bda:LG99CD40D97BF657FC , bda:LGB3E58E6BBD4552E6 , bda:LGED3B697F6FE94B5D , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -38,12 +38,6 @@ bdg:L1RKL481 {
         adm:logDate         "2014-04-16T15:54:01.498Z"^^xsd:dateTime ;
         adm:logMessage      "added object and location"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG69DF0E53D1A94E6B
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG757A9FE9ED941378
         a                   adm:UpdateData ;
@@ -69,24 +63,25 @@ bdg:L1RKL481 {
         adm:logMessage      "changed Lineage Type"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGCBAC6E3386760415
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGED3B697F6FE94B5D
         a                   adm:UpdateData ;
         adm:logDate         "2013-10-05T05:51:04.89Z"^^xsd:dateTime ;
         adm:logMessage      "change name add lin ref"@en ;
         adm:logWho          bdu:U00063 .
     
-    bdr:CLE788F1C591980DF6
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationSide  "8b4ff." ;
-        :contentLocationVolume  "ka" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV001A84ECED4A1C0C
         a                   :LineageEvent ;
@@ -175,12 +170,11 @@ bdg:L1RKL481 {
     bdr:L1RKL481  a         :Lineage ;
         skos:altLabel       "rdo rje nag po chen po mgur mgon lha brgyad kyi rjes gnang sgo rum bse 'bag nag po 'phur shes kyi drung dang / rdo mgon yid bzhin nor bu'i drung sogs su lan gsum thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "rdo rje nag po chen po mgur mgon lha brgyad kyi rjes gnang /"@bo-x-ewts ;
-        :contentLocation    bdr:CLE788F1C591980DF6 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH06E0F6E6BFACAE24 , bdr:LH17E3823DB656302B , bdr:LH33BD2AF69D5BAC07 , bdr:LH355C320FED56C8A9 , bdr:LH3E23403CC20E9ED7 , bdr:LH3F3E2D5B2B4DB165 , bdr:LH59887F270A6C8A06 , bdr:LH59AA25F4288B121E , bdr:LH60FB403A11D5528A , bdr:LH6A63F9FE9CBC112D , bdr:LH7A3B9B1595A22FFB , bdr:LH85CAE590D0B0B4DB , bdr:LHA1D1D2F389435EA6 , bdr:LHA420524E32F9441E , bdr:LHA46C15A5DDDE4CBD , bdr:LHAAA1C63140A0AC3A , bdr:LHAD8D525B3A61D293 , bdr:LHB07F3B95A7E749CF , bdr:LHB78B2FF0B4FDFCAF , bdr:LHD5571C4B24123CD0 , bdr:LHD697CD268BB01D1B , bdr:LHDD4AC6A056128460 ;
         :lineageRef         bdr:L1RKL482 , bdr:L1RKL483 ;
         :lineageType        bdr:LineageRjesGnang ;
-        :note               bdr:NT593B35AEDBBA3373 , bdr:NT619135CEBE5E4289 , bdr:NT8EAC5A48C73EE76D , bdr:NTC0DC28577B7E9E42 .
+        :note               bdr:NT593B35AEDBBA3373 , bdr:NT619135CEBE5E4289 , bdr:NT8EAC5A48C73EE76D , bdr:NTC0DC28577B7E9E42 , bdr:NTE788F1C591980DF6 .
     
     bdr:LH06E0F6E6BFACAE24
         a                   :LineageHolder ;
@@ -306,4 +300,9 @@ bdg:L1RKL481 {
     bdr:NTC0DC28577B7E9E42
         a                   :Note ;
         :noteText           "alternative lineage: L26a"@en .
+    
+    bdr:NTE788F1C591980DF6
+        a                   :Note ;
+        :contentLocationStatement  "vol. ka" ;
+        :noteSource         bdr:MW29307 .
 }

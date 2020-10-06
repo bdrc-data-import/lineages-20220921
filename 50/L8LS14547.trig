@@ -19,15 +19,9 @@ bdg:L8LS14547 {
         adm:gitPath         "50/L8LS14547.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14547 ;
-        adm:logEntry        bda:LG195D41940E2A4F99 , bda:LG291B65E55A5C653E , bda:LG3E37C5C1DBD8C90C , bda:LG522887B32EC305BE , bda:LG6F457D05D0CFF27F , bda:LGC759EF9D5852A905 ;
+        adm:logEntry        bda:LG291B65E55A5C653E , bda:LG3E37C5C1DBD8C90C , bda:LG522887B32EC305BE , bda:LGC759EF9D5852A905 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG195D41940E2A4F99
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG291B65E55A5C653E
         a                   adm:UpdateData ;
@@ -46,23 +40,25 @@ bdg:L8LS14547 {
         adm:logDate         "2014-07-29T14:27:26.916Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG6F457D05D0CFF27F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGC759EF9D5852A905
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-28T15:43:41.272Z"^^xsd:dateTime ;
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL012777EBF3477A2E
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  579 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV021931EE38F25716
         a                   :LineageEvent ;
@@ -120,11 +116,11 @@ bdg:L8LS14547 {
         rdfs:comment        "another oral transmission of secret instructional text concerning four faced mahakala"@en ;
         skos:altLabel       "bstan pa'i stobs 'phrog nag po chen po gdong bzhi pa'am drag po gzi ldan dbang phyug gyi chos skor las/ gsang 'khrid yig rnying gi brgyud pa lugs gcig"@bo-x-ewts ;
         skos:prefLabel      "bstan pa'i stobs 'phrog nag po chen po gdong bzhi chos skor gsang 'khrid yig rnying gi brgyud lugs/"@bo-x-ewts ;
-        :contentLocation    bdr:CL012777EBF3477A2E ;
         :isRoot             true ;
         :lineageHolder      bdr:LH03F1C010EA5A6375 , bdr:LH06002D8C49A1568C , bdr:LH086A1EE6EDBE0B06 , bdr:LH27DE71B6362EFC1E , bdr:LH36CC1CCDA86EEFAF , bdr:LH3709052B92159830 , bdr:LH4AD93D623CC5C9B2 , bdr:LH4E8B2905E310010B , bdr:LH63B23E3E17D2CEDF , bdr:LH68FDD0A0B3904EC1 , bdr:LH8BC95CA8837D338B , bdr:LH8C6FDD9F0A44B847 , bdr:LH94606128AA233097 , bdr:LHDCC4E0364158BBA0 ;
         :lineageObject      bdr:T10MS11187 , bdr:T924 ;
-        :lineageType        bdr:LineageKhrid .
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NT012777EBF3477A2E .
     
     bdr:LH03F1C010EA5A6375
         a                   :LineageHolder ;
@@ -194,4 +190,9 @@ bdg:L8LS14547 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVC57973DB345B8992 ;
         :lineageWho         bdr:P6515 .
+    
+    bdr:NT012777EBF3477A2E
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 579" ;
+        :noteSource         bdr:MW1PD107937 .
 }

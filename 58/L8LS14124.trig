@@ -19,7 +19,7 @@ bdg:L8LS14124 {
         adm:gitPath         "58/L8LS14124.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14124 ;
-        adm:logEntry        bda:LG10DE8EB1BC56AF77 , bda:LG2360B3E7E24163B0 , bda:LG2A78AF162A5C3951 , bda:LG507AED50771626E1 , bda:LG854FBDE8DEC304F8 , bda:LG932D1B16B780A8F2 , bda:LGFA8667FB7D35C6EC ;
+        adm:logEntry        bda:LG10DE8EB1BC56AF77 , bda:LG2A78AF162A5C3951 , bda:LG854FBDE8DEC304F8 , bda:LG932D1B16B780A8F2 , bda:LGFA8667FB7D35C6EC , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,23 +29,11 @@ bdg:L8LS14124 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG2360B3E7E24163B0
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG2A78AF162A5C3951
         a                   adm:UpdateData ;
         adm:logDate         "2015-04-28T11:25:33.307Z"^^xsd:dateTime ;
         adm:logMessage      "changed p2807 to p3750"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG507AED50771626E1
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG854FBDE8DEC304F8
         a                   adm:UpdateData ;
@@ -62,11 +50,19 @@ bdg:L8LS14124 {
         adm:logDate         "2014-07-28T11:36:50.008Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL0B90E3D73D20A21A
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  238 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV04571C0980EFEAC8
         a                   :LineageEvent ;
@@ -119,11 +115,11 @@ bdg:L8LS14124 {
     bdr:L8LS14124  a        :Lineage ;
         rdfs:comment        "oral transmission of rakta yamari marked as ra"@en ;
         skos:prefLabel      "gshin rje gshed dmar po lha lnga'i chos skor las/ ra'i rtags can gyi lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL0B90E3D73D20A21A ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0E03CFB70D0DF45C , bdr:LH1BC8B084F25465E6 , bdr:LH3461E8307420F04A , bdr:LH48F0BBAF6833389D , bdr:LH64116955EF4235CF , bdr:LH6C42B2AC3520A59C , bdr:LH97A1BA54B30A1446 , bdr:LHB323EC6E6156332A , bdr:LHC75A5428245889B9 , bdr:LHCC1E3B0814A5579F , bdr:LHDEFDE4B5FEB8123B , bdr:LHE686ADED50264B2B , bdr:LHFF744C58FCFC7656 ;
         :lineageObject      bdr:T1613 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT0B90E3D73D20A21A .
     
     bdr:LH0E03CFB70D0DF45C
         a                   :LineageHolder ;
@@ -188,4 +184,9 @@ bdg:L8LS14124 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV55E6C7C7269EEAAB ;
         :lineageWho         bdr:P3510 .
+    
+    bdr:NT0B90E3D73D20A21A
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 238" ;
+        :noteSource         bdr:MW1PD107937 .
 }

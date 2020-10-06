@@ -19,7 +19,7 @@ bdg:L1RKL653 {
         adm:gitPath         "bd/L1RKL653.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL653 ;
-        adm:logEntry        bda:LG052C6DF5D9BF425D , bda:LG0A137D74A0D17F1F , bda:LG2149EBD988F4CA44 , bda:LG37BCCB8EB58E127B , bda:LG5433D90BAFF18513 , bda:LG55E21B7138B8C383 , bda:LG56EDD57D97A5865D , bda:LG7E990590B35F58C8 , bda:LGAA5DE8413585523D , bda:LGE5EDC56F5779813B ;
+        adm:logEntry        bda:LG052C6DF5D9BF425D , bda:LG0A137D74A0D17F1F , bda:LG2149EBD988F4CA44 , bda:LG5433D90BAFF18513 , bda:LG55E21B7138B8C383 , bda:LG56EDD57D97A5865D , bda:LGAA5DE8413585523D , bda:LGE5EDC56F5779813B , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -40,12 +40,6 @@ bdg:L1RKL653 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG37BCCB8EB58E127B
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG5433D90BAFF18513
         a                   adm:UpdateData ;
         adm:logDate         "2014-06-02T09:07:46.245Z"^^xsd:dateTime ;
@@ -61,12 +55,6 @@ bdg:L1RKL653 {
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LG7E990590B35F58C8
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGAA5DE8413585523D
         a                   adm:UpdateData ;
         adm:logDate         "2013-12-13T14:02:48.271Z"^^xsd:dateTime ;
@@ -78,11 +66,19 @@ bdg:L1RKL653 {
         adm:logDate         "2014-02-25T12:08:04.953Z"^^xsd:dateTime ;
         adm:logMessage      "object ref as cw"@en .
     
-    bdr:CLB09E5575A1D73391
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  654 ;
-        :contentLocationVolume  "ka" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0A1F52D7DA33CC86
         a                   :LineageEvent ;
@@ -107,12 +103,11 @@ bdg:L1RKL653 {
     bdr:L1RKL653  a         :Lineage ;
         skos:altLabel       "jo bo rje'i thugs dam chos chung brgya rtsar grags pa thob pa'i mtshan gyi rnams grangs ni/ ... (fols. 13b3-16b7 omitted) ... de nyid dang tshul khrims rgyal po'i 'gyur te rjes dran gsum so sor byas pa'i chos kyi rnam grangs brgya dang gsum yod pa thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "jo bo rje'i thugs dam chos chung brgya rtsar grags pa thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLB09E5575A1D73391 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH10F176E72EAF6EAE , bdr:LH24312E2BB962CF78 , bdr:LH4C22DFCF28E33A40 , bdr:LH7A79295EDF77B8E9 , bdr:LH843435F229B7C89A , bdr:LH8B81E2A04AE28181 ;
         :lineageRef         bdr:L1RKL651 ;
         :lineageType        bdr:LineageLung ;
-        :note               bdr:NT7D7759BE7F00345F , bdr:NTAF04B69B6DEC44C9 .
+        :note               bdr:NT7D7759BE7F00345F , bdr:NTAF04B69B6DEC44C9 , bdr:NTB09E5575A1D73391 .
     
     bdr:LH10F176E72EAF6EAE
         a                   :LineageHolder ;
@@ -150,4 +145,9 @@ bdg:L1RKL653 {
     bdr:NTAF04B69B6DEC44C9
         a                   :Note ;
         :noteText           "alternative lineage: L65b"@en .
+    
+    bdr:NTB09E5575A1D73391
+        a                   :Note ;
+        :contentLocationStatement  "vol. ka, p. 654" ;
+        :noteSource         bdr:MW29307 .
 }

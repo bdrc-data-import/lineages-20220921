@@ -19,7 +19,7 @@ bdg:L1RKL3912 {
         adm:gitPath         "c9/L1RKL3912.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL3912 ;
-        adm:logEntry        bda:LG196B95C24210AA14 , bda:LG20E855E660580352 , bda:LG2A6D620448DAAF46 , bda:LG31E70D277FB1EAEF , bda:LG37B9A8E18FE15461 , bda:LG456817ED76ABB5E9 , bda:LG4A06322B8892708B , bda:LG4F5B64BF7C262C6B , bda:LG5EC338973F08080F , bda:LG78EADBA2637A930F , bda:LG8F9E336626B41E5E , bda:LGEEE4DEE0C12647C6 ;
+        adm:logEntry        bda:LG196B95C24210AA14 , bda:LG2A6D620448DAAF46 , bda:LG31E70D277FB1EAEF , bda:LG37B9A8E18FE15461 , bda:LG456817ED76ABB5E9 , bda:LG4A06322B8892708B , bda:LG4F5B64BF7C262C6B , bda:LG5EC338973F08080F , bda:LG8F9E336626B41E5E , bda:LGEEE4DEE0C12647C6 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,12 +28,6 @@ bdg:L1RKL3912 {
         adm:logDate         "2019-03-14T12:21:38.641Z"^^xsd:dateTime ;
         adm:logMessage      "changed Lineages"@en ;
         adm:logWho          bdu:U00017 .
-    
-    bda:LG20E855E660580352
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG2A6D620448DAAF46
         a                   adm:InitialDataCreation ;
@@ -74,12 +68,6 @@ bdg:L1RKL3912 {
         adm:logDate         "2015-12-03T14:16:51.29Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG78EADBA2637A930F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG8F9E336626B41E5E
         a                   adm:UpdateData ;
         adm:logDate         "2019-02-26T15:08:25.613Z"^^xsd:dateTime ;
@@ -92,11 +80,19 @@ bdg:L1RKL3912 {
         adm:logMessage      "edited name, added lin ref"@en ;
         adm:logWho          bdu:U00020 .
     
-    bdr:CLB37C97D96D737DC5
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "52b6" ;
-        :contentLocationVolume  "kha" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV043E2A367825573C
         a                   :LineageEvent ;
@@ -196,12 +192,11 @@ bdg:L1RKL3912 {
     
     bdr:L1RKL3912  a        :Lineage ;
         skos:prefLabel      "indra bhu ti lam nye brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CLB37C97D96D737DC5 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH02420C3AA9EE9409 , bdr:LH08130A71287F29CE , bdr:LH1166EDEB35A50F29 , bdr:LH1176F8705176E4E2 , bdr:LH14370537DC791134 , bdr:LH20569FDFC4FB36AB , bdr:LH2067B3D7598E2978 , bdr:LH21BB7D749F924981 , bdr:LH2ABEDBA071890828 , bdr:LH3CE302D5AC28A438 , bdr:LH5905EB9C3E599781 , bdr:LH5F00970B3F58A82F , bdr:LH63FEBCD1FDEF332C , bdr:LH6826701D84865DA5 , bdr:LH7FB50EF4FD992887 , bdr:LH846A94700C5810B1 , bdr:LH938F105D0E6C53F6 , bdr:LH9EB1614A6EFED5B2 , bdr:LHAC431D61BF63850A , bdr:LHD582065E18E95C0B , bdr:LHD741C8C64D7E00F8 , bdr:LHDCE4464F438C43BF , bdr:LHEA597050A409FEB4 , bdr:LHF8CF7648FBCA145B , bdr:LHFA99CF712367C1E1 ;
         :lineageRef         bdr:L1RKL3911 ;
         :lineageType        bdr:LineageNyeBrgyud ;
-        :note               bdr:NT6EDB441DC16E9EB2 .
+        :note               bdr:NT6EDB441DC16E9EB2 , bdr:NTB37C97D96D737DC5 .
     
     bdr:LH02420C3AA9EE9409
         a                   :LineageHolder ;
@@ -330,4 +325,9 @@ bdg:L1RKL3912 {
     bdr:NT6EDB441DC16E9EB2
         a                   :Note ;
         :noteText           "alternative lineage: L391a"@en .
+    
+    bdr:NTB37C97D96D737DC5
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, 52b6" ;
+        :noteSource         bdr:MW29307 .
 }

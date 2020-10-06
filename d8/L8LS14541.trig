@@ -19,7 +19,7 @@ bdg:L8LS14541 {
         adm:gitPath         "d8/L8LS14541.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14541 ;
-        adm:logEntry        bda:LG31D7F53D8F9E1751 , bda:LG3B89F907C10390FF , bda:LG6865F01B508B638F , bda:LGC6FA7B7124257364 , bda:LGCCFE95AFFF11DB85 , bda:LGD1D68DD6F03F3B5A ;
+        adm:logEntry        bda:LG31D7F53D8F9E1751 , bda:LG3B89F907C10390FF , bda:LGC6FA7B7124257364 , bda:LGD1D68DD6F03F3B5A , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,22 +35,10 @@ bdg:L8LS14541 {
         adm:logMessage      "added location and object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG6865F01B508B638F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGC6FA7B7124257364
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-29T10:39:05.975Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LGCCFE95AFFF11DB85
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGD1D68DD6F03F3B5A
         a                   adm:UpdateData ;
@@ -58,11 +46,19 @@ bdg:L8LS14541 {
         adm:logMessage      "changed type"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL1FF2F6761905237E
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  577 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0A0242EC8B80C4E6
         a                   :LineageEvent ;
@@ -127,11 +123,11 @@ bdg:L8LS14541 {
     bdr:L8LS14541  a        :Lineage ;
         rdfs:comment        "anuja transmission of five entourage mahakala, gongkar tradition"@en ;
         skos:prefLabel      "gong dkar lugs kyi sgrub dus mgon po gtso 'khor lnga pa'i rjes gnang gi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL1FF2F6761905237E ;
         :isRoot             true ;
         :lineageHolder      bdr:LH02AC84B425675A54 , bdr:LH1585FA2EF2013537 , bdr:LH2633D1F23E2E58D4 , bdr:LH35343F0F4F43D00C , bdr:LH3E12D1940849619A , bdr:LH54880EC8854916FA , bdr:LH5FA6AF092F381F0C , bdr:LH7C61AAEFE00DB096 , bdr:LH7FB8AEF063A231F5 , bdr:LH80F7C88C063C4B9C , bdr:LH97527D5D9C7847E8 , bdr:LH9A0712A7555D261E , bdr:LHABA2CF7002F4F274 , bdr:LHB1464A13809C68B8 , bdr:LHDB22769FE19E740C , bdr:LHDC2C416B015573B4 ;
         :lineageObject      bdr:T950 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NT1FF2F6761905237E .
     
     bdr:LH02AC84B425675A54
         a                   :LineageHolder ;
@@ -211,4 +207,9 @@ bdg:L8LS14541 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVDFC2F59046C45A73 ;
         :lineageWho         bdr:P3412 .
+    
+    bdr:NT1FF2F6761905237E
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 577" ;
+        :noteSource         bdr:MW1PD107937 .
 }

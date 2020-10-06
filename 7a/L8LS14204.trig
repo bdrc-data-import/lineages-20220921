@@ -19,7 +19,7 @@ bdg:L8LS14204 {
         adm:gitPath         "7a/L8LS14204.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14204 ;
-        adm:logEntry        bda:LG513E09669E9665B6 , bda:LG7068548598212BCE , bda:LGABE1F7162ED5F080 , bda:LGB642ADFA356E94B3 , bda:LGD63A1666509D36CD , bda:LGE34E62E985CF5A12 ;
+        adm:logEntry        bda:LG513E09669E9665B6 , bda:LG7068548598212BCE , bda:LGABE1F7162ED5F080 , bda:LGD63A1666509D36CD , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -39,28 +39,24 @@ bdg:L8LS14204 {
         adm:logDate         "2014-05-28T11:23:24.499Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGB642ADFA356E94B3
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGD63A1666509D36CD
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T11:12:04.552Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGE34E62E985CF5A12
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL4D5A1103FAA56CE3
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  272 ;
-        :contentLocationVolume  1 .
     
     bdr:EV28DF4E3842A00CAD
         a                   :LineageEvent ;
@@ -85,11 +81,11 @@ bdg:L8LS14204 {
     bdr:L8LS14204  a        :Lineage ;
         rdfs:comment        "oral transmission of cycle of teachings of garuda"@en ;
         skos:prefLabel      "rdo rje nam mkha' lding gser mig 'khyil ba 'byung po 'ur 'ded kyi chos skor gyi lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL4D5A1103FAA56CE3 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH21D3E4E25CF23402 , bdr:LH8C4594056E4FC6F7 , bdr:LH965940DC49148EB3 , bdr:LH9715FA29B6BEBBEB , bdr:LH99BCB54916EB03FB , bdr:LHD0A99772D90D17B6 ;
         :lineageObject      bdr:T10MS11187 , bdr:T712 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT4D5A1103FAA56CE3 .
     
     bdr:LH21D3E4E25CF23402
         a                   :LineageHolder ;
@@ -119,4 +115,9 @@ bdg:L8LS14204 {
     bdr:LHD0A99772D90D17B6
         a                   :LineageHolder ;
         :lineageWho         bdr:P783 .
+    
+    bdr:NT4D5A1103FAA56CE3
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 272" ;
+        :noteSource         bdr:MW1PD107937 .
 }

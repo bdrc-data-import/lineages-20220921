@@ -19,7 +19,7 @@ bdg:L8LS14093 {
         adm:gitPath         "23/L8LS14093.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14093 ;
-        adm:logEntry        bda:LG1039FEE0637DB485 , bda:LG749F74F9BA6341D2 , bda:LG81C38D84BFD6F24F , bda:LGC1CA1D08011FCC4F , bda:LGC3EC0B75801CAE1E , bda:LGC9941042241B55DF , bda:LGF57A63BBD1BD140B ;
+        adm:logEntry        bda:LG1039FEE0637DB485 , bda:LG749F74F9BA6341D2 , bda:LGC1CA1D08011FCC4F , bda:LGC3EC0B75801CAE1E , bda:LGF57A63BBD1BD140B , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,12 +34,6 @@ bdg:L8LS14093 {
         adm:logDate         "2014-07-28T16:03:56.045Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG81C38D84BFD6F24F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGC1CA1D08011FCC4F
         a                   adm:UpdateData ;
         adm:logDate         "2014-01-07T10:44:01.646Z"^^xsd:dateTime ;
@@ -51,22 +45,24 @@ bdg:L8LS14093 {
         adm:logDate         "2013-07-15T09:44:54.56Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGC9941042241B55DF
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGF57A63BBD1BD140B
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-22T09:57:57.65Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLE04F55A645D6F438
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  226 ;
-        :contentLocationVolume  1 .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV23147710CFDF751C
         a                   :LineageEvent ;
@@ -80,11 +76,11 @@ bdg:L8LS14093 {
         rdfs:comment        "oral transmission of yantra yoga ritual text"@en ;
         skos:altLabel       "zhu lu pa legs pa rgyal mtshan gyis mdzad pa'i drug cu pa'i rtsa tshig la brten nas paN chen blo bzang chos kyi rgyal mtshan gyis mdzad pa'i drug cu pa'i rnam gzhag dam nyams kyi srog gcod mtshon cha 'bar ba'i 'khrul 'khor/ bka' sdod dam can rnam gsum gyi phrin las bskul ba myur mgyogs drag po'i pho nya'i yig cha'i lung dang sa 'khor 'dri lugs dang gnam 'khor rtsigs lugs kyi phyag 'khrid dang bcas pa thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "drug cu pa'i rnam gzhag bka' sdod dam can rnam gsum gyi phrin bskul/ sa 'khor 'dri lugs dang gnam 'khor rtsigs lugs kyi lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CLE04F55A645D6F438 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH2420A518FBFC1A4F , bdr:LH455841FDEE28D085 , bdr:LH83EE42E692CE7C93 , bdr:LH8E7C5E3EBAA38F81 ;
         :lineageObject      bdr:T288 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTE04F55A645D6F438 .
     
     bdr:LH2420A518FBFC1A4F
         a                   :LineageHolder ;
@@ -108,4 +104,9 @@ bdg:L8LS14093 {
     bdr:NT0F74DA5B28B3A34C
         a                   :Note ;
         :noteText           "'di rjes bla ma gnyis gsum zhig ma rnyed/"@bo-x-ewts .
+    
+    bdr:NTE04F55A645D6F438
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 226" ;
+        :noteSource         bdr:MW1PD107937 .
 }

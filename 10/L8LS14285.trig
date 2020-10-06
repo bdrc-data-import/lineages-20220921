@@ -19,7 +19,7 @@ bdg:L8LS14285 {
         adm:gitPath         "10/L8LS14285.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14285 ;
-        adm:logEntry        bda:LG04D4F97D6C0463FE , bda:LG200033F9133F040A , bda:LG4E7531AEDA7886D8 , bda:LGCF475E58813617AD , bda:LGDA198923B4A01C80 , bda:LGE30654F819D78327 ;
+        adm:logEntry        bda:LG04D4F97D6C0463FE , bda:LG4E7531AEDA7886D8 , bda:LGCF475E58813617AD , bda:LGE30654F819D78327 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -27,12 +27,6 @@ bdg:L8LS14285 {
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T09:49:13.797Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG200033F9133F040A
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG4E7531AEDA7886D8
         a                   adm:InitialDataCreation ;
@@ -45,23 +39,25 @@ bdg:L8LS14285 {
         adm:logMessage      "added location and short title"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGDA198923B4A01C80
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGE30654F819D78327
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-27T15:01:33.748Z"^^xsd:dateTime ;
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL5BC4AA515C47C63A
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  308 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0362282F5682A16D
         a                   :LineageEvent ;
@@ -171,11 +167,11 @@ bdg:L8LS14285 {
         rdfs:comment        "anuja transmission of bali offering, recitation and implements ritual practice of mahakala riding on tiger"@en ;
         skos:altLabel       "bka' ma phyi 'gyur gyi dpal mgon stag zhon nag po'i gtor ma/ bzlas lung / phyag mtshan gtod pa sogs phyag len 'khrul med du sku gsung thugs kyi rjes gnang thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "dpal mgon stag zhon nag po'i gtor ma/ bzlas lung / phyag mtshan gyi rjes gnang thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL5BC4AA515C47C63A ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0A68CD3812FA749C , bdr:LH107F3CF6A46A3C51 , bdr:LH1DA4210F97FDC265 , bdr:LH27BAFC85153D256B , bdr:LH28EE5688FBD7A5B3 , bdr:LH2962B8A67A3D66C3 , bdr:LH372EDD43BEDE286C , bdr:LH3DA9D9D3A6D52AEA , bdr:LH403881C8153A5E05 , bdr:LH521A78218591B3C8 , bdr:LH579FF7A17344E10D , bdr:LH5B0D70995B091C92 , bdr:LH722D8736A545B677 , bdr:LH74CF256023A83A88 , bdr:LH8919B30A4AF578C6 , bdr:LH8AAFA5B47F460995 , bdr:LH8C0080686B4EEB46 , bdr:LH922E00ACAA1FD3CE , bdr:LH9D206BEC0F3917F3 , bdr:LHD14F48835C1A50E2 , bdr:LHD1CE632E4E9367AC , bdr:LHE18BF9A51BDC4ED3 , bdr:LHE488DF612E0BFF58 , bdr:LHE75FC4C0AE5444A5 , bdr:LHE93F6A714EA41685 , bdr:LHF29CAFEF25AD4243 , bdr:LHFE2336F2591C3D70 , bdr:LHFFC2125D1C27B87D ;
         :lineageObject      bdr:T494 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NT5BC4AA515C47C63A .
     
     bdr:LH0A68CD3812FA749C
         a                   :LineageHolder ;
@@ -313,4 +309,9 @@ bdg:L8LS14285 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV5E68A7113E2C575E ;
         :lineageWho         bdr:P3256 .
+    
+    bdr:NT5BC4AA515C47C63A
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 308" ;
+        :noteSource         bdr:MW1PD107937 .
 }

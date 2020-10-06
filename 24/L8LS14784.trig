@@ -19,7 +19,7 @@ bdg:L8LS14784 {
         adm:gitPath         "24/L8LS14784.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14784 ;
-        adm:logEntry        bda:LG08FDEAE012C222C0 , bda:LG094893F19E50A077 , bda:LG7B38BD8C985F327E , bda:LGBB5939A75A1B203A , bda:LGC6F7F4D1F97F4DA5 , bda:LGDF51348BE285712A , bda:LGE078EE8758D939E6 , bda:LGE6B698E477EDD4E0 ;
+        adm:logEntry        bda:LG08FDEAE012C222C0 , bda:LG7B38BD8C985F327E , bda:LGBB5939A75A1B203A , bda:LGC6F7F4D1F97F4DA5 , bda:LGE078EE8758D939E6 , bda:LGE6B698E477EDD4E0 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,12 +28,6 @@ bdg:L8LS14784 {
         adm:logDate         "2019-01-30T12:09:42.391Z"^^xsd:dateTime ;
         adm:logMessage      "P3630 changed to P1865"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG094893F19E50A077
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG7B38BD8C985F327E
         a                   adm:InitialDataCreation ;
@@ -53,12 +47,6 @@ bdg:L8LS14784 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGDF51348BE285712A
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGE078EE8758D939E6
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-31T10:05:55.721Z"^^xsd:dateTime ;
@@ -71,11 +59,19 @@ bdg:L8LS14784 {
         adm:logMessage      "changed p record"@en ;
         adm:logWho          bdu:U00017 .
     
-    bdr:CL7DA8E8A1131ABCE1
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "106-107" ;
-        :contentLocationVolume  2 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV055406551A38D17F
         a                   :LineageEvent ;
@@ -191,11 +187,11 @@ bdg:L8LS14784 {
     
     bdr:L8LS14784  a        :Lineage ;
         skos:prefLabel      "'gro mgon chos rgyal 'phags pa'i gsung 'bum gyi lung ji ltar nos pa las/ pra'i rtags yod pa'i brgyud lugs gcig"@bo-x-ewts ;
-        :contentLocation    bdr:CL7DA8E8A1131ABCE1 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH142F6553E37AE797 , bdr:LH1C34B0E7048E55AE , bdr:LH2E41D8B44609110A , bdr:LH382E91C01861C2DB , bdr:LH42C74FFA6E1C965E , bdr:LH4455B36EF4915BC6 , bdr:LH50112799ABE79E40 , bdr:LH53CE3E483EBD9D29 , bdr:LH55681D1AE7D3AC17 , bdr:LH59E48EE0D3470C91 , bdr:LH5C06F2E0A1D126E3 , bdr:LH679FF08F8C93C738 , bdr:LH7698EF8D0A6B17E1 , bdr:LH7ACB3ED652104BF9 , bdr:LH7EAC73D938EC5728 , bdr:LH8297AFF590201ED5 , bdr:LH8C8050D8EC23F2F5 , bdr:LH90DC0B610BF89DFD , bdr:LH954E616A6B9190F4 , bdr:LHAB963E4B6D5FA7CC , bdr:LHBC95F541F000D386 , bdr:LHC20AEC3F2114C325 , bdr:LHC805E9B88AA8815B , bdr:LHC853E54802AFDD7C , bdr:LHCC51B745AC69EE9B , bdr:LHCDE95D91EAF4B23E , bdr:LHCF9504FAC4B6C138 , bdr:LHD65FB8484B87863C , bdr:LHDED51FBD4B118B5E ;
         :lineageObject      bdr:T208 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT7DA8E8A1131ABCE1 .
     
     bdr:LH142F6553E37AE797
         a                   :LineageHolder ;
@@ -340,4 +336,9 @@ bdg:L8LS14784 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV581F467B06B64280 ;
         :lineageWho         bdr:P1615 .
+    
+    bdr:NT7DA8E8A1131ABCE1
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 106-107" ;
+        :noteSource         bdr:MW1PD107937 .
 }

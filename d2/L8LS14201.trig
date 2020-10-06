@@ -19,7 +19,7 @@ bdg:L8LS14201 {
         adm:gitPath         "d2/L8LS14201.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14201 ;
-        adm:logEntry        bda:LG04E3C7916C9615E6 , bda:LG0FEF8AA1A8B86EEE , bda:LG55C02CCFAAD1BD0D , bda:LG9CED4E4B9335C2A0 , bda:LGA4294143604D2C33 , bda:LGDCC47EE0CFFCBDBE , bda:LGE7C62F5CED2C79C2 ;
+        adm:logEntry        bda:LG04E3C7916C9615E6 , bda:LG0FEF8AA1A8B86EEE , bda:LG9CED4E4B9335C2A0 , bda:LGA4294143604D2C33 , bda:LGDCC47EE0CFFCBDBE , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -33,12 +33,6 @@ bdg:L8LS14201 {
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-07-30T14:03:19.692Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG55C02CCFAAD1BD0D
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG9CED4E4B9335C2A0
         a                   adm:UpdateData ;
@@ -58,17 +52,19 @@ bdg:L8LS14201 {
         adm:logMessage      "change go lung pa"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGE7C62F5CED2C79C2
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CLCC5553F655644C9C
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  271 ;
-        :contentLocationVolume  1 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV05FE43922A0C48D1
         a                   :LineageEvent ;
@@ -174,11 +170,11 @@ bdg:L8LS14201 {
         rdfs:comment        "oral transmission of white varahi sadhana"@en ;
         skos:altLabel       "sgrub khan pa dpal ldan don grub kyis mdzad pa'i phag dkar shes rab gsal byed kyi sgrub thabs dang byin rlabs kyi cho ga gnyis kyi lung brgyud/"@bo-x-ewts ;
         skos:prefLabel      "phag dkar shes rab gsal byed kyi sgrub thabs dang byin rlabs kyi cho ga gnyis kyi lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CLCC5553F655644C9C ;
         :isRoot             true ;
         :lineageHolder      bdr:LH00E9CCDC827FBB34 , bdr:LH0C39207BA2CBCAE4 , bdr:LH11B8B63F7BBA8F82 , bdr:LH170899CFBEBA99E5 , bdr:LH2AC96E1CAE93EF21 , bdr:LH2D115118A58D9B8F , bdr:LH4234CD0E7668269C , bdr:LH4381A5421EEF8916 , bdr:LH4FAA2E9C6DF0EB59 , bdr:LH520A58D43AAE3CCF , bdr:LH579297D85161CF5A , bdr:LH5FD1C93F03E88637 , bdr:LH62364AA1FDC24E90 , bdr:LH6523C10FC8161ADB , bdr:LH6E0E054E1C4B43FC , bdr:LH6EF4B2C9E6B6AF76 , bdr:LH73F69B5706B6846D , bdr:LHAB2820956F698548 , bdr:LHC0BBA411C4A8FE49 , bdr:LHD21AD54892EFA7B0 , bdr:LHD4BB5AD4010CA719 , bdr:LHD9BF77ED6ECC9FA9 , bdr:LHDC5E36B85E659C26 , bdr:LHE7D7B80AA06D3099 , bdr:LHE99FF09E04892D24 , bdr:LHF9936F47753D3CA9 ;
         :lineageObject      bdr:T1 , bdr:T2GS1168 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTCC5553F655644C9C .
     
     bdr:LH00E9CCDC827FBB34
         a                   :LineageHolder ;
@@ -308,4 +304,9 @@ bdg:L8LS14201 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV17AEB44234860846 ;
         :lineageWho         bdr:P502 .
+    
+    bdr:NTCC5553F655644C9C
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 271" ;
+        :noteSource         bdr:MW1PD107937 .
 }

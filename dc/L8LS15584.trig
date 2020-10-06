@@ -29,12 +29,6 @@ bdg:L8LS15584 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLC9844EB4D3A4BCB7
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 99r2-3" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV0401FC124F7DF13A
         a                   :LineageEvent ;
         :lineageFrom        bdr:P8LS14683 .
@@ -77,11 +71,11 @@ bdg:L8LS15584 {
     
     bdr:L8LS15584  a        :Lineage ;
         skos:prefLabel      "jo mo lugs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLC9844EB4D3A4BCB7 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0C1A560B432DAA64 , bdr:LH46C172F44B40E267 , bdr:LH4EB0747929B44FAC , bdr:LH6909909738A906BE , bdr:LHB18B838229679940 , bdr:LHB97DD6DBE9CC1813 , bdr:LHBA53213C7F210205 , bdr:LHBCFC91B50F288851 , bdr:LHC00A4D3074DA57F5 , bdr:LHF1AE024F0DE9CE95 , bdr:LHF518D41B249DF803 ;
         :lineageObject      bdr:T2044 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTC9844EB4D3A4BCB7 .
     
     bdr:LH0C1A560B432DAA64
         a                   :LineageHolder ;
@@ -137,4 +131,9 @@ bdg:L8LS15584 {
         :lineageDownFrom    bdr:L8LS15577 ;
         :lineageReceived    bdr:EVD369FF7E1E188F0D ;
         :lineageWho         bdr:P2JM28 .
+    
+    bdr:NTC9844EB4D3A4BCB7
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 99r2-3" ;
+        :noteSource         bdr:MW29706 .
 }

@@ -35,12 +35,6 @@ bdg:L8LS15467 {
         adm:logMessage      "Moved accociated link to T1804"@en ;
         adm:logWho          bdu:U00017 .
     
-    bdr:CL97D27FFF42500957
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 93r5-93r4" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV061C1F456CFA1D3D
         a                   :LineageEvent ;
         :lineageFrom        bdr:P2890 .
@@ -187,11 +181,11 @@ bdg:L8LS15467 {
     
     bdr:L8LS15467  a        :Lineage ;
         skos:prefLabel      "lung a nu yo ga'i skor gyi brgyud pa/ spyi brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL97D27FFF42500957 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH00331EFEAD1DC84E , bdr:LH0178A3FAE9A93D1E , bdr:LH03F5FA313BBAA39B , bdr:LH0E325F01B07E1F77 , bdr:LH2A95EF650269B230 , bdr:LH327C025BAA1A135C , bdr:LH3E9CB919D85834C1 , bdr:LH402EDC72873CD02A , bdr:LH4265A59F73AFCFF9 , bdr:LH44BC88EF831858C8 , bdr:LH48923FA17DBA782A , bdr:LH494EA19F78BBAB15 , bdr:LH4DAF4CC26801C630 , bdr:LH4DE826EBC81AC8F7 , bdr:LH5036E39FA79AB112 , bdr:LH5258DA6BE2499A48 , bdr:LH5D59DCB1DEA1B2A6 , bdr:LH61715720ACB33EA9 , bdr:LH6ABED442651A6A38 , bdr:LH74969DAF3EDA176F , bdr:LH795B0D42FBCEC596 , bdr:LH8644511BB3851FB2 , bdr:LH8EA9E27FA13F8179 , bdr:LH92593616CAB22024 , bdr:LH935876FC0C2DAC90 , bdr:LH9790C356194ED5B9 , bdr:LH9AA38A06C3D4E64E , bdr:LH9BC245E69C919F9C , bdr:LHA31023788F1C7C73 , bdr:LHA98587E7526EE41E , bdr:LHAB4F516856C99331 , bdr:LHABB0C12F43E87968 , bdr:LHC7809756A25EE920 , bdr:LHDF376B44622025E4 , bdr:LHE47E4D0F499733E1 , bdr:LHEAEF3C2B0AED8503 , bdr:LHEDDFEAC5298C4322 ;
         :lineageObject      bdr:T1460 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT97D27FFF42500957 .
     
     bdr:LH00331EFEAD1DC84E
         a                   :LineageHolder ;
@@ -377,4 +371,9 @@ bdg:L8LS15467 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV09851686BABB79AF ;
         :lineageWho         bdr:P8LS14150 .
+    
+    bdr:NT97D27FFF42500957
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 93r5-93r4" ;
+        :noteSource         bdr:MW29706 .
 }

@@ -19,7 +19,7 @@ bdg:L8LS14513 {
         adm:gitPath         "f6/L8LS14513.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14513 ;
-        adm:logEntry        bda:LG1A9C449CE5AB005F , bda:LG26ECC2EE5C19D282 , bda:LG8EA33D1619A4C4B0 , bda:LGAEFEB0362E77A628 , bda:LGB7C67D76E122EAEA , bda:LGD8232D3AFE7ADFC2 ;
+        adm:logEntry        bda:LG1A9C449CE5AB005F , bda:LG8EA33D1619A4C4B0 , bda:LGB7C67D76E122EAEA , bda:LGD8232D3AFE7ADFC2 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,23 +29,11 @@ bdg:L8LS14513 {
         adm:logMessage      "added topic"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG26ECC2EE5C19D282
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG8EA33D1619A4C4B0
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-09-17T16:57:49.925Z"^^xsd:dateTime ;
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LGAEFEB0362E77A628
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGB7C67D76E122EAEA
         a                   adm:UpdateData ;
@@ -58,11 +46,19 @@ bdg:L8LS14513 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL6B3FF38C9278AD15
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "531-532" ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV01327B326C33FC3A
         a                   :LineageEvent ;
@@ -87,11 +83,11 @@ bdg:L8LS14513 {
     bdr:L8LS14513  a        :Lineage ;
         rdfs:comment        "anuja transmission of black cloacked mahakala with copper knife"@en ;
         skos:prefLabel      "ber nag zangs gri can gyi rjes gnang gi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL6B3FF38C9278AD15 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH13E0A78B1410C452 , bdr:LH238F038ECB437DBC , bdr:LH24BD2A289EACAA3C , bdr:LH45F74881FB86CEBD , bdr:LHB1538933BB0A5FA6 , bdr:LHC9E659273B6D5F9A ;
         :lineageObject      bdr:T2338 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NT6B3FF38C9278AD15 .
     
     bdr:LH13E0A78B1410C452
         a                   :LineageHolder ;
@@ -121,4 +117,9 @@ bdg:L8LS14513 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV01327B326C33FC3A ;
         :lineageWho         bdr:P650 .
+    
+    bdr:NT6B3FF38C9278AD15
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 531-532" ;
+        :noteSource         bdr:MW1PD107937 .
 }

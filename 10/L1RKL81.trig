@@ -19,7 +19,7 @@ bdg:L1RKL81 {
         adm:gitPath         "10/L1RKL81.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL81 ;
-        adm:logEntry        bda:LG166CEF6DB23766B9 , bda:LG50713BFEAE8984BB , bda:LG59BF253E82487D51 , bda:LG6259F8AB0A4C4EA3 , bda:LG738D4348AF86CC5E , bda:LG822F796DDEF3DBEF , bda:LGABE0DDB96368F58B , bda:LGB7A7EABF47BDCFB5 , bda:LGD35A5EA2FF9843B2 ;
+        adm:logEntry        bda:LG166CEF6DB23766B9 , bda:LG50713BFEAE8984BB , bda:LG59BF253E82487D51 , bda:LG6259F8AB0A4C4EA3 , bda:LG738D4348AF86CC5E , bda:LG822F796DDEF3DBEF , bda:LGB7A7EABF47BDCFB5 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -56,28 +56,24 @@ bdg:L1RKL81 {
         adm:logMessage      "edited according to gsan yig"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGABE0DDB96368F58B
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGB7A7EABF47BDCFB5
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T10:52:13.536Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGD35A5EA2FF9843B2
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL87E5953D0F1CCE3F
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "574-575" ;
-        :contentLocationVolume  "ka" .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV1420F03B13499CD4
         a                   :LineageEvent ;
@@ -126,13 +122,12 @@ bdg:L1RKL81 {
     bdr:L1RKL81  a          :Lineage ;
         rdfs:comment        "Consecration of nairAtmya" ;
         skos:prefLabel      "rje btsun rdo rje bdag med ma'i byin rlabs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL87E5953D0F1CCE3F ;
         :isRoot             true ;
         :lineageHolder      bdr:LH12C08629F5E15286 , bdr:LH4BADA443D24EAF8D , bdr:LH5236B4CBD2684BCA , bdr:LH5FEBD8078445417D , bdr:LH66C024934A1F2125 , bdr:LH84EF6AC7DAFCB48F , bdr:LH99BD18D0DC7D60AB , bdr:LHD8901CAF6118D503 , bdr:LHEA4ADACF5F5E9147 , bdr:LHF20B6329E2DAD650 , bdr:LHFA799A111D44B54F ;
         :lineageObject      bdr:T624 ;
         :lineageRef         bdr:L1RKL82 ;
         :lineageType        bdr:LineageDbang ;
-        :note               bdr:NTC1B6096030A243FC .
+        :note               bdr:NT87E5953D0F1CCE3F , bdr:NTC1B6096030A243FC .
     
     bdr:LH12C08629F5E15286
         a                   :LineageHolder ;
@@ -188,6 +183,11 @@ bdg:L1RKL81 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV7C07B941340685BB ;
         :lineageWho         bdr:P461 .
+    
+    bdr:NT87E5953D0F1CCE3F
+        a                   :Note ;
+        :contentLocationStatement  "vol. ka, p. 574-575" ;
+        :noteSource         bdr:MW29307 .
     
     bdr:NTC1B6096030A243FC
         a                   :Note ;

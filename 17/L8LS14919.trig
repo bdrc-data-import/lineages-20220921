@@ -19,7 +19,7 @@ bdg:L8LS14919 {
         adm:gitPath         "17/L8LS14919.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14919 ;
-        adm:logEntry        bda:LG4725731ACCD55569 , bda:LG50715BFA5BB2B3BC , bda:LG97F0E7A64DFF65D1 , bda:LGB3AD407DE8C30EFE , bda:LGD8C57FCAC7E93E5E , bda:LGF1B85538AF2C07E2 ;
+        adm:logEntry        bda:LG4725731ACCD55569 , bda:LG50715BFA5BB2B3BC , bda:LGD8C57FCAC7E93E5E , bda:LGF1B85538AF2C07E2 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,18 +35,6 @@ bdg:L8LS14919 {
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG97F0E7A64DFF65D1
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LGB3AD407DE8C30EFE
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGD8C57FCAC7E93E5E
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-11-20T13:52:40.507Z"^^xsd:dateTime ;
@@ -59,11 +47,19 @@ bdg:L8LS14919 {
         adm:logMessage      "added snyan brgyud and deleted note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bdr:CL3CDD54A7939C7140
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "197-198" ;
-        :contentLocationVolume  2 .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV2F9FE719CC3F43C4
         a                   :LineageEvent ;
@@ -104,11 +100,11 @@ bdg:L8LS14919 {
     bdr:L8LS14919  a        :Lineage ;
         skos:altLabel       "rje btsun kun dga' grol mchog gyis dka' ba brgya phrag du ma'i sgo nas btsal ba'i 'khrid brgya'i skor nos pa la/ sum pa lo tsA ba khams 'dus pa'i tshe sgrol mas gnang ba'i gdams pa/ rgyal sras thogs med pas bla ma dam pa la drung gi thugs dam gyi bcud sems can la phan pa zhig zhus pas gnang ba'i sum pa lo tsA'i snyan brgyud kyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "sum pa lo tsA'i snyan brgyud kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL3CDD54A7939C7140 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0C4C6FF26814B132 , bdr:LH276983A956346536 , bdr:LH2897517BB257D3EE , bdr:LH2DAC05C2D133E9B5 , bdr:LH4E68DDD6569A315A , bdr:LH9077D26DDED9CAE7 , bdr:LHA13D7AA638CC9083 , bdr:LHA742456B7D49F5AF , bdr:LHDC0CE312C5CBB186 , bdr:LHF65269B17945378B ;
         :lineageObject      bdr:T1259 ;
-        :lineageType        bdr:LineageKhrid .
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NT3CDD54A7939C7140 .
     
     bdr:LH0C4C6FF26814B132
         a                   :LineageHolder ;
@@ -159,4 +155,9 @@ bdg:L8LS14919 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVF81F9AF21BA17255 ;
         :lineageWho         bdr:P2388 .
+    
+    bdr:NT3CDD54A7939C7140
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 197-198" ;
+        :noteSource         bdr:MW1PD107937 .
 }

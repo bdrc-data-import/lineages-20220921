@@ -29,12 +29,6 @@ bdg:L8LS15636 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLCC0E9EA582DE704E
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 101v1-3" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV020DBFA91062B4FE
         a                   :LineageEvent ;
         :lineageFrom        bdr:P8LS15640 .
@@ -93,11 +87,11 @@ bdg:L8LS15636 {
     
     bdr:L8LS15636  a        :Lineage ;
         skos:prefLabel      "phur pa lcam lugs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLCC0E9EA582DE704E ;
         :isRoot             true ;
         :lineageHolder      bdr:LH01C4CD7C86850C5F , bdr:LH14BFBAE7EA941657 , bdr:LH2041E515E3DCF228 , bdr:LH533CC40F3836CF84 , bdr:LH6003FF35939C4815 , bdr:LH7780FC701C30ABAB , bdr:LH84B14D79094F7C57 , bdr:LH892F8DED980653BC , bdr:LHA33995C5C7315838 , bdr:LHA7EB3D628C718A5D , bdr:LHBA01F33349FC64B9 , bdr:LHBB0CE547AC478D32 , bdr:LHBB82C249B0EE0775 , bdr:LHF006BD42005FA3BB , bdr:LHFEC98D1BEB71D001 ;
         :lineageObject      bdr:T1786 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTCC0E9EA582DE704E .
     
     bdr:LH01C4CD7C86850C5F
         a                   :LineageHolder ;
@@ -173,4 +167,9 @@ bdg:L8LS15636 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV682488FD2B04A11D ;
         :lineageWho         bdr:P8LS15588 .
+    
+    bdr:NTCC0E9EA582DE704E
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 101v1-3" ;
+        :noteSource         bdr:MW29706 .
 }

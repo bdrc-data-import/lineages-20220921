@@ -19,15 +19,9 @@ bdg:L8LS14450 {
         adm:gitPath         "6c/L8LS14450.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14450 ;
-        adm:logEntry        bda:LG4B9E7E87C9F7FFEA , bda:LG4E629042CC37AFBA , bda:LG5FC48D694068A1FB , bda:LG761FC8D7FBD379D4 , bda:LG9A145B8F09A2A063 , bda:LGA8D5FDF1A81E28D9 , bda:LGCAAA70836238DB99 ;
+        adm:logEntry        bda:LG4E629042CC37AFBA , bda:LG5FC48D694068A1FB , bda:LG9A145B8F09A2A063 , bda:LGA8D5FDF1A81E28D9 , bda:LGCAAA70836238DB99 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG4B9E7E87C9F7FFEA
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG4E629042CC37AFBA
         a                   adm:UpdateData ;
@@ -39,12 +33,6 @@ bdg:L8LS14450 {
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-09-10T12:46:38.794Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG761FC8D7FBD379D4
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG9A145B8F09A2A063
         a                   adm:UpdateData ;
@@ -62,11 +50,19 @@ bdg:L8LS14450 {
         adm:logDate         "2014-05-13T16:06:29.46Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLB5ECC81D15612AFF
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "424-425" ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0F49641AF2B2040F
         a                   :LineageEvent ;
@@ -127,11 +123,11 @@ bdg:L8LS14450 {
     bdr:L8LS14450  a        :Lineage ;
         rdfs:comment        "oral transmission of black manjushri's liturgical text composed gyugul pachen or guge panchen dakpa gyaltsen"@en ;
         skos:prefLabel      "dpal sa skya pa'i gser chos 'jam dpal nag po'i skor las/ rgyu 'bul paN chen gyis mdzad pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLB5ECC81D15612AFF ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0FC56F998CA53016 , bdr:LH0FD56732A939AD8F , bdr:LH31BF74FC04C44924 , bdr:LH39C7431997F91F62 , bdr:LH3BF161526CD4E0F3 , bdr:LH65D631ADBAA6AEAE , bdr:LH7C837A6C0B1410A4 , bdr:LH852F6BAB671109BE , bdr:LH8F388531693509A8 , bdr:LH8F7456CFBEE5930D , bdr:LHA7B779BF278A8137 , bdr:LHB83936D27C6AF282 , bdr:LHBA003CD9010381F5 , bdr:LHD3627D57C05B2BBA , bdr:LHFAE576F617FB1109 ;
         :lineageObject      bdr:T1564 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTB5ECC81D15612AFF .
     
     bdr:LH0FC56F998CA53016
         a                   :LineageHolder ;
@@ -206,4 +202,9 @@ bdg:L8LS14450 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV35E01D8E40CD383F ;
         :lineageWho         bdr:P461 .
+    
+    bdr:NTB5ECC81D15612AFF
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 424-425" ;
+        :noteSource         bdr:MW1PD107937 .
 }

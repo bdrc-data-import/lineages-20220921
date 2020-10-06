@@ -19,7 +19,7 @@ bdg:L8LS14244 {
         adm:gitPath         "64/L8LS14244.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14244 ;
-        adm:logEntry        bda:LG110220E981569AB6 , bda:LG7FDDFB57A5B1A6EF , bda:LGAE222EB67C8A2160 , bda:LGB4DACAB32E6E4296 , bda:LGB55C73C173E9674D , bda:LGE8A1A4FBB6F5AD3B ;
+        adm:logEntry        bda:LG110220E981569AB6 , bda:LG7FDDFB57A5B1A6EF , bda:LGB4DACAB32E6E4296 , bda:LGE8A1A4FBB6F5AD3B , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,22 +34,10 @@ bdg:L8LS14244 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGAE222EB67C8A2160
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGB4DACAB32E6E4296
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T08:45:05.941Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LGB55C73C173E9674D
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGE8A1A4FBB6F5AD3B
         a                   adm:UpdateData ;
@@ -57,11 +45,19 @@ bdg:L8LS14244 {
         adm:logMessage      "added topic"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL8028D811D1EB638D
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  285 ;
-        :contentLocationVolume  1 .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV10EA3696CF5BDE7B
         a                   :LineageEvent ;
@@ -114,11 +110,11 @@ bdg:L8LS14244 {
     bdr:L8LS14244  a        :Lineage ;
         rdfs:comment        "anuja transmission of solitary and 9 deity simhamukhi jnanadakini accoring to nyingma tradition"@en ;
         skos:prefLabel      "snga 'gyur ltar seng gdong lha dgu dang gtso rkyang gi rjes gnang /"@bo-x-ewts ;
-        :contentLocation    bdr:CL8028D811D1EB638D ;
         :isRoot             true ;
         :lineageHolder      bdr:LH46930B14CE03F214 , bdr:LH4970ACE9153DA829 , bdr:LH4F3CCE85D900ED9A , bdr:LH5D9B70E03C91E401 , bdr:LH5F7275F04D2F5B63 , bdr:LH6194B2B7C4E461CC , bdr:LH69C3134FBF8BB0D8 , bdr:LH6C666BE999D153EF , bdr:LH786B3C0A42941DE4 , bdr:LHA3FAFBAFCA39CEEF , bdr:LHB64A265BCCB7637C , bdr:LHC6ADB33DEC90F585 , bdr:LHD1CF555B9E6489E7 ;
         :lineageObject      bdr:T400 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NT8028D811D1EB638D .
     
     bdr:LH46930B14CE03F214
         a                   :LineageHolder ;
@@ -183,4 +179,9 @@ bdg:L8LS14244 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV10EA3696CF5BDE7B ;
         :lineageWho         bdr:P8LS14241 .
+    
+    bdr:NT8028D811D1EB638D
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 285" ;
+        :noteSource         bdr:MW1PD107937 .
 }

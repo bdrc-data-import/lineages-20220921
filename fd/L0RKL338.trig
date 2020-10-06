@@ -19,7 +19,7 @@ bdg:L0RKL338 {
         adm:gitPath         "fd/L0RKL338.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L0RKL338 ;
-        adm:logEntry        bda:LG2B1D32F143B2E00B , bda:LG3F0B242ADB2EE03D , bda:LG5B0A521E7483FAA5 , bda:LG8C4AE3C1E0DE5D8D , bda:LGA4BEABB441CF663B , bda:LGA659BDF324B11812 , bda:LGB573D5AD00DF3D6A , bda:LGB923DAE5E1B8E334 ;
+        adm:logEntry        bda:LG2B1D32F143B2E00B , bda:LG3F0B242ADB2EE03D , bda:LGA4BEABB441CF663B , bda:LGA659BDF324B11812 , bda:LGB573D5AD00DF3D6A , bda:LGB923DAE5E1B8E334 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -33,18 +33,6 @@ bdg:L0RKL338 {
         adm:logDate         "2019-01-09T16:02:20.442Z"^^xsd:dateTime ;
         adm:logMessage      "changed p#"@en ;
         adm:logWho          bdu:U00007 .
-    
-    bda:LG5B0A521E7483FAA5
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG8C4AE3C1E0DE5D8D
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGA4BEABB441CF663B
         a                   adm:UpdateData ;
@@ -70,11 +58,19 @@ bdg:L0RKL338 {
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
     
-    bdr:CL26994F2B25586783
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "20a3f." ;
-        :contentLocationVolume  "kha" .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV12E9205F32428BD9
         a                   :LineageEvent ;
@@ -162,11 +158,11 @@ bdg:L0RKL338 {
     
     bdr:L0RKL338  a         :Lineage ;
         skos:prefLabel      "bdud rtsi byin rlabs dang/ rdo rje'i tshig rkang gi lung /"@bo-x-ewts ;
-        :contentLocation    bdr:CL26994F2B25586783 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH052D3A4BC5F4F3B9 , bdr:LH093000804B3386AB , bdr:LH0FEF37614A77E661 , bdr:LH1078B936F5C636C2 , bdr:LH1394CAA0DAB23DA6 , bdr:LH2926A0C0AF40F8B4 , bdr:LH310E11B894F5340B , bdr:LH426049DA88EF3511 , bdr:LH5F9B8CB0093784E4 , bdr:LH603DFED99D84C34F , bdr:LH744DB3A3A5AC1CC1 , bdr:LH84C73C54254F6132 , bdr:LH86664E56ED0F24E1 , bdr:LH893A0F45043060F0 , bdr:LH934C25C055082F38 , bdr:LH95FAD1D2E1F05FB5 , bdr:LHA64D5EC8A27200EE , bdr:LHB5845621CBC8977E , bdr:LHD229BE2FC948B126 , bdr:LHE6EFF95234115BFE , bdr:LHEB1C913B12B0F4BC , bdr:LHF108781DE430BDF0 ;
         :lineageObject      bdr:T1543 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT26994F2B25586783 .
     
     bdr:LH052D3A4BC5F4F3B9
         a                   :LineageHolder ;
@@ -276,4 +272,9 @@ bdg:L0RKL338 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV93DD9E789FBA24BA ;
         :lineageWho         bdr:P786 .
+    
+    bdr:NT26994F2B25586783
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, 20a3f." ;
+        :noteSource         bdr:MW29307 .
 }

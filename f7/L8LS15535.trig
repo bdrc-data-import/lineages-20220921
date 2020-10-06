@@ -29,12 +29,6 @@ bdg:L8LS15535 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL25971E58D1948979
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 96r2-4" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV176E8D742CA00868
         a                   :LineageEvent ;
         :lineageFrom        bdr:T1987 .
@@ -149,11 +143,11 @@ bdg:L8LS15535 {
     
     bdr:L8LS15535  a        :Lineage ;
         skos:prefLabel      "zla gsang thig le'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL25971E58D1948979 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH00BF9025C6C51FBC , bdr:LH01184FA75A15B5D8 , bdr:LH03E1BE065C0DEF79 , bdr:LH0F9473332E1DF850 , bdr:LH179C0D9DA10773CF , bdr:LH1B78C5EC9700D3A6 , bdr:LH1BBB9E2C45C8D79F , bdr:LH33E1218CD2FE22C2 , bdr:LH3AF5EB335A832C79 , bdr:LH3CB3A293F9782A1A , bdr:LH40205042F831463F , bdr:LH44268C988C1026CF , bdr:LH587846C5BD617041 , bdr:LH5CA8BF6DC45F955C , bdr:LH6027E7685878FB8D , bdr:LH6096D304710FBFD1 , bdr:LH8A17B375F94CC7F3 , bdr:LH9308AA4158C66EB1 , bdr:LH94E390CD06D2738A , bdr:LH9D9E8FE73A122409 , bdr:LHA55D7B21B70F43E6 , bdr:LHB0F0E4D2F35C1CB9 , bdr:LHD1E2D29EF8A222AF , bdr:LHD34951720CC8BEF6 , bdr:LHE3775FE4F56EB2B1 , bdr:LHE451649845E2C58F , bdr:LHE5278CED1068737D , bdr:LHF2383563D3EC25FF , bdr:LHF880B02AE81DF9B9 ;
         :lineageObject      bdr:T2129 , bdr:W25388 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT25971E58D1948979 .
     
     bdr:LH00BF9025C6C51FBC
         a                   :LineageHolder ;
@@ -299,4 +293,9 @@ bdg:L8LS15535 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV176E8D742CA00868 ;
         :lineageWho         bdr:T8LS15536 .
+    
+    bdr:NT25971E58D1948979
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 96r2-4" ;
+        :noteSource         bdr:MW29706 .
 }

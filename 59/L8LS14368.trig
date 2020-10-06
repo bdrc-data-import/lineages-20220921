@@ -19,27 +19,15 @@ bdg:L8LS14368 {
         adm:gitPath         "59/L8LS14368.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14368 ;
-        adm:logEntry        bda:LG04B96D7C7CD57F9B , bda:LG0A6FD2F3D68A4540 , bda:LG4BA417A70C3476A7 , bda:LGADF922DB00969E1A , bda:LGCF852E101075A5C1 , bda:LGDB0ED3A2E0BEA0BD ;
+        adm:logEntry        bda:LG0A6FD2F3D68A4540 , bda:LGADF922DB00969E1A , bda:LGCF852E101075A5C1 , bda:LGDB0ED3A2E0BEA0BD , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG04B96D7C7CD57F9B
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG0A6FD2F3D68A4540
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-17T14:34:10.942Z"^^xsd:dateTime ;
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG4BA417A70C3476A7
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGADF922DB00969E1A
         a                   adm:UpdateData ;
@@ -58,11 +46,19 @@ bdg:L8LS14368 {
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLF80B4660C5DF3E3D
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  368 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV1BB7B027599D357C
         a                   :LineageEvent ;
@@ -147,11 +143,11 @@ bdg:L8LS14368 {
     bdr:L8LS14368  a        :Lineage ;
         rdfs:comment        "oral transmission of lamdre teachings marked as cog"@en ;
         skos:prefLabel      "slob bshad gser chos kyi skor las/ cog gi rtags yod pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLF80B4660C5DF3E3D ;
         :isRoot             true ;
         :lineageHolder      bdr:LH083E9E6A2E07F67C , bdr:LH12F9583A9DEFFFF1 , bdr:LH1752B0875AA05038 , bdr:LH1F8F73EB6749E784 , bdr:LH359047DEB72CE407 , bdr:LH48B2C95486F70E4C , bdr:LH512DA9D1BB26A2C6 , bdr:LH7CC850E1AA1CD40A , bdr:LH7E7019C2D933427A , bdr:LH82CCEC7AA4EF6D5A , bdr:LH8EF9880CF7391E98 , bdr:LH9566DA551D3F9FA6 , bdr:LH9DCBC0A4FEFFC1BB , bdr:LHB345AA38580E762C , bdr:LHC54CF2AFE2BE3D4D , bdr:LHD6A2F2EDC106BAD3 , bdr:LHDE246E3C40F03D13 , bdr:LHEBAB648380644D15 , bdr:LHEE0D27E12EEB1AEB , bdr:LHF55182E08CD6D791 , bdr:LHF833F63DC6A1421B , bdr:LHFA4963CBB4868ECC ;
         :lineageObject      bdr:T1GS138984 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTF80B4660C5DF3E3D .
     
     bdr:LH083E9E6A2E07F67C
         a                   :LineageHolder ;
@@ -259,4 +255,9 @@ bdg:L8LS14368 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV340B2A4C1FA21E0D ;
         :lineageWho         bdr:P3510 .
+    
+    bdr:NTF80B4660C5DF3E3D
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 368" ;
+        :noteSource         bdr:MW1PD107937 .
 }

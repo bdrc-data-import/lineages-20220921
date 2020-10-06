@@ -19,7 +19,7 @@ bdg:L8LS14394 {
         adm:gitPath         "32/L8LS14394.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14394 ;
-        adm:logEntry        bda:LG16445B894D806827 , bda:LG3287CF49BC14CC66 , bda:LG343C5DAAFC8C9822 , bda:LG838BFECFFC9A11E5 , bda:LGA82386EE3B68CB6B , bda:LGC2ABFA8D5BA1D0DA , bda:LGEC293F49A7F05CCE ;
+        adm:logEntry        bda:LG16445B894D806827 , bda:LG343C5DAAFC8C9822 , bda:LGA82386EE3B68CB6B , bda:LGC2ABFA8D5BA1D0DA , bda:LGEC293F49A7F05CCE , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,23 +29,11 @@ bdg:L8LS14394 {
         adm:logMessage      "changed P#"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG3287CF49BC14CC66
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG343C5DAAFC8C9822
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-18T11:53:45.637Z"^^xsd:dateTime ;
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG838BFECFFC9A11E5
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGA82386EE3B68CB6B
         a                   adm:InitialDataCreation ;
@@ -64,11 +52,19 @@ bdg:L8LS14394 {
         adm:logMessage      "deleted note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bdr:CL5709DE0A2CADB9FA
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  384 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0C63425EA185DEE1
         a                   :LineageEvent ;
@@ -137,11 +133,11 @@ bdg:L8LS14394 {
     bdr:L8LS14394  a        :Lineage ;
         rdfs:comment        "oral transmission of marpo korsum teachings marked as brag"@en ;
         skos:prefLabel      "dmar po skor gsum las/ brag gi rtags yod pa'i lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL5709DE0A2CADB9FA ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0A2042580D788AB8 , bdr:LH103347470017A822 , bdr:LH163FA0FB3011C547 , bdr:LH1851FF3938BF851F , bdr:LH19E6C8A843419CAE , bdr:LH23885AE8CF15771C , bdr:LH3E4988F41DAC5102 , bdr:LH45A090D7394ACB14 , bdr:LH4E07FFC2E37F6B24 , bdr:LH7AF2EF515EF7830C , bdr:LH83E1EFD6092D470D , bdr:LH8A09A0E921860D85 , bdr:LH8EE773C2D4B72D7E , bdr:LHB811877D8082A1D7 , bdr:LHBBCCBA6F3E844D57 , bdr:LHD075A65D750816D2 , bdr:LHFA6A69BABA6F259E ;
         :lineageObject      bdr:T2103 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT5709DE0A2CADB9FA .
     
     bdr:LH0A2042580D788AB8
         a                   :LineageHolder ;
@@ -226,4 +222,9 @@ bdg:L8LS14394 {
     bdr:LHFA6A69BABA6F259E
         a                   :LineageHolder ;
         :lineageWho         bdr:P1056 .
+    
+    bdr:NT5709DE0A2CADB9FA
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 384" ;
+        :noteSource         bdr:MW1PD107937 .
 }

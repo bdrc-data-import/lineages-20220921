@@ -19,7 +19,7 @@ bdg:L8LS14052 {
         adm:gitPath         "d1/L8LS14052.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14052 ;
-        adm:logEntry        bda:LG05978B4B111C4FA9 , bda:LG11E1585724E29278 , bda:LG27855B88D31BB65C , bda:LG2B75F875E12AC6E9 , bda:LG2D6D1F79D642D66B , bda:LG33877394804F825E , bda:LG3991A6A96540CEF3 , bda:LG62690297CC77D040 , bda:LG82976C6D43934F31 , bda:LGC73E802633211E1D , bda:LGD602CD22A61EC0A6 , bda:LGE6D32FF958024F55 , bda:LGE7834CD5C83940B1 ;
+        adm:logEntry        bda:LG05978B4B111C4FA9 , bda:LG27855B88D31BB65C , bda:LG2B75F875E12AC6E9 , bda:LG2D6D1F79D642D66B , bda:LG33877394804F825E , bda:LG3991A6A96540CEF3 , bda:LG62690297CC77D040 , bda:LG82976C6D43934F31 , bda:LGC73E802633211E1D , bda:LGD602CD22A61EC0A6 , bda:LGE7834CD5C83940B1 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -27,12 +27,6 @@ bdg:L8LS14052 {
         a                   adm:UpdateData ;
         adm:logDate         "2019-02-01T10:56:52.894Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG11E1585724E29278
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG27855B88D31BB65C
         a                   adm:UpdateData ;
@@ -84,23 +78,25 @@ bdg:L8LS14052 {
         adm:logMessage      "changed topics"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGE6D32FF958024F55
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGE7834CD5C83940B1
         a                   adm:UpdateData ;
         adm:logDate         "2014-02-26T16:39:30.032Z"^^xsd:dateTime ;
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL05954DB2E3578C96
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  218 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0427572745DFBDB5
         a                   :LineageEvent ;
@@ -220,11 +216,11 @@ bdg:L8LS14052 {
     
     bdr:L8LS14052  a        :Lineage ;
         skos:prefLabel      "rdo rje 'jigs byed rwa lugs chos skor las/ legs kyi rtags yod pa'i lung brgyud lugs gcig"@bo-x-ewts ;
-        :contentLocation    bdr:CL05954DB2E3578C96 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0285D46A02433346 , bdr:LH1477D8CF349AF140 , bdr:LH31B93AC7CC735D53 , bdr:LH35E99E8166A9182A , bdr:LH363034C1016B17C2 , bdr:LH381F66B376CF4117 , bdr:LH38255CB57ABA811D , bdr:LH38E0C49F63CF39D7 , bdr:LH3C9F94ADECB2FC04 , bdr:LH43C3469C9D1D7220 , bdr:LH44BA9697E70A7368 , bdr:LH5379F9181C263D32 , bdr:LH5608C6EE5EFA24BE , bdr:LH66C4979F03AD0A9D , bdr:LH680FCE734FF31078 , bdr:LH7185FAA65764B7B4 , bdr:LH75B068E37D497489 , bdr:LH866031520054DBFB , bdr:LH8EFC544C4E602AC4 , bdr:LH9AEC92A153275BFB , bdr:LHA4806E369F691B2C , bdr:LHA94F84A6402F4714 , bdr:LHAAC66ADA9987EBC6 , bdr:LHB0B83FD2F3CEFBAB , bdr:LHBF6C5CC1B930D3C9 , bdr:LHBFD21E4966585D41 , bdr:LHCA8FF288BDB4704A , bdr:LHD4F1E1D70C36000B , bdr:LHD6E889D294F2D9ED , bdr:LHFFAB79B4C2F4C30A ;
         :lineageObject      bdr:T104 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT05954DB2E3578C96 .
     
     bdr:LH0285D46A02433346
         a                   :LineageHolder ;
@@ -374,4 +370,9 @@ bdg:L8LS14052 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV1AA5AEA2B4A18492 ;
         :lineageWho         bdr:P3181 .
+    
+    bdr:NT05954DB2E3578C96
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 218" ;
+        :noteSource         bdr:MW1PD107937 .
 }

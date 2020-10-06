@@ -19,7 +19,7 @@ bdg:L8LS14416 {
         adm:gitPath         "b4/L8LS14416.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14416 ;
-        adm:logEntry        bda:LG02821D5D6FD5BF35 , bda:LG07A4123CCD61C14C , bda:LG25D1C21FF4886455 , bda:LG44E7B81B21223EC9 , bda:LG4DF587BC9064695C ;
+        adm:logEntry        bda:LG02821D5D6FD5BF35 , bda:LG07A4123CCD61C14C , bda:LG25D1C21FF4886455 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -41,23 +41,19 @@ bdg:L8LS14416 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG44E7B81B21223EC9
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LG4DF587BC9064695C
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL87C0090418D8F3BD
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  397 ;
-        :contentLocationVolume  1 .
     
     bdr:EV1BC30D95E684177C
         a                   :LineageEvent ;
@@ -78,12 +74,11 @@ bdg:L8LS14416 {
     bdr:L8LS14416  a        :Lineage ;
         rdfs:comment        "oral transmission of common anuja of marpo korsum and sadhana composed by tsharchen losel gyatso"@en ;
         skos:prefLabel      "rjes gnang thun mong ba dang / tshar chen gyis mdzad pa'i sgrub thabs gang+ga'i chu rgyun gyi lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL87C0090418D8F3BD ;
         :isRoot             true ;
         :lineageHolder      bdr:LH150D621285340655 , bdr:LH51A1C238A51D8298 , bdr:LH558A3C6A1AEB0CE9 , bdr:LH6CCE6886114D2F6D , bdr:LHBA36BFC361175794 ;
         :lineageObject      bdr:T1 , bdr:T2103 , bdr:T7 ;
         :lineageType        bdr:LineageLung ;
-        :note               bdr:NTB814037FDE66FE3D .
+        :note               bdr:NT87C0090418D8F3BD , bdr:NTB814037FDE66FE3D .
     
     bdr:LH150D621285340655
         a                   :LineageHolder ;
@@ -108,6 +103,11 @@ bdg:L8LS14416 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV5A5E7B0E6D2C0BEA ;
         :lineageWho         bdr:P3871 .
+    
+    bdr:NT87C0090418D8F3BD
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 397" ;
+        :noteSource         bdr:MW1PD107937 .
     
     bdr:NTB814037FDE66FE3D
         a                   :Note ;

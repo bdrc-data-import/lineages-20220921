@@ -19,21 +19,9 @@ bdg:L0RKL30 {
         adm:gitPath         "83/L0RKL30.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L0RKL30 ;
-        adm:logEntry        bda:LG2AEC07C843958DF3 , bda:LG3FA4E3F0221CC3FC , bda:LG52958B0300BE2814 , bda:LG9DBA61D03007ED67 , bda:LGACA4D8C0D14560ED , bda:LGDA0F5A98F2684AFB , bda:LGEF60AAC5499FE7F8 , bda:LGF24B7507FDE04B74 ;
+        adm:logEntry        bda:LG52958B0300BE2814 , bda:LG9DBA61D03007ED67 , bda:LGACA4D8C0D14560ED , bda:LGDA0F5A98F2684AFB , bda:LGEF60AAC5499FE7F8 , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG2AEC07C843958DF3
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG3FA4E3F0221CC3FC
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG52958B0300BE2814
         a                   adm:UpdateData ;
@@ -63,17 +51,26 @@ bdg:L0RKL30 {
         adm:logMessage      "removed note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGF24B7507FDE04B74
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CLF458EED28DBCD785
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "21b6ff." ;
-        :contentLocationVolume  "ka" .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV18B88692E698CEE8
         a                   :LineageEvent ;
@@ -110,11 +107,11 @@ bdg:L0RKL30 {
     bdr:L0RKL30  a          :Lineage ;
         skos:altLabel       "paNDi ta chen po nags kyi rin chen gyi slop dpon chen po padma 'byung gnas la dngos su gsan pa'i tshe bsgrub zab mo'i bsgom lung /"@bo-x-ewts ;
         skos:prefLabel      "tshe bsgrub zab mo'i bsgom lung /"@bo-x-ewts ;
-        :contentLocation    bdr:CLF458EED28DBCD785 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH00C41B3D5B150947 , bdr:LH131BF20DB1551B75 , bdr:LH43249F09583B55F7 , bdr:LH457511C1176EF92A , bdr:LH75604D497DAD2FF5 , bdr:LH8F44AC10887A0591 , bdr:LHCD43466E87A98A3F , bdr:LHD4A1E758A8B6C4D4 , bdr:LHDD6FE4A5130CBDA8 ;
         :lineageObject      bdr:T27 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTF458EED28DBCD785 .
     
     bdr:LH00C41B3D5B150947
         a                   :LineageHolder ;
@@ -159,4 +156,9 @@ bdg:L0RKL30 {
     bdr:LHDD6FE4A5130CBDA8
         a                   :LineageHolder ;
         :lineageWho         bdr:T1347 .
+    
+    bdr:NTF458EED28DBCD785
+        a                   :Note ;
+        :contentLocationStatement  "vol. ka, 21b6ff." ;
+        :noteSource         bdr:MW29307 .
 }

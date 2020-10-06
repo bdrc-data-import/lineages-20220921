@@ -19,7 +19,7 @@ bdg:L8LS14414 {
         adm:gitPath         "0d/L8LS14414.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14414 ;
-        adm:logEntry        bda:LG0841C0B43B3BFFA5 , bda:LG0DD294866BB1858F , bda:LG2EFE187CF5A58A24 , bda:LG4CC12979CCF18E94 , bda:LGEC47E630B97E0C90 , bda:LGF07B41CC3D300442 , bda:LGF75F0FA2DA9612C2 ;
+        adm:logEntry        bda:LG0841C0B43B3BFFA5 , bda:LG0DD294866BB1858F , bda:LG4CC12979CCF18E94 , bda:LGEC47E630B97E0C90 , bda:LGF07B41CC3D300442 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -33,12 +33,6 @@ bdg:L8LS14414 {
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-09-05T09:11:06.642Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG2EFE187CF5A58A24
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG4CC12979CCF18E94
         a                   adm:UpdateData ;
@@ -57,17 +51,19 @@ bdg:L8LS14414 {
         adm:logMessage      "deleted note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGF75F0FA2DA9612C2
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL0EB6023AF9561735
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  397 ;
-        :contentLocationVolume  1 .
     
     bdr:EV0C3C21FB89E6D396
         a                   :LineageEvent ;
@@ -80,11 +76,11 @@ bdg:L8LS14414 {
     bdr:L8LS14414  a        :Lineage ;
         rdfs:comment        "oral transmission of anuja text for marpo korsum teachings written by wangchuk rabten"@en ;
         skos:prefLabel      "sa skya pa'i gdams pa dmar po skor gsum du grags pa las/ rje dbang rab kyis mdzad pa'i rjes gnang gyi yi ge'i lungs/"@bo-x-ewts ;
-        :contentLocation    bdr:CL0EB6023AF9561735 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH16F33AABD06FB797 , bdr:LH4F971927734523F9 , bdr:LHE35F74973131434D ;
         :lineageObject      bdr:T2103 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT0EB6023AF9561735 .
     
     bdr:LH16F33AABD06FB797
         a                   :LineageHolder ;
@@ -99,4 +95,9 @@ bdg:L8LS14414 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV5ED32B3D823DCBE2 ;
         :lineageWho         bdr:P3510 .
+    
+    bdr:NT0EB6023AF9561735
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 397" ;
+        :noteSource         bdr:MW1PD107937 .
 }

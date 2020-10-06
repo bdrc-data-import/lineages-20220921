@@ -29,12 +29,6 @@ bdg:L8LS15419 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL0217A9371AB46139
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 87r5-6" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV0A3BEBF276D10D58
         a                   :LineageEvent ;
         :lineageFrom        bdr:P8LS15424 .
@@ -101,11 +95,11 @@ bdg:L8LS15419 {
     
     bdr:L8LS15419  a        :Lineage ;
         skos:prefLabel      "sems sde spyi'i nye brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL0217A9371AB46139 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0E0C0DAADC860785 , bdr:LH138E8F234288DE16 , bdr:LH1D74F3CF5AD26AA3 , bdr:LH2381F23E19A8FDEC , bdr:LH43005EE4040DF337 , bdr:LH60EFC64DAE449308 , bdr:LH6BB54336E170291C , bdr:LH7A04A6D6515BE5EE , bdr:LH8803A14AADC27B25 , bdr:LHA6BB5ADCE081DCAC , bdr:LHB69566A589608665 , bdr:LHB69C9137718D5C93 , bdr:LHB8F534360D7CAD53 , bdr:LHE42A58E5F1FC6B2C , bdr:LHF00E4CB4F311CD9D , bdr:LHFAF854C619B2D046 ;
         :lineageObject      bdr:T1294 , bdr:T354 ;
-        :lineageType        bdr:LineageNyeBrgyud .
+        :lineageType        bdr:LineageNyeBrgyud ;
+        :note               bdr:NT0217A9371AB46139 .
     
     bdr:LH0E0C0DAADC860785
         a                   :LineageHolder ;
@@ -186,4 +180,9 @@ bdg:L8LS15419 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV8AD70E3DD601596D ;
         :lineageWho         bdr:P8LS15422 .
+    
+    bdr:NT0217A9371AB46139
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 87r5-6" ;
+        :noteSource         bdr:MW29706 .
 }

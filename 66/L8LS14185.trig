@@ -19,7 +19,7 @@ bdg:L8LS14185 {
         adm:gitPath         "66/L8LS14185.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14185 ;
-        adm:logEntry        bda:LG31314727D5471840 , bda:LG597D3CBAA507B5BD , bda:LG66190CE8161430EB , bda:LG7192BCF717ADC20C , bda:LG7370DCF1E15B3043 , bda:LG7E0DF87885BDB3BC ;
+        adm:logEntry        bda:LG31314727D5471840 , bda:LG597D3CBAA507B5BD , bda:LG66190CE8161430EB , bda:LG7192BCF717ADC20C , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -44,23 +44,19 @@ bdg:L8LS14185 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG7370DCF1E15B3043
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LG7E0DF87885BDB3BC
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL4F08CA70AFF89549
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  259 ;
-        :contentLocationVolume  1 .
     
     bdr:EV01946E61723758CA
         a                   :LineageEvent ;
@@ -194,11 +190,11 @@ bdg:L8LS14185 {
         rdfs:comment        "extended initiation transmision of 37 deity donkey faced cakrasamvara"@en ;
         skos:altLabel       "gu ge paN chen gyis mdzad pa'i sgrub thabs 'phrin las mtha' yas dang dbang chog bdud rtsi gang+ga'i klung rgyun gnyis kyi steng nas dpal 'khor lo sdom pa bong zhal can lha so bdun gyi ras bris kyi dkyil 'khor du dbang bzhi legs par nos pa'i ring brgyud/"@bo-x-ewts ;
         skos:prefLabel      "dpal 'khor lo sdom pa bong zhal can lha so bdun gyi ras bris kyi dkyil 'khor du dbang bzhi legs par nos pa'i ring brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL4F08CA70AFF89549 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0C4E3D404CE8D7E7 , bdr:LH0D349A490EA2E43B , bdr:LH1A0A4B57AC607FCF , bdr:LH1AC0CC134BF04B15 , bdr:LH2C263070E4769AF9 , bdr:LH463BBDEA0BB55D18 , bdr:LH4F6675FE53F56049 , bdr:LH5292BE185EE1A739 , bdr:LH52A7F13F876C64A1 , bdr:LH55D0FF9EDA184EEC , bdr:LH5B1F6260D52E4670 , bdr:LH6559A2A305511A87 , bdr:LH6B813D5785F5D650 , bdr:LH6F3192E9704D7F7D , bdr:LH79BC3F685B214424 , bdr:LH8D1DCA2562F50E67 , bdr:LH91A320CC83F4CC10 , bdr:LH9DDCAF368F44561C , bdr:LH9F0BB5C939F88339 , bdr:LHACCAB43706E02BD0 , bdr:LHB05DACF3F96C398C , bdr:LHB096254EFC27FDC1 , bdr:LHB1AD224D9655CC05 , bdr:LHB51311235064E0DA , bdr:LHB995DA732A76E7D1 , bdr:LHC8A32A1D0D048B84 , bdr:LHCD56EA75FEA63CE0 , bdr:LHD4EE2FAB0F34E797 , bdr:LHD507C8E9DD35DB64 , bdr:LHE1F33C2AAD156402 , bdr:LHF066ABD6DEA65C4F , bdr:LHF0CA2084915F17CB , bdr:LHF1DCA84BEE015802 ;
         :lineageObject      bdr:T1064 ;
-        :lineageType        bdr:LineageRingBrgyud .
+        :lineageType        bdr:LineageRingBrgyud ;
+        :note               bdr:NT4F08CA70AFF89549 .
     
     bdr:LH0C4E3D404CE8D7E7
         a                   :LineageHolder ;
@@ -363,4 +359,9 @@ bdg:L8LS14185 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV3D0C2C37161F3A0B ;
         :lineageWho         bdr:P0RK1398 .
+    
+    bdr:NT4F08CA70AFF89549
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 259" ;
+        :noteSource         bdr:MW1PD107937 .
 }

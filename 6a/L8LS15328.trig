@@ -29,12 +29,6 @@ bdg:L8LS15328 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLC2988A9355F7AC63
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 70r4-7" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV03A81659F5BC0A0C
         a                   :LineageEvent ;
         :lineageFrom        bdr:P559 .
@@ -194,11 +188,11 @@ bdg:L8LS15328 {
     bdr:L8LS15328  a        :Lineage ;
         skos:altLabel       "dam tshig gsum bkod pa'i rgyal po'i rgyud kr-iSh+Na paN+Di ta dang nag tshos bsgyur ba'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "dam tshig gsum bkod pa'i rgyal po'i rgyud kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLC2988A9355F7AC63 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH096400CFF31A8197 , bdr:LH1041B095C388AAC3 , bdr:LH143B6493FFC7CA6C , bdr:LH1633A8847B3C5D80 , bdr:LH19FCEBB1287148FE , bdr:LH1ECC7808027F144D , bdr:LH2222F95530983994 , bdr:LH22E5013C2DF4FADC , bdr:LH263B55C0CDF084E9 , bdr:LH41E6674E421736C9 , bdr:LH4A99450BFDB7B4AB , bdr:LH5D05352ED67277BE , bdr:LH5FFD68B2F0A303AD , bdr:LH734E09464D8203E9 , bdr:LH73D9DFCC1C7A028B , bdr:LH743186D609841EC3 , bdr:LH76C4CCCBCB69D356 , bdr:LH7B88EDE070F29878 , bdr:LH7BD1CB172EE9B3CB , bdr:LH8601EC86C9011498 , bdr:LH8ABD47B1D26126D2 , bdr:LH8ADC53AD86EDD4E7 , bdr:LH8D70DC8BCFFF4A6C , bdr:LH99EA863CDBD60BF7 , bdr:LHA79A90AEF5A32291 , bdr:LHBBA573592AA941A5 , bdr:LHBD4EF4F2963B741E , bdr:LHBD7E24615683E6F8 , bdr:LHC7C447AC66E415D3 , bdr:LHC9B12B256CA26B09 , bdr:LHC9C1335FE5701231 , bdr:LHCE1D554ACD380BD9 , bdr:LHD27B567977648B60 , bdr:LHD4DDA891B3E46C1F , bdr:LHDA1DE4A6BBD73F8F , bdr:LHEADF530E1BD3B3C8 , bdr:LHEE91ECD85B15113F , bdr:LHF2FF56784D157779 , bdr:LHF5D8FD05CF3C3DF7 , bdr:LHFC3F73899CF7B83F ;
         :lineageObject      bdr:T1992 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTC2988A9355F7AC63 .
     
     bdr:LH096400CFF31A8197
         a                   :LineageHolder ;
@@ -398,4 +392,9 @@ bdg:L8LS15328 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVF1FB671D3B62DC78 ;
         :lineageWho         bdr:P3205 .
+    
+    bdr:NTC2988A9355F7AC63
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 70r4-7" ;
+        :noteSource         bdr:MW29706 .
 }

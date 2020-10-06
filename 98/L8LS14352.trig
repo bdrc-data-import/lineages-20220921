@@ -19,7 +19,7 @@ bdg:L8LS14352 {
         adm:gitPath         "98/L8LS14352.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14352 ;
-        adm:logEntry        bda:LG56D6A113C04FF17F , bda:LG5D40C5206037B522 , bda:LG7606D52683973C91 , bda:LG86463E3737C93771 , bda:LG872C509AFB6C379F , bda:LG9513726DB7238B48 ;
+        adm:logEntry        bda:LG56D6A113C04FF17F , bda:LG5D40C5206037B522 , bda:LG7606D52683973C91 , bda:LG872C509AFB6C379F , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -40,29 +40,25 @@ bdg:L8LS14352 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG86463E3737C93771
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG872C509AFB6C379F
         a                   adm:UpdateData ;
         adm:logDate         "2014-06-12T11:54:59.273Z"^^xsd:dateTime ;
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG9513726DB7238B48
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CLE68380845AE32B9B
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  365 ;
-        :contentLocationVolume  1 .
     
     bdr:EV002A9F6CC579AC07
         a                   :LineageEvent ;
@@ -191,11 +187,11 @@ bdg:L8LS14352 {
     bdr:L8LS14352  a        :Lineage ;
         rdfs:comment        "oral transmission of lamdre teachings marked as dkar"@en ;
         skos:prefLabel      "slob bshad gser chos kyi skor las/ dkar gyi rtags yod pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLE68380845AE32B9B ;
         :isRoot             true ;
         :lineageHolder      bdr:LH003F35DC3B312268 , bdr:LH016C8DB4839C4A10 , bdr:LH10F371657712C393 , bdr:LH14716C731347E8CA , bdr:LH2A4C2AB00313F1CB , bdr:LH2C44E8C995DD6B99 , bdr:LH2CF262081CDBFE41 , bdr:LH38589BCFA82FD53E , bdr:LH3C68561A885CED2A , bdr:LH4235723FEFE9F837 , bdr:LH7518A354778D97A6 , bdr:LH7A7A8894DEB0A5AC , bdr:LH7F0F478A401A82AB , bdr:LH837C0F5865148BE7 , bdr:LH8AD4FA20E5A801C9 , bdr:LH8E0BC86590986BEC , bdr:LH9247717F20BAB61C , bdr:LH925A329427AD7664 , bdr:LH99EF0F78A4865190 , bdr:LHA23D5A2C65BEC87F , bdr:LHA856FECC8B737277 , bdr:LHAC08AEFD6F58D334 , bdr:LHB08B072580B1DD65 , bdr:LHB9DCEE4B5A8EB5D6 , bdr:LHC1067D2DB5E0A17C , bdr:LHCE58C0874885EEF8 , bdr:LHD7013099D8943F7C , bdr:LHEAB64921B5E9172D , bdr:LHF0D74F11A151AD46 , bdr:LHF3F112F4E93F1007 , bdr:LHFB1F223A3F5AC4AB ;
         :lineageObject      bdr:T1GS138984 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTE68380845AE32B9B .
     
     bdr:LH003F35DC3B312268
         a                   :LineageHolder ;
@@ -350,4 +346,9 @@ bdg:L8LS14352 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV6BDF6483F441241C ;
         :lineageWho         bdr:P1615 .
+    
+    bdr:NTE68380845AE32B9B
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 365" ;
+        :noteSource         bdr:MW1PD107937 .
 }

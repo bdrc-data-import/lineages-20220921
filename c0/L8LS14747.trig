@@ -19,21 +19,9 @@ bdg:L8LS14747 {
         adm:gitPath         "c0/L8LS14747.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14747 ;
-        adm:logEntry        bda:LG02F8E3A8C2884774 , bda:LG2BB2CE7537C84155 , bda:LG86B7990D86A141F2 , bda:LGB358A84C0C5C7114 , bda:LGE2A8C19813C73E14 , bda:LGF41D8BF9109FE53F ;
+        adm:logEntry        bda:LG86B7990D86A141F2 , bda:LGB358A84C0C5C7114 , bda:LGE2A8C19813C73E14 , bda:LGF41D8BF9109FE53F , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG02F8E3A8C2884774
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG2BB2CE7537C84155
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG86B7990D86A141F2
         a                   adm:UpdateData ;
@@ -59,11 +47,19 @@ bdg:L8LS14747 {
         adm:logMessage      "chenged type and deleted note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bdr:CLDDD5FAC112A88937
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  86 ;
-        :contentLocationVolume  2 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV108EC0BCB48FDCC1
         a                   :LineageEvent ;
@@ -103,11 +99,11 @@ bdg:L8LS14747 {
     
     bdr:L8LS14747  a        :Lineage ;
         skos:prefLabel      "rje btsun sa skya pa gong ma lnga'i bka' 'bum lung nos pa las/ b+hU'i rtags yod pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLDDD5FAC112A88937 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0CB92485E0634D6B , bdr:LH251E594458146CF9 , bdr:LH49BB08BC6A39A889 , bdr:LH8357B7524F46D5B9 , bdr:LH93F2E8AFEB141687 , bdr:LH9448905A2163E16E , bdr:LHAF289DCD95B317D3 , bdr:LHCC33800D5D942909 , bdr:LHDA928EDDE64FF81E , bdr:LHF47C6E877CBC0824 ;
         :lineageObject      bdr:T208 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTDDD5FAC112A88937 .
     
     bdr:LH0CB92485E0634D6B
         a                   :LineageHolder ;
@@ -159,4 +155,9 @@ bdg:L8LS14747 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV2BAEF9492C79E105 ;
         :lineageWho         bdr:P0RK550 .
+    
+    bdr:NTDDD5FAC112A88937
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 86" ;
+        :noteSource         bdr:MW1PD107937 .
 }

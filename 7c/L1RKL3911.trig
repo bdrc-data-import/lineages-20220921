@@ -19,7 +19,7 @@ bdg:L1RKL3911 {
         adm:gitPath         "7c/L1RKL3911.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL3911 ;
-        adm:logEntry        bda:LG014D362150C65E92 , bda:LG054A5F457DB3E576 , bda:LG33DD58B62BE7C39C , bda:LG3EF38CA94C5B295B , bda:LG44297096E95B5541 , bda:LG5869EAFE312449EE , bda:LG5AC0AC307E3CC8D4 , bda:LG5E1C42382919003B , bda:LG5E4AE2F8387AC8FF , bda:LG8533552DF7FA1B07 , bda:LG8EF1FD2FBED3F584 , bda:LG8F3B20A6DCD88464 , bda:LG9269EB98684477A3 , bda:LG9B7F21787DC2F985 , bda:LGA1DF1F5A9B383690 , bda:LGA23DD1D2834D3733 , bda:LGB888FAF8E640B6A6 , bda:LGC2E5E86986A52925 , bda:LGC51D9451B2BBB8ED , bda:LGC83FFDC5638EE856 , bda:LGD4623341444CAA24 ;
+        adm:logEntry        bda:LG014D362150C65E92 , bda:LG054A5F457DB3E576 , bda:LG33DD58B62BE7C39C , bda:LG3EF38CA94C5B295B , bda:LG44297096E95B5541 , bda:LG5869EAFE312449EE , bda:LG5E1C42382919003B , bda:LG5E4AE2F8387AC8FF , bda:LG8533552DF7FA1B07 , bda:LG9269EB98684477A3 , bda:LG9B7F21787DC2F985 , bda:LGA1DF1F5A9B383690 , bda:LGA23DD1D2834D3733 , bda:LGB888FAF8E640B6A6 , bda:LGC2E5E86986A52925 , bda:LGC51D9451B2BBB8ED , bda:LGC83FFDC5638EE856 , bda:LGD4623341444CAA24 , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -55,12 +55,6 @@ bdg:L1RKL3911 {
         adm:logDate         "2014-08-25T10:11:17.017Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG5AC0AC307E3CC8D4
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG5E1C42382919003B
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-21T12:23:32.456Z"^^xsd:dateTime ;
@@ -77,18 +71,6 @@ bdg:L1RKL3911 {
         adm:logDate         "2013-10-03T14:26:07.123Z"^^xsd:dateTime ;
         adm:logMessage      "edited name, added lin ref"@en ;
         adm:logWho          bdu:U00020 .
-    
-    bda:LG8EF1FD2FBED3F584
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG8F3B20A6DCD88464
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG9269EB98684477A3
         a                   adm:UpdateData ;
@@ -142,11 +124,26 @@ bdg:L1RKL3911 {
         adm:logMessage      "chenged p record"@en ;
         adm:logWho          bdu:U00017 .
     
-    bdr:CLFFCF6C1BD6B21056
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "52b4ff." ;
-        :contentLocationVolume  "kha" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0DE30B99711AFCFD
         a                   :LineageEvent ;
@@ -302,13 +299,12 @@ bdg:L1RKL3911 {
     
     bdr:L1RKL3911  a        :Lineage ;
         skos:prefLabel      "indra bhu ti lam gyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLFFCF6C1BD6B21056 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH03FDAFE03BB1AAF5 , bdr:LH09732B687BDB1314 , bdr:LH327E7B4C1A9C8A1C , bdr:LH33468D7E36937C3B , bdr:LH398D5E03BE7C74F9 , bdr:LH3D9C70E4ACBDDB7D , bdr:LH3DBD0224EB328628 , bdr:LH47565BD76510F0C8 , bdr:LH4805B659329535DB , bdr:LH52F05DAF5F523F89 , bdr:LH714A7FC99D9862B0 , bdr:LH7E237082B976C28D , bdr:LH7F30382AD9BD5C86 , bdr:LH80A4227F83AA26C3 , bdr:LH82C40236277C1DFA , bdr:LH8D8042666FFE0541 , bdr:LH8FDEBB8A58B1EBF5 , bdr:LH9AEA81DEEF20B8AA , bdr:LHA53077E9557F78C3 , bdr:LHA59AA0A94709E1E1 , bdr:LHAC01D2101803CE61 , bdr:LHB30442EB5ADBF047 , bdr:LHB3E5776E13E61069 , bdr:LHB5238E4959DCF665 , bdr:LHBA3EBA5FCC89EC52 , bdr:LHBA986E3050ABABF3 , bdr:LHC3E97B39ED9546BF , bdr:LHC72EEBA6A3149954 , bdr:LHD113F61DF3E94411 , bdr:LHD152F861E36D8DCB , bdr:LHD368EEFC749CE151 , bdr:LHE138B12ABC6FACDF , bdr:LHE1A7C2019B10EDBA , bdr:LHE516542EA51AC010 , bdr:LHE52308CB9D34E4A4 , bdr:LHE613BF895E765C10 , bdr:LHE9BB09D817590A19 , bdr:LHF4399A2AB8A9E3F1 , bdr:LHFC79EA52A557F05B ;
         :lineageObject      bdr:T199 ;
         :lineageRef         bdr:L1RKL3912 ;
         :lineageType        bdr:LineageKhrid ;
-        :note               bdr:NT4F102E676CDAEE61 .
+        :note               bdr:NT4F102E676CDAEE61 , bdr:NTFFCF6C1BD6B21056 .
     
     bdr:LH03FDAFE03BB1AAF5
         a                   :LineageHolder ;
@@ -507,4 +503,9 @@ bdg:L1RKL3911 {
     bdr:NT4F102E676CDAEE61
         a                   :Note ;
         :noteText           "alternative lineage:  L391b"@en .
+    
+    bdr:NTFFCF6C1BD6B21056
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, 52b4ff." ;
+        :noteSource         bdr:MW29307 .
 }

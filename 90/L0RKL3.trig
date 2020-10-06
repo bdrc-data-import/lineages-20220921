@@ -19,7 +19,7 @@ bdg:L0RKL3 {
         adm:gitPath         "90/L0RKL3.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L0RKL3 ;
-        adm:logEntry        bda:LG4C267F6D2AB205A6 , bda:LG79D07272349CD256 , bda:LG7AADB04D8EBBF1E2 , bda:LG80DEFC14A3A866FF , bda:LG846EA43692671390 , bda:LGA627FC6AC1CEF837 , bda:LGCEFB4DC228C82996 ;
+        adm:logEntry        bda:LG4C267F6D2AB205A6 , bda:LG7AADB04D8EBBF1E2 , bda:LG80DEFC14A3A866FF , bda:LG846EA43692671390 , bda:LGCEFB4DC228C82996 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -27,12 +27,6 @@ bdg:L0RKL3 {
         a                   adm:UpdateData ;
         adm:logDate         "2019-03-14T14:27:19.793Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG79D07272349CD256
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG7AADB04D8EBBF1E2
         a                   adm:UpdateData ;
@@ -52,22 +46,24 @@ bdg:L0RKL3 {
         adm:logMessage      "added type, object and location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGA627FC6AC1CEF837
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGCEFB4DC228C82996
         a                   adm:UpdateData ;
         adm:logDate         "2014-06-12T09:55:23.409Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL0B0E8F90980B25F2
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "4b7ff." ;
-        :contentLocationVolume  "ka" .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV06F912A4FF6A79AC
         a                   :LineageEvent ;
@@ -155,12 +151,11 @@ bdg:L0RKL3 {
     
     bdr:L0RKL3  a           :Lineage ;
         skos:prefLabel      "ma gcig grub pa'i rgyal mo lugs kyi tshe dpag med kyi dbang bzhi byin rlabs kyi tshul du bskur ba/"@bo-x-ewts ;
-        :contentLocation    bdr:CL0B0E8F90980B25F2 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0D8BDB950DE0B2DF , bdr:LH125B45E2223E2ECA , bdr:LH2183DF34CD3C9FB7 , bdr:LH2BF6497F11D55CDB , bdr:LH2DEE3D5F6DED3383 , bdr:LH317CB6264076D389 , bdr:LH3595157251B90954 , bdr:LH5A759E2745442574 , bdr:LH5A8F212443503CE6 , bdr:LH6C97C8A15AEBD3AA , bdr:LH6EAD68DCB07BAD8C , bdr:LH84B5588254654B0C , bdr:LH87120D64CBFD14C6 , bdr:LH8A2B9E4C7C1D963A , bdr:LH8B682D94EA452D20 , bdr:LH937FF71CCBF52A55 , bdr:LHA1B8595F32C3DB69 , bdr:LHA9435B5CA3409254 , bdr:LHAFE812973251B50D , bdr:LHB05D502C4311C5DA , bdr:LHD06D7ACCA7DA50E6 , bdr:LHF748A54BC18ED162 ;
         :lineageObject      bdr:T1347 ;
         :lineageType        bdr:LineageDbang ;
-        :note               bdr:NTFF20FD0FC97E51E6 .
+        :note               bdr:NT0B0E8F90980B25F2 , bdr:NTFF20FD0FC97E51E6 .
     
     bdr:LH0D8BDB950DE0B2DF
         a                   :LineageHolder ;
@@ -270,6 +265,11 @@ bdg:L0RKL3 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVD4023567F75BE30E ;
         :lineageWho         bdr:P5262 .
+    
+    bdr:NT0B0E8F90980B25F2
+        a                   :Note ;
+        :contentLocationStatement  "vol. ka, 4b7ff." ;
+        :noteSource         bdr:MW29307 .
     
     bdr:NTFF20FD0FC97E51E6
         a                   :Note ;

@@ -19,7 +19,7 @@ bdg:L8LS14563 {
         adm:gitPath         "fb/L8LS14563.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14563 ;
-        adm:logEntry        bda:LG5153ACB58ADBC8B4 , bda:LG5991A524A9A7D539 , bda:LG5F6C556ED88948EF , bda:LG60A94173361A7140 , bda:LG8FCBC6694FBF8B80 , bda:LGD2F42D2C5D4C1DC2 ;
+        adm:logEntry        bda:LG5153ACB58ADBC8B4 , bda:LG5991A524A9A7D539 , bda:LG5F6C556ED88948EF , bda:LG8FCBC6694FBF8B80 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -40,29 +40,25 @@ bdg:L8LS14563 {
         adm:logMessage      "changed type"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG60A94173361A7140
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG8FCBC6694FBF8B80
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-13T11:39:14.518Z"^^xsd:dateTime ;
         adm:logMessage      "added location and object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGD2F42D2C5D4C1DC2
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL5EC2196851308CB3
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "582-583" ;
-        :contentLocationVolume  1 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV080DC009452CA4AA
         a                   :LineageEvent ;
@@ -187,11 +183,11 @@ bdg:L8LS14563 {
     bdr:L8LS14563  a        :Lineage ;
         rdfs:comment        "anuja transmission of mahakala black lion and oral transmission of text marked as vajra"@en ;
         skos:prefLabel      "dpal mgon seng ge nag po'i rjes gnang dang / badza+ra gyi rtags yod pa'i lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL5EC2196851308CB3 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0C059245DD909972 , bdr:LH15DD9E272059FDD5 , bdr:LH185EB2D04015B5E1 , bdr:LH2E5D83826DAFD621 , bdr:LH3D3581267CA04FDA , bdr:LH56BE257C5A04F0AC , bdr:LH5EA909CA6909D6AC , bdr:LH6BAD99EFD7952644 , bdr:LH7452638BE92073BC , bdr:LH7858FB733EDA2D7A , bdr:LH7921CB22B75C555F , bdr:LH800C1629C321FF70 , bdr:LH82029C899882A15C , bdr:LH82D3F412CFB5E4C4 , bdr:LH88EE363AAB738FF3 , bdr:LH91931815AE858D90 , bdr:LH91D371AB1E862FEC , bdr:LH96929185C452483A , bdr:LH9756DFD532C5DCC5 , bdr:LH9D42AF3548EE8088 , bdr:LHA1D86C156DF1DC4E , bdr:LHA81A92F896FE2A07 , bdr:LHB32B8F07040EECF7 , bdr:LHBBB07B569AF723AF , bdr:LHC14633CD5B6F3AA2 , bdr:LHC90E746D8CC1F6CD , bdr:LHDC933AD5280814E3 , bdr:LHE1E6668E05B672D7 , bdr:LHE61ADE3644250734 , bdr:LHEBA1869AF9F9FB52 , bdr:LHF1771B49D42A6783 ;
         :lineageObject      bdr:T950 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT5EC2196851308CB3 .
     
     bdr:LH0C059245DD909972
         a                   :LineageHolder ;
@@ -346,4 +342,9 @@ bdg:L8LS14563 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVFF80EC3B4B8825D8 ;
         :lineageWho         bdr:P4CZ15612 .
+    
+    bdr:NT5EC2196851308CB3
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 582-583" ;
+        :noteSource         bdr:MW1PD107937 .
 }

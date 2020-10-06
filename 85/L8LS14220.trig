@@ -19,7 +19,7 @@ bdg:L8LS14220 {
         adm:gitPath         "85/L8LS14220.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14220 ;
-        adm:logEntry        bda:LG3E71BD9BE95705E4 , bda:LG57A112FFFC97A821 , bda:LG59013184E73CAB66 , bda:LG775A127A6ECAB2AF , bda:LGF0C5B667D49884FE , bda:LGF8CBDAA3AA08CAF7 ;
+        adm:logEntry        bda:LG3E71BD9BE95705E4 , bda:LG57A112FFFC97A821 , bda:LG59013184E73CAB66 , bda:LGF0C5B667D49884FE , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -39,28 +39,24 @@ bdg:L8LS14220 {
         adm:logDate         "2014-05-13T10:01:25.991Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG775A127A6ECAB2AF
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGF0C5B667D49884FE
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-08-02T09:26:53.73Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGF8CBDAA3AA08CAF7
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL0B82F4C98A7873B8
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "279-280" ;
-        :contentLocationVolume  1 .
     
     bdr:EV1455C6E8BD847D72
         a                   :LineageEvent ;
@@ -113,11 +109,11 @@ bdg:L8LS14220 {
     bdr:L8LS14220  a        :Lineage ;
         rdfs:comment        "oral transmission of protecting from the lightning"@en ;
         skos:prefLabel      "thams cad mkhyen pa bu ston rin po ches sam+pu T'i rgyud la brten nas mdzad pa'i thog bsrung gi lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL0B82F4C98A7873B8 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH17CE00585F6BAB4A , bdr:LH28D88F90198A1CDF , bdr:LH299B020F357F7345 , bdr:LH45B014191DAF6876 , bdr:LH45B922D7E47DD5C0 , bdr:LH54AE308D7D624253 , bdr:LH62EF58E5B265E9C0 , bdr:LH666BB66639934EC6 , bdr:LH96638E8B00E7CABC , bdr:LHD7752226470A6FAD , bdr:LHE0BB2210F38579C3 , bdr:LHF0D072AA2C33F7B6 , bdr:LHFE29C7F393DC8088 ;
         :lineageObject      bdr:T1456 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT0B82F4C98A7873B8 .
     
     bdr:LH17CE00585F6BAB4A
         a                   :LineageHolder ;
@@ -182,4 +178,9 @@ bdg:L8LS14220 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVE3EDF22614ECD2F0 ;
         :lineageWho         bdr:P3510 .
+    
+    bdr:NT0B82F4C98A7873B8
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 279-280" ;
+        :noteSource         bdr:MW1PD107937 .
 }

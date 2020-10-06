@@ -19,27 +19,15 @@ bdg:L8LS14396 {
         adm:gitPath         "6e/L8LS14396.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14396 ;
-        adm:logEntry        bda:LG1F1CEB97400C96CE , bda:LG20C1AA7F4BD2AE11 , bda:LG2EE149D7ABE7B465 , bda:LG66FDF30E805E0946 , bda:LG808BC35FCF03C64A , bda:LG9ABB67112C909C2B , bda:LGBC84F3345744E857 , bda:LGE64DAEAC452752C7 ;
+        adm:logEntry        bda:LG20C1AA7F4BD2AE11 , bda:LG66FDF30E805E0946 , bda:LG808BC35FCF03C64A , bda:LG9ABB67112C909C2B , bda:LGE64DAEAC452752C7 , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG1F1CEB97400C96CE
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG20C1AA7F4BD2AE11
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-29T08:47:54.931Z"^^xsd:dateTime ;
         adm:logMessage      "added object and location"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG2EE149D7ABE7B465
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG66FDF30E805E0946
         a                   adm:UpdateData ;
@@ -58,23 +46,32 @@ bdg:L8LS14396 {
         adm:logDate         "2013-08-30T15:59:12.442Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGBC84F3345744E857
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGE64DAEAC452752C7
         a                   adm:UpdateData ;
         adm:logDate         "2019-01-09T15:45:55.584Z"^^xsd:dateTime ;
         adm:logMessage      "changed p3"@en ;
         adm:logWho          bdu:U00007 .
     
-    bdr:CL9EDBAD3792AF2007
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  385 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV20C6F6937B692C0F
         a                   :LineageEvent ;
@@ -143,11 +140,11 @@ bdg:L8LS14396 {
     bdr:L8LS14396  a        :Lineage ;
         rdfs:comment        "instrucational transmission of marpo korsum teachings marked as zha"@en ;
         skos:prefLabel      "dmar po skor gsum las/ zha'i rtags can gyi 'khrid kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL9EDBAD3792AF2007 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH1D848201DF69949E , bdr:LH4FE30E367395F34B , bdr:LH52E469F1E32AE932 , bdr:LH5D1A5DB90F75499B , bdr:LH6D9061CF47CA4296 , bdr:LH760DE982575B9CFB , bdr:LH78C30F88D465FD8E , bdr:LH79FA0BBADB451FA8 , bdr:LH8AD8CFED158DCC1A , bdr:LH9487E552BF41EED5 , bdr:LH99296C5DC36627EA , bdr:LHC97FCC6898C3019B , bdr:LHD48A590438695E3B , bdr:LHDE8719CF4EB35133 , bdr:LHF45C27158EE19525 , bdr:LHFAF671D4EFE9FE11 , bdr:LHFFA4085DACFF7229 ;
         :lineageObject      bdr:T2103 ;
-        :lineageType        bdr:LineageKhrid .
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NT9EDBAD3792AF2007 .
     
     bdr:LH1D848201DF69949E
         a                   :LineageHolder ;
@@ -232,4 +229,9 @@ bdg:L8LS14396 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV7A215FFD02442437 ;
         :lineageWho         bdr:P786 .
+    
+    bdr:NT9EDBAD3792AF2007
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 385" ;
+        :noteSource         bdr:MW1PD107937 .
 }

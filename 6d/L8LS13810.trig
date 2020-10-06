@@ -19,7 +19,7 @@ bdg:L8LS13810 {
         adm:gitPath         "6d/L8LS13810.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13810 ;
-        adm:logEntry        bda:LG0540CA1C8A7E43C9 , bda:LG10369803CE7018A2 , bda:LG1BDE6829D652CE0A , bda:LG238790C736E0A642 , bda:LG6E52DA5BCADB53C3 , bda:LG8316EB8322D31818 , bda:LGCEA8C49C2FCAED16 , bda:LGEABF049D84565B69 ;
+        adm:logEntry        bda:LG0540CA1C8A7E43C9 , bda:LG10369803CE7018A2 , bda:LG1BDE6829D652CE0A , bda:LG6E52DA5BCADB53C3 , bda:LGCEA8C49C2FCAED16 , bda:LGEABF049D84565B69 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -41,22 +41,10 @@ bdg:L8LS13810 {
         adm:logMessage      "changed type"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG238790C736E0A642
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG6E52DA5BCADB53C3
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-05-21T16:30:02.485Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG8316EB8322D31818
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGCEA8C49C2FCAED16
         a                   adm:UpdateData ;
@@ -69,11 +57,19 @@ bdg:L8LS13810 {
         adm:logMessage      "deleted note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bdr:CL58816E5489729495
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  113 ;
-        :contentLocationVolume  1 .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV323A5CB6E18724A0
         a                   :LineageEvent ;
@@ -158,11 +154,11 @@ bdg:L8LS13810 {
     bdr:L8LS13810  a        :Lineage ;
         rdfs:comment        "oral transmission of cintamani sukla anuja according to nyan lotsava darmadak" ;
         skos:prefLabel      "sgrol dkar yid bzhin 'khor lo bka' babs lnga pa'i rjes gnang gi lung brgyud/ gnyan lugs/"@bo-x-ewts ;
-        :contentLocation    bdr:CL58816E5489729495 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0669BA9C2A249FB6 , bdr:LH073AF0F7A3B968F0 , bdr:LH0A13E48EC9B6CC2F , bdr:LH16FCE3AC14B29B41 , bdr:LH1ED5F1DAC1C70CA3 , bdr:LH2027CDD2969C7008 , bdr:LH2350299838D4BA8A , bdr:LH2C81F739ABCE619D , bdr:LH368AA2C942051D39 , bdr:LH3D16421E4712E5DB , bdr:LH3DAC8F01D321186D , bdr:LH58988D85C2E7697C , bdr:LH744DE6DF72E582A7 , bdr:LH88E79970DDEB720D , bdr:LH8F3D56B8C7E54B35 , bdr:LH91618763815155AE , bdr:LH9314167142DDE5C6 , bdr:LH991D799F616E5749 , bdr:LHCED58E7BEB2B6935 , bdr:LHD0C75704DE312C48 , bdr:LHE541918C10E85EA8 ;
         :lineageObject      bdr:T2GS1084 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT58816E5489729495 .
     
     bdr:LH0669BA9C2A249FB6
         a                   :LineageHolder ;
@@ -267,4 +263,9 @@ bdg:L8LS13810 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVF6C12B74AD6078C0 ;
         :lineageWho         bdr:P2613 .
+    
+    bdr:NT58816E5489729495
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 113" ;
+        :noteSource         bdr:MW1PD107937 .
 }

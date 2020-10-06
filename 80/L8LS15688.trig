@@ -29,11 +29,6 @@ bdg:L8LS15688 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL608DCC5F73170B38
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1KG16278 ;
-        :contentLocationPage  "131-132" .
-    
     bdr:EV102050EA853779CA
         a                   :LineageEvent ;
         :lineageFrom        bdr:P719 .
@@ -164,11 +159,11 @@ bdg:L8LS15688 {
     
     bdr:L8LS15688  a        :Lineage ;
         skos:prefLabel      "dbu ma rig tshogs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL608DCC5F73170B38 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH07A7FA797308C0F2 , bdr:LH0E88D7C6CEB90941 , bdr:LH1CCE9AFCB7B1DF47 , bdr:LH29F47E99F8062A1A , bdr:LH2F70F229E64297BE , bdr:LH310145D80AD86944 , bdr:LH35F3A06FA404EC33 , bdr:LH3A7D837DF652AB45 , bdr:LH3CCEE2E51D1DD74D , bdr:LH3D40F1271B0F8FE0 , bdr:LH3DAC2D3778BA413E , bdr:LH4A4F7D5F213534EA , bdr:LH4AC7F9E914F18E47 , bdr:LH534D0577FB292D35 , bdr:LH57C512C114BF457B , bdr:LH59F5D96A3D0D2171 , bdr:LH6A32C81D259A90CA , bdr:LH7283F5A8964FF959 , bdr:LH7E81B2963D7EEF79 , bdr:LH88374072A11DFB8C , bdr:LH88F7DB09E2600689 , bdr:LH8AFE2AC5FAAF5F96 , bdr:LH9EE92DFE8CE1E5FE , bdr:LHAE430C5205CE3094 , bdr:LHC2A8C0590C8B20C2 , bdr:LHC70CA41DE5FB1980 , bdr:LHC9EC17988E2567A1 , bdr:LHCD855D47E11EDD76 , bdr:LHD0F6F3BBC1E29404 , bdr:LHD145DAC70DD1757A , bdr:LHD49D04C764ACC47F , bdr:LHE23205166210A022 , bdr:LHECBF32BC650A3039 ;
         :lineageObject      bdr:T233 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT608DCC5F73170B38 .
     
     bdr:LH07A7FA797308C0F2
         a                   :LineageHolder ;
@@ -333,4 +328,9 @@ bdg:L8LS15688 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV29FF4C0D6686DDA5 ;
         :lineageWho         bdr:P412 .
+    
+    bdr:NT608DCC5F73170B38
+        a                   :Note ;
+        :contentLocationStatement  "p. 131-132" ;
+        :noteSource         bdr:MW1KG16278 .
 }

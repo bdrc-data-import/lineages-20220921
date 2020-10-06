@@ -34,12 +34,6 @@ bdg:L3JT13496 {
         adm:logMessage      "changed P2CN21 to P2783"@en ;
         adm:logWho          bdu:U00016 .
     
-    bdr:CLA5A9365E1AF04C2D
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W1KG18291 ;
-        :contentLocationSide  "245r-245v (ge)" .
-    
     bdr:EV229A79F2006A9698
         a                   :LineageEvent ;
         :lineageFrom        bdr:P2786 .
@@ -91,11 +85,11 @@ bdg:L3JT13496 {
     bdr:L3JT13496  a        :Lineage ;
         skos:altLabel       "rgyud sde lnga'i don gyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "don gyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLA5A9365E1AF04C2D ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0737C5A699EA7437 , bdr:LH0C382AE575825ED0 , bdr:LH13E4EC5E332FA0A7 , bdr:LH17E092597E85D8D2 , bdr:LH1A9FB3403A6C0450 , bdr:LH2BD4809E13486630 , bdr:LH7FE9124E18122A95 , bdr:LH8860A36BCD925DC0 , bdr:LH906700F47067C985 , bdr:LHABC85256B6A8B94D , bdr:LHAEBFFE46E3FD4746 , bdr:LHE401597920DD33A3 , bdr:LHFD89FC2A50E623B2 ;
         :lineageObject      bdr:T1824 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NTA5A9365E1AF04C2D .
     
     bdr:LH0737C5A699EA7437
         a                   :LineageHolder ;
@@ -160,4 +154,8 @@ bdg:L3JT13496 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV9398FC49778B712A ;
         :lineageWho         bdr:P2786 .
+    
+    bdr:NTA5A9365E1AF04C2D
+        a                   :Note ;
+        :noteSource         bdr:MW1KG18291 .
 }

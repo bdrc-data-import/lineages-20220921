@@ -35,11 +35,6 @@ bdg:L8LS15654 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL9E8304958C514BE8
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1KG16278 ;
-        :contentLocationPage  "p. 124-125" .
-    
     bdr:EV0C916D332D07263F
         a                   :LineageEvent ;
         :lineageFrom        bdr:P2885 .
@@ -186,11 +181,11 @@ bdg:L8LS15654 {
     
     bdr:L8LS15654  a        :Lineage ;
         skos:prefLabel      "mo rbod gtong gi skor gyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL9E8304958C514BE8 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0475BAC766F8452B , bdr:LH0650BC5FDDF9036D , bdr:LH0871649888666DB9 , bdr:LH0F93421C8761BAE5 , bdr:LH19085FEAD0854A6E , bdr:LH2B70E0A03C373D98 , bdr:LH3911B99ABF3C47EC , bdr:LH3D93FABF27E3A907 , bdr:LH403F3553905DCD05 , bdr:LH432EF3CF68CBD909 , bdr:LH488DF0556C1E5679 , bdr:LH48FC18CF2EE2C953 , bdr:LH4AF79F14CAACFA00 , bdr:LH5389AB3BAA0A3C1D , bdr:LH589CE4533A345693 , bdr:LH5D8084CDE05E3979 , bdr:LH656E630D4616EEB2 , bdr:LH67C8E1FCF5526153 , bdr:LH6AE4F882E594FD85 , bdr:LH6C35A68158D76D8C , bdr:LH74B1DD81B9DECDA4 , bdr:LH7F44B4120422E962 , bdr:LH8A396D26463BB346 , bdr:LH9F037212277F126D , bdr:LHA0F943E3007BB2B6 , bdr:LHA4E64E9981EE667E , bdr:LHB51EBA3CE2860D6A , bdr:LHBC7ECD3FC0B6C7FC , bdr:LHBF905057A1C8C7C3 , bdr:LHC2C99C296108C086 , bdr:LHC4D0CA07C98B94ED , bdr:LHC89A315F30586247 , bdr:LHCBE5B11F0D93A860 , bdr:LHD35E9277196A16EC , bdr:LHD38C1DEDDF283F35 , bdr:LHD7AC8DC07CB7203E , bdr:LHEA9D3E85537D813C ;
         :lineageObject      bdr:T2129 , bdr:T97 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT9E8304958C514BE8 .
     
     bdr:LH0475BAC766F8452B
         a                   :LineageHolder ;
@@ -376,4 +371,9 @@ bdg:L8LS15654 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV99EF4F190D429F15 ;
         :lineageWho         bdr:P7868 .
+    
+    bdr:NT9E8304958C514BE8
+        a                   :Note ;
+        :contentLocationStatement  "p. 124-125" ;
+        :noteSource         bdr:MW1KG16278 .
 }

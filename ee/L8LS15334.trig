@@ -46,12 +46,6 @@ bdg:L8LS15334 {
         adm:logDate         "2019-01-30T15:25:46.862Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLE2B83033A1BD3851
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 72v6-7" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV1EDB445DF4522F9B
         a                   :LineageEvent ;
         :lineageFrom        bdr:P1614 .
@@ -111,11 +105,11 @@ bdg:L8LS15334 {
     bdr:L8LS15334  a        :Lineage ;
         skos:altLabel       "'jam dpal dpa' bo gcig grub dI paM ka ra dang dge ba'i blo gros kyis bsgyur ba'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "'jam dpal dpa' bo gcig grub pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLE2B83033A1BD3851 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH21FE08FF6F76BBA3 , bdr:LH2FCC62EBF78207E6 , bdr:LH44F0144A1BA24A54 , bdr:LH45508EFF40F42C05 , bdr:LH4868E5721759CEC0 , bdr:LH5AB9ECAE97D0CCCF , bdr:LH64BFD357F187EF3C , bdr:LH717ACABBF1EEE1B8 , bdr:LH8B37738B42D278C0 , bdr:LHAAFE00B1F1682959 , bdr:LHBCD4E914ED10F376 , bdr:LHD62D06DEFA3BAECE , bdr:LHEBD8D3F443FFAF0A , bdr:LHFB675D7A7B9BEA18 , bdr:LHFECA4991433B19A9 ;
         :lineageObject      bdr:T2129 , bdr:T69 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTE2B83033A1BD3851 .
     
     bdr:LH21FE08FF6F76BBA3
         a                   :LineageHolder ;
@@ -191,4 +185,9 @@ bdg:L8LS15334 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVE70BCBD4150C0FA5 ;
         :lineageWho         bdr:P1064 .
+    
+    bdr:NTE2B83033A1BD3851
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 72v6-7" ;
+        :noteSource         bdr:MW29706 .
 }

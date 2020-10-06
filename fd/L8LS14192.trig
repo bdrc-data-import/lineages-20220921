@@ -19,7 +19,7 @@ bdg:L8LS14192 {
         adm:gitPath         "fd/L8LS14192.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14192 ;
-        adm:logEntry        bda:LG27D7D077055DA16A , bda:LG5E238A70F9AA7CC5 , bda:LG7A2AA06D9098C5E4 , bda:LGAC6B06EB85D58D5D , bda:LGBDD418D199DEC180 , bda:LGCEA54C33DCE06E5F , bda:LGE616145259FCAC89 ;
+        adm:logEntry        bda:LG27D7D077055DA16A , bda:LG5E238A70F9AA7CC5 , bda:LG7A2AA06D9098C5E4 , bda:LGAC6B06EB85D58D5D , bda:LGBDD418D199DEC180 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -50,23 +50,19 @@ bdg:L8LS14192 {
         adm:logDate         "2014-07-28T09:32:30.895Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGCEA54C33DCE06E5F
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LGE616145259FCAC89
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL237ACBA9FA24555D
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  262 ;
-        :contentLocationVolume  1 .
     
     bdr:EV4855D7C46B106926
         a                   :LineageEvent ;
@@ -115,11 +111,11 @@ bdg:L8LS14192 {
     bdr:L8LS14192  a        :Lineage ;
         rdfs:comment        "instructional transmission of transferrence"@en ;
         skos:prefLabel      "'pho ba 'jag tshugs ma'i nyams 'khrid kyi brgyud pa lugs gcig"@bo-x-ewts ;
-        :contentLocation    bdr:CL237ACBA9FA24555D ;
         :isRoot             true ;
         :lineageHolder      bdr:LH1ED1C164ACFFA191 , bdr:LH26506CF6B284E9BA , bdr:LH2EA09EC45D240F71 , bdr:LH3D682F40773C23A8 , bdr:LH48CC5DE934C59A64 , bdr:LH5DCCBB84CD6BF130 , bdr:LH6A39BEF7EC283DFA , bdr:LH83BED93C37E6206C , bdr:LH8F490531BC382987 , bdr:LHC673E7D84C5DB18E , bdr:LHC9788D74E728C1A5 , bdr:LHFEF07424B850AD3F ;
         :lineageObject      bdr:T15 ;
-        :lineageType        bdr:LineageKhrid .
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NT237ACBA9FA24555D .
     
     bdr:LH1ED1C164ACFFA191
         a                   :LineageHolder ;
@@ -179,4 +175,9 @@ bdg:L8LS14192 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV4855D7C46B106926 ;
         :lineageWho         bdr:P7009 .
+    
+    bdr:NT237ACBA9FA24555D
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 262" ;
+        :noteSource         bdr:MW1PD107937 .
 }

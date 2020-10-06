@@ -19,7 +19,7 @@ bdg:L8LS14373 {
         adm:gitPath         "e0/L8LS14373.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14373 ;
-        adm:logEntry        bda:LG33DA786330E921D7 , bda:LG500AE53F3114FD98 , bda:LG81EA34828A87BF1B , bda:LG87D6BCD05F20F02F , bda:LG95DFFD258F400557 , bda:LGE46952E861A91B47 , bda:LGF24E089C70B4D845 ;
+        adm:logEntry        bda:LG33DA786330E921D7 , bda:LG500AE53F3114FD98 , bda:LG81EA34828A87BF1B , bda:LG87D6BCD05F20F02F , bda:LG95DFFD258F400557 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -49,23 +49,19 @@ bdg:L8LS14373 {
         adm:logDate         "2014-06-02T09:11:42.628Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGE46952E861A91B47
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LGF24E089C70B4D845
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CLB315B6179CF3F458
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  371 ;
-        :contentLocationVolume  1 .
     
     bdr:EV011F0804F820B8BD
         a                   :LineageEvent ;
@@ -203,11 +199,11 @@ bdg:L8LS14373 {
         rdfs:comment        "oral transmission of commentary on bodhicittavivarana"@en ;
         skos:altLabel       "dpal mgon 'phags pa klu sgrub kyis gsang ba 'dus pa la brten nas byang chub sems 'grel mdzad/ de nyams su len pa la mchod rten gyi drung gu sems thag bcad pa'i gdams pa'i gsal byed rje btsun chen po grags pas mdzad pa'i bgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "byang chub sems 'grel gyi gdams pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLB315B6179CF3F458 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0F5F5BD05B13C93E , bdr:LH12E2F13E64D32667 , bdr:LH1AA818AFB40259C1 , bdr:LH1ECDCF5A3A7ADA76 , bdr:LH1FE11A946B35E9A5 , bdr:LH202C6674B2CFC156 , bdr:LH28A860F74494E6BB , bdr:LH2DD2FC5E5E894E4D , bdr:LH31043363EF6B0C88 , bdr:LH431814A8FA64D2FD , bdr:LH58A19C9D68E5A4E3 , bdr:LH5F82CF28A3D84E86 , bdr:LH6074C4C91117B948 , bdr:LH6111B66318536AAD , bdr:LH6143A67CB80599C6 , bdr:LH70813047197BDEE8 , bdr:LH7D8493A84CC18E3F , bdr:LH865AD6E34226DF5B , bdr:LH8C402E708400F183 , bdr:LH91F2125C2FAB3110 , bdr:LH921011BFB4A4DED8 , bdr:LH95BACDA21F4BD585 , bdr:LH96C89BD2581BDCDB , bdr:LH9D6D317DA8B57E86 , bdr:LHB59F284AA61FF878 , bdr:LHCD8AF3F7535F2044 , bdr:LHD059094B48C99CC2 , bdr:LHDE3409C7BEC3884A , bdr:LHE0A3825D8FF1EB36 , bdr:LHE6C4756F011B7BEE , bdr:LHE9EEAB256667521D , bdr:LHEEAB57374E96380E , bdr:LHF748D07C3355F39E , bdr:LHFD2462EAFD1D3B8C ;
         :lineageObject      bdr:W2GS1027 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTB315B6179CF3F458 .
     
     bdr:LH0F5F5BD05B13C93E
         a                   :LineageHolder ;
@@ -377,4 +373,9 @@ bdg:L8LS14373 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV8BA88C577A7E2B8F ;
         :lineageWho         bdr:P7401 .
+    
+    bdr:NTB315B6179CF3F458
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 371" ;
+        :noteSource         bdr:MW1PD107937 .
 }

@@ -41,12 +41,6 @@ bdg:L8LS15397 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLD6213F11E55CADA1
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 85v7-86r3" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV013DE07FBE68F578
         a                   :LineageEvent ;
         :lineageFrom        bdr:P2JM79 .
@@ -133,11 +127,11 @@ bdg:L8LS15397 {
     
     bdr:L8LS15397  a        :Lineage ;
         skos:prefLabel      "snga 'gyur lnga'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLD6213F11E55CADA1 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH023D189E59A1DBCC , bdr:LH0634BDF8635C9A1E , bdr:LH101C781060CC7C50 , bdr:LH3BAAF0BDAFA41D84 , bdr:LH3C62AB0CEFB12490 , bdr:LH476E9DF9CC3EACDB , bdr:LH60AB9F557B845396 , bdr:LH835A4BCDF0AF21B4 , bdr:LH872F6745771B5C8C , bdr:LH8890206652D9CFBE , bdr:LH8A9468B2FEDEC2A3 , bdr:LHA0A8255C03DF1C6D , bdr:LHB4E94512C2940445 , bdr:LHBCD9C7D10E9BE64B , bdr:LHC393427084368A6D , bdr:LHCBE6B1B95E8078D7 , bdr:LHDDD6CDF01E8F13DA , bdr:LHEE0DE6D8A10072A6 , bdr:LHF04BE7E1D88296CF , bdr:LHF0FCB33294D5D8D8 , bdr:LHFC0E5798160C53A3 , bdr:LHFDE940D0C9E87346 ;
         :lineageObject      bdr:T354 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTD6213F11E55CADA1 .
     
     bdr:LH023D189E59A1DBCC
         a                   :LineageHolder ;
@@ -248,4 +242,9 @@ bdg:L8LS15397 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV9CC7EB25403E52D4 ;
         :lineageWho         bdr:P8LS15402 .
+    
+    bdr:NTD6213F11E55CADA1
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 85v7-86r3" ;
+        :noteSource         bdr:MW29706 .
 }

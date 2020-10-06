@@ -19,15 +19,9 @@ bdg:L8LS14231 {
         adm:gitPath         "66/L8LS14231.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14231 ;
-        adm:logEntry        bda:LG1B9C0B5F13AF96CA , bda:LG1BD7C8C958CD7C0E , bda:LG35A6827632D7E894 , bda:LG3F4320BBDC9A8274 , bda:LG47726673570F6C93 , bda:LG4E504E7AE148F1E5 , bda:LG7C7F8B6EFCE731E9 , bda:LGCD79272D6025CD8B ;
+        adm:logEntry        bda:LG1BD7C8C958CD7C0E , bda:LG35A6827632D7E894 , bda:LG47726673570F6C93 , bda:LG4E504E7AE148F1E5 , bda:LG7C7F8B6EFCE731E9 , bda:LGCD79272D6025CD8B , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG1B9C0B5F13AF96CA
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG1BD7C8C958CD7C0E
         a                   adm:UpdateData ;
@@ -39,12 +33,6 @@ bdg:L8LS14231 {
         adm:logDate         "2014-01-07T11:59:53.264Z"^^xsd:dateTime ;
         adm:logMessage      "edited according to gsan yig"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG3F4320BBDC9A8274
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG47726673570F6C93
         a                   adm:InitialDataCreation ;
@@ -68,11 +56,19 @@ bdg:L8LS14231 {
         adm:logMessage      "replaced with the correct Topic (P7326) Associated Lineages"@en ;
         adm:logWho          bdu:U00017 .
     
-    bdr:CLDD01C299A97C5708
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  283 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV05BB2D2C6134EEA4
         a                   :LineageEvent ;
@@ -153,11 +149,11 @@ bdg:L8LS14231 {
     bdr:L8LS14231  a        :Lineage ;
         rdfs:comment        "oral transmission of the three yugu sister"@en ;
         skos:prefLabel      "dbyug gu spun gsum gyi chos skor las/ g.yung drung gi rtags kyi lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CLDD01C299A97C5708 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH05BAA7DAFE94BBED , bdr:LH05C28E0B1F10A339 , bdr:LH16E62A6385E8F184 , bdr:LH37E425EF28724E49 , bdr:LH3D459D8A60912DDB , bdr:LH3DEEBBAF198C10B6 , bdr:LH42FD5FD9925D0C07 , bdr:LH510DE6A05A06E6D7 , bdr:LH57F7D1F0AA4BB28F , bdr:LH92081B094041897B , bdr:LH933A63B64BF402BB , bdr:LH9832E016B3DAA0A2 , bdr:LH9A8739555329AF52 , bdr:LHA08EAE2A96BBD557 , bdr:LHA11395276552D570 , bdr:LHD61A9099C1FA676B , bdr:LHE1960AD4D117397F , bdr:LHE328428D6B70A187 , bdr:LHF380B67DEEF74D3A , bdr:LHF8E24A4C7E07BBCD , bdr:LHFB1E77868C1789B7 ;
         :lineageObject      bdr:T2GS1191 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTDD01C299A97C5708 .
     
     bdr:LH05BAA7DAFE94BBED
         a                   :LineageHolder ;
@@ -266,4 +262,9 @@ bdg:L8LS14231 {
     bdr:NTA6248FAC116D24B2
         a                   :Note ;
         :noteText           "bar 'di nas bla ma gnyis tsam ma rnyed/"@bo-x-ewts .
+    
+    bdr:NTDD01C299A97C5708
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 283" ;
+        :noteSource         bdr:MW1PD107937 .
 }

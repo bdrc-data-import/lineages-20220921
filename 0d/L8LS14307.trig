@@ -19,7 +19,7 @@ bdg:L8LS14307 {
         adm:gitPath         "0d/L8LS14307.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14307 ;
-        adm:logEntry        bda:LG19779BA0D6FE1F7C , bda:LG697725F7C60EF948 , bda:LG6B9F98EA8DD5CB27 , bda:LG7EA8C7A984D54DEC , bda:LG8BEB3A9420BCA735 , bda:LGA97A9B2A228D8BF8 , bda:LGDA6440CD8C52825F ;
+        adm:logEntry        bda:LG19779BA0D6FE1F7C , bda:LG6B9F98EA8DD5CB27 , bda:LG7EA8C7A984D54DEC , bda:LG8BEB3A9420BCA735 , bda:LGA97A9B2A228D8BF8 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,12 +28,6 @@ bdg:L8LS14307 {
         adm:logDate         "2019-01-10T12:51:10.192Z"^^xsd:dateTime ;
         adm:logMessage      "changed P#"@en ;
         adm:logWho          bdu:U00007 .
-    
-    bda:LG697725F7C60EF948
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG6B9F98EA8DD5CB27
         a                   adm:UpdateData ;
@@ -56,17 +50,19 @@ bdg:L8LS14307 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGDA6440CD8C52825F
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL7432266AA8D72E61
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  355 ;
-        :contentLocationVolume  1 .
     
     bdr:EV0393C434EC65CE4E
         a                   :LineageEvent ;
@@ -99,11 +95,11 @@ bdg:L8LS14307 {
     bdr:L8LS14307  a        :Lineage ;
         rdfs:comment        "common initiation transmission of lama rinjung's guruyoga"@en ;
         skos:prefLabel      "bla ma rin 'byung gi byin rlabs kyi brgyud pa thun mong ba/"@bo-x-ewts ;
-        :contentLocation    bdr:CL7432266AA8D72E61 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH171EE430627B02EE , bdr:LH18D3B5F971D2D320 , bdr:LH3300523C403D2C7A , bdr:LH4F799BBE206BBEA8 , bdr:LH5176D4445574B729 , bdr:LH5D87E866D835AD01 , bdr:LHBEBA8590A43468C8 , bdr:LHBFE05D1A0D6E72F6 ;
         :lineageObject      bdr:T4 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NT7432266AA8D72E61 .
     
     bdr:LH171EE430627B02EE
         a                   :LineageHolder ;
@@ -143,4 +139,9 @@ bdg:L8LS14307 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV8551BDF2CF571E94 ;
         :lineageWho         bdr:P37 .
+    
+    bdr:NT7432266AA8D72E61
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 355" ;
+        :noteSource         bdr:MW1PD107937 .
 }

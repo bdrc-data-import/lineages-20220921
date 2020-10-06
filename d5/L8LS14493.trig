@@ -19,7 +19,7 @@ bdg:L8LS14493 {
         adm:gitPath         "d5/L8LS14493.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14493 ;
-        adm:logEntry        bda:LG2C918FBCBB77FD3B , bda:LG84848C55D71E03E7 , bda:LGAADD8F06A7FCD098 , bda:LGBA91A44FD615F4BE , bda:LGD9F51A0A8DDC0C39 , bda:LGED00B1E195F4180D ;
+        adm:logEntry        bda:LG2C918FBCBB77FD3B , bda:LGAADD8F06A7FCD098 , bda:LGBA91A44FD615F4BE , bda:LGED00B1E195F4180D , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,12 +28,6 @@ bdg:L8LS14493 {
         adm:logDate         "2013-09-16T13:44:56.703Z"^^xsd:dateTime ;
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG84848C55D71E03E7
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGAADD8F06A7FCD098
         a                   adm:UpdateData ;
@@ -46,22 +40,24 @@ bdg:L8LS14493 {
         adm:logDate         "2014-07-28T10:15:17.257Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGD9F51A0A8DDC0C39
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGED00B1E195F4180D
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-14T08:35:20.565Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL30D7DC663CC6E3E2
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  527 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV07FC8DF8CECD2C80
         a                   :LineageEvent ;
@@ -114,11 +110,11 @@ bdg:L8LS14493 {
     bdr:L8LS14493  a        :Lineage ;
         rdfs:comment        "oral transmission of mahakala panjaranath text marked as vajra and pelbeu"@en ;
         skos:prefLabel      "nag po chen po'i chos skor las/ rdo rje dpal be'u lhan cig yod pa'i lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL30D7DC663CC6E3E2 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH09198614B3714E4A , bdr:LH0EA6B01CA3193421 , bdr:LH1EA210507EDFA35C , bdr:LH47942E4EBA5ECC63 , bdr:LH653A3DB0800A5BFE , bdr:LH9B4A6EC12CB99527 , bdr:LHAFB5724D4FE97A71 , bdr:LHCB319A4EDF8D957E , bdr:LHCD58941D1184289A , bdr:LHD95995EB57D0B496 , bdr:LHE5B5250E529516A0 , bdr:LHE8C2A6BEAFAA7097 , bdr:LHEDCA572923DFAE9E ;
         :lineageObject      bdr:T1599 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT30D7DC663CC6E3E2 .
     
     bdr:LH09198614B3714E4A
         a                   :LineageHolder ;
@@ -183,4 +179,9 @@ bdg:L8LS14493 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV1F2C3DD55A183BF9 ;
         :lineageWho         bdr:P3256 .
+    
+    bdr:NT30D7DC663CC6E3E2
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 527" ;
+        :noteSource         bdr:MW1PD107937 .
 }

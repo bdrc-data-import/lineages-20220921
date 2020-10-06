@@ -19,7 +19,7 @@ bdg:L8LS15142 {
         adm:gitPath         "e4/L8LS15142.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS15142 ;
-        adm:logEntry        bda:LG303FFBE36ED4E955 , bda:LG7093C273EC531466 , bda:LG762DB0C9FF6AF5A0 , bda:LG8062041BF04B611B , bda:LG906E5D11A33D1927 , bda:LGCFDE72CC995832A7 , bda:LGD5D1493CC4BBD6C4 , bda:LGF04D01BB3BFA6FCB ;
+        adm:logEntry        bda:LG303FFBE36ED4E955 , bda:LG7093C273EC531466 , bda:LG8062041BF04B611B , bda:LGCFDE72CC995832A7 , bda:LGD5D1493CC4BBD6C4 , bda:LGF04D01BB3BFA6FCB , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,22 +34,10 @@ bdg:L8LS15142 {
         adm:logDate         "2014-07-29T16:14:03.371Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG762DB0C9FF6AF5A0
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG8062041BF04B611B
         a                   adm:UpdateData ;
         adm:logDate         "2014-02-25T11:43:46.158Z"^^xsd:dateTime ;
         adm:logMessage      "added object ref as cw"@en .
-    
-    bda:LG906E5D11A33D1927
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGCFDE72CC995832A7
         a                   adm:UpdateData ;
@@ -68,12 +56,19 @@ bdg:L8LS15142 {
         adm:logDate         "2014-03-14T10:22:00.743Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL25B5BE281AD6E125
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationSide  "f. 32v4-5" ;
-        :contentLocationVolume  "e" .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV1ABA6B9D8FAE656F
         a                   :LineageEvent ;
@@ -98,11 +93,11 @@ bdg:L8LS15142 {
     bdr:L8LS15142  a        :Lineage ;
         skos:altLabel       "gsum pa bstan pa'i 'byung khungs rgyal ba'i gsung rab rin po che sde snod rgyud sde dang bcas pa ji ltar thob pa'i tshul las/ yum 'bring po shes phyin stong phrag nyi shu lnga pa deng sang nyi khrir grags pa bam po bdun cu rtsa brgyad dang sho lo ka brgya pa/ le'u bdun cu rtsa drug gi lung nos pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "shes phyin stong phrag nyi shu lnga pa'i lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL25B5BE281AD6E125 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH085DBBC9C78704B6 , bdr:LH5BF3D17518E4190A , bdr:LH9FC825448258A52D , bdr:LHE82F73D15CBFC0E3 , bdr:LHF4D55977C8B24490 , bdr:LHF8ED7B3437035B90 ;
         :lineageObject      bdr:W4CZ15641 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT25B5BE281AD6E125 .
     
     bdr:LH085DBBC9C78704B6
         a                   :LineageHolder ;
@@ -133,4 +128,9 @@ bdg:L8LS15142 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV1ABA6B9D8FAE656F ;
         :lineageWho         bdr:P7132 .
+    
+    bdr:NT25B5BE281AD6E125
+        a                   :Note ;
+        :contentLocationStatement  "vol. e" ;
+        :noteSource         bdr:MW29706 .
 }

@@ -19,7 +19,7 @@ bdg:L8LS14108 {
         adm:gitPath         "15/L8LS14108.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14108 ;
-        adm:logEntry        bda:LG22C5477821C18A5D , bda:LG368C0228E66DC820 , bda:LG52B93E9DF1C00012 , bda:LG6E14927936451EA2 , bda:LGAC30E79D77200463 , bda:LGD4C83B4E11573F0A , bda:LGD7529EFCAB6689E4 , bda:LGE54DE63425ABFA79 ;
+        adm:logEntry        bda:LG22C5477821C18A5D , bda:LG368C0228E66DC820 , bda:LG6E14927936451EA2 , bda:LGAC30E79D77200463 , bda:LGD4C83B4E11573F0A , bda:LGE54DE63425ABFA79 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -33,12 +33,6 @@ bdg:L8LS14108 {
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-14T11:42:29.784Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG52B93E9DF1C00012
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG6E14927936451EA2
         a                   adm:UpdateData ;
@@ -57,22 +51,24 @@ bdg:L8LS14108 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGD7529EFCAB6689E4
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGE54DE63425ABFA79
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-07-16T09:46:25.562Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLD967795792D0023A
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  230 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0528B2103F84CBDF
         a                   :LineageEvent ;
@@ -166,11 +162,11 @@ bdg:L8LS14108 {
         rdfs:comment        "initiation transmission of 13 deity rakta yamari drawing mandala, danashila tradition"@en ;
         skos:altLabel       "bka' babs gnyis pa dA na shI la lugs kyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "gzhin rje gshed dmar po lha bcu gsum gyi ras bris dkyil 'khor dbang bzhi thob pa las dA na shI la'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLD967795792D0023A ;
         :isRoot             true ;
         :lineageHolder      bdr:LH08BF4A13E57203E0 , bdr:LH18B434B8755CBD82 , bdr:LH23DA5C1D830FADE1 , bdr:LH2890670C6E083796 , bdr:LH291EF7A41BC51002 , bdr:LH2DB7F03D5CC79BA5 , bdr:LH2EECE6BB1BD76E7F , bdr:LH3015DE0B3FC4F8DD , bdr:LH30BDF5C1D750BF55 , bdr:LH5815B850AA53DA39 , bdr:LH5F685E9F9EE8D71F , bdr:LH67583E90516841AD , bdr:LH6C586C8DD8A10668 , bdr:LH7531667886AA5B43 , bdr:LH778FCDEA33FC5362 , bdr:LH79B61005D6365911 , bdr:LHA21E96C176E7C0AA , bdr:LHB01606C811E4404E , bdr:LHC0A3B24927D593D7 , bdr:LHC110BEB576630372 , bdr:LHCD11235104DE745E , bdr:LHD49015984620F6D2 , bdr:LHE7BADD37255D5F51 ;
         :lineageObject      bdr:T1613 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NTD967795792D0023A .
     
     bdr:LH08BF4A13E57203E0
         a                   :LineageHolder ;
@@ -285,4 +281,9 @@ bdg:L8LS14108 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV106269C1E2AD5531 ;
         :lineageWho         bdr:P3212 .
+    
+    bdr:NTD967795792D0023A
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 230" ;
+        :noteSource         bdr:MW1PD107937 .
 }

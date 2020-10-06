@@ -19,7 +19,7 @@ bdg:L8LS14011 {
         adm:gitPath         "b8/L8LS14011.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14011 ;
-        adm:logEntry        bda:LG1066748C185A579D , bda:LG4E715E6368ABD1A9 , bda:LG623F2158A6E7AD2F , bda:LG72517C2E2DFB62A7 , bda:LGDE1E407785174A2D , bda:LGE02DEC8BA7E8B5B6 ;
+        adm:logEntry        bda:LG1066748C185A579D , bda:LG4E715E6368ABD1A9 , bda:LG72517C2E2DFB62A7 , bda:LGDE1E407785174A2D , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,12 +34,6 @@ bdg:L8LS14011 {
         adm:logDate         "2013-06-24T11:42:05.117Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG623F2158A6E7AD2F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG72517C2E2DFB62A7
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-13T08:40:16.857Z"^^xsd:dateTime ;
@@ -51,17 +45,19 @@ bdg:L8LS14011 {
         adm:logDate         "2014-07-29T14:46:07.096Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGE02DEC8BA7E8B5B6
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL80895BC2D75E38C0
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "193-194" ;
-        :contentLocationVolume  1 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV117E54A39450D642
         a                   :LineageEvent ;
@@ -111,11 +107,11 @@ bdg:L8LS14011 {
         rdfs:comment        "initiation transmission of abhisamaya of 19 deity manjushri krishna yamari"@en ;
         skos:altLabel       "thugs sras lo tsA bas mdzad pa'i gshin rje dgra nag po'i mngon par rtogs pa gsod byed rngams pa 'jigs rungs kyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "gshin rje dgra nag po'i mngon par rtogs pa gsod byed rngams pa 'jigs rungs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL80895BC2D75E38C0 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH061FFF4D7CBF587D , bdr:LH111E23C787F6E51C , bdr:LH38F8F6B9BD47A133 , bdr:LH3AE0AABED8BBCEBF , bdr:LH4DD862C9C2A4E083 , bdr:LH61EFA3A3A1C8211D , bdr:LH6ACB02F3482750CB , bdr:LH89F9539ECF5B88A1 , bdr:LHC6BF61C5AF9936ED , bdr:LHCF15D139A695DCE5 , bdr:LHD7D586097CA3E480 , bdr:LHD9953D7255B9257F ;
         :lineageObject      bdr:T927 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NT80895BC2D75E38C0 .
     
     bdr:LH061FFF4D7CBF587D
         a                   :LineageHolder ;
@@ -175,4 +171,9 @@ bdg:L8LS14011 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV31D88048B9C74839 ;
         :lineageWho         bdr:P3510 .
+    
+    bdr:NT80895BC2D75E38C0
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 193-194" ;
+        :noteSource         bdr:MW1PD107937 .
 }

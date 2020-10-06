@@ -19,7 +19,7 @@ bdg:L8LS14844 {
         adm:gitPath         "51/L8LS14844.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14844 ;
-        adm:logEntry        bda:LG13C124B9285F2BC2 , bda:LG1B85B7BDB71865FD , bda:LG39D95A9D8A50836F , bda:LG646D031B379BEB2C , bda:LG7ECE98CCF84668A4 , bda:LGA669F6C570F29A75 , bda:LGDDBCBB9C7D872542 ;
+        adm:logEntry        bda:LG13C124B9285F2BC2 , bda:LG646D031B379BEB2C , bda:LG7ECE98CCF84668A4 , bda:LGDDBCBB9C7D872542 , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,18 +28,6 @@ bdg:L8LS14844 {
         adm:logDate         "2013-11-15T10:52:23.993Z"^^xsd:dateTime ;
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG1B85B7BDB71865FD
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG39D95A9D8A50836F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG646D031B379BEB2C
         a                   adm:UpdateData ;
@@ -53,23 +41,32 @@ bdg:L8LS14844 {
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGA669F6C570F29A75
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGDDBCBB9C7D872542
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-30T09:21:00.696Z"^^xsd:dateTime ;
         adm:logMessage      "deleted note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bdr:CLC55B3CD2ED20D22F
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "142-143" ;
-        :contentLocationVolume  2 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV2A72F903432FE322
         a                   :LineageEvent ;
@@ -130,11 +127,11 @@ bdg:L8LS14844 {
     bdr:L8LS14844  a        :Lineage ;
         skos:altLabel       "gnubs 'dul ba 'dzin pa chen po rgyal ba g.ya' bzang par drang srong gzas dngos su phul ba'i gza' nyi ma mdung gang ma'i skor la/ dang po/ dpal phyag na rdo rje'i sgom lung zla ba gang yang rung ba'i nyer dgu'i nyi ma mdung gang gi dus phyag len ltar gnang ba nas bzung zla ba gcig gi bar nyam len chags med mtshan nyid dang ldan pa nos pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "gza' nyi ma mdung gang ma'i nyams len nos pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLC55B3CD2ED20D22F ;
         :isRoot             true ;
         :lineageHolder      bdr:LH276A96E9B9A00CF2 , bdr:LH2EE42CCF5BA37E98 , bdr:LH32B600FD93EB1286 , bdr:LH32C7EB07B02C6943 , bdr:LH36120312ACBD4639 , bdr:LH387F6534866D632A , bdr:LH646B6F01FABC7D2A , bdr:LH7AC57C84AA482115 , bdr:LH95C72C9C4A529685 , bdr:LH9F6CD3DE944E8EED , bdr:LHBB8F2AD628ED17C3 , bdr:LHC683910670E17F67 , bdr:LHD1B3971132A4E0E1 , bdr:LHEA7AAA2A21397559 , bdr:LHF0F375812C0A3F1A , bdr:LHF7A7060AEFAEE5D9 ;
         :lineageObject      bdr:T1793 ;
-        :lineageType        bdr:LineageKhrid .
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NTC55B3CD2ED20D22F .
     
     bdr:LH276A96E9B9A00CF2
         a                   :LineageHolder ;
@@ -218,4 +215,9 @@ bdg:L8LS14844 {
     bdr:NT3B04CFE5B54821DB
         a                   :Note ;
         :noteText           "bar 'dir bla ma gcig gnyis shig ma rnyed/"@bo-x-ewts .
+    
+    bdr:NTC55B3CD2ED20D22F
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 142-143" ;
+        :noteSource         bdr:MW1PD107937 .
 }

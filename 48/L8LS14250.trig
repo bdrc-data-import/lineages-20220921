@@ -19,7 +19,7 @@ bdg:L8LS14250 {
         adm:gitPath         "48/L8LS14250.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14250 ;
-        adm:logEntry        bda:LG2321D8F625747419 , bda:LG310E8C6266EFC496 , bda:LG399DBBF276DAEE20 , bda:LG6A2B3DB5DDB4B144 , bda:LG9EF80712CBC02147 , bda:LGE0AE00523254AF01 ;
+        adm:logEntry        bda:LG2321D8F625747419 , bda:LG310E8C6266EFC496 , bda:LG6A2B3DB5DDB4B144 , bda:LG9EF80712CBC02147 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,12 +35,6 @@ bdg:L8LS14250 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG399DBBF276DAEE20
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG6A2B3DB5DDB4B144
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-06T15:20:38.228Z"^^xsd:dateTime ;
@@ -53,17 +47,19 @@ bdg:L8LS14250 {
         adm:logMessage      "added type and deleted note"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGE0AE00523254AF01
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL15522DF7B8F88C72
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  286 ;
-        :contentLocationVolume  1 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV04EA8B907F3D5826
         a                   :LineageEvent ;
@@ -161,11 +157,11 @@ bdg:L8LS14250 {
         rdfs:comment        "anuja transmission of red hayagriva"@en ;
         skos:altLabel       "rje ras pa badz+ra kIrti nas brgyud pa'i pad+ma gar dbang gi rigs su gtogs pa rta mgrin dmar po pad dbyug can gyi rjes gnang thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "rta mgrin dmar po pad dbyug can gyi rjes gnang thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL15522DF7B8F88C72 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0D5A94B22C3B7607 , bdr:LH0EA4350985D612D2 , bdr:LH257C65B2FC780CE7 , bdr:LH2B7790965BB7C763 , bdr:LH2EEB6506C30A7629 , bdr:LH318C08C760D6DF8C , bdr:LH482CCCEB276E0C57 , bdr:LH65852DC61D594325 , bdr:LH6CCBE0BBB30FE04B , bdr:LH75411F97F918EB78 , bdr:LH811EE861A97A3E55 , bdr:LH82E5606DED6CA756 , bdr:LH848E725647C8B27C , bdr:LH8C937A80CC38DA84 , bdr:LH92D06E27752E8BE5 , bdr:LH9C2D0B93F57E5BC0 , bdr:LH9D66B89ED5D94A7C , bdr:LH9E803823781BDA20 , bdr:LHCF121BD1D18FFB82 , bdr:LHD33045B642FCE805 , bdr:LHE2A10C493CB98B25 , bdr:LHEA17D0E4D00C1EF6 , bdr:LHF15C68697B4B0A1C , bdr:LHFD610D1C01F71026 ;
         :lineageObject      bdr:T2044 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NT15522DF7B8F88C72 .
     
     bdr:LH0D5A94B22C3B7607
         a                   :LineageHolder ;
@@ -285,4 +281,9 @@ bdg:L8LS14250 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVE35922DFFB9FA9DA ;
         :lineageWho         bdr:P4278 .
+    
+    bdr:NT15522DF7B8F88C72
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 286" ;
+        :noteSource         bdr:MW1PD107937 .
 }

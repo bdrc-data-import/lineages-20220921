@@ -45,12 +45,6 @@ bdg:L8LS15314 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLC4BC06FD98F191A4
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 68r3" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV08B013805D0072F5
         a                   :LineageEvent ;
         :lineageFrom        bdr:P1040 .
@@ -158,11 +152,11 @@ bdg:L8LS15314 {
     bdr:L8LS15314  a        :Lineage ;
         skos:altLabel       "ngan song yongs su sbyong ba gzi brjid kyi rgyal po brtag pa gnyis pa shan+ti gar+bha dza ya rak+Shi ta'i 'gyur gyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "ngan song yongs su sbyong ba gzi brjid kyi rgyal po brtag pa gnyis pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLC4BC06FD98F191A4 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH00EDB7536BD741FA , bdr:LH09EB8AD0F8DED673 , bdr:LH1BF291316FF5D490 , bdr:LH1DAA11B6D3718A08 , bdr:LH2988E727F9B3E197 , bdr:LH2BD9F530A72621C3 , bdr:LH302023FEAB033F8F , bdr:LH39EDDC130FD24FA0 , bdr:LH40C957F4D44D04DA , bdr:LH4AF47616E15BCE0F , bdr:LH60B292D701992CDC , bdr:LH767E4A7AD7C25C99 , bdr:LH7C0DACDB2D9C4726 , bdr:LH84B3D658F9C3EDE0 , bdr:LH93203F07D7CCFDB4 , bdr:LH9509AB0B50F7DC77 , bdr:LHA42C07E581677DA8 , bdr:LHA8B0D92CED591D92 , bdr:LHAB76623954A4E4BF , bdr:LHAD2163B33379A0D7 , bdr:LHB09282A4515EFB51 , bdr:LHB18A821A1A1BCF72 , bdr:LHC1DF583F9798EDBF , bdr:LHCA4150EABEF45C8F , bdr:LHCCDE628376B6CF16 , bdr:LHD02BBBFD33BA2341 , bdr:LHE051B86D16B02001 ;
         :lineageObject      bdr:T2129 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTC4BC06FD98F191A4 .
     
     bdr:LH00EDB7536BD741FA
         a                   :LineageHolder ;
@@ -298,4 +292,9 @@ bdg:L8LS15314 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVDD10233ED703DA02 ;
         :lineageWho         bdr:P1056 .
+    
+    bdr:NTC4BC06FD98F191A4
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 68r3" ;
+        :noteSource         bdr:MW29706 .
 }

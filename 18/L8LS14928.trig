@@ -19,15 +19,9 @@ bdg:L8LS14928 {
         adm:gitPath         "18/L8LS14928.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14928 ;
-        adm:logEntry        bda:LG0ADDA7A78E565BE1 , bda:LG47B1BB18CE1C20BD , bda:LG7740CDD3CCA357B5 , bda:LGA694594545D2DFDA , bda:LGBFD2CCE7DE6AC35E , bda:LGDB170BBF0C2E25FE , bda:LGE3E499A402A5E514 ;
+        adm:logEntry        bda:LG47B1BB18CE1C20BD , bda:LG7740CDD3CCA357B5 , bda:LGA694594545D2DFDA , bda:LGBFD2CCE7DE6AC35E , bda:LGDB170BBF0C2E25FE , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG0ADDA7A78E565BE1
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG47B1BB18CE1C20BD
         a                   adm:UpdateData ;
@@ -57,17 +51,19 @@ bdg:L8LS14928 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGE3E499A402A5E514
+    bda:LGIM88BD19A8AB
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CLBAA123CE537C2D0B
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  199 ;
-        :contentLocationVolume  2 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV069FF44C7DCDBBD0
         a                   :LineageEvent ;
@@ -172,11 +168,11 @@ bdg:L8LS14928 {
     bdr:L8LS14928  a        :Lineage ;
         skos:altLabel       "rje btsun kun dga' grol mchog gyis dka' ba brgya phrag du ma'i sgo nas btsal ba'i 'khrid brgya'i skor nos pa la/ bshes gnyen sha ri bas tshogs pa lan gsum bkye ba'i mtha' ma'i skabs gtum ston la gtsang phyogs su 'gro don 'byung bar lung bstan pa ltar dpal snar thang gi chos sde dar rgyas su gyur pa'i bka' srol skyes bu gsum gyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "skyes bu gsum gyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLBAA123CE537C2D0B ;
         :isRoot             true ;
         :lineageHolder      bdr:LH19A5B3DD635C3413 , bdr:LH1C724FD2937637DE , bdr:LH241B5947377EF10B , bdr:LH317CB982C44BFBBD , bdr:LH33346D3414030882 , bdr:LH3E2F120C96B6577E , bdr:LH4927BF0314DAB6B8 , bdr:LH51185A926BB47A68 , bdr:LH61642FE4F5719385 , bdr:LH649B99679D2857AA , bdr:LH6B32E2D00954B416 , bdr:LH6BD56B630D4B33CF , bdr:LH6CC138C9CD966A49 , bdr:LH734F53019B1DFAB7 , bdr:LH7752EED3FE7578F7 , bdr:LH7985C5A810BEAACD , bdr:LH812BEEB5B116B5C1 , bdr:LH99CD39DAC467AF60 , bdr:LH9CEF624B4FE32880 , bdr:LH9EE642D5E2E59A08 , bdr:LHA80987B60C8FF83D , bdr:LHD3C73FB9653BD508 , bdr:LHD55AA2AF8AE74CC2 , bdr:LHE718DB2E229AE9E9 , bdr:LHE877BD670F9D3E51 , bdr:LHEBA4440FCCEB2130 ;
         :lineageObject      bdr:T1253 , bdr:T1512 ;
-        :lineageType        bdr:LineageKhrid .
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NTBAA123CE537C2D0B .
     
     bdr:LH19A5B3DD635C3413
         a                   :LineageHolder ;
@@ -307,4 +303,9 @@ bdg:L8LS14928 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVDFE7A7857D37AAFE ;
         :lineageWho         bdr:P1219 .
+    
+    bdr:NTBAA123CE537C2D0B
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 199" ;
+        :noteSource         bdr:MW1PD107937 .
 }

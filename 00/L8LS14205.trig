@@ -19,7 +19,7 @@ bdg:L8LS14205 {
         adm:gitPath         "00/L8LS14205.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14205 ;
-        adm:logEntry        bda:LG6B32134968EB157E , bda:LG6C79E4441E4EB0C1 , bda:LG95CBDE8424537A01 , bda:LGA60BDD94795DC163 , bda:LGAE32C1116038C388 , bda:LGC983B882221195A1 , bda:LGD3720D01B245872C , bda:LGE8398AB6CC248192 , bda:LGFA0A9167167F3448 ;
+        adm:logEntry        bda:LG6B32134968EB157E , bda:LG6C79E4441E4EB0C1 , bda:LG95CBDE8424537A01 , bda:LGAE32C1116038C388 , bda:LGC983B882221195A1 , bda:LGD3720D01B245872C , bda:LGFA0A9167167F3448 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -38,12 +38,6 @@ bdg:L8LS14205 {
         adm:logDate         "2019-02-01T10:57:57.322Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGA60BDD94795DC163
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGAE32C1116038C388
         a                   adm:UpdateData ;
         adm:logDate         "2020-07-23T08:53:42.107Z"^^xsd:dateTime ;
@@ -61,23 +55,25 @@ bdg:L8LS14205 {
         adm:logMessage      "added location and object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGE8398AB6CC248192
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGFA0A9167167F3448
         a                   adm:UpdateData ;
         adm:logDate         "2019-01-10T11:52:57.456Z"^^xsd:dateTime ;
         adm:logMessage      "changed P#"@en ;
         adm:logWho          bdu:U00007 .
     
-    bdr:CL3CE029C0FCBA1B12
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "273-274" ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV043F83CDF1C31B41
         a                   :LineageEvent ;
@@ -198,11 +194,11 @@ bdg:L8LS14205 {
     bdr:L8LS14205  a        :Lineage ;
         rdfs:comment        "anuaja transmission of charnel ground, protector of sakya tradition"@en ;
         skos:prefLabel      "sa skya ba'i bka' srung dpal dur khrod bdag po yab yum gyi rjes gnang /"@bo-x-ewts ;
-        :contentLocation    bdr:CL3CE029C0FCBA1B12 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH02013BF028B66209 , bdr:LH09D48D45213C225D , bdr:LH12C15E51FCB4AC02 , bdr:LH1DEA8B60A0DB178F , bdr:LH33018BDE9101BD4E , bdr:LH3346F7BCA235604F , bdr:LH5938DF9A00CD4232 , bdr:LH5BD43D2D25F43ECC , bdr:LH5C67E49F9B1C7569 , bdr:LH616ED157C4C5BDDE , bdr:LH69B683FAD3D49FB2 , bdr:LH727E81A84D8983D8 , bdr:LH763BF38F9BE5A4EC , bdr:LH79BB33189C2BE3DA , bdr:LH7B828CB648072549 , bdr:LH7D664AC3709429F7 , bdr:LH8CF9C3CE4CB6EFBA , bdr:LH9264540BD00F7106 , bdr:LH9336F0C7A9B6B2B4 , bdr:LH93C6ED20B870DCB7 , bdr:LH9C8CD73D53A22E75 , bdr:LHAA61AF269907036F , bdr:LHB769E5B34EEAA0D4 , bdr:LHB9B46E13C87A12DD , bdr:LHCA3653DFFEE04FBB , bdr:LHCEBD131AB0B60DCC , bdr:LHE2D7856C9E57962B , bdr:LHEF24199CCC621FC7 , bdr:LHF308E471000DEDFD , bdr:LHF43F017DA5DAA64A ;
         :lineageObject      bdr:T928 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NT3CE029C0FCBA1B12 .
     
     bdr:LH02013BF028B66209
         a                   :LineageHolder ;
@@ -352,4 +348,9 @@ bdg:L8LS14205 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVB2DA05AA360E3182 ;
         :lineageWho         bdr:P2CZ7929 .
+    
+    bdr:NT3CE029C0FCBA1B12
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 273-274" ;
+        :noteSource         bdr:MW1PD107937 .
 }

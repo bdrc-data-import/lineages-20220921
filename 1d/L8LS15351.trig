@@ -40,12 +40,6 @@ bdg:L8LS15351 {
         adm:logDate         "2019-01-30T15:22:48.978Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLFACC357A96A52992
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 76r4-5" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV11F762020E76BF9D
         a                   :LineageEvent ;
         :lineageFrom        bdr:P5852 .
@@ -120,11 +114,11 @@ bdg:L8LS15351 {
     
     bdr:L8LS15351  a        :Lineage ;
         skos:prefLabel      "lag na rdo rje'i mtshan brgya rtsa brgyad pa'i sgos bgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CLFACC357A96A52992 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH22B22C2C5537EA1C , bdr:LH32F6E8D7BF7FA537 , bdr:LH3DAF8BB74A90E445 , bdr:LH49113550B0BFBE94 , bdr:LH55EAA7C8F9C9D32A , bdr:LH5F08E3057011781D , bdr:LH88F04D93E30FA4F1 , bdr:LH8BFF30E821775CB7 , bdr:LH8C622C16B031B18A , bdr:LH8D5DF2B1E06B33E7 , bdr:LHAEE599FDEF1422CD , bdr:LHB3B3F03B52DA4546 , bdr:LHBFD1590E8424284C , bdr:LHC3D7F40A3BEA3FB8 , bdr:LHC52F54B664AF3BAA , bdr:LHCB74AF31114CF067 , bdr:LHD3E6DA0C56AC28E6 , bdr:LHD52082BD4B4804C3 , bdr:LHE76C97C001BF865D ;
         :lineageObject      bdr:T390 , bdr:T933 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTFACC357A96A52992 .
     
     bdr:LH22B22C2C5537EA1C
         a                   :LineageHolder ;
@@ -220,4 +214,9 @@ bdg:L8LS15351 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVE61FF95FAB66BC56 ;
         :lineageWho         bdr:P8LS15364 .
+    
+    bdr:NTFACC357A96A52992
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 76r4-5" ;
+        :noteSource         bdr:MW29706 .
 }

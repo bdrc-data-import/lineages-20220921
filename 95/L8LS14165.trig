@@ -19,21 +19,9 @@ bdg:L8LS14165 {
         adm:gitPath         "95/L8LS14165.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14165 ;
-        adm:logEntry        bda:LG176B64991AB904E3 , bda:LG2EC9117D863B1690 , bda:LG6F81068AAF0A0377 , bda:LG934993C709977653 , bda:LG97A45EB99FA827FB , bda:LGABB33AA5C0292649 ;
+        adm:logEntry        bda:LG6F81068AAF0A0377 , bda:LG934993C709977653 , bda:LG97A45EB99FA827FB , bda:LGABB33AA5C0292649 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG176B64991AB904E3
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG2EC9117D863B1690
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG6F81068AAF0A0377
         a                   adm:UpdateData ;
@@ -57,11 +45,19 @@ bdg:L8LS14165 {
         adm:logDate         "2013-07-24T09:30:06.074Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLE3BB68949D76DABB
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  251 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0018706F569CA677
         a                   :LineageEvent ;
@@ -163,11 +159,11 @@ bdg:L8LS14165 {
         rdfs:comment        "initiation of cakrasamvara drawing mandala, dpyal tradition"@en ;
         skos:altLabel       "dpal 'khor lo sdom pa lha drug cu rtsa gnyis kyi ras bris dkyil 'khor du dbang nos pa'i brgyud pa las/ bka' babs bdun pa dpyal lugs kyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "dpal 'khor lo sdom pa lha drug cu rtsa gnyis kyi ras bris dkyil 'khor du dbang nos pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLE3BB68949D76DABB ;
         :isRoot             true ;
         :lineageHolder      bdr:LH1EF7E8D9D6E74D16 , bdr:LH28BE4561A649BA78 , bdr:LH3ABC9EF4626BC77E , bdr:LH4632EB8D0C3399D0 , bdr:LH5399CF509599A672 , bdr:LH5738B6C279D02F07 , bdr:LH6341F74A817EBF9B , bdr:LH683ED58EFA8DE0AC , bdr:LH6C9ED2CD56DDA2F5 , bdr:LH7768082A54495362 , bdr:LH7B0B7A35171C5AAF , bdr:LH8EA3002297A5B6C8 , bdr:LH8EDC034EA8442C41 , bdr:LHA92D2A8B9EDB3AA6 , bdr:LHAAAFDE0C60CA0F97 , bdr:LHB8931940AB432D38 , bdr:LHC1E7BFCC227498F8 , bdr:LHC26B17ADA8913B4F , bdr:LHCD8F63BEFE0C16F5 , bdr:LHD5E6A2508DC863EA , bdr:LHF49598D0A91FC457 , bdr:LHF78849A0A8C5B4A1 , bdr:LHFD1279BC8D27940B , bdr:LHFDFE8C1D9689A740 ;
         :lineageObject      bdr:T1GS147789 , bdr:T80 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NTE3BB68949D76DABB .
     
     bdr:LH1EF7E8D9D6E74D16
         a                   :LineageHolder ;
@@ -287,4 +283,9 @@ bdg:L8LS14165 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV95716E3C582A3CF7 ;
         :lineageWho         bdr:P4CZ15083 .
+    
+    bdr:NTE3BB68949D76DABB
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 251" ;
+        :noteSource         bdr:MW1PD107937 .
 }

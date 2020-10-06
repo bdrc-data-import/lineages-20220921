@@ -19,7 +19,7 @@ bdg:L8LS14200 {
         adm:gitPath         "7f/L8LS14200.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14200 ;
-        adm:logEntry        bda:LG4026217F4209340B , bda:LG6F9722DA5DF3CD35 , bda:LG7850CF5728AE2C15 , bda:LG80BC7FAF1E90B8DA , bda:LG91B67F5F384CAA28 , bda:LGA6B8634EEB5772F9 , bda:LGEADA34FA7E04B392 ;
+        adm:logEntry        bda:LG4026217F4209340B , bda:LG6F9722DA5DF3CD35 , bda:LG7850CF5728AE2C15 , bda:LG91B67F5F384CAA28 , bda:LGA6B8634EEB5772F9 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -40,12 +40,6 @@ bdg:L8LS14200 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG80BC7FAF1E90B8DA
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG91B67F5F384CAA28
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-22T10:05:52.038Z"^^xsd:dateTime ;
@@ -57,17 +51,19 @@ bdg:L8LS14200 {
         adm:logDate         "2014-07-28T16:06:14.488Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGEADA34FA7E04B392
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL6876F7847E369156
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  271 ;
-        :contentLocationVolume  1 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV05B345F1930F8FD9
         a                   :LineageEvent ;
@@ -173,11 +169,11 @@ bdg:L8LS14200 {
         rdfs:comment        "initiation transmission of white varahi"@en ;
         skos:altLabel       "mkhas grub dpal ldan don grub kyis mdzad pa'i yi ge'i steng nas phag dkar shes rab gsal byed kyi byin rlabs thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "phag dkar shes rab gsal byed kyi byin rlabs thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL6876F7847E369156 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0108F267FC43C512 , bdr:LH0B37D7B7777E84D8 , bdr:LH32058F136C573184 , bdr:LH340B11A5B00D6FB1 , bdr:LH3435F0B69E3758A6 , bdr:LH378FCAB7A9AD5270 , bdr:LH473F0D38221A8367 , bdr:LH4837C536B7FE56BA , bdr:LH58A5EACD4D6DC94A , bdr:LH5B6A8DEF30FEE1F2 , bdr:LH61FF71C5605A6CC1 , bdr:LH66A62EAD8B886103 , bdr:LH692AB2FA8D657755 , bdr:LH738AF7697BF654AB , bdr:LH8B93FD927EBACE9B , bdr:LH95304248C08B690C , bdr:LH9816A635734A44BC , bdr:LHA1B98EB54DB215C2 , bdr:LHA42377080CFE3CD2 , bdr:LHA8D8C33A810665CC , bdr:LHACFD7DB87C65AD1A , bdr:LHBCFC4B397AA4361B , bdr:LHBEB0F1299AD7EBD7 , bdr:LHD14BA25341A3EED5 , bdr:LHE5A81FA79DEA7E72 , bdr:LHF10661EA3645044E ;
         :lineageObject      bdr:T2GS1168 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NT6876F7847E369156 .
     
     bdr:LH0108F267FC43C512
         a                   :LineageHolder ;
@@ -307,4 +303,9 @@ bdg:L8LS14200 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVDDA9F0F6462A19AC ;
         :lineageWho         bdr:P3094 .
+    
+    bdr:NT6876F7847E369156
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 271" ;
+        :noteSource         bdr:MW29307 .
 }

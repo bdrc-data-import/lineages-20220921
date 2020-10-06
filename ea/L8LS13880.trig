@@ -19,7 +19,7 @@ bdg:L8LS13880 {
         adm:gitPath         "ea/L8LS13880.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13880 ;
-        adm:logEntry        bda:LG5D68FAF1E558E435 , bda:LG6AD34072E63A12F4 , bda:LG75872629D6795F33 , bda:LG8D03D7461BD470BA , bda:LG8E8B80F25B9F085D , bda:LGD13377A59F794D81 , bda:LGECE063C434BFFA49 ;
+        adm:logEntry        bda:LG5D68FAF1E558E435 , bda:LG6AD34072E63A12F4 , bda:LG75872629D6795F33 , bda:LG8D03D7461BD470BA , bda:LGECE063C434BFFA49 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -45,29 +45,25 @@ bdg:L8LS13880 {
         adm:logMessage      "chenged type and deleted note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG8E8B80F25B9F085D
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LGD13377A59F794D81
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGECE063C434BFFA49
         a                   adm:UpdateData ;
         adm:logDate         "2014-06-11T11:19:13.492Z"^^xsd:dateTime ;
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLAEAD2BE19E23D99E
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  152 ;
-        :contentLocationVolume  1 .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0BBE00D587CFBB6A
         a                   :LineageEvent ;
@@ -189,11 +185,11 @@ bdg:L8LS13880 {
         rdfs:comment        "anuja transmission of nine deity vaisravana and vaisravana raudra sorrounded by eight naga"@en ;
         skos:altLabel       "zangs dkar lo tsA bas smad kyi char g.yor po jo ston la gnang bas smad lugs su grags pa'i rgyal po chen po ngal bsos po zhi ba bde byed ser chen lha dgu dang drag byed bzhon pa med pa klu brgyad kyis bskor ba'i rjes gnang bu ston thams cad mkhyen pa'i phyag len ltar thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "ser chen lha dgu dang drag byed bzhon pa med pa klu brgyad kyis bskor ba'i rjes gnang brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLAEAD2BE19E23D99E ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0D6A15CA50521109 , bdr:LH1604298FC569E534 , bdr:LH204D12BC736F6B43 , bdr:LH34381CB02FF99DC9 , bdr:LH42CC3E11FDE1921E , bdr:LH4A02D2D12F8BA085 , bdr:LH64175A2435DE9B95 , bdr:LH6F21511A954822A1 , bdr:LH6F5B8BF503975561 , bdr:LH778265058B5067BD , bdr:LH832FD42CE771D4E2 , bdr:LH85EA9A8D61AC5462 , bdr:LH8AB1F3AAAB619840 , bdr:LH9F797DEE2BA772FC , bdr:LHA273DE02FF12D366 , bdr:LHA34C11CCFAAC1F36 , bdr:LHA619524EF08F55A8 , bdr:LHB10945E883CD5A2D , bdr:LHBE0479AB026B59DA , bdr:LHC0F4516D4254B633 , bdr:LHC86AB3C627C25DCC , bdr:LHCF40899C0F3BDA46 , bdr:LHCFA5AD01A89B703C , bdr:LHD64DB089B456AF97 , bdr:LHD707F821CB3330A8 , bdr:LHDB4584B6841A296D , bdr:LHE7691EE8BE248C0C , bdr:LHF250EB9A32F0FE35 , bdr:LHFB19FB6FC35B8AFE ;
         :lineageObject      bdr:T112 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NTAEAD2BE19E23D99E .
     
     bdr:LH0D6A15CA50521109
         a                   :LineageHolder ;
@@ -338,4 +334,9 @@ bdg:L8LS13880 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVE2FD02E0A07E1D36 ;
         :lineageWho         bdr:P4009 .
+    
+    bdr:NTAEAD2BE19E23D99E
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 152" ;
+        :noteSource         bdr:MW1PD107937 .
 }

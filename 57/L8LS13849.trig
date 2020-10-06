@@ -19,21 +19,9 @@ bdg:L8LS13849 {
         adm:gitPath         "57/L8LS13849.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13849 ;
-        adm:logEntry        bda:LG042D48E7C23462EC , bda:LG141BB151E838FECF , bda:LG24C3B4A24139EFB1 , bda:LG32CF36F638846719 , bda:LG97E5271C6DFA0A70 , bda:LGA4031BA9C962C5A2 , bda:LGCBB015DD139B3E6F ;
+        adm:logEntry        bda:LG24C3B4A24139EFB1 , bda:LG32CF36F638846719 , bda:LG97E5271C6DFA0A70 , bda:LGA4031BA9C962C5A2 , bda:LGCBB015DD139B3E6F , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG042D48E7C23462EC
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG141BB151E838FECF
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG24C3B4A24139EFB1
         a                   adm:UpdateData ;
@@ -64,11 +52,19 @@ bdg:L8LS13849 {
         adm:logMessage      "deleted note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bdr:CL23CC4FD7D81FF906
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  122 ;
-        :contentLocationVolume  1 .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0603C28FBD594C24
         a                   :LineageEvent ;
@@ -190,11 +186,11 @@ bdg:L8LS13849 {
         rdfs:comment        "oral transmission of supplementary sadhana and anuja of the white sarasvati" ;
         skos:altLabel       "thar rtse nam mkha' dpal bzang gis mdzad pa'i dbyangs can ma dkar mo'i sgrub thabs rjes gnang gi kha skong dang bcas pa'i lung brgyud/"@bo-x-ewts ;
         skos:prefLabel      "dbyangs can ma dkar mo'i sgrub thabs rjes gnang gi kha skong lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL23CC4FD7D81FF906 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH09E7772149C453FC , bdr:LH0E82218C8C55E274 , bdr:LH0EC1C96541ABE698 , bdr:LH1D552796C49CFC4F , bdr:LH20FC4F2EAE5E6C9F , bdr:LH3830A5688E09C0FE , bdr:LH3ADDE84A8080971E , bdr:LH3BC9C558AE8BF7B6 , bdr:LH3BDBDD0BE33A52C3 , bdr:LH3EF15462A4701DAD , bdr:LH430725D81B5BE3DA , bdr:LH4529BAC7B9E71929 , bdr:LH4B2685F4EB8D9585 , bdr:LH6578BAC8ACC48359 , bdr:LH8A2E84BA1570CEA6 , bdr:LH94516F491BCB2615 , bdr:LH95D6D4933D3D49F6 , bdr:LHA1867203D18EC5A1 , bdr:LHA23B88207A38740F , bdr:LHA2B2F8592FF5E6F5 , bdr:LHA9A8432A3BDD13F0 , bdr:LHB14D32C8A8616BF1 , bdr:LHB40AE4A59FD7797E , bdr:LHC2B8EE25C680F1DB , bdr:LHC60DF30D3D204ED3 , bdr:LHCFBD16B796204472 , bdr:LHD24620DA638BDD94 , bdr:LHDB66A838B16B11D1 , bdr:LHE0AB81641AFE50CB , bdr:LHF114FDFD8BC3D18B ;
         :lineageObject      bdr:T1 , bdr:T2GS1086 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT23CC4FD7D81FF906 .
     
     bdr:LH09E7772149C453FC
         a                   :LineageHolder ;
@@ -344,4 +340,9 @@ bdg:L8LS13849 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV29B2F400949828A0 ;
         :lineageWho         bdr:P8LS13836 .
+    
+    bdr:NT23CC4FD7D81FF906
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 122" ;
+        :noteSource         bdr:MW1PD107937 .
 }

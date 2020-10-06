@@ -29,11 +29,6 @@ bdg:L8LS15679 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL34E2743B66CCCF66
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1KG16278 ;
-        :contentLocationPage  129 .
-    
     bdr:EV0BCDDE1E48134551
         a                   :LineageEvent ;
         :lineageFrom        bdr:P106 .
@@ -80,11 +75,11 @@ bdg:L8LS15679 {
     
     bdr:L8LS15679  a        :Lineage ;
         skos:prefLabel      "bstod pa brgya lnga bcu pa'i lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL34E2743B66CCCF66 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH220E01ABC54046D5 , bdr:LH364A07097BE3B0C9 , bdr:LH394683D648C2EB33 , bdr:LH577508169C5C64E0 , bdr:LH5AF6A8F12304857A , bdr:LH6B6932D327CF7B2E , bdr:LH7DE26F0455152462 , bdr:LH8BF82275632DC995 , bdr:LH9D6EE0ED43312C65 , bdr:LHE489AC35718F9ED8 , bdr:LHE4968484A3B05D96 , bdr:LHF75496E36E6A84EC ;
         :lineageObject      bdr:T1PD110101 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT34E2743B66CCCF66 .
     
     bdr:LH220E01ABC54046D5
         a                   :LineageHolder ;
@@ -145,4 +140,9 @@ bdg:L8LS15679 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVD23A81ABE5390945 ;
         :lineageWho         bdr:P8LS12036 .
+    
+    bdr:NT34E2743B66CCCF66
+        a                   :Note ;
+        :contentLocationStatement  "p. 129" ;
+        :noteSource         bdr:MW1KG16278 .
 }

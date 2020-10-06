@@ -19,7 +19,7 @@ bdg:L1RKL114 {
         adm:gitPath         "25/L1RKL114.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL114 ;
-        adm:logEntry        bda:LG06E6D8E0E9FEC2E9 , bda:LG125D94A3DAFA485E , bda:LG1CDA0B2E3798BA14 , bda:LG1D593B746BE15CAA , bda:LG4053E2691E90EC00 , bda:LG5EBB5D9241003906 , bda:LG9442CAEE595C0C3B , bda:LGC631C56536B954FE , bda:LGD523466FFBB1B0BB ;
+        adm:logEntry        bda:LG06E6D8E0E9FEC2E9 , bda:LG125D94A3DAFA485E , bda:LG1CDA0B2E3798BA14 , bda:LG4053E2691E90EC00 , bda:LG5EBB5D9241003906 , bda:LG9442CAEE595C0C3B , bda:LGD523466FFBB1B0BB , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -37,12 +37,6 @@ bdg:L1RKL114 {
         adm:logDate         "2014-03-10T08:40:46.829Z"^^xsd:dateTime ;
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG1D593B746BE15CAA
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG4053E2691E90EC00
         a                   adm:UpdateData ;
@@ -62,23 +56,25 @@ bdg:L1RKL114 {
         adm:logMessage      "edited name, added lin ref"@en ;
         adm:logWho          bdu:U00020 .
     
-    bda:LGC631C56536B954FE
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGD523466FFBB1B0BB
         a                   adm:InitialDataImport ;
         adm:logDate         "2007-07-12T13:30:24.52Z"^^xsd:dateTime ;
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
     
-    bdr:CL9EC265456CBB3CC6
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  576 ;
-        :contentLocationVolume  "ka" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV06152685D6A8BBE6
         a                   :LineageEvent ;
@@ -183,12 +179,11 @@ bdg:L1RKL114 {
     bdr:L1RKL114  a         :Lineage ;
         rdfs:comment        "intitation transmission of guru yoga and cycle of teachings" ;
         skos:prefLabel      "lam zab mo bla ma'i rnal 'byor gyi byin rlabs dang chos skor rnams kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL9EC265456CBB3CC6 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0A8107882BF37E4D , bdr:LH1E7564E5EF88C598 , bdr:LH50F15F7F41C55482 , bdr:LH5AB579C9269C52A2 , bdr:LH5B1C2B3056D5D7E7 , bdr:LH653BF99C85D3944F , bdr:LH699719302B585BAC , bdr:LH6A6A624333C548D7 , bdr:LH737560324349F6CF , bdr:LH7BE01BFC9899CB47 , bdr:LH91DC079A44B6E5C7 , bdr:LH97B88117BD1DFAFF , bdr:LHA8B9B77D92C4CF7D , bdr:LHB0251110307F13A4 , bdr:LHB52EAFA8C5A76B02 , bdr:LHB849E8FC97BAD176 , bdr:LHC3D917B8AB00F8B6 , bdr:LHC9362ED87C0F3DD5 , bdr:LHD681146E1B193EFE , bdr:LHD748EA5DDECC88B4 , bdr:LHDBA9144D3EEADB6D , bdr:LHE24E00DC8A19602B , bdr:LHF4ABBF4DA08DF66B , bdr:LHFCD5C3594B3B571E ;
         :lineageObject      bdr:T10MS11187 , bdr:T4 ;
         :lineageType        bdr:LineageDbang ;
-        :note               bdr:NT0A0C991C4296DCD4 , bdr:NT1EE1829C66179340 , bdr:NT3B555AD0262C732C .
+        :note               bdr:NT0A0C991C4296DCD4 , bdr:NT1EE1829C66179340 , bdr:NT3B555AD0262C732C , bdr:NT9EC265456CBB3CC6 .
     
     bdr:LH0A8107882BF37E4D
         a                   :LineageHolder ;
@@ -320,4 +315,9 @@ bdg:L1RKL114 {
     bdr:NT3B555AD0262C732C
         a                   :Note ;
         :noteText           "alternative lineage: L11b"@en .
+    
+    bdr:NT9EC265456CBB3CC6
+        a                   :Note ;
+        :contentLocationStatement  "vol. ka, p. 576" ;
+        :noteSource         bdr:MW29307 .
 }

@@ -19,7 +19,7 @@ bdg:L0RKL390 {
         adm:gitPath         "ad/L0RKL390.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L0RKL390 ;
-        adm:logEntry        bda:LG0A329B5A7AEB7A2C , bda:LG2B6D7D23021A8182 , bda:LG31A17A6C962F1ABA , bda:LG5BF686FCE1D5F7F2 , bda:LG7283CA20726F16C2 , bda:LG9DB2A49606EE0A8C , bda:LGA7AE05C8B33004DB , bda:LGF185E17DEF465083 , bda:LGF64923FF7C84BDC1 , bda:LGFF04C836D972B604 ;
+        adm:logEntry        bda:LG0A329B5A7AEB7A2C , bda:LG2B6D7D23021A8182 , bda:LG31A17A6C962F1ABA , bda:LG7283CA20726F16C2 , bda:LG9DB2A49606EE0A8C , bda:LGA7AE05C8B33004DB , bda:LGF185E17DEF465083 , bda:LGF64923FF7C84BDC1 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -39,12 +39,6 @@ bdg:L0RKL390 {
         adm:logDate         "2019-03-14T12:21:26.744Z"^^xsd:dateTime ;
         adm:logMessage      "changed Lineages"@en ;
         adm:logWho          bdu:U00017 .
-    
-    bda:LG5BF686FCE1D5F7F2
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG7283CA20726F16C2
         a                   adm:InitialDataCreation ;
@@ -74,17 +68,19 @@ bdg:L0RKL390 {
         adm:logMessage      "added type, object and location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGFF04C836D972B604
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL2F5CA19CA9F144CD
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "52b3f." ;
-        :contentLocationVolume  "kha" .
     
     bdr:EV0A05BB1A3CE7D331
         a                   :LineageEvent ;
@@ -200,11 +196,11 @@ bdg:L0RKL390 {
     
     bdr:L0RKL390  a         :Lineage ;
         skos:prefLabel      "phyag chen yi ge med pa yon po bsrong ba'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL2F5CA19CA9F144CD ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0530492C295F43D8 , bdr:LH1FBC8DA58FBD8EB0 , bdr:LH2737ABD0D3E3CD86 , bdr:LH2C7E0EBFA8A7585C , bdr:LH344EF29E7E689C27 , bdr:LH40F33AE71C25E288 , bdr:LH43811EACEEB5D290 , bdr:LH44CA0EB3F5E969C1 , bdr:LH4E55384AEECE09CF , bdr:LH57B9067E5BE0F62B , bdr:LH60E9B7A3F55AD38E , bdr:LH683D877F32FA7DE5 , bdr:LH75B2976F314B722D , bdr:LH86681472AF938B2E , bdr:LH87EE71EAB1264ED9 , bdr:LH8DD88298624AA359 , bdr:LH8E6AAD7A5DB90091 , bdr:LH91E717E9DACF2908 , bdr:LH98E02AC6B08905E5 , bdr:LH9D9CD10497B7ECCA , bdr:LHAFB1443CE88D7AB8 , bdr:LHDF3C3348009B51D9 , bdr:LHEA4564472E8A8529 , bdr:LHEADEA4D14996FC9A , bdr:LHEB62B465777D3FA1 , bdr:LHEE417F07D2C57283 , bdr:LHF52EC6401D3DAB96 , bdr:LHF66B61B17C66A00A , bdr:LHF6F1F85F85667161 ;
         :lineageObject      bdr:T199 ;
-        :lineageType        bdr:LineageKhrid .
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NT2F5CA19CA9F144CD .
     
     bdr:LH0530492C295F43D8
         a                   :LineageHolder ;
@@ -349,4 +345,9 @@ bdg:L0RKL390 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV83479958F5DB01EA ;
         :lineageWho         bdr:P0RK326 .
+    
+    bdr:NT2F5CA19CA9F144CD
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, 52b3f." ;
+        :noteSource         bdr:MW29307 .
 }

@@ -19,7 +19,7 @@ bdg:L8LS14193 {
         adm:gitPath         "ae/L8LS14193.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14193 ;
-        adm:logEntry        bda:LG0C9441792E673396 , bda:LG1D3E9E35EC6566C2 , bda:LG2774E6EBB902CE2B , bda:LG9136C342E889235F , bda:LG96CC3439278AAC39 , bda:LGBBD36A3871FD97C3 ;
+        adm:logEntry        bda:LG0C9441792E673396 , bda:LG1D3E9E35EC6566C2 , bda:LG2774E6EBB902CE2B , bda:LGBBD36A3871FD97C3 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -40,28 +40,24 @@ bdg:L8LS14193 {
         adm:logMessage      "added object and short title"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG9136C342E889235F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG96CC3439278AAC39
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGBBD36A3871FD97C3
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T16:50:43.017Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL86EBECD9543B7B95
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  262 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV08F9937DA686C429
         a                   :LineageEvent ;
@@ -111,11 +107,11 @@ bdg:L8LS14193 {
         rdfs:comment        "oral transmission of six yogas of naropa, an instructional text"@en ;
         skos:altLabel       "spyan snga chos kyi rgyal po lha gzigs ras pas mdzad pa'i nA ro chos drug gi 'khrid yig chen mo'i lung thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "nA ro chos drug gi 'khrid yig chen mo'i lung thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL86EBECD9543B7B95 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0842E81146A699EE , bdr:LH1270A6BEA000423C , bdr:LH1400062E687B9B70 , bdr:LH1488CB62DFC6F77B , bdr:LH449DF5DA64FDE3AB , bdr:LH47CBEBB454CFB41E , bdr:LH5F059E5B6E53EC17 , bdr:LH6C0CE9B719187360 , bdr:LHC2AD9E7B39680524 , bdr:LHC7A71B755C89E772 , bdr:LHD9A2AF27AA661D04 , bdr:LHF75E416FA4B40FBD ;
         :lineageObject      bdr:T200 , bdr:T394 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT86EBECD9543B7B95 .
     
     bdr:LH0842E81146A699EE
         a                   :LineageHolder ;
@@ -175,4 +171,9 @@ bdg:L8LS14193 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV81848945CEBD79F2 ;
         :lineageWho         bdr:P999 .
+    
+    bdr:NT86EBECD9543B7B95
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 262" ;
+        :noteSource         bdr:MW1PD107937 .
 }

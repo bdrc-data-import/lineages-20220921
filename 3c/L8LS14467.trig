@@ -19,15 +19,9 @@ bdg:L8LS14467 {
         adm:gitPath         "3c/L8LS14467.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14467 ;
-        adm:logEntry        bda:LG00A1BEB0E1F1E27E , bda:LG0A70E980CCBF569D , bda:LG5DDD9D2BA5D3B7F0 , bda:LGC0683F93242673E2 , bda:LGE1C9E3B83D36C6F4 , bda:LGF51620C10B957BB1 ;
+        adm:logEntry        bda:LG0A70E980CCBF569D , bda:LG5DDD9D2BA5D3B7F0 , bda:LGE1C9E3B83D36C6F4 , bda:LGF51620C10B957BB1 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG00A1BEB0E1F1E27E
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG0A70E980CCBF569D
         a                   adm:UpdateData ;
@@ -39,12 +33,6 @@ bdg:L8LS14467 {
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T14:57:09.294Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LGC0683F93242673E2
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGE1C9E3B83D36C6F4
         a                   adm:UpdateData ;
@@ -58,11 +46,19 @@ bdg:L8LS14467 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLEDA2BB8EB1736A50
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  519 ;
-        :contentLocationVolume  1 .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV08F0182281B50A41
         a                   :LineageEvent ;
@@ -124,11 +120,11 @@ bdg:L8LS14467 {
         rdfs:comment        "initiation transmission of five and twelve deity mahakala panjaranatha"@en ;
         skos:altLabel       "rgya gzhung lugs sogs dbang brgyud lugs khag gi skor las/ gri gug lha lnga dang lha bcu gnyis ma gnyis kyi dbang brgyud lugs/"@bo-x-ewts ;
         skos:prefLabel      "gri gug lha lnga dang lha bcu gnyis ma gnyis kyi dbang brgyud lugs/"@bo-x-ewts ;
-        :contentLocation    bdr:CLEDA2BB8EB1736A50 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH00D0EF13C3DD2A99 , bdr:LH08893472F36394CD , bdr:LH10817B5AE6A6E186 , bdr:LH12E42A40027D8354 , bdr:LH3828ED6EFF30163A , bdr:LH501768CF4CA26B89 , bdr:LH6DE21DFAD5FC48BD , bdr:LH8DB84FB4F5640AF7 , bdr:LH92CFDF734AF09143 , bdr:LH93D813C6622521C5 , bdr:LHA653619E9A596DC1 , bdr:LHD5BDB935B5A2E3E2 , bdr:LHD80B00E1FA5B30A4 , bdr:LHE56EF1DB4E13BC8C , bdr:LHE7C5D16E0940E71B ;
         :lineageObject      bdr:T2159 , bdr:T2161 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NTEDA2BB8EB1736A50 .
     
     bdr:LH00D0EF13C3DD2A99
         a                   :LineageHolder ;
@@ -203,4 +199,9 @@ bdg:L8LS14467 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV15A80B3038A2633C ;
         :lineageWho         bdr:P487 .
+    
+    bdr:NTEDA2BB8EB1736A50
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 519" ;
+        :noteSource         bdr:MW1PD107937 .
 }

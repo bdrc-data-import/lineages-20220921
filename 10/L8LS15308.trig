@@ -35,12 +35,6 @@ bdg:L8LS15308 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLD7533FBD09E1DCAA
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 67r2" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV13AB9458D3BFEF1C
         a                   :LineageEvent ;
         :lineageFrom        bdr:P5728 .
@@ -147,11 +141,11 @@ bdg:L8LS15308 {
     
     bdr:L8LS15308  a        :Lineage ;
         skos:prefLabel      "dpal ral pa gcig pa'i rtogs pa'i rgyud shrI kha la ru tra dang khro phu lo tsA bas bsgyur ba'i brgyud pa/ pad+ma'i rigs kyi rgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CLD7533FBD09E1DCAA ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0059616D42813D8F , bdr:LH0A65C2E4C711762A , bdr:LH32D74CB53D1E47C1 , bdr:LH383C118F86D3D3E7 , bdr:LH3FD0BD735AA4F58A , bdr:LH4530FE372679D7E4 , bdr:LH4746F686BF2724DE , bdr:LH5C08FF789862DB65 , bdr:LH67FB907B78CB90D3 , bdr:LH6886A696808FA0BF , bdr:LH79FB36F49441A5B8 , bdr:LH7FA3D4391017C614 , bdr:LH83D28DA1C1A3C53E , bdr:LH86E853E1F1239574 , bdr:LH899B38619D343F7C , bdr:LH89AC60F52449984B , bdr:LH98C2E3AE4B8F683E , bdr:LHA304FE98BBF3B3C5 , bdr:LHA3E41CFC63C554AD , bdr:LHA79F36B744FA4609 , bdr:LHC4F2AF00EBEEC57F , bdr:LHC60DB9A4C57FFE66 , bdr:LHD92199D3EAF09A1D , bdr:LHF78E56D8D620A16A , bdr:LHF7FE54503A149CB8 , bdr:LHFD0B1DAF45E8DF11 , bdr:LHFD844810FF8773B7 ;
         :lineageObject      bdr:T498 , bdr:W25385 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTD7533FBD09E1DCAA .
     
     bdr:LH0059616D42813D8F
         a                   :LineageHolder ;
@@ -286,4 +280,9 @@ bdg:L8LS15308 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVF4A8AA2FCF037154 ;
         :lineageWho         bdr:P828 .
+    
+    bdr:NTD7533FBD09E1DCAA
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 67r2" ;
+        :noteSource         bdr:MW29706 .
 }

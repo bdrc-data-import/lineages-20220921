@@ -29,11 +29,6 @@ bdg:L8LS15677 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLE191AC926D219DDA
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1KG16278 ;
-        :contentLocationPage  129 .
-    
     bdr:EV1B50B8623DC4046F
         a                   :LineageEvent ;
         :lineageFrom        bdr:P2516 .
@@ -108,11 +103,11 @@ bdg:L8LS15677 {
     
     bdr:L8LS15677  a        :Lineage ;
         skos:prefLabel      "bstod tshogs kyi brgyud pa las/ bskal bzang rgyan phreng gyi lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CLE191AC926D219DDA ;
         :isRoot             true ;
         :lineageHolder      bdr:LH01EDF0FB2BB62389 , bdr:LH2373A7F5A562B0B2 , bdr:LH2E7664C6AAAC4B94 , bdr:LH548748F8413A8A68 , bdr:LH586BAD958CE67EC9 , bdr:LH5AC6C1AC15BC405B , bdr:LH607CAD46F66F704B , bdr:LH7B0C91558627140D , bdr:LH80FD1FB344E06F10 , bdr:LH818F06FAB7EF80BA , bdr:LH891025F2C0DD22AE , bdr:LH9A3B6F2C14223D0B , bdr:LHA281A5777A80CEA9 , bdr:LHA57A3DEF82144B04 , bdr:LHA83807967484A639 , bdr:LHB0875D6630C67219 , bdr:LHDD0B6347B4DB51A1 , bdr:LHDF1B9A0D46902744 , bdr:LHF913420600B2BC40 ;
         :lineageObject      bdr:T1PD110101 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTE191AC926D219DDA .
     
     bdr:LH01EDF0FB2BB62389
         a                   :LineageHolder ;
@@ -208,4 +203,9 @@ bdg:L8LS15677 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV4FFE8FC8E095D5EE ;
         :lineageWho         bdr:P424 .
+    
+    bdr:NTE191AC926D219DDA
+        a                   :Note ;
+        :contentLocationStatement  "p. 129" ;
+        :noteSource         bdr:MW1KG16278 .
 }

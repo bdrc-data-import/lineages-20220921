@@ -19,7 +19,7 @@ bdg:L8LS14539 {
         adm:gitPath         "32/L8LS14539.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14539 ;
-        adm:logEntry        bda:LG02873E4B8D09280E , bda:LG660CB25C44E91209 , bda:LG69135F932A1A7EB3 , bda:LG925EF094427B78D1 , bda:LGB9210D93E1C39124 , bda:LGCF344AEA593E1580 , bda:LGE3A5335948269E6B , bda:LGF20FFDD880822CAB ;
+        adm:logEntry        bda:LG02873E4B8D09280E , bda:LG69135F932A1A7EB3 , bda:LGB9210D93E1C39124 , bda:LGCF344AEA593E1580 , bda:LGE3A5335948269E6B , bda:LGF20FFDD880822CAB , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,23 +29,11 @@ bdg:L8LS14539 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG660CB25C44E91209
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG69135F932A1A7EB3
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-29T09:14:54.351Z"^^xsd:dateTime ;
         adm:logMessage      "added short title"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG925EF094427B78D1
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGB9210D93E1C39124
         a                   adm:UpdateData ;
@@ -69,11 +57,19 @@ bdg:L8LS14539 {
         adm:logMessage      "changed p3"@en ;
         adm:logWho          bdu:U00007 .
     
-    bdr:CLFBAD38FBF525814A
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  576 ;
-        :contentLocationVolume  1 .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV03317A91AFBF2E1C
         a                   :LineageEvent ;
@@ -199,11 +195,11 @@ bdg:L8LS14539 {
         rdfs:comment        "common and uncommon anuja transmission of mahakala and oral transmission of sadhanas also marked ta in the first section"@en ;
         skos:altLabel       "bstan pa'i stobs 'phrog nag po chen po gdong bzhi pa'am drag po gzi ldan dbang phyug gyi chos skor las/ sgrub dus kyi mgon po'i rjes gnang thun mong dang thun mong ma yin pa dang / ta thA ga ta rak+shi ta nas brgyud pa'i sgrub skor dang dkar chag gis ma zin pa'i sa bcad dang po'i ta'i rtags can dang bcas pa'i lung brgyud/"@bo-x-ewts ;
         skos:prefLabel      "drag po gzi ldan dbang phyug gyi chos skor las rjes gnang dang lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CLFBAD38FBF525814A ;
         :isRoot             true ;
         :lineageHolder      bdr:LH007326298B9140BF , bdr:LH00C953F5931B11C8 , bdr:LH055310A2ED67E926 , bdr:LH0C8B828D3A7C280F , bdr:LH2239088B068B5688 , bdr:LH2AF98893275926CD , bdr:LH310D1621E84637FA , bdr:LH3880BBE9F33E29BB , bdr:LH3B4135861D2251CD , bdr:LH40F5D25B94782BCD , bdr:LH4CA1C27FC49C3124 , bdr:LH558A53CE8B638F4F , bdr:LH561AC80246EAF902 , bdr:LH59D768E964391FAA , bdr:LH67DD6A3854703721 , bdr:LH68587E4386282480 , bdr:LH6B21FB04620D8E47 , bdr:LH702CC3599D02D446 , bdr:LH956A066210F32925 , bdr:LH9EF4F7553A085E31 , bdr:LHAFF8824CA1413FCB , bdr:LHB17F99C7715926F4 , bdr:LHB5016D5C58121A5E , bdr:LHB6F66C62010D3671 , bdr:LHB7E0EB32798304F1 , bdr:LHB8C6B7234CC98604 , bdr:LHD027CEC9CC4841A3 , bdr:LHD462666A3A56E84E , bdr:LHD479B0E744A027F3 , bdr:LHE60DE89A87B66F27 , bdr:LHED7BBB68776696B0 ;
         :lineageObject      bdr:T1181 , bdr:T924 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NTFBAD38FBF525814A .
     
     bdr:LH007326298B9140BF
         a                   :LineageHolder ;
@@ -358,4 +354,9 @@ bdg:L8LS14539 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVE6E333D21FD3B00E ;
         :lineageWho         bdr:P1089 .
+    
+    bdr:NTFBAD38FBF525814A
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 576" ;
+        :noteSource         bdr:MW1PD107937 .
 }

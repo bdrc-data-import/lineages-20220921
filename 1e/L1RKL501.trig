@@ -19,7 +19,7 @@ bdg:L1RKL501 {
         adm:gitPath         "1e/L1RKL501.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL501 ;
-        adm:logEntry        bda:LG05A286DAE905FAA4 , bda:LG0648EE51B31566E2 , bda:LG13641CAF0A652B4F , bda:LG1FC122B307F6E334 , bda:LG2E04AAED884D9E30 , bda:LG37E68B44FE641B13 , bda:LG46CB49E143DE117F , bda:LG5238D67124C644C9 , bda:LGA4F8F512230F1909 , bda:LGBF21A66469AC9099 , bda:LGF70A42D219C26DC1 ;
+        adm:logEntry        bda:LG05A286DAE905FAA4 , bda:LG0648EE51B31566E2 , bda:LG13641CAF0A652B4F , bda:LG1FC122B307F6E334 , bda:LG2E04AAED884D9E30 , bda:LG37E68B44FE641B13 , bda:LGA4F8F512230F1909 , bda:LGBF21A66469AC9099 , bda:LGF70A42D219C26DC1 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -57,18 +57,6 @@ bdg:L1RKL501 {
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LG46CB49E143DE117F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG5238D67124C644C9
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGA4F8F512230F1909
         a                   adm:UpdateData ;
         adm:logDate         "2019-01-10T12:51:07.719Z"^^xsd:dateTime ;
@@ -87,12 +75,19 @@ bdg:L1RKL501 {
         adm:logMessage      "added lin ref; edited names"@en ;
         adm:logWho          bdu:U00055 .
     
-    bdr:CL1140E643172505DC
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationSide  "8b7ff." ;
-        :contentLocationVolume  "ka" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV055C23BFB9A846F6
         a                   :LineageEvent ;
@@ -208,13 +203,12 @@ bdg:L1RKL501 {
     
     bdr:L1RKL501  a         :Lineage ;
         skos:prefLabel      "nag po chen po gur mgon gyi bsnyen sgrub gzhan phan rgyas byed kyi lung khrid/"@bo-x-ewts ;
-        :contentLocation    bdr:CL1140E643172505DC ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0C022BE9F48D1057 , bdr:LH0C65AFA0E107C2E4 , bdr:LH0F7515AB74D49F2E , bdr:LH25A46CC829A9F251 , bdr:LH282870253D432656 , bdr:LH3C39F523173BEFFD , bdr:LH418F765991FA2082 , bdr:LH45F2942616A366DB , bdr:LH510746DBE027900E , bdr:LH5996A737DCDACA10 , bdr:LH5D19D22E2C3261B8 , bdr:LH5D26655F5143AE87 , bdr:LH5E1BE36E005ACEA0 , bdr:LH63676B6BA96935ED , bdr:LH724D7637DA854C43 , bdr:LH74D0857252FCCB1B , bdr:LH9121FBE361A4D8A2 , bdr:LH9EBF3CED2A75C051 , bdr:LHA15F22F3E60C51DB , bdr:LHBD54FDA9A4EC0EF6 , bdr:LHC11E2E08FCEA4185 , bdr:LHCDE7EF0DE1E3FBD5 , bdr:LHD8598F0384C9B71F , bdr:LHE36F3FF8F590B1EE , bdr:LHE4C03EA2B8E10705 , bdr:LHE552A579AEA4B482 , bdr:LHF0EB6BE8E507C806 , bdr:LHF413796AC39FAC39 , bdr:LHFC9B14333235D023 ;
         :lineageObject      bdr:T151 , bdr:T2105 ;
         :lineageRef         bdr:L1RKL502 , bdr:L1RKL503 , bdr:L1RKL504 ;
         :lineageType        bdr:LineageKhrid ;
-        :note               bdr:NT0BCCA150E529E791 , bdr:NT5451B09807FA7841 , bdr:NTCCC638205307BC8B .
+        :note               bdr:NT0BCCA150E529E791 , bdr:NT1140E643172505DC , bdr:NT5451B09807FA7841 , bdr:NTCCC638205307BC8B .
     
     bdr:LH0C022BE9F48D1057
         a                   :LineageHolder ;
@@ -363,6 +357,11 @@ bdg:L1RKL501 {
     bdr:NT0BCCA150E529E791
         a                   :Note ;
         :noteText           "alternative lineage: L50c"@en .
+    
+    bdr:NT1140E643172505DC
+        a                   :Note ;
+        :contentLocationStatement  "vol. ka" ;
+        :noteSource         bdr:MW29307 .
     
     bdr:NT5451B09807FA7841
         a                   :Note ;

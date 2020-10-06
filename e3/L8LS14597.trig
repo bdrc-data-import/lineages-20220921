@@ -19,15 +19,9 @@ bdg:L8LS14597 {
         adm:gitPath         "e3/L8LS14597.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14597 ;
-        adm:logEntry        bda:LG02FEBE5FECA245D5 , bda:LG2927D86182AB1B7F , bda:LG4058C81949B8C485 , bda:LG491141A0269F5343 , bda:LG50C338D96257FF81 , bda:LGBB5EB903CD3CF144 ;
+        adm:logEntry        bda:LG2927D86182AB1B7F , bda:LG4058C81949B8C485 , bda:LG491141A0269F5343 , bda:LG50C338D96257FF81 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG02FEBE5FECA245D5
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG2927D86182AB1B7F
         a                   adm:UpdateData ;
@@ -51,17 +45,19 @@ bdg:L8LS14597 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGBB5EB903CD3CF144
+    bda:LGIM88BD19A8AB
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL6977F4C60AE859F8
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  4 ;
-        :contentLocationVolume  2 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV1541CD34C78C8DB0
         a                   :LineageEvent ;
@@ -85,12 +81,12 @@ bdg:L8LS14597 {
     
     bdr:L8LS14597  a        :Lineage ;
         skos:prefLabel      "dus kyi 'khor lo shong lugs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL6977F4C60AE859F8 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0F5AD5A145F42343 , bdr:LH1CA6853EE9135F29 , bdr:LH54572F6B92BA436C , bdr:LH5D3EB2BEE076FC02 , bdr:LH96D03E16B30C07F0 , bdr:LHAEE8B46CAB363BE9 ;
         :lineageObject      bdr:T74 ;
         :lineageRef         bdr:L8LS14596 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NT6977F4C60AE859F8 .
     
     bdr:LH0F5AD5A145F42343
         a                   :LineageHolder ;
@@ -121,4 +117,9 @@ bdg:L8LS14597 {
         :lineageDownFrom    bdr:L8LS14582 ;
         :lineageReceived    bdr:EV1541CD34C78C8DB0 ;
         :lineageWho         bdr:P139 .
+    
+    bdr:NT6977F4C60AE859F8
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 4" ;
+        :noteSource         bdr:MW1PD107937 .
 }

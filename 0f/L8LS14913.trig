@@ -19,7 +19,7 @@ bdg:L8LS14913 {
         adm:gitPath         "0f/L8LS14913.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14913 ;
-        adm:logEntry        bda:LG025D6A04504519EC , bda:LG02B6615484FA35F6 , bda:LG1646B8E2E144D3D5 , bda:LG2AB20E866C660DB0 , bda:LG906B67CDECA23367 , bda:LGAEFB7A8A715E3CC9 , bda:LGBD8B83106D239DD5 , bda:LGCE6D82BAD6F352E4 ;
+        adm:logEntry        bda:LG025D6A04504519EC , bda:LG02B6615484FA35F6 , bda:LG1646B8E2E144D3D5 , bda:LG2AB20E866C660DB0 , bda:LG906B67CDECA23367 , bda:LGAEFB7A8A715E3CC9 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -58,23 +58,19 @@ bdg:L8LS14913 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGBD8B83106D239DD5
+    bda:LGIM88BD19A8AB
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LGCE6D82BAD6F352E4
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL9BA6948FA66FEE23
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  197 ;
-        :contentLocationVolume  2 .
     
     bdr:EV2214C2A5DEB70224
         a                   :LineageEvent ;
@@ -163,11 +159,11 @@ bdg:L8LS14913 {
     bdr:L8LS14913  a        :Lineage ;
         skos:altLabel       "rje btsun kun dga' grol mchog gyis dka' ba brgya phrag du ma'i sgo nas btsal ba'i 'khrid brgya'i skor nos pa la/ mgon po 'jam dpal dbyangs kyis rje btsun sa skya pa la dngos su gnang ba'i blo sbyong zhen pa bzhi bral gyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "blo sbyong zhen pa bzhi bral gyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL9BA6948FA66FEE23 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH07037CE463C06E29 , bdr:LH094AE133875EAEFA , bdr:LH0B46473DBB6721AB , bdr:LH122FFE01FEAE7B28 , bdr:LH1DF25A095CEC724B , bdr:LH3F498CC2D8EDEBDF , bdr:LH42BF53828B5CA58F , bdr:LH47B7AF98572958F8 , bdr:LH49F557F298233548 , bdr:LH50D19C892CFF65E1 , bdr:LH616E34BFC4575DEA , bdr:LH7D5AEC6ABACD86D9 , bdr:LH81F5E04C53952403 , bdr:LH82780DA5CA15A44D , bdr:LHA05A49CFF185F3C3 , bdr:LHA08A2A002AF0D3E2 , bdr:LHCD226D8C1DE6AEF3 , bdr:LHCE01FB304C581CD0 , bdr:LHD384D9EAED05B03E , bdr:LHF198F4FB13DC4AF4 , bdr:LHF8D4F42A681C4ECD , bdr:LHFF8C2DE6D1C54477 ;
         :lineageObject      bdr:T1504 ;
-        :lineageType        bdr:LineageKhrid .
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NT9BA6948FA66FEE23 .
     
     bdr:LH07037CE463C06E29
         a                   :LineageHolder ;
@@ -277,4 +273,9 @@ bdg:L8LS14913 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV5D3AE9593DF34FB2 ;
         :lineageWho         bdr:P1614 .
+    
+    bdr:NT9BA6948FA66FEE23
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 197" ;
+        :noteSource         bdr:MW1PD107937 .
 }

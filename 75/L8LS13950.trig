@@ -19,7 +19,7 @@ bdg:L8LS13950 {
         adm:gitPath         "75/L8LS13950.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13950 ;
-        adm:logEntry        bda:LG1215553A57BEB23C , bda:LG1F7D34BAF2D54AD2 , bda:LG3C53E68B5FF1B4EB , bda:LG7D9622172E47AE17 , bda:LG8D28924C238405E0 , bda:LGAEAE0446928E5703 ;
+        adm:logEntry        bda:LG1215553A57BEB23C , bda:LG1F7D34BAF2D54AD2 , bda:LG3C53E68B5FF1B4EB , bda:LG7D9622172E47AE17 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -44,23 +44,19 @@ bdg:L8LS13950 {
         adm:logDate         "2014-07-29T15:39:59.792Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG8D28924C238405E0
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LGAEAE0446928E5703
+    bda:LGIM88BD19A8AB
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CLF4BF23D994043EA5
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  167 ;
-        :contentLocationVolume  1 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV1249A88E340A11AD
         a                   :LineageEvent ;
@@ -189,11 +185,11 @@ bdg:L8LS13950 {
     bdr:L8LS13950  a        :Lineage ;
         rdfs:comment        "oral transmission of yogatantra, tradition of ugyur changwa"@en ;
         skos:prefLabel      "rnal 'byor rgyud kyi lung brgyud/ dbus 'gyur 'chang ba'i lugs/"@bo-x-ewts ;
-        :contentLocation    bdr:CLF4BF23D994043EA5 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH04A231E95FF8F024 , bdr:LH04E15E67B9A9B94C , bdr:LH09139A274D6DD724 , bdr:LH0B404080D9D8C1AB , bdr:LH0E3C0F633F337418 , bdr:LH18B351C681B0B6D7 , bdr:LH22ED6C96893507D6 , bdr:LH242DC89A0341F996 , bdr:LH2C7ECF454A6AAA65 , bdr:LH307D18D84E11BA62 , bdr:LH30C2BE294DC05F92 , bdr:LH3B84D08AF71B6494 , bdr:LH436CC8E739CA1F09 , bdr:LH45D82915588233A1 , bdr:LH58703CD24C4CE7A2 , bdr:LH5AA75553CE970D5E , bdr:LH60888AA211B58693 , bdr:LH6164EEC896E98E0E , bdr:LH7D46F685958383D8 , bdr:LH85AC09ECD7FAE3BE , bdr:LHA5DFFAE79DC94B4C , bdr:LHBEA774C1B5E2DEFC , bdr:LHDCFEAD3B65A2265A , bdr:LHE0A625CF949F776F , bdr:LHEE278BBE2D064231 , bdr:LHF17AB2F88CC39D80 , bdr:LHF5FFBE596B8675D0 , bdr:LHFEC2B95B90A5D9AE ;
         :lineageObject      bdr:T971 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTF4BF23D994043EA5 .
     
     bdr:LH04A231E95FF8F024
         a                   :LineageHolder ;
@@ -333,4 +329,9 @@ bdg:L8LS13950 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV9031C101BF44B566 , bdr:EVEC6CEE855F9758AC ;
         :lineageWho         bdr:P3418 .
+    
+    bdr:NTF4BF23D994043EA5
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 167" ;
+        :noteSource         bdr:MW1PD107937 .
 }

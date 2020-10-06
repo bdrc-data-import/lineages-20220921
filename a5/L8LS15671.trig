@@ -29,11 +29,6 @@ bdg:L8LS15671 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL3A4CF0D0741558FD
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1KG16278 ;
-        :contentLocationPage  "p. 126" .
-    
     bdr:EV011CD9DC7EC379A0
         a                   :LineageEvent ;
         :lineageFrom        bdr:P0RK1197 .
@@ -136,11 +131,11 @@ bdg:L8LS15671 {
     
     bdr:L8LS15671  a        :Lineage ;
         skos:prefLabel      "bstan srung skor gyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL3A4CF0D0741558FD ;
         :isRoot             true ;
         :lineageHolder      bdr:LH2BDB203A57C3B103 , bdr:LH2CDA35AD20F31079 , bdr:LH38BC56DCC64DD8F1 , bdr:LH41AEFB7CF11DC40F , bdr:LH44FAC34D51F0F535 , bdr:LH4D59D7EBA403A572 , bdr:LH5A749B76498137EA , bdr:LH629F771CDCDCB468 , bdr:LH6DF62C18DF496B90 , bdr:LH75BFDC5D1F78F764 , bdr:LH7E49323AAEAF0F2E , bdr:LH83C6E46597484D18 , bdr:LH87DB15A3121AD805 , bdr:LHADA1A1EAE27A145E , bdr:LHB8597B4A9F325F20 , bdr:LHBE0205D7858B437F , bdr:LHBF232F2EC9B618BF , bdr:LHC0967559773BF08A , bdr:LHC0BB6AD209B99714 , bdr:LHC19E4EAC0985D548 , bdr:LHD633ED150FD9C081 , bdr:LHD936D30E7A4211B1 , bdr:LHEB32A2085BA0FF18 , bdr:LHF205515F47B49977 , bdr:LHF7AEAAD024EFBC41 , bdr:LHFBF978F752F3FBE4 ;
         :lineageObject      bdr:T406 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT3A4CF0D0741558FD .
     
     bdr:LH2BDB203A57C3B103
         a                   :LineageHolder ;
@@ -271,4 +266,9 @@ bdg:L8LS15671 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVAA51DF47D804619B ;
         :lineageWho         bdr:T4CZ15353 .
+    
+    bdr:NT3A4CF0D0741558FD
+        a                   :Note ;
+        :contentLocationStatement  "p. 126" ;
+        :noteSource         bdr:MW1KG16278 .
 }

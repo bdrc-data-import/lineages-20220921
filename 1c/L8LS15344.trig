@@ -29,12 +29,6 @@ bdg:L8LS15344 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLEF3FE47EF7E36E08
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 75r6-7" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV4108236D5D46CE97
         a                   :LineageEvent ;
         :lineageFrom        bdr:P2139 .
@@ -93,11 +87,11 @@ bdg:L8LS15344 {
     
     bdr:L8LS15344  a        :Lineage ;
         skos:prefLabel      "khro mo'i gzungs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLEF3FE47EF7E36E08 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH048261D633C01669 , bdr:LH10FD15BA37CB3CC8 , bdr:LH1C18A7931A6825A6 , bdr:LH5219342A1721A9E8 , bdr:LH656AEB9B238F5703 , bdr:LH6EA062A1A9450B02 , bdr:LH71B21328CE608C8F , bdr:LH86E3121875C2E55D , bdr:LH8F02297610836E5F , bdr:LHA1202F113066CD8A , bdr:LHAC6A6F9084014A55 , bdr:LHB697115D9824B867 , bdr:LHC869F93A5EB44AC5 , bdr:LHD05F1910034D694F , bdr:LHF234EE3FDCFB0C71 ;
         :lineageObject      bdr:T933 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTEF3FE47EF7E36E08 .
     
     bdr:LH048261D633C01669
         a                   :LineageHolder ;
@@ -173,4 +167,9 @@ bdg:L8LS15344 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVBF3FF6A02A2D6087 ;
         :lineageWho         bdr:P2139 .
+    
+    bdr:NTEF3FE47EF7E36E08
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 75r6-7" ;
+        :noteSource         bdr:MW29706 .
 }

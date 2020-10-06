@@ -28,11 +28,6 @@ bdg:L3JT13493 {
         adm:logDate         "2014-08-12T16:10:56.957Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00013 .
     
-    bdr:CL968B952FC8A22DF7
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W1KG18291 .
-    
     bdr:EV54BA5974C4E8A8D9
         a                   :LineageEvent ;
         :lineageFrom        bdr:P3277 .
@@ -56,12 +51,12 @@ bdg:L3JT13493 {
     bdr:L3JT13493  a        :Lineage ;
         skos:altLabel       "rgyud sde lnga'i byin brlabs nye ba'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "byin brlabs nye ba'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL968B952FC8A22DF7 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH1FA4CF86FBDB2E3A , bdr:LH33E4E3A6BCA8C521 , bdr:LH38AE24469FACC0B4 , bdr:LH6F31A8FF470BDDF3 , bdr:LHB7F60EB040D3EE98 , bdr:LHE2FB5E5A2F65B417 ;
         :lineageObject      bdr:T1824 ;
         :lineageRef         bdr:L3JT13494 ;
-        :lineageType        bdr:LineageNyeBrgyud .
+        :lineageType        bdr:LineageNyeBrgyud ;
+        :note               bdr:NT968B952FC8A22DF7 .
     
     bdr:LH1FA4CF86FBDB2E3A
         a                   :LineageHolder ;
@@ -91,4 +86,8 @@ bdg:L3JT13493 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVAF915FF936742F75 ;
         :lineageWho         bdr:P2387 .
+    
+    bdr:NT968B952FC8A22DF7
+        a                   :Note ;
+        :noteSource         bdr:MW1KG18291 .
 }

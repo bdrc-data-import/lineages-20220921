@@ -19,7 +19,7 @@ bdg:L8LS13951 {
         adm:gitPath         "28/L8LS13951.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13951 ;
-        adm:logEntry        bda:LG09FAF912AB4BEC0E , bda:LG2468AAE072DA8909 , bda:LG652607876095FE3F , bda:LG8D6D82C25AFF7BB3 , bda:LGA33E8F9287F07C23 , bda:LGCA8E0FCE46823720 , bda:LGF31FEBF4A322E232 ;
+        adm:logEntry        bda:LG09FAF912AB4BEC0E , bda:LG2468AAE072DA8909 , bda:LG8D6D82C25AFF7BB3 , bda:LGA33E8F9287F07C23 , bda:LGCA8E0FCE46823720 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -33,12 +33,6 @@ bdg:L8LS13951 {
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-06-10T16:12:35.663Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG652607876095FE3F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG8D6D82C25AFF7BB3
         a                   adm:UpdateData ;
@@ -56,17 +50,19 @@ bdg:L8LS13951 {
         adm:logDate         "2014-05-29T15:10:02.52Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGF31FEBF4A322E232
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CLE91E97F46198E0B7
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "167-168" ;
-        :contentLocationVolume  1 .
     
     bdr:EV02F9FE100A8BF52B
         a                   :LineageEvent ;
@@ -207,11 +203,11 @@ bdg:L8LS13951 {
     bdr:L8LS13951  a        :Lineage ;
         rdfs:comment        "oral transmission of yogatantra, upper yoga tradition"@en ;
         skos:prefLabel      "rnal 'byor rgyud kyi lung brgyud/ yo ga stod lugs/"@bo-x-ewts ;
-        :contentLocation    bdr:CLE91E97F46198E0B7 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH027C4A2D848EB455 , bdr:LH120D329760254DD7 , bdr:LH1865C605969FFB2A , bdr:LH1F7B9ACFB6B6E35C , bdr:LH206402191FD9D60E , bdr:LH23E4DD94DB3014C7 , bdr:LH27D7A34C4A068ABF , bdr:LH3B301C2D89FEF6AA , bdr:LH40748370D028F7FD , bdr:LH431F6463DF6BD8B0 , bdr:LH60BC28688587D8E0 , bdr:LH61693F76AAFCC0C3 , bdr:LH62EDC18FEE699B08 , bdr:LH634C9C7C11DA6BF7 , bdr:LH6701BBF006855278 , bdr:LH73DB331D5CEF0EED , bdr:LH7C68E107524D8F17 , bdr:LH7F528441365BB87F , bdr:LH8161F619C3A36C58 , bdr:LH82AA2D7CA5AA7C52 , bdr:LH849DAC790DBE305B , bdr:LH85048988B9379102 , bdr:LH884549475F3FFB21 , bdr:LH8F8CA1419ACB5764 , bdr:LH94830CACE4ADE9D8 , bdr:LH9BA1A45B8E2C59CD , bdr:LHD8D55BAFE9F17C0B , bdr:LHE19E11E54487AEC1 , bdr:LHE62DACAAC1AF32F4 , bdr:LHED605B3E6A85ABB3 , bdr:LHF759754F31E95AF6 , bdr:LHFA12DFC0BD7546A3 , bdr:LHFAA974B1B9A0D437 ;
         :lineageObject      bdr:T971 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTE91E97F46198E0B7 .
     
     bdr:LH027C4A2D848EB455
         a                   :LineageHolder ;
@@ -376,4 +372,9 @@ bdg:L8LS13951 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV26635A3FD4D6FB6A ;
         :lineageWho         bdr:P8LS13954 .
+    
+    bdr:NTE91E97F46198E0B7
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 167-168" ;
+        :noteSource         bdr:MW1PD107937 .
 }

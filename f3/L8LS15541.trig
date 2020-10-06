@@ -29,12 +29,6 @@ bdg:L8LS15541 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLB6EF4EC89A5CCB6E
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 96r4-6" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV05E6DFA78AD53617
         a                   :LineageEvent ;
         :lineageFrom        bdr:P8LS15542 .
@@ -117,11 +111,11 @@ bdg:L8LS15541 {
     
     bdr:L8LS15541  a        :Lineage ;
         skos:prefLabel      "dpal mchog gi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLB6EF4EC89A5CCB6E ;
         :isRoot             true ;
         :lineageHolder      bdr:LH1A205C17F4DD8FA4 , bdr:LH201C9580792A5001 , bdr:LH2300AA7EE931F57B , bdr:LH25FE5BF659569548 , bdr:LH526CB5A265F198DB , bdr:LH5E6E95460EB28B05 , bdr:LH6290467567D0103D , bdr:LH691CA002A1C2D901 , bdr:LH72994B036B9E7443 , bdr:LH7A98CD3F4DCBDFBD , bdr:LH811BBF09BC85D64E , bdr:LH8CC233FE1BABC6D9 , bdr:LH97B00CF6E8C233C1 , bdr:LH9A107C8161EAB1B2 , bdr:LH9A59EA95954C814D , bdr:LHC033FBF027A35BE1 , bdr:LHC387D06071894A12 , bdr:LHD2D87C7D2773BBB9 , bdr:LHE6E642C3246BC850 , bdr:LHF74862B26BC2AB4E ;
         :lineageObject      bdr:T2129 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTB6EF4EC89A5CCB6E .
     
     bdr:LH1A205C17F4DD8FA4
         a                   :LineageHolder ;
@@ -223,4 +217,9 @@ bdg:L8LS15541 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVE799BB650147837F ;
         :lineageWho         bdr:P2894 .
+    
+    bdr:NTB6EF4EC89A5CCB6E
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 96r4-6" ;
+        :noteSource         bdr:MW29706 .
 }

@@ -19,7 +19,7 @@ bdg:L1RKL2122 {
         adm:gitPath         "9a/L1RKL2122.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL2122 ;
-        adm:logEntry        bda:LG1D541BE2E0E87E9B , bda:LG44223C4ABC229DCB , bda:LG452C6D1B8BB17E06 , bda:LG59A3BC27D84E907F , bda:LG764A7A2BBCB4D601 , bda:LG7FDF3F57F79C9D66 , bda:LG839F00C5426F6F6E , bda:LGA3CABFB1E255B650 , bda:LGC920BCC09E5243D3 , bda:LGF2D2538C7852CF80 ;
+        adm:logEntry        bda:LG1D541BE2E0E87E9B , bda:LG44223C4ABC229DCB , bda:LG452C6D1B8BB17E06 , bda:LG59A3BC27D84E907F , bda:LG764A7A2BBCB4D601 , bda:LG839F00C5426F6F6E , bda:LGA3CABFB1E255B650 , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -53,12 +53,6 @@ bdg:L1RKL2122 {
         adm:logMessage      "added short title"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG7FDF3F57F79C9D66
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG839F00C5426F6F6E
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00023 .
@@ -69,23 +63,26 @@ bdg:L1RKL2122 {
         adm:logMessage      "change name add lin ref"@en ;
         adm:logWho          bdu:U00063 .
     
-    bda:LGC920BCC09E5243D3
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LGF2D2538C7852CF80
+    bda:LGIMD0AA988290
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CLA89C6C9C02B19076
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  134 ;
-        :contentLocationVolume  "kha" .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV1499883AB457E96C
         a                   :LineageEvent ;
@@ -110,13 +107,12 @@ bdg:L1RKL2122 {
     bdr:L1RKL2122  a        :Lineage ;
         skos:altLabel       "rje btsun bla ma dam pa thugs rjes chen po dang ldan pa sangs rgyas rin chen dpal bzang po nyid kyi gsung rab rnams kyi lung thob pa'i rnam grangs/"@bo-x-ewts ;
         skos:prefLabel      "sangs rgyas rin chen dpal bzang po nyid kyi gsung rab rnams kyi lung thob pa'i rnam grangs/"@bo-x-ewts ;
-        :contentLocation    bdr:CLA89C6C9C02B19076 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH053B33F7FBEC1FE1 , bdr:LH06E1C8AA8BEADE40 , bdr:LH7AB61203DCA31184 , bdr:LHC8E16086E66DC6B6 , bdr:LHD5BBF1580382FD7F , bdr:LHDB28E5A4994F8006 ;
         :lineageObject      bdr:T208 ;
         :lineageRef         bdr:L1RKL2121 ;
         :lineageType        bdr:LineageLung ;
-        :note               bdr:NT6942B988C4E587C2 .
+        :note               bdr:NT6942B988C4E587C2 , bdr:NTA89C6C9C02B19076 .
     
     bdr:LH053B33F7FBEC1FE1
         a                   :LineageHolder ;
@@ -150,4 +146,9 @@ bdg:L1RKL2122 {
     bdr:NT6942B988C4E587C2
         a                   :Note ;
         :noteText           "alternative lineage: L212a"@en .
+    
+    bdr:NTA89C6C9C02B19076
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, p. 134" ;
+        :noteSource         bdr:MW29307 .
 }

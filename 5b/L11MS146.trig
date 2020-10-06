@@ -34,12 +34,6 @@ bdg:L11MS146 {
         adm:logMessage      "editing"@en ;
         adm:logWho          bdu:U00020 .
     
-    bdr:CL8390DC79FD7C6925
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W1KG18291 ;
-        :contentLocationSide  "244r" .
-    
     bdr:EV0706BAAF8F21ADD4
         a                   :LineageEvent ;
         :lineageFrom        bdr:P3JT13483 .
@@ -86,12 +80,12 @@ bdg:L11MS146 {
     
     bdr:L11MS146  a         :Lineage ;
         skos:prefLabel      "rgyud sde lnga'i dbang dang / rdo rje gdam pa'i rgya gzhung mchan bcas thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL8390DC79FD7C6925 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH02F49B55D1EF8FCF , bdr:LH1CFBAFBA00F83E00 , bdr:LH1D038FF4A52D2AD8 , bdr:LH4FA4B4E73DDA1838 , bdr:LH503866590606C80A , bdr:LHB4B9B6A3624FD037 , bdr:LHC127679BD229FB93 , bdr:LHC52E2DA89BAABD93 , bdr:LHDB08FAAE0AED684D , bdr:LHE7CC60CD976737D4 , bdr:LHF1008CA99B550B41 , bdr:LHF9203915BEC0E163 ;
         :lineageObject      bdr:T1824 ;
         :lineageRef         bdr:L3JT13485 , bdr:L3JT13487 , bdr:L3JT13489 , bdr:L3JT13491 , bdr:L3JT13492 ;
-        :lineageType        bdr:LineageRingBrgyud .
+        :lineageType        bdr:LineageRingBrgyud ;
+        :note               bdr:NT8390DC79FD7C6925 .
     
     bdr:LH02F49B55D1EF8FCF
         a                   :LineageHolder ;
@@ -151,4 +145,8 @@ bdg:L11MS146 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV6D180384021974E9 ;
         :lineageWho         bdr:P3JT13482 .
+    
+    bdr:NT8390DC79FD7C6925
+        a                   :Note ;
+        :noteSource         bdr:MW1KG18291 .
 }

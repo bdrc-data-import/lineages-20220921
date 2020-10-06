@@ -19,7 +19,7 @@ bdg:L1RKL471 {
         adm:gitPath         "5f/L1RKL471.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL471 ;
-        adm:logEntry        bda:LG03C0594B9EA978F1 , bda:LG1B31146F22657B78 , bda:LG2C806C478C3BB1DF , bda:LG45D64766E252DD43 , bda:LG5AC70EB131EE30C0 , bda:LGB3DEEA4E04E16D48 , bda:LGC059BAB7540FAADF , bda:LGD8CDE24C49C5D15E , bda:LGDE5975135EE59682 , bda:LGFE40E5137AF9DE97 ;
+        adm:logEntry        bda:LG03C0594B9EA978F1 , bda:LG1B31146F22657B78 , bda:LG2C806C478C3BB1DF , bda:LGB3DEEA4E04E16D48 , bda:LGC059BAB7540FAADF , bda:LGD8CDE24C49C5D15E , bda:LGDE5975135EE59682 , bda:LGFE40E5137AF9DE97 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -40,18 +40,6 @@ bdg:L1RKL471 {
         adm:logDate         "2018-03-05T14:57:28.52Z"^^xsd:dateTime ;
         adm:logMessage      "P0RK166 changed to P4004"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG45D64766E252DD43
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG5AC70EB131EE30C0
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGB3DEEA4E04E16D48
         a                   adm:InitialDataImport ;
@@ -81,11 +69,19 @@ bdg:L1RKL471 {
         adm:logMessage      "changed Lineages"@en ;
         adm:logWho          bdu:U00017 .
     
-    bdr:CL57A75C3562349533
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "7b5ff." ;
-        :contentLocationVolume  "ka" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV045FBE15C093B5A5
         a                   :LineageEvent ;
@@ -177,13 +173,12 @@ bdg:L1RKL471 {
     
     bdr:L1RKL471  a         :Lineage ;
         skos:prefLabel      "mkha' 'gro ma rdo rje gur gyi rgyud nas bshad pa'i byung po 'dul byed kyi rjes gnang /"@bo-x-ewts ;
-        :contentLocation    bdr:CL57A75C3562349533 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH139AB5CAD89AF3C0 , bdr:LH160960A714D70C19 , bdr:LH1732F419E4EA12A1 , bdr:LH1A2E47EBA73AA5BB , bdr:LH1B8253726F740AB3 , bdr:LH32297D43216A694E , bdr:LH50BD535EFB90B43E , bdr:LH580488036424437B , bdr:LH5B1023032E5A557C , bdr:LH5C175897B5758EEC , bdr:LH75AAD69FB4F83A3E , bdr:LH76AA877F25F51693 , bdr:LH80C606238052264C , bdr:LH87B435A738A17D63 , bdr:LHA3D3E4623F81EC8D , bdr:LHA819182C77B212F0 , bdr:LHB1BDF5952B2CAFF9 , bdr:LHBBBDA1595564485B , bdr:LHC8AF3235414A05C4 , bdr:LHD7ECEE71812B10EC , bdr:LHDB6F7F80CA00EF90 , bdr:LHDC1EAA278972BFE5 , bdr:LHEFABECE6B38BBFA3 ;
         :lineageObject      bdr:T660 ;
         :lineageRef         bdr:L1RKL472 , bdr:L1RKL473 ;
         :lineageType        bdr:LineageRjesGnang ;
-        :note               bdr:NT8FDB868F58168682 , bdr:NT961ECFCF0A819D74 .
+        :note               bdr:NT57A75C3562349533 , bdr:NT8FDB868F58168682 , bdr:NT961ECFCF0A819D74 .
     
     bdr:LH139AB5CAD89AF3C0
         a                   :LineageHolder ;
@@ -298,6 +293,11 @@ bdg:L1RKL471 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV407AA40FD18F5E85 ;
         :lineageWho         bdr:P783 .
+    
+    bdr:NT57A75C3562349533
+        a                   :Note ;
+        :contentLocationStatement  "vol. ka, 7b5ff." ;
+        :noteSource         bdr:MW29307 .
     
     bdr:NT8FDB868F58168682
         a                   :Note ;

@@ -29,11 +29,6 @@ bdg:L8LS15731 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLE86C8A358BAAF00E
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1KG16278 ;
-        :contentLocationPage  141 .
-    
     bdr:EV09096135AECEF4F1
         a                   :LineageEvent ;
         :lineageFrom        bdr:P22 .
@@ -45,11 +40,11 @@ bdg:L8LS15731 {
     bdr:L8LS15731  a        :Lineage ;
         skos:altLabel       "klu sgrub kyis mdzad pa'i gsang 'dus sgrub thabs mdo byas/ mdo bsre/ dkyil chog nyi shu pa/ byang chub sems 'grel/ de'i 'grel pa Ar+ya de bas mdzad pa'i spyod bsdus sgron ma rim lnga'i khongs su bsdus pa'i man ngag klu'i blos mdzad pa bcas kyi brgyud pa ni zung 'jug gsal pa ltar la/ byang chub sems 'grel gyi 'grel pa'i lung brgyud/"@bo-x-ewts ;
         skos:prefLabel      "gsang 'dus sgrub thabs mdo byas/ mdo bsre/ dkyil chog nyi shu pa/ byang chub sems 'grel/ byang chub sems 'grel gyi 'grel pa'i lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CLE86C8A358BAAF00E ;
         :isRoot             true ;
         :lineageHolder      bdr:LH3387D28564E8EAE8 , bdr:LH88354C8B92B66D33 , bdr:LHC3EE62D70C497461 ;
         :lineageObject      bdr:T1 , bdr:T132 , bdr:T2064 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTE86C8A358BAAF00E .
     
     bdr:LH3387D28564E8EAE8
         a                   :LineageHolder ;
@@ -65,4 +60,9 @@ bdg:L8LS15731 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVC9D527FBF6757B0C ;
         :lineageWho         bdr:P264 .
+    
+    bdr:NTE86C8A358BAAF00E
+        a                   :Note ;
+        :contentLocationStatement  "p. 141" ;
+        :noteSource         bdr:MW1KG16278 .
 }

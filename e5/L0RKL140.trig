@@ -19,15 +19,9 @@ bdg:L0RKL140 {
         adm:gitPath         "e5/L0RKL140.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L0RKL140 ;
-        adm:logEntry        bda:LG32F55520E13B650F , bda:LG51F39AF5C33584D5 , bda:LG7B78B3C620EDE6F9 , bda:LG97B1ADF65489CF94 , bda:LGB18A6640CA9C3DF8 , bda:LGB3F059FA1B059A6F , bda:LGCEB0F6B4597FDE77 , bda:LGE91AA362E556EF5C ;
+        adm:logEntry        bda:LG51F39AF5C33584D5 , bda:LG7B78B3C620EDE6F9 , bda:LG97B1ADF65489CF94 , bda:LGB18A6640CA9C3DF8 , bda:LGB3F059FA1B059A6F , bda:LGE91AA362E556EF5C , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG32F55520E13B650F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG51F39AF5C33584D5
         a                   adm:UpdateData ;
@@ -58,23 +52,25 @@ bdg:L0RKL140 {
         adm:logMessage      "edited according to the gsan yig"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGCEB0F6B4597FDE77
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGE91AA362E556EF5C
         a                   adm:UpdateData ;
         adm:logDate         "2014-06-10T10:57:35.601Z"^^xsd:dateTime ;
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLA11607F3F9E34587
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  78 ;
-        :contentLocationVolume  "kha" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0981AA7B27CDE0BA
         a                   :LineageEvent ;
@@ -151,11 +147,11 @@ bdg:L0RKL140 {
     bdr:L0RKL140  a         :Lineage ;
         rdfs:comment        "the tradition of tshem bu pa's clear exposition" ;
         skos:prefLabel      "smar khrid tshem bu lugs/"@bo-x-ewts ;
-        :contentLocation    bdr:CLA11607F3F9E34587 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH00CFDC354B5AF12A , bdr:LH25EDB306311D9A84 , bdr:LH2883FB1A21EECE5D , bdr:LH28BF20D9365FE0E4 , bdr:LH2E8DB1519CF65E63 , bdr:LH3824B97858ADF1F6 , bdr:LH4BA54A678A5278CF , bdr:LH52191C07DA925DBD , bdr:LH637E71CE4DAF6F1B , bdr:LH689A5BC8BFE84C4B , bdr:LH69B2EEF1165FE1C0 , bdr:LH6CE3D6D38FEEFEAF , bdr:LH8311B4B7CAF59D41 , bdr:LHAD6739AD1A341343 , bdr:LHCB77C5E2D0113B5E , bdr:LHD1FFC0EA3647BBEA , bdr:LHD4E68E4B1B2C954D , bdr:LHE68170005C5A0142 , bdr:LHE8C04F2476B6B17B ;
         :lineageObject      bdr:T61 ;
-        :lineageType        bdr:LineageDmarKhrid .
+        :lineageType        bdr:LineageDmarKhrid ;
+        :note               bdr:NTA11607F3F9E34587 .
     
     bdr:LH00CFDC354B5AF12A
         a                   :LineageHolder ;
@@ -250,4 +246,9 @@ bdg:L0RKL140 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV602031BCDFBDAA46 ;
         :lineageWho         bdr:P3410 .
+    
+    bdr:NTA11607F3F9E34587
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, p. 78" ;
+        :noteSource         bdr:MW29307 .
 }

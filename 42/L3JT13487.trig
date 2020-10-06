@@ -33,12 +33,6 @@ bdg:L3JT13487 {
         adm:logDate         "2019-01-31T16:51:10.484Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL3ED454D910C5E1EC
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W1KG18291 ;
-        :contentLocationSide  "244v" .
-    
     bdr:EV1BBA9D57CD590748
         a                   :LineageEvent ;
         :lineageFrom        bdr:T1987 .
@@ -89,12 +83,12 @@ bdg:L3JT13487 {
     
     bdr:L3JT13487  a        :Lineage ;
         skos:prefLabel      "gsang ba 'dus pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL3ED454D910C5E1EC ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0618428DEBCDDC6A , bdr:LH1776BD701C4D463F , bdr:LH2AD16B1607D6FA20 , bdr:LH3DB2DCA9D57B257A , bdr:LH5EC157D69619CE30 , bdr:LH74BF8DD17829C4E3 , bdr:LH82DC64D433391304 , bdr:LH983EE87A1902D651 , bdr:LHBF43800EA33F3117 , bdr:LHC40B3866CFC52E9E , bdr:LHC6B27AA0111C67F0 , bdr:LHDF464FC6C9A4276F , bdr:LHEF338D6B1CDD5E6A ;
         :lineageObject      bdr:T417 ;
         :lineageRef         bdr:L3JT13485 , bdr:L3JT13487 , bdr:L3JT13489 , bdr:L3JT13491 , bdr:L3JT13492 ;
-        :lineageType        bdr:LineageRingBrgyud .
+        :lineageType        bdr:LineageRingBrgyud ;
+        :note               bdr:NT3ED454D910C5E1EC .
     
     bdr:LH0618428DEBCDDC6A
         a                   :LineageHolder ;
@@ -159,4 +153,8 @@ bdg:L3JT13487 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV753453C4E2EDB037 ;
         :lineageWho         bdr:P3JT13488 .
+    
+    bdr:NT3ED454D910C5E1EC
+        a                   :Note ;
+        :noteSource         bdr:MW1KG18291 .
 }

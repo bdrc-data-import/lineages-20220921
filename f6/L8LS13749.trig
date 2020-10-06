@@ -19,15 +19,9 @@ bdg:L8LS13749 {
         adm:gitPath         "f6/L8LS13749.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13749 ;
-        adm:logEntry        bda:LG1D2199095BC44D5B , bda:LG3C41AE525E2FD7EC , bda:LG3DADEB95B0BD9838 , bda:LG639C86A60EF4ACE4 , bda:LGC9D1CF53747CF040 , bda:LGE6FD0473AA7508AA , bda:LGECE263C7A9EC75F8 ;
+        adm:logEntry        bda:LG3C41AE525E2FD7EC , bda:LG3DADEB95B0BD9838 , bda:LG639C86A60EF4ACE4 , bda:LGE6FD0473AA7508AA , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG1D2199095BC44D5B
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG3C41AE525E2FD7EC
         a                   adm:UpdateData ;
@@ -47,28 +41,31 @@ bdg:L8LS13749 {
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGC9D1CF53747CF040
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGE6FD0473AA7508AA
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-05-14T16:04:13.13Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGECE263C7A9EC75F8
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL5AEE7E18D943E013
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  90 ;
-        :contentLocationVolume  1 .
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV5D035D478F524685
         a                   :LineageEvent ;
@@ -82,11 +79,11 @@ bdg:L8LS13749 {
         rdfs:comment        "oral transmission of wrathdul gtsugto barwa" ;
         skos:altLabel       "slob dpon chen po a b+ha yA ka ra'i bzhed srol chag lo gsum pas mdzad pa'i sreg byed me'i mtshon cha'i yi ge'i steng nas dam pa'i ph+yag len ltar khro bo'i rgyal po gtsug tor 'bar ba'i rjes gnang dang / lung la lo rgyus/ sgrub thabs dngos/ spyir bzlog pa'i man ngag /byad chus bor bskyur ba dang bcas pa man ngag tu bsebs pa'i sreg byed me'i mtshon cha chag lo gsum pa rin chen chos kyi rgyal pos mdzad pa/ des mdzad pa'i bstod pa dpal mgon sangs rgyas ma dang bcas thob pa las lung gi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "khro bo'i rgyal po gtsug to 'bar ba'i lung gi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL5AEE7E18D943E013 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH344B55247F9C705C , bdr:LH6346A55A40CB5CAB , bdr:LHD5ED15E428B8755D ;
         :lineageObject      bdr:T912 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT5AEE7E18D943E013 .
     
     bdr:LH344B55247F9C705C
         a                   :LineageHolder ;
@@ -101,4 +98,9 @@ bdg:L8LS13749 {
     bdr:LHD5ED15E428B8755D
         a                   :LineageHolder ;
         :lineageWho         bdr:P792 .
+    
+    bdr:NT5AEE7E18D943E013
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 90" ;
+        :noteSource         bdr:MW1PD107937 .
 }

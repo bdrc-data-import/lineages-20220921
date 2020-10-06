@@ -19,7 +19,7 @@ bdg:L8LS14523 {
         adm:gitPath         "e9/L8LS14523.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14523 ;
-        adm:logEntry        bda:LG30E0CC3A57AB9911 , bda:LG37CD5B24068F4FF1 , bda:LG4F30C2816E0EA198 , bda:LGB3E649BB162ABD22 , bda:LGE22CD3ED84DE77C9 , bda:LGF4FA22510AE0D1E6 ;
+        adm:logEntry        bda:LG30E0CC3A57AB9911 , bda:LGB3E649BB162ABD22 , bda:LGE22CD3ED84DE77C9 , bda:LGF4FA22510AE0D1E6 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,18 +28,6 @@ bdg:L8LS14523 {
         adm:logDate         "2014-03-12T15:02:00.713Z"^^xsd:dateTime ;
         adm:logMessage      "added location and short title"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG37CD5B24068F4FF1
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG4F30C2816E0EA198
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGB3E649BB162ABD22
         a                   adm:UpdateData ;
@@ -58,11 +46,19 @@ bdg:L8LS14523 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL95FDC21DE217333F
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  572 ;
-        :contentLocationVolume  1 .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0141FB293B7743EE
         a                   :LineageEvent ;
@@ -108,11 +104,11 @@ bdg:L8LS14523 {
         rdfs:comment        "anuja transmission and another oral transmission of the first section of four faced mahakala texts"@en ;
         skos:altLabel       "bstan pa'i stobs 'phrog nag po chen po gdong bzhi pa'am drag po gzi ldan dbang phyug gyi chos skor las/ rjes gnang dang sa bcad dang po'i lung brgyud gcig"@bo-x-ewts ;
         skos:prefLabel      "bstan pa'i stobs 'phrog nag po chen po gdong bzhi chos skor rjes gnang dang lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL95FDC21DE217333F ;
         :isRoot             true ;
         :lineageHolder      bdr:LH047ECD47D2CB5B5F , bdr:LH1DBC3DA7EEDD7FAB , bdr:LH4CF961D88355E573 , bdr:LH59C8F4AFDB220B3C , bdr:LH624B1A19C94BC164 , bdr:LH8E0749866010C805 , bdr:LHA67DBF4E5CECBBCB , bdr:LHAA9C36A7F2FDD251 , bdr:LHC106998177396AF6 , bdr:LHC54DEBD09216875B , bdr:LHFC1717EC644E64CF ;
         :lineageObject      bdr:T924 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NT95FDC21DE217333F .
     
     bdr:LH047ECD47D2CB5B5F
         a                   :LineageHolder ;
@@ -167,4 +163,9 @@ bdg:L8LS14523 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVF808E918692CE4A8 ;
         :lineageWho         bdr:P3509 .
+    
+    bdr:NT95FDC21DE217333F
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 572" ;
+        :noteSource         bdr:MW1PD107937 .
 }

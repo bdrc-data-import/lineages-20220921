@@ -19,15 +19,9 @@ bdg:L2RKL873 {
         adm:gitPath         "dc/L2RKL873.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L2RKL873 ;
-        adm:logEntry        bda:LG12EABBDCD00A345C , bda:LG199698EAB1B59A21 , bda:LG2F211BB3E46B23AC , bda:LG4DF47AF238EBE305 , bda:LG52B0E5847FDA9C0C , bda:LG66D1C3ABAD8B90C3 , bda:LG69F1A795E0E9566B , bda:LG86ED89E75A6B1434 , bda:LGC8523C42C449DA1B ;
+        adm:logEntry        bda:LG199698EAB1B59A21 , bda:LG2F211BB3E46B23AC , bda:LG4DF47AF238EBE305 , bda:LG52B0E5847FDA9C0C , bda:LG86ED89E75A6B1434 , bda:LGC8523C42C449DA1B , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG12EABBDCD00A345C
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG199698EAB1B59A21
         a                   adm:UpdateData ;
@@ -51,18 +45,6 @@ bdg:L2RKL873 {
         adm:logDate         "2014-07-25T16:24:51.83Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG66D1C3ABAD8B90C3
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG69F1A795E0E9566B
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG86ED89E75A6B1434
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-07-12T13:59:44.46Z"^^xsd:dateTime ;
@@ -75,11 +57,26 @@ bdg:L2RKL873 {
         adm:logMessage      "edited name; added lin ref"@en ;
         adm:logWho          bdu:U00055 .
     
-    bdr:CLD52519DF36A7B1F7
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  20 ;
-        :contentLocationVolume  "kha" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0596B95F24E7BABB
         a                   :LineageEvent ;
@@ -152,13 +149,12 @@ bdg:L2RKL873 {
     bdr:L2RKL873  a         :Lineage ;
         skos:altLabel       "dbang byin rlabs de rnams kyi brgyud lugs gcig"@bo-x-ewts ;
         skos:prefLabel      "dbang byin rlabs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLD52519DF36A7B1F7 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH00E1FC6BFBC5FD19 , bdr:LH0115FA2E6A3B7F2C , bdr:LH0250E46E528E991A , bdr:LH1C93D51AF2D9A896 , bdr:LH33026F90D77C3175 , bdr:LH52258D2A032E11A9 , bdr:LH598E1167B08E70DB , bdr:LH72757AAA42F0D926 , bdr:LH7D1D3809B267DF74 , bdr:LH860FA48144148F0A , bdr:LH880B24D9C09F06A1 , bdr:LH906A706CFAC2A5FA , bdr:LHCC7D3AC3D2B14714 , bdr:LHEE795C9E9743A71D ;
         :lineageObject      bdr:T130 ;
         :lineageRef         bdr:L2RKL871 ;
         :lineageType        bdr:LineageDbang ;
-        :note               bdr:NT0384EF23260818BF , bdr:NT12D59DB1964C34CC , bdr:NT1A430C34B643BB31 , bdr:NT36D1455166D1E4D7 , bdr:NT3B9B460DEA4AFC17 , bdr:NT4506DF5F41901BEB , bdr:NT4A8E6434BB8DB46D , bdr:NT50E3D57B656605A9 , bdr:NT568ED79984C6B330 , bdr:NT5B72290BD12E05AC , bdr:NT5D249DBF45D83F3B , bdr:NT5E18F7F97A315590 , bdr:NT761001D9E68C3335 , bdr:NT7B1D86F627008B0C , bdr:NT7BFB41C1638EA50D , bdr:NT8803E3145BEED99E , bdr:NTAC19E61897978DB5 , bdr:NTB49603E7C623EBDA , bdr:NTB9A93DABF01B7A5E , bdr:NTBEC42AE6B25418A9 , bdr:NTC4D297574510444D , bdr:NTD7CDA18EA76554D5 , bdr:NTE105290249C0812A , bdr:NTE15E221CA44B5A44 , bdr:NTEA73DE3018082CA1 , bdr:NTEEF70824C12AB294 , bdr:NTF923D576F769706D .
+        :note               bdr:NT0384EF23260818BF , bdr:NT12D59DB1964C34CC , bdr:NT1A430C34B643BB31 , bdr:NT36D1455166D1E4D7 , bdr:NT3B9B460DEA4AFC17 , bdr:NT4506DF5F41901BEB , bdr:NT4A8E6434BB8DB46D , bdr:NT50E3D57B656605A9 , bdr:NT568ED79984C6B330 , bdr:NT5B72290BD12E05AC , bdr:NT5D249DBF45D83F3B , bdr:NT5E18F7F97A315590 , bdr:NT761001D9E68C3335 , bdr:NT7B1D86F627008B0C , bdr:NT7BFB41C1638EA50D , bdr:NT8803E3145BEED99E , bdr:NTAC19E61897978DB5 , bdr:NTB49603E7C623EBDA , bdr:NTB9A93DABF01B7A5E , bdr:NTBEC42AE6B25418A9 , bdr:NTC4D297574510444D , bdr:NTD52519DF36A7B1F7 , bdr:NTD7CDA18EA76554D5 , bdr:NTE105290249C0812A , bdr:NTE15E221CA44B5A44 , bdr:NTEA73DE3018082CA1 , bdr:NTEEF70824C12AB294 , bdr:NTF923D576F769706D .
     
     bdr:LH00E1FC6BFBC5FD19
         a                   :LineageHolder ;
@@ -312,6 +308,11 @@ bdg:L2RKL873 {
     bdr:NTC4D297574510444D
         a                   :Note ;
         :noteText           "alternative lineage: L87x"@en .
+    
+    bdr:NTD52519DF36A7B1F7
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, p. 20" ;
+        :noteSource         bdr:MW29307 .
     
     bdr:NTD7CDA18EA76554D5
         a                   :Note ;

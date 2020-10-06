@@ -41,12 +41,6 @@ bdg:L8LS15404 {
         adm:logMessage      "changed p#"@en ;
         adm:logWho          bdu:U00007 .
     
-    bdr:CLFCE094CC42F6C447
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 88r2-5" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV05B331D8D0B676C6
         a                   :LineageEvent ;
         :lineageFrom        bdr:P0RK1394 .
@@ -149,11 +143,11 @@ bdg:L8LS15404 {
     
     bdr:L8LS15404  a        :Lineage ;
         skos:prefLabel      "sems sde spyi'i skor gyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLFCE094CC42F6C447 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH09D086086D2C0D90 , bdr:LH0F7AFA2F88D147DE , bdr:LH11C4A25D235BA806 , bdr:LH129372ED4FDA47E5 , bdr:LH2CFB5AEBD8DCF378 , bdr:LH2DAC7FB330CB622F , bdr:LH364EE2605F7F4451 , bdr:LH427774C3736E2B78 , bdr:LH46E5EBB6A39B605D , bdr:LH539D113052A6EF89 , bdr:LH778619E4ED558F3C , bdr:LH84CDB70DD3C502D3 , bdr:LH911D2FA885F96212 , bdr:LH94D0C7F974E97581 , bdr:LH9A8FBF3EB20DD760 , bdr:LHA7D7548C3D864A2F , bdr:LHA906E57034CF294F , bdr:LHB23D85F62EBAC8F2 , bdr:LHB740C74CDB124B90 , bdr:LHB9EEC3A23135697F , bdr:LHBEEA23488B3DE7A9 , bdr:LHC79F3B04B1CF9054 , bdr:LHCE5FAF6B2B0FCF14 , bdr:LHDD956E980BE1A6DE , bdr:LHECB937CFAC4D2AA3 , bdr:LHEE386B297F03DEC0 ;
         :lineageObject      bdr:T1294 , bdr:T354 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTFCE094CC42F6C447 .
     
     bdr:LH09D086086D2C0D90
         a                   :LineageHolder ;
@@ -284,4 +278,9 @@ bdg:L8LS15404 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV2CF8BBC9399E6443 ;
         :lineageWho         bdr:P0RK1394 .
+    
+    bdr:NTFCE094CC42F6C447
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 88r2-5" ;
+        :noteSource         bdr:MW29706 .
 }

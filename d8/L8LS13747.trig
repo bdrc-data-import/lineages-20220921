@@ -19,7 +19,7 @@ bdg:L8LS13747 {
         adm:gitPath         "d8/L8LS13747.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13747 ;
-        adm:logEntry        bda:LG133ECF9CBE55D659 , bda:LG17799FA4EA1A3D6F , bda:LG2F91BCCBA5DD2605 , bda:LG9F0C51B174677D57 , bda:LGA6409FB9FB32FB09 , bda:LGDD8F9B25AC8DD83D , bda:LGF35D89340830DB39 ;
+        adm:logEntry        bda:LG133ECF9CBE55D659 , bda:LG17799FA4EA1A3D6F , bda:LG9F0C51B174677D57 , bda:LGA6409FB9FB32FB09 , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,12 +34,6 @@ bdg:L8LS13747 {
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG2F91BCCBA5DD2605
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG9F0C51B174677D57
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-31T14:39:46.307Z"^^xsd:dateTime ;
@@ -52,23 +46,26 @@ bdg:L8LS13747 {
         adm:logMessage      "added type and location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGDD8F9B25AC8DD83D
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LGF35D89340830DB39
+    bda:LGIMD0AA988290
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL75DC798FC6AC5700
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  89 ;
-        :contentLocationVolume  1 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0697AE22FFEC4756
         a                   :LineageEvent ;
@@ -114,11 +111,11 @@ bdg:L8LS13747 {
         rdfs:comment        "oral transmission of ushnishvijaya stotra composed by ngorchen kunga zangpo" ;
         skos:altLabel       "ngor chen gyis mdzad pa'i bstod pa 'chi med dpal sbyin gyi lung gi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "bstod pa 'chi med dpal sbyin gyi lung gi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL75DC798FC6AC5700 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH211038C451755286 , bdr:LH24E6036034F10A4B , bdr:LH3A70DB5557FE7748 , bdr:LH3EF067F24C38B893 , bdr:LH44FBA3597A85CA2A , bdr:LH467989BB18A8EBB6 , bdr:LH5C91C89080C33211 , bdr:LH78E66F290720C47D , bdr:LH951504ACE23F5ED3 , bdr:LH9CAD9FC7F6912BAE , bdr:LHAFB30113EFF18513 ;
         :lineageObject      bdr:T67 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT75DC798FC6AC5700 .
     
     bdr:LH211038C451755286
         a                   :LineageHolder ;
@@ -173,4 +170,9 @@ bdg:L8LS13747 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVE3160CDADB91C693 ;
         :lineageWho         bdr:P779 .
+    
+    bdr:NT75DC798FC6AC5700
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 89" ;
+        :noteSource         bdr:MW1PD107937 .
 }

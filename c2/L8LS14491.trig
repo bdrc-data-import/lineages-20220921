@@ -19,7 +19,7 @@ bdg:L8LS14491 {
         adm:gitPath         "c2/L8LS14491.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14491 ;
-        adm:logEntry        bda:LG180A1E772FB4EFC3 , bda:LG33F1044D8EE2F1D6 , bda:LG3B05515EE0560DEE , bda:LG9D128577401B3B38 , bda:LGAA6B3B611CF72A5F , bda:LGB143931E7BF5569E , bda:LGB436E758BA81ADA7 , bda:LGD75B4BB0E2C76B35 ;
+        adm:logEntry        bda:LG180A1E772FB4EFC3 , bda:LG33F1044D8EE2F1D6 , bda:LG3B05515EE0560DEE , bda:LGB143931E7BF5569E , bda:LGB436E758BA81ADA7 , bda:LGD75B4BB0E2C76B35 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -40,18 +40,6 @@ bdg:L8LS14491 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG9D128577401B3B38
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LGAA6B3B611CF72A5F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGB143931E7BF5569E
         a                   adm:UpdateData ;
         adm:logDate         "2020-01-14T16:14:26.802Z"^^xsd:dateTime ;
@@ -68,11 +56,19 @@ bdg:L8LS14491 {
         adm:logDate         "2014-05-13T16:34:30.055Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL9E520A2B63F61440
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "526, 522" ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0786F493B5206AF5
         a                   :LineageEvent ;
@@ -137,11 +133,11 @@ bdg:L8LS14491 {
     bdr:L8LS14491  a        :Lineage ;
         rdfs:comment        "anuja transmission of eight and twelve deity mahakala panjaranatha"@en ;
         skos:prefLabel      "nag po chen po'i chos skor las/ lha brgyad dang bcu gnyis ma'i rjes gnang rjes 'brang nas 'ongs pa'i thor bu'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL9E520A2B63F61440 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH14F5DA7999B9407A , bdr:LH184A6E213DB00CE0 , bdr:LH1E0940018B5B641C , bdr:LH6122988C0C4CC536 , bdr:LH8AF76BA7BA3367C7 , bdr:LH8CF7F7F010FF36E0 , bdr:LH8D55F522C69E2465 , bdr:LH8FE60A2A9480F7A4 , bdr:LHAAEDF714DC85BE94 , bdr:LHAF707D0038BD58FD , bdr:LHC542A4ACD0B4A335 , bdr:LHCA80A06CBB4E0EAD , bdr:LHCDE2C07C4550DA3B , bdr:LHD0D0067F4A7DFE70 , bdr:LHE4757B8846BA7BE3 , bdr:LHE91E61983D46A4EC ;
         :lineageObject      bdr:T1599 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NT9E520A2B63F61440 .
     
     bdr:LH14F5DA7999B9407A
         a                   :LineageHolder ;
@@ -221,4 +217,9 @@ bdg:L8LS14491 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV7055EBC80FC04302 ;
         :lineageWho         bdr:P2610 .
+    
+    bdr:NT9E520A2B63F61440
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, 526, 522" ;
+        :noteSource         bdr:MW1PD107937 .
 }

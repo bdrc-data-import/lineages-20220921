@@ -19,7 +19,7 @@ bdg:L8LS13754 {
         adm:gitPath         "f8/L8LS13754.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13754 ;
-        adm:logEntry        bda:LG0FDE8AAD0AC1E161 , bda:LG14CCF5F8FD98EE31 , bda:LG215FB8F1C36D7D64 , bda:LG3AF785A5A82A81EF , bda:LG826E9C3AF44C1BDC , bda:LG9B94284A7E10190A , bda:LGBA79E416D16F672C ;
+        adm:logEntry        bda:LG0FDE8AAD0AC1E161 , bda:LG14CCF5F8FD98EE31 , bda:LG3AF785A5A82A81EF , bda:LG826E9C3AF44C1BDC , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,12 +35,6 @@ bdg:L8LS13754 {
         adm:logMessage      "added mngon rtogs, rjes gnang and removed note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG215FB8F1C36D7D64
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG3AF785A5A82A81EF
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-05-15T14:13:06.031Z"^^xsd:dateTime ;
@@ -52,23 +46,26 @@ bdg:L8LS13754 {
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG9B94284A7E10190A
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LGBA79E416D16F672C
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL83D4F34A5CA71F34
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  93 ;
-        :contentLocationVolume  1 .
     
     bdr:EV1F4DD3DC2333265D
         a                   :LineageEvent ;
@@ -94,11 +91,11 @@ bdg:L8LS13754 {
         rdfs:comment        "oral transmission of abhisamaya and anuja of blue akshobhiya composed by konchok lhundup" ;
         skos:altLabel       "dkon mchog lhun grub kyis mdzad pa'i mngon rtogs dang rjes gnang gi cho ga'i lung brgyud/"@bo-x-ewts ;
         skos:prefLabel      "mngon rtogs dang rjes gnang gi cho ga'i lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL83D4F34A5CA71F34 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH20B440529EA6D45B , bdr:LH82FBFB3C9EB5E2FC , bdr:LHD2066206824C74E8 , bdr:LHD893F522DAC4E2AC , bdr:LHE77105F6D4463D00 , bdr:LHF21B6FA3047A2FE8 ;
         :lineageObject      bdr:T5 , bdr:T977 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT83D4F34A5CA71F34 .
     
     bdr:LH20B440529EA6D45B
         a                   :LineageHolder ;
@@ -128,4 +125,9 @@ bdg:L8LS13754 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV1F4DD3DC2333265D ;
         :lineageWho         bdr:P37 .
+    
+    bdr:NT83D4F34A5CA71F34
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 93" ;
+        :noteSource         bdr:MW1PD107937 .
 }

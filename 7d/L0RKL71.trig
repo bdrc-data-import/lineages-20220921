@@ -19,7 +19,7 @@ bdg:L0RKL71 {
         adm:gitPath         "7d/L0RKL71.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L0RKL71 ;
-        adm:logEntry        bda:LG323A72535E5427C1 , bda:LG3E647F2B293ED55B , bda:LG67298E0E3A22367F , bda:LG9D0E795DC9331D1B , bda:LGCBD1B72AE78D4FC6 , bda:LGD3F71CEABC3987C7 , bda:LGD6089D9250AAAB60 , bda:LGD8645A22FAC5E80D ;
+        adm:logEntry        bda:LG323A72535E5427C1 , bda:LG9D0E795DC9331D1B , bda:LGCBD1B72AE78D4FC6 , bda:LGD3F71CEABC3987C7 , bda:LGD6089D9250AAAB60 , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,18 +28,6 @@ bdg:L0RKL71 {
         adm:logDate         "2014-02-28T10:00:51.441Z"^^xsd:dateTime ;
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG3E647F2B293ED55B
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG67298E0E3A22367F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG9D0E795DC9331D1B
         a                   adm:UpdateData ;
@@ -65,17 +53,26 @@ bdg:L0RKL71 {
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LGD8645A22FAC5E80D
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL030A68F31DD37AF0
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  9 ;
-        :contentLocationVolume  "kha" .
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV03F7E7D7881D5D24
         a                   :LineageEvent ;
@@ -88,11 +85,11 @@ bdg:L0RKL71 {
     bdr:L0RKL71  a          :Lineage ;
         skos:altLabel       "byang chub sems dpa'i sdom pa mnos pa'i tshul/ mngon par rtogs pa rin po che'i ljon shing las/ bla ma gong ma rnams dbang gi sngon du thun mong ma yin pa'i skyabs su 'gro ba dang sems bskyed pa tsam mdzad ces gsungs pa de'i phyag len zur du phyung ba'i/ dbu sems kyi lugs las khyad par du 'phags pa/ slob dpon klu sgrub kyi rjes 'brangs jo bo nA ro ta pa la sogs pas bde mchog gi dbang gi sngon du md´zad pa dang/ rnal 'byor dbang phyug gi rjes 'brangs jo bo ga ya dha ra la sogs pas kyai rdo rje'i dbang gi sngon du mdzad pas brgyud pa'i khyad par gnyis ldan gyi sems bskyed ces bya ba/ lta ba'i sgo nas dbu ma lugs kyi sems bskyed du bsdud pa tsam las/ theg chen thun mong ba'i mdo yi rjes su 'brangs pa ni ma yin pa'i rgyud sde nas bshad pa'i sems bskyed kyi sdom pa rnam par dag pa thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "byang chub sems dpa'i sdom pa thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL030A68F31DD37AF0 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH14F51488A734B494 , bdr:LH5F394B0CCD3359B8 , bdr:LHA374244906C6FC72 ;
         :lineageObject      bdr:T1400 ;
-        :lineageType        bdr:LineageSdomBrgyud .
+        :lineageType        bdr:LineageSdomBrgyud ;
+        :note               bdr:NT030A68F31DD37AF0 .
     
     bdr:LH14F51488A734B494
         a                   :LineageHolder ;
@@ -108,4 +105,9 @@ bdg:L0RKL71 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV72CE182696804ED8 ;
         :lineageWho         bdr:T390 .
+    
+    bdr:NT030A68F31DD37AF0
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, p. 9" ;
+        :noteSource         bdr:MW29307 .
 }

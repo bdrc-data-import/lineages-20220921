@@ -35,12 +35,6 @@ bdg:L8LS15434 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLD1227AA7F1E810C4
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 87v2-3" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV14F7AC26E26CA868
         a                   :LineageEvent ;
         :lineageFrom        bdr:P8LS15411 .
@@ -79,11 +73,11 @@ bdg:L8LS15434 {
     
     bdr:L8LS15434  a        :Lineage ;
         skos:prefLabel      "sdud pa rgyal po'i skor gyi brgyud pa bye brag"@bo-x-ewts ;
-        :contentLocation    bdr:CLD1227AA7F1E810C4 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0D8ED24619872B87 , bdr:LH33C9686CA2F31CAF , bdr:LH5F40B22DD9B16161 , bdr:LH82AC048EB4B3754A , bdr:LH8BC16FBE1A729A05 , bdr:LHB83AA2C982EED9AD , bdr:LHBAC23A57D7877313 , bdr:LHCCEAFE768EF84417 , bdr:LHEDC92B067CB420E3 , bdr:LHF920A3FA29DEDA2C ;
         :lineageObject      bdr:T1294 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTD1227AA7F1E810C4 .
     
     bdr:LH0D8ED24619872B87
         a                   :LineageHolder ;
@@ -134,4 +128,9 @@ bdg:L8LS15434 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV55457DFDA9F64705 ;
         :lineageWho         bdr:P8LS15435 .
+    
+    bdr:NTD1227AA7F1E810C4
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 87v2-3" ;
+        :noteSource         bdr:MW29706 .
 }

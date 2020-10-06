@@ -35,12 +35,6 @@ bdg:L8LS15372 {
         adm:logMessage      "changed p record"@en ;
         adm:logWho          bdu:U00017 .
     
-    bdr:CL04C80486FF194C37
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 78r6-7" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV0438763E35978862
         a                   :LineageEvent ;
         :lineageFrom        bdr:P3323 .
@@ -92,11 +86,11 @@ bdg:L8LS15372 {
     bdr:L8LS15372  a        :Lineage ;
         skos:altLabel       "spyan ras gzigs phyag stong spyan stong thogs pa mi mnga' ba'i thugs rje chen po'i sems rgya cher yongs su rdzogs pa zhes bya ba'i gzungs 'gos chos 'grub 'gyur gyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "thugs rje chen po'i sems rgya cher yongs su rdzogs pa zhes bya ba'i gzungs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL04C80486FF194C37 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH01353A734B730930 , bdr:LH03D90DCD5D94C542 , bdr:LH04984B91C95BDAAF , bdr:LH5028D31A7D6875F7 , bdr:LH5AB891A2670CA65E , bdr:LH846C86B6D61622F1 , bdr:LH852A6E0F29740861 , bdr:LH8687FF2B97AD941C , bdr:LH88A5E218085C5AB5 , bdr:LHC541924197ED482F , bdr:LHD8D289BED1D5122F , bdr:LHF42405A854CF6FE3 , bdr:LHF8DB8A4C12F8CEA7 ;
         :lineageObject      bdr:T106 , bdr:T933 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT04C80486FF194C37 .
     
     bdr:LH01353A734B730930
         a                   :LineageHolder ;
@@ -162,4 +156,9 @@ bdg:L8LS15372 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVA7EFFE852D9BF27E ;
         :lineageWho         bdr:P3831 .
+    
+    bdr:NT04C80486FF194C37
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 78r6-7" ;
+        :noteSource         bdr:MW29706 .
 }

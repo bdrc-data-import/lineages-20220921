@@ -34,12 +34,6 @@ bdg:L3JT13530 {
         adm:logDate         "2014-08-12T16:11:00.311Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00013 .
     
-    bdr:CL4D35466F5735D508
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W1KG18291 ;
-        :contentLocationSide  "251r-521r" .
-    
     bdr:EV03DC6118F3AA0F12
         a                   :LineageEvent ;
         :lineageFrom        bdr:T1987 .
@@ -98,12 +92,11 @@ bdg:L3JT13530 {
     
     bdr:L3JT13530  a        :Lineage ;
         skos:prefLabel      "tshe dbang thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL4D35466F5735D508 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0CDB41C4C20A5553 , bdr:LH12E394F811991093 , bdr:LH210F1C4685D3BCB0 , bdr:LH24CB41615F2AAEF5 , bdr:LH3F3E99F67743B270 , bdr:LH63858DD88E1F7D25 , bdr:LH696D9E72041F7780 , bdr:LH6E4EF57ED38DA8BF , bdr:LH99B697C922F45877 , bdr:LHBF5C130382F13EB2 , bdr:LHC5C8ADFB7AFAFEBF , bdr:LHCF22EAAE7068C2E3 , bdr:LHDC8F2B68112CF8C9 , bdr:LHDF19B67CFB2E609D , bdr:LHE7C083E48F55A977 ;
         :lineageObject      bdr:T473 , bdr:T69 ;
         :lineageType        bdr:LineageLung ;
-        :note               bdr:NT2A3DDC3085B355A2 .
+        :note               bdr:NT2A3DDC3085B355A2 , bdr:NT4D35466F5735D508 .
     
     bdr:LH0CDB41C4C20A5553
         a                   :LineageHolder ;
@@ -183,4 +176,8 @@ bdg:L3JT13530 {
         a                   :Note ;
         :contentLocationStatement  "ff. 251r" ;
         :noteText           "འཇམ་དབྱངས་ན་ག་རཀྵའི་སྒོམ་ལུང་དང་། གཡའ་ཚན། གངས་ཚན་གྱི་བཅུད་ལེན་གྱི་ལུང་ཡང་ཐོབ།"@bo .
+    
+    bdr:NT4D35466F5735D508
+        a                   :Note ;
+        :noteSource         bdr:MW1KG18291 .
 }

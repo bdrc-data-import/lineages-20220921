@@ -19,15 +19,9 @@ bdg:L8LS14303 {
         adm:gitPath         "90/L8LS14303.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14303 ;
-        adm:logEntry        bda:LG1EBE53038F1F63CF , bda:LG2D0F9CE54F2D8803 , bda:LG7DBFD839AA337B97 , bda:LG84F2A9EFCDA2B58B , bda:LG93F077244E36B631 , bda:LGB388970221412774 , bda:LGC0BE28C1EFBAA8F3 ;
+        adm:logEntry        bda:LG2D0F9CE54F2D8803 , bda:LG7DBFD839AA337B97 , bda:LG84F2A9EFCDA2B58B , bda:LGB388970221412774 , bda:LGC0BE28C1EFBAA8F3 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG1EBE53038F1F63CF
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG2D0F9CE54F2D8803
         a                   adm:UpdateData ;
@@ -45,12 +39,6 @@ bdg:L8LS14303 {
         adm:logDate         "2014-07-29T08:32:18.874Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG93F077244E36B631
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGB388970221412774
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-08-14T09:03:37.578Z"^^xsd:dateTime ;
@@ -62,11 +50,19 @@ bdg:L8LS14303 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLAD8377AF7DD072DC
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  353 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV017C6C9D2665909E
         a                   :LineageEvent ;
@@ -135,11 +131,11 @@ bdg:L8LS14303 {
     bdr:L8LS14303  a        :Lineage ;
         rdfs:comment        "initiation transmission of guruyoga"@en ;
         skos:prefLabel      "lam zab mo bla ma'i rnal 'byor phyi ma'i byin rlabs kyi brgyud pa thun mong ma yin pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLAD8377AF7DD072DC ;
         :isRoot             true ;
         :lineageHolder      bdr:LH13239A6337454723 , bdr:LH15ABDAF81102EFA0 , bdr:LH2012023452FBCFB7 , bdr:LH2D0550AC9EFB7AD4 , bdr:LH2E9187A6B07AD695 , bdr:LH34A0EABE15215E8B , bdr:LH36BEB4CC8C0FF6C4 , bdr:LH49DD80037F3594C3 , bdr:LH54776315DE589DDE , bdr:LH7CDEC3A37BCBE708 , bdr:LHA21967774B94416E , bdr:LHAE1BD68EEC56AEC9 , bdr:LHC64A2E904A984964 , bdr:LHD24CFEFD62AA16B9 , bdr:LHE836391E3F9F7131 , bdr:LHEE9EA2BBC8E8DD96 , bdr:LHF151A678702C23D4 ;
         :lineageObject      bdr:T4 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NTAD8377AF7DD072DC .
     
     bdr:LH13239A6337454723
         a                   :LineageHolder ;
@@ -224,4 +220,9 @@ bdg:L8LS14303 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVC75C1CFC60AF4772 ;
         :lineageWho         bdr:P3092 .
+    
+    bdr:NTAD8377AF7DD072DC
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 353" ;
+        :noteSource         bdr:MW1PD107937 .
 }

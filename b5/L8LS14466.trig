@@ -19,7 +19,7 @@ bdg:L8LS14466 {
         adm:gitPath         "b5/L8LS14466.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14466 ;
-        adm:logEntry        bda:LG0494F2DE5B7F6960 , bda:LG07198C94881C95AB , bda:LG1C6B5FE84EFFD976 , bda:LG291546C0865E8A85 , bda:LG358C15C035892C73 , bda:LG44F9A51161CEAEB1 , bda:LG6F03FCD177CB802F ;
+        adm:logEntry        bda:LG0494F2DE5B7F6960 , bda:LG07198C94881C95AB , bda:LG1C6B5FE84EFFD976 , bda:LG291546C0865E8A85 , bda:LG44F9A51161CEAEB1 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -45,28 +45,24 @@ bdg:L8LS14466 {
         adm:logDate         "2014-07-28T10:51:35.877Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG358C15C035892C73
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG44F9A51161CEAEB1
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-14T09:57:56.675Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG6F03FCD177CB802F
+    bda:LGIM88BD19A8AB
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL5D39BAA046AF2F21
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  518 ;
-        :contentLocationVolume  1 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0AB20D662BFC0E56
         a                   :LineageEvent ;
@@ -103,11 +99,11 @@ bdg:L8LS14466 {
     bdr:L8LS14466  a        :Lineage ;
         rdfs:comment        "initiation transmission of eight deity mahakala panjaranatha"@en ;
         skos:prefLabel      "nag po chen po gur gyi mgon po'i chos skro las/ lha brgyad rgya gzhung lugs kyi dbang brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL5D39BAA046AF2F21 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH2E90A79B3834DBE5 , bdr:LH33611DD5B3779066 , bdr:LH38F92AB5BC3A9E42 , bdr:LH426D238C563FDF91 , bdr:LH607946F8711FD5F7 , bdr:LH76ED27ED64EC6091 , bdr:LH84EFA0299B5DD385 , bdr:LH8CB40AA140B41B04 , bdr:LHF872E136CD6BF7A0 ;
         :lineageObject      bdr:T1599 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NT5D39BAA046AF2F21 .
     
     bdr:LH2E90A79B3834DBE5
         a                   :LineageHolder ;
@@ -152,4 +148,9 @@ bdg:L8LS14466 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVA0D6CBFB72AD5734 ;
         :lineageWho         bdr:P37 .
+    
+    bdr:NT5D39BAA046AF2F21
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 518" ;
+        :noteSource         bdr:MW1PD107937 .
 }

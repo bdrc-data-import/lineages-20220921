@@ -19,26 +19,14 @@ bdg:L0RKL167 {
         adm:gitPath         "6e/L0RKL167.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L0RKL167 ;
-        adm:logEntry        bda:LG10B0269A9038A147 , bda:LG293C5F353637D7B3 , bda:LG531AF5622BB51FAA , bda:LG808241F203FB4622 , bda:LGA49732E4E2D72C86 , bda:LGAA329A55962FC047 , bda:LGAE0D3B3B2611818C ;
+        adm:logEntry        bda:LG293C5F353637D7B3 , bda:LG808241F203FB4622 , bda:LGA49732E4E2D72C86 , bda:LGAA329A55962FC047 , bda:LGAE0D3B3B2611818C , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG10B0269A9038A147
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG293C5F353637D7B3
         a                   adm:UpdateData ;
         adm:logDate         "2019-03-14T14:26:25.153Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG531AF5622BB51FAA
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG808241F203FB4622
         a                   adm:UpdateData ;
@@ -64,11 +52,19 @@ bdg:L0RKL167 {
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL83F1CC3D94722691
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "45a4ff." ;
-        :contentLocationVolume  "kha" .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0BE651B7193B2A77
         a                   :LineageEvent ;
@@ -164,11 +160,11 @@ bdg:L0RKL167 {
     
     bdr:L0RKL167  a         :Lineage ;
         skos:prefLabel      "ma gcig grub pa'i rgyal mo nas brgyud pa'i byin rlabs dbang bskur zab mo thob pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL83F1CC3D94722691 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH1F5D561321431C20 , bdr:LH3D22ACDB21BE90FC , bdr:LH4775831C60B5B9FB , bdr:LH50D6006157F4633D , bdr:LH635F21F53EE85B75 , bdr:LH6430B07ED27E583F , bdr:LH6AA67B51FC5FCA34 , bdr:LH76B06014D4548AB5 , bdr:LH7B3A9218B9FFD54E , bdr:LH91FB37EE7A8182C9 , bdr:LH9FC981530374071F , bdr:LHA69CBA9C240E5DB4 , bdr:LHAB85F1F130431C96 , bdr:LHBD6DF5239334A1DC , bdr:LHC87FD9567BEB3276 , bdr:LHC9A552100CD0E7FC , bdr:LHCC7B30CAD8FF2575 , bdr:LHCEB82E01AD12782F , bdr:LHD4FEC5535FB94844 , bdr:LHD78A3BFDB227A604 , bdr:LHE072D6D54C333E28 , bdr:LHEE07B9CE339CCE4F , bdr:LHF27A0176E79E39BC , bdr:LHF447D79D8753B0C3 ;
         :lineageObject      bdr:T401 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NT83F1CC3D94722691 .
     
     bdr:LH1F5D561321431C20
         a                   :LineageHolder ;
@@ -288,4 +284,9 @@ bdg:L0RKL167 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV13AD05D611E4CD68 ;
         :lineageWho         bdr:P0RK70 .
+    
+    bdr:NT83F1CC3D94722691
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, 45a4ff." ;
+        :noteSource         bdr:MW29307 .
 }

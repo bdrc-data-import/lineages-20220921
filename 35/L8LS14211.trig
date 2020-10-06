@@ -19,7 +19,7 @@ bdg:L8LS14211 {
         adm:gitPath         "35/L8LS14211.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14211 ;
-        adm:logEntry        bda:LG35730BBB8B3A5301 , bda:LG4CB28D2AF8CF8E6E , bda:LG70044D5BC1AFA721 , bda:LG99631529E1F22A2F , bda:LGA0A8506E897B7607 , bda:LGD6E6669F761E32DA , bda:LGE1D1ACF2F30C75C2 , bda:LGEECB4DB3D372AB1A ;
+        adm:logEntry        bda:LG35730BBB8B3A5301 , bda:LG70044D5BC1AFA721 , bda:LGA0A8506E897B7607 , bda:LGD6E6669F761E32DA , bda:LGE1D1ACF2F30C75C2 , bda:LGEECB4DB3D372AB1A , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,23 +28,11 @@ bdg:L8LS14211 {
         adm:logDate         "2014-05-12T08:36:42.484Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG4CB28D2AF8CF8E6E
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG70044D5BC1AFA721
         a                   adm:UpdateData ;
         adm:logDate         "2014-02-27T16:18:18.843Z"^^xsd:dateTime ;
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG99631529E1F22A2F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGA0A8506E897B7607
         a                   adm:UpdateData ;
@@ -68,11 +56,19 @@ bdg:L8LS14211 {
         adm:logMessage      "Changed P0RK364 to P4CZ15180"@en ;
         adm:logWho          bdu:U00016 .
     
-    bdr:CLA4D1D120396C91CE
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "276-277" ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV05AD1ECA5511284F
         a                   :LineageEvent ;
@@ -170,11 +166,11 @@ bdg:L8LS14211 {
         rdfs:comment        "initiation transmission of 9 deity hevajra drawing mandala, according to nagpo damtshig dorjee"@en ;
         skos:altLabel       "slob dpon nag po dam tshig rdo rje legs par bkral ba'i sku gsung thugs snying po kye rdo rje lha dgu'i ras bris kyi dkyil 'khor du rgya ston byang chub dbang rgyal gyis rdo rje gdan pa chen pos mdzad pa'i stod cha dang gsung mchan la brten nas bsgrigs pa'i mngon rtogs de kho na nyid rab tu gsal ba dang / dbang gi cho ga la brten nas dbang bzhi rdzogs par nos pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "kye rdo rje lha dgu'i ras bris kyi dkyil 'khor du dbang bzhi rdzogs par nos pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLA4D1D120396C91CE ;
         :isRoot             true ;
         :lineageHolder      bdr:LH142A2B5A46DC27F1 , bdr:LH2B05B04C9D877143 , bdr:LH2B663772BD108FF3 , bdr:LH2E6320DECF7B8DD9 , bdr:LH3339DEC671E40AD4 , bdr:LH35581115CCC9A8CA , bdr:LH3835DF15FB585058 , bdr:LH39460B6019F3F57D , bdr:LH485BAF5E556B625F , bdr:LH53C42535611D7212 , bdr:LH5557FC680FF97F16 , bdr:LH60373BF2736A0421 , bdr:LH6076F6F42011DCBF , bdr:LH61BF97943226FD80 , bdr:LH644F58D273F2BB13 , bdr:LH6C642C6D87058B04 , bdr:LH84FB1CD0A93930A6 , bdr:LH89FE27D5029AA24E , bdr:LHA8C9BAB46BEE2958 , bdr:LHBC6912DF3D225B81 , bdr:LHC3F783804253F960 , bdr:LHCB381A7AB9759FB9 , bdr:LHE099FAA151CBB399 , bdr:LHF934B118D4DEE361 ;
         :lineageObject      bdr:T130 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NTA4D1D120396C91CE .
     
     bdr:LH142A2B5A46DC27F1
         a                   :LineageHolder ;
@@ -294,4 +290,9 @@ bdg:L8LS14211 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVD1A335349A66C495 ;
         :lineageWho         bdr:P3206 .
+    
+    bdr:NTA4D1D120396C91CE
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 276-277" ;
+        :noteSource         bdr:MW1PD107937 .
 }

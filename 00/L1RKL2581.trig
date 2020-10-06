@@ -19,27 +19,15 @@ bdg:L1RKL2581 {
         adm:gitPath         "00/L1RKL2581.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL2581 ;
-        adm:logEntry        bda:LG07B176F364580587 , bda:LG2652A9E90CB4E3BA , bda:LG33B10280FD5C1598 , bda:LG4AFCEF3B892E957C , bda:LG5CE2C24527251658 , bda:LG7F42762CCCE29603 , bda:LG963AFF3B352A379E , bda:LGBE746A300F50BC3B , bda:LGE1DD8A4F5AD6ADCC , bda:LGE38F8DA41AAE539A ;
+        adm:logEntry        bda:LG2652A9E90CB4E3BA , bda:LG4AFCEF3B892E957C , bda:LG5CE2C24527251658 , bda:LG7F42762CCCE29603 , bda:LGBE746A300F50BC3B , bda:LGE1DD8A4F5AD6ADCC , bda:LGE38F8DA41AAE539A , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG07B176F364580587
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG2652A9E90CB4E3BA
         a                   adm:InitialDataImport ;
         adm:logDate         "2007-07-12T13:43:02.296Z"^^xsd:dateTime ;
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
-    
-    bda:LG33B10280FD5C1598
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG4AFCEF3B892E957C
         a                   adm:UpdateData ;
@@ -55,12 +43,6 @@ bdg:L1RKL2581 {
     bda:LG7F42762CCCE29603
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00023 .
-    
-    bda:LG963AFF3B352A379E
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGBE746A300F50BC3B
         a                   adm:UpdateData ;
@@ -80,11 +62,26 @@ bdg:L1RKL2581 {
         adm:logMessage      "removed note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bdr:CL116DA59EA71CB1F1
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "7a1ff." ;
-        :contentLocationVolume  "kha" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV158266D760683971
         a                   :LineageEvent ;
@@ -116,13 +113,12 @@ bdg:L1RKL2581 {
     
     bdr:L1RKL2581  a        :Lineage ;
         skos:prefLabel      "bla ma chos kyi rje rdo rje 'chang kun dga' bzang po'i bka' 'bum thob pa'i chos kyi rnam grangs la/"@bo-x-ewts ;
-        :contentLocation    bdr:CL116DA59EA71CB1F1 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH92D9B31D404B945E , bdr:LH95FB9C8CC3AE750A , bdr:LH9E93D317B746E858 , bdr:LHA6721A57BA2A2CBB , bdr:LHBE40EDF95D3BBA99 , bdr:LHC72B580D85334683 , bdr:LHC95D8062DC489E6A , bdr:LHCE2647A62FD8314C ;
         :lineageObject      bdr:T208 ;
         :lineageRef         bdr:L1RKL2582 ;
         :lineageType        bdr:LineageLung ;
-        :note               bdr:NT46E01B640D7F762B .
+        :note               bdr:NT116DA59EA71CB1F1 , bdr:NT46E01B640D7F762B .
     
     bdr:LH92D9B31D404B945E
         a                   :LineageHolder ;
@@ -162,6 +158,11 @@ bdg:L1RKL2581 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV158266D760683971 ;
         :lineageWho         bdr:P1040 .
+    
+    bdr:NT116DA59EA71CB1F1
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, 7a1ff." ;
+        :noteSource         bdr:MW29307 .
     
     bdr:NT46E01B640D7F762B
         a                   :Note ;

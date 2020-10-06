@@ -19,7 +19,7 @@ bdg:L8LS14559 {
         adm:gitPath         "8d/L8LS14559.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14559 ;
-        adm:logEntry        bda:LG20B6FBEB148046D7 , bda:LG2D47568F9999093B , bda:LG557BF1E8396E4619 , bda:LG57F0BCA6DC9F51B8 , bda:LG66930BB99583D9E0 , bda:LG8D355A7D2CA0655E , bda:LGFE5901B5F8D39694 ;
+        adm:logEntry        bda:LG20B6FBEB148046D7 , bda:LG2D47568F9999093B , bda:LG557BF1E8396E4619 , bda:LG57F0BCA6DC9F51B8 , bda:LG66930BB99583D9E0 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -51,23 +51,19 @@ bdg:L8LS14559 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG8D355A7D2CA0655E
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LGFE5901B5F8D39694
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL053868DCDCB70C13
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "581-582" ;
-        :contentLocationVolume  1 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV1E354F6D3C46D777
         a                   :LineageEvent ;
@@ -136,11 +132,11 @@ bdg:L8LS14559 {
     bdr:L8LS14559  a        :Lineage ;
         rdfs:comment        "anuja transmission of mahakla composed by kunga drolchog"@en ;
         skos:prefLabel      "rje btsun grol mchog gis zhi rgyas dbang drag gi mgon po'i rjes gnang /"@bo-x-ewts ;
-        :contentLocation    bdr:CL053868DCDCB70C13 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH16BE9A897662547B , bdr:LH17D015222E00565A , bdr:LH1BD183BAE460D795 , bdr:LH206BA9B997B11C31 , bdr:LH2A0D28298FC05129 , bdr:LH2CAEA0A2B2D513ED , bdr:LH3AC06D9CF7AF8B1E , bdr:LH451951FF89C895B3 , bdr:LH49DF3C9EF62770F6 , bdr:LH557496FC76E6D123 , bdr:LH7029CCE560B4201A , bdr:LH7461DD9ACDE420DA , bdr:LHA584B5F8BD8EECA4 , bdr:LHB704B9F11514F1AB , bdr:LHC61F266F14495E6F , bdr:LHF70D7A9D52F1D156 , bdr:LHFA738C578BB6A50D ;
         :lineageObject      bdr:T950 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NT053868DCDCB70C13 .
     
     bdr:LH16BE9A897662547B
         a                   :LineageHolder ;
@@ -225,4 +221,9 @@ bdg:L8LS14559 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV68F28C07E627B431 ;
         :lineageWho         bdr:P1244 .
+    
+    bdr:NT053868DCDCB70C13
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 581-582" ;
+        :noteSource         bdr:MW1PD107937 .
 }

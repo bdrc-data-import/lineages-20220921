@@ -29,11 +29,6 @@ bdg:L8LS15675 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLD41F468B3E361EF8
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1KG16278 ;
-        :contentLocationPage  "p. 126" .
-    
     bdr:EV00777BEF835BC4EF
         a                   :LineageEvent ;
         :lineageFrom        bdr:P2676 .
@@ -152,11 +147,11 @@ bdg:L8LS15675 {
     
     bdr:L8LS15675  a        :Lineage ;
         skos:prefLabel      "bstan srung skor gyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLD41F468B3E361EF8 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0978CA3922DD9B36 , bdr:LH0DCBDA7C77612209 , bdr:LH142C7D1F51091E1B , bdr:LH1E7D2E943226E81B , bdr:LH2781326EA47230A0 , bdr:LH2902EF12326AE3E9 , bdr:LH4399C0C19EBB693B , bdr:LH571BA0DECD9B6F7C , bdr:LH6BA756487B01DF27 , bdr:LH70FDD904EB7AE5D4 , bdr:LH728B3C8916F45CD3 , bdr:LH794B20E6BD9F4BF6 , bdr:LH7B8A9F0C0EF5713A , bdr:LH96767C4D6402D270 , bdr:LH99B14821A607C374 , bdr:LHAFC8715440753308 , bdr:LHBB9E2C7821474CA7 , bdr:LHCA7E2CA1C4DC8EE8 , bdr:LHD4F4BC13585B5EE0 , bdr:LHD90BAE8716820A42 , bdr:LHD9E04D6A380B0F8F , bdr:LHDBB9C53B00E57B48 , bdr:LHDC25C3F9FC6EF280 , bdr:LHDF702ABD0CB7A054 , bdr:LHE49DEBD02DC2F304 , bdr:LHE88DF9D9E6E32B0D , bdr:LHE8A23B82027B0545 , bdr:LHEC55F1AAE4B69232 , bdr:LHFC7A0C824671C503 , bdr:LHFDDF6BDFAC91D722 ;
         :lineageObject      bdr:T406 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTD41F468B3E361EF8 .
     
     bdr:LH0978CA3922DD9B36
         a                   :LineageHolder ;
@@ -306,4 +301,9 @@ bdg:L8LS15675 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVF072A9B3D73FB089 ;
         :lineageWho         bdr:P264 .
+    
+    bdr:NTD41F468B3E361EF8
+        a                   :Note ;
+        :contentLocationStatement  "p. 126" ;
+        :noteSource         bdr:MW1KG16278 .
 }

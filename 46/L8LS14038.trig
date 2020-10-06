@@ -19,7 +19,7 @@ bdg:L8LS14038 {
         adm:gitPath         "46/L8LS14038.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14038 ;
-        adm:logEntry        bda:LG313ECAE983592DD1 , bda:LG63032F0E18A93042 , bda:LGB0D0ED7F641A3225 , bda:LGE1DD6DE72BE4BE69 , bda:LGE8E1B1C1A1599C3E , bda:LGEE4BA4676B860A1D , bda:LGF3F58E8111AFCA7E ;
+        adm:logEntry        bda:LG313ECAE983592DD1 , bda:LG63032F0E18A93042 , bda:LGB0D0ED7F641A3225 , bda:LGE1DD6DE72BE4BE69 , bda:LGEE4BA4676B860A1D , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -45,28 +45,24 @@ bdg:L8LS14038 {
         adm:logDate         "2014-09-05T15:36:29.352Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGE8E1B1C1A1599C3E
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGEE4BA4676B860A1D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-06-27T12:32:36.129Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGF3F58E8111AFCA7E
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL44A6B304D5BFA1E5
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  215 ;
-        :contentLocationVolume  "1," .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV06A26B0BDB041CAC
         a                   :LineageEvent ;
@@ -137,13 +133,13 @@ bdg:L8LS14038 {
         :lineageFrom        bdr:P8LS14040 .
     
     bdr:L8LS14038  a        :Lineage ;
-        rdfs:comment        "another initiation transmission of vajrabairava cycle of teachings"@en ;
         skos:prefLabel      "rdo rje 'jigs byed rwa lugs chos skor las/ dbang gi brgyud tshul mi 'dra ba gcig"@bo-x-ewts ;
-        :contentLocation    bdr:CL44A6B304D5BFA1E5 ;
+        :catalogInfo        "another initiation transmission of vajrabairava cycle of teachings"@en ;
         :isRoot             true ;
         :lineageHolder      bdr:LH13B327AA291F82A1 , bdr:LH2B496CB9A67284C1 , bdr:LH2C7952B155C29AE4 , bdr:LH2D496F4C26361275 , bdr:LH630CB1FC9B7923F9 , bdr:LH68F6C99808A0C251 , bdr:LH7666A7E9C3E0F1EE , bdr:LH79ACD38E396F901B , bdr:LH917A9F3D09A9EFA9 , bdr:LH94584C20CE9359BA , bdr:LHA6775D919143B5F1 , bdr:LHBC4D780AB6C6CE93 , bdr:LHC712B05090AEC25F , bdr:LHD3CDFAC3D778EE57 , bdr:LHD75A5744EA3951FB , bdr:LHDB879EFF6E7BB1A0 , bdr:LHED98D264A3F3E9DB , bdr:LHF4DB2F82C410E7BE ;
         :lineageObject      bdr:T104 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NT44A6B304D5BFA1E5 .
     
     bdr:LH13B327AA291F82A1
         a                   :LineageHolder ;
@@ -233,4 +229,9 @@ bdg:L8LS14038 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVAC9731FC1BF37C7A ;
         :lineageWho         bdr:P0RK1100 .
+    
+    bdr:NT44A6B304D5BFA1E5
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 215" ;
+        :noteSource         bdr:MW1PD107937 .
 }

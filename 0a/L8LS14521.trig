@@ -19,7 +19,7 @@ bdg:L8LS14521 {
         adm:gitPath         "0a/L8LS14521.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14521 ;
-        adm:logEntry        bda:LG0257000325CEDB34 , bda:LG1CE9EF3F49D2C17E , bda:LG6B53C12ED57192ED , bda:LG9FB385B254F1B2C3 , bda:LGB21B5AB3582F1512 , bda:LGC79C2EDB147EBA68 , bda:LGD5B108D0D3FAC422 , bda:LGDA9C6B269BF50FFF ;
+        adm:logEntry        bda:LG0257000325CEDB34 , bda:LG1CE9EF3F49D2C17E , bda:LG9FB385B254F1B2C3 , bda:LGB21B5AB3582F1512 , bda:LGC79C2EDB147EBA68 , bda:LGD5B108D0D3FAC422 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -32,12 +32,6 @@ bdg:L8LS14521 {
         a                   adm:UpdateData ;
         adm:logDate         "2020-01-14T09:38:39.005Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG6B53C12ED57192ED
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG9FB385B254F1B2C3
         a                   adm:InitialDataCreation ;
@@ -62,17 +56,19 @@ bdg:L8LS14521 {
         adm:logMessage      "added location and short title"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGDA9C6B269BF50FFF
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CLC54331B07E49F989
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  571 ;
-        :contentLocationVolume  1 .
     
     bdr:EV0B289C6793F9D283
         a                   :LineageEvent ;
@@ -194,11 +190,11 @@ bdg:L8LS14521 {
         rdfs:comment        "oral transmission of four faced mahakala liturgical text marked ldong and g.yung drung together also those unmarked"@en ;
         skos:altLabel       "bstan pa'i stobs 'phrog nag po chen po gdong bzhi pa'am drag po gzi ldan dbang phyug gyi chos skor las/ dkar chag gis ma zin pa'i sa bcad dang po'i ldong g.yung drung lhan cig pa'i rtags can dang rtags gang yang med pa rnams dang bcas pa'i lung gi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "drag po gzi ldan dbang phyug gyi chos skor lung gi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLC54331B07E49F989 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH003B7CDC94DC3103 , bdr:LH0BBCF2D7DDAC67A6 , bdr:LH1A06A4442C31CD90 , bdr:LH24BFE3C00A173AF7 , bdr:LH36BB4E10226D23C4 , bdr:LH3EB8536E862F50BE , bdr:LH53C77C37DD612819 , bdr:LH564AA2146725C599 , bdr:LH576158346CBAFFAA , bdr:LH586FD6C3A1994B44 , bdr:LH62BEE6E054ACE81D , bdr:LH6338C789E610D909 , bdr:LH635AFB4E96857F91 , bdr:LH6EE6CA093DA13018 , bdr:LH70260684AEF1D055 , bdr:LH7CFBED63EA162963 , bdr:LH7DB4A03A523AF365 , bdr:LH7DC8BF02EDCBC9AF , bdr:LH9679AED8FF8A98F2 , bdr:LHA1059A29691CDF70 , bdr:LHA5701BFBFF63929B , bdr:LHA9463438C66D8B58 , bdr:LHAF8E51713FA9C94E , bdr:LHB8394EB3C90C7B37 , bdr:LHDE16459707E3A991 , bdr:LHDE444F6C0A7CD906 , bdr:LHEB7C39E4982DB809 , bdr:LHEC41910DAE375A51 , bdr:LHF8752C7559E2C7AF , bdr:LHF929E86B259A693D ;
         :lineageObject      bdr:T924 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTC54331B07E49F989 .
     
     bdr:LH003B7CDC94DC3103
         a                   :LineageHolder ;
@@ -348,4 +344,9 @@ bdg:L8LS14521 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVDB4F65E8CCA2B6F7 ;
         :lineageWho         bdr:P0RK352 .
+    
+    bdr:NTC54331B07E49F989
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 571" ;
+        :noteSource         bdr:MW1PD107937 .
 }

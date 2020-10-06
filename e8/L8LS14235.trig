@@ -19,7 +19,7 @@ bdg:L8LS14235 {
         adm:gitPath         "e8/L8LS14235.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14235 ;
-        adm:logEntry        bda:LG0300458DC57C17E5 , bda:LG7F0DF8FB22D3B730 , bda:LG88566D04BCFFBCF8 , bda:LGA12673ABB15C2C72 , bda:LGB5858838FFDDE5F6 , bda:LGFDF0B61503D7A12D ;
+        adm:logEntry        bda:LG0300458DC57C17E5 , bda:LG7F0DF8FB22D3B730 , bda:LGA12673ABB15C2C72 , bda:LGB5858838FFDDE5F6 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,12 +34,6 @@ bdg:L8LS14235 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG88566D04BCFFBCF8
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGA12673ABB15C2C72
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-27T08:38:10.876Z"^^xsd:dateTime ;
@@ -51,17 +45,19 @@ bdg:L8LS14235 {
         adm:logDate         "2013-08-06T09:02:28.21Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGFDF0B61503D7A12D
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL8B9E1238C7C55682
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "284-285" ;
-        :contentLocationVolume  1 .
     
     bdr:EV0E1501EAEA17F1C0
         a                   :LineageEvent ;
@@ -155,11 +151,11 @@ bdg:L8LS14235 {
         rdfs:comment        "anuja transmission of solitary and 9 deity simhamukhi jnanadakini"@en ;
         skos:altLabel       "rjes gnang gi yi ge yid bzhin nor bu rin po che'i steng nas me long dgon pa ba bo dong paN chen pad+ma gar dbang la ye shes kyi mkha' 'gro sing+ha mu khas dngos su gnang ba'i phyi sgrub seng gdong lha dgu'i rjes gnang nos nas/ lung la pad+ma gar dbang gis mdzad pa'i phyi sgrub lha dgu'i mngon rtogs/ rgyun khyer gtso rkyang gi nyams len bya tshul/ gtso rkyang gi rjes gnang yid bzhin nor bu rnams legs par thob pa'i ring brgyud/"@bo-x-ewts ;
         skos:prefLabel      "seng gdong lha dgu dang gtso rkyang gi rjes gnang /"@bo-x-ewts ;
-        :contentLocation    bdr:CL8B9E1238C7C55682 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0122641832AFC9FF , bdr:LH0DD291207A11FBAA , bdr:LH168E38B75B30A6A8 , bdr:LH2CC94326FBD60FAF , bdr:LH2EDEC18CBB1D139F , bdr:LH450BB156961DD3B9 , bdr:LH471DEEA650E68481 , bdr:LH4D25BBA1D0103A51 , bdr:LH538FA844DB08FBCE , bdr:LH5BDD8AE85B130EE1 , bdr:LH5E3658CEAA320503 , bdr:LH695720FF27E40E0E , bdr:LH80D5C1840403128A , bdr:LH84176A5ADE16AFFB , bdr:LH951372E3ECA7E3A8 , bdr:LH9CE64D3A7BFC8485 , bdr:LHA0C450C9EDF22EA4 , bdr:LHBD6588C4C4C69949 , bdr:LHC8279843AA90B59D , bdr:LHCECC4F76221C85E7 , bdr:LHD40BDAD7E4A44735 , bdr:LHE2921954788371D1 , bdr:LHEFD346138BB7C273 ;
         :lineageObject      bdr:T400 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NT8B9E1238C7C55682 .
     
     bdr:LH0122641832AFC9FF
         a                   :LineageHolder ;
@@ -274,4 +270,9 @@ bdg:L8LS14235 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV871053EF1172F8DF ;
         :lineageWho         bdr:P3731 .
+    
+    bdr:NT8B9E1238C7C55682
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 284-285" ;
+        :noteSource         bdr:MW1PD107937 .
 }

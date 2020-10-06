@@ -29,12 +29,6 @@ bdg:L8LS15644 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLBA4E7374897C15BA
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 101v3-4" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV067018088333D5AA
         a                   :LineageEvent ;
         :lineageFrom        bdr:P8LS15515 .
@@ -105,11 +99,11 @@ bdg:L8LS15644 {
     
     bdr:L8LS15644  a        :Lineage ;
         skos:prefLabel      "rdo rje phur pa stod kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLBA4E7374897C15BA ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0DF26A385EA13A6F , bdr:LH10A0BEFB2C451075 , bdr:LH255ECD95A306304D , bdr:LH2EBAB53B38CBFEF5 , bdr:LH3260CC3B8F88FB6B , bdr:LH4322A0E9EB624B5C , bdr:LH54C9A1A5E0070369 , bdr:LH7A76D3C1EC54E918 , bdr:LH7B5B45DAAD804D3A , bdr:LH87BB7C2DAE4ADED0 , bdr:LH90C2F368AF2BB5AD , bdr:LHB767A27D3E7591C6 , bdr:LHBB9659FD4FA40467 , bdr:LHBDB100AB41C66D3C , bdr:LHE5E6F329EE63B279 , bdr:LHE904336CECE3F3D1 , bdr:LHEA90F86CD1EBA83F , bdr:LHF4FF54B647E88B3E ;
         :lineageObject      bdr:T1786 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTBA4E7374897C15BA .
     
     bdr:LH0DF26A385EA13A6F
         a                   :LineageHolder ;
@@ -200,4 +194,9 @@ bdg:L8LS15644 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV83A9E77F5068044C ;
         :lineageWho         bdr:P8LS15646 .
+    
+    bdr:NTBA4E7374897C15BA
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 101v3-4" ;
+        :noteSource         bdr:MW29706 .
 }

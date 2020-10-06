@@ -35,12 +35,6 @@ bdg:L8LS15335 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL4D08DAB41EC993DF
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 73r5-6" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV056793230E1B3F0F
         a                   :LineageEvent ;
         :lineageFrom        bdr:P3830 .
@@ -160,11 +154,11 @@ bdg:L8LS15335 {
     bdr:L8LS15335  a        :Lineage ;
         skos:altLabel       "'phags pa gser 'od dam pa mchog tu rnam par rgyal ba'i mdo le'u so gcig pa 'gos chos 'grub kyis rgya nag nas bsgyur ba'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "'phags pa gser 'od dam pa mchog tu rnam par rgyal ba'i mdo le'u so gcig pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL4D08DAB41EC993DF ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0271255058702F68 , bdr:LH313FE1DA79E43383 , bdr:LH344E0937F27F5154 , bdr:LH351A705803B2F483 , bdr:LH3FDAA8FDB5233D01 , bdr:LH629391D994BD3973 , bdr:LH6CD52C25A69294D9 , bdr:LH72E67D257BE55335 , bdr:LH7BCB0A5A6F27ED23 , bdr:LH8131B5DEF1D4DDB1 , bdr:LH88BDBC11D0F8BE56 , bdr:LH8B302DF440C7230D , bdr:LH949C0DEBC3057299 , bdr:LH9637E367EEA1AAFF , bdr:LH996FB9D2A868873A , bdr:LH9B943AA055218A04 , bdr:LH9BC77B147FF9FC5D , bdr:LH9CA03001705FED3D , bdr:LHA8797574270E6816 , bdr:LHAD70E37E2D18E015 , bdr:LHAE5BC7FE8ED866FE , bdr:LHB4FC5C9F65CA7FB6 , bdr:LHB5B68FC4E9614D04 , bdr:LHB734134E415791EF , bdr:LHB8814CE34A9816BC , bdr:LHCEFF52F4EBBB50C3 , bdr:LHD544AD730FBB33D4 , bdr:LHDE00ED4E7E2F4286 , bdr:LHFC719134BC2487FC ;
         :lineageObject      bdr:T769 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT4D08DAB41EC993DF .
     
     bdr:LH0271255058702F68
         a                   :LineageHolder ;
@@ -310,4 +304,9 @@ bdg:L8LS15335 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV7DF4D2E91EE92A47 ;
         :lineageWho         bdr:P6119 .
+    
+    bdr:NT4D08DAB41EC993DF
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 73r5-6" ;
+        :noteSource         bdr:MW29706 .
 }

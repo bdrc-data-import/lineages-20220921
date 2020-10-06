@@ -19,32 +19,14 @@ bdg:L8LS13663 {
         adm:gitPath         "42/L8LS13663.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13663 ;
-        adm:logEntry        bda:LG0799B318D4FB5513 , bda:LG35384E54C75EB924 , bda:LG4C8200C834369A9B , bda:LG859FF2C67678009A , bda:LGBD5EFD117E0E53F6 , bda:LGC999C6A69EF88906 , bda:LGDB8A111E0368B34E ;
+        adm:logEntry        bda:LG35384E54C75EB924 , bda:LGBD5EFD117E0E53F6 , bda:LGC999C6A69EF88906 , bda:LGDB8A111E0368B34E , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG0799B318D4FB5513
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG35384E54C75EB924
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-05-06T14:16:42.716Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG4C8200C834369A9B
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG859FF2C67678009A
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGBD5EFD117E0E53F6
         a                   adm:UpdateData ;
@@ -63,11 +45,26 @@ bdg:L8LS13663 {
         adm:logDate         "2014-06-06T09:27:19.968Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL8E7EF45FF67A00B9
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  62 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV25C3681D00B2D30A
         a                   :LineageEvent ;
@@ -92,12 +89,11 @@ bdg:L8LS13663 {
     bdr:L8LS13663  a        :Lineage ;
         rdfs:comment        "oral and explanation transmission lineage of jatakamala" ;
         skos:prefLabel      "'khrungs rabs so bzhi pa'i bshad lung rdzogs par thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL8E7EF45FF67A00B9 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH2474DC86879CAAE2 , bdr:LH340DC116E9BACB53 , bdr:LH6DA4C6414CF70B38 , bdr:LHA2851EA982C30165 , bdr:LHA6DF9136F9E58EE4 , bdr:LHBA48FE8AD5BFAEBE ;
         :lineageObject      bdr:T1342 ;
         :lineageType        bdr:LineageKhrid ;
-        :note               bdr:NT7B6E3D14C4354707 .
+        :note               bdr:NT7B6E3D14C4354707 , bdr:NT8E7EF45FF67A00B9 .
     
     bdr:LH2474DC86879CAAE2
         a                   :LineageHolder ;
@@ -133,4 +129,9 @@ bdg:L8LS13663 {
         :contentLocationStatement  "vol. 1, p. 62" ;
         :noteSource         bdr:MW1PD107937 ;
         :noteText           "lineage before the second dalai lama is not known"@en .
+    
+    bdr:NT8E7EF45FF67A00B9
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 62" ;
+        :noteSource         bdr:MW1PD107937 .
 }

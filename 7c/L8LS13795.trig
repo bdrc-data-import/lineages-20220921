@@ -19,33 +19,15 @@ bdg:L8LS13795 {
         adm:gitPath         "7c/L8LS13795.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13795 ;
-        adm:logEntry        bda:LG02C328FB2801F420 , bda:LG92985042ECBB7159 , bda:LGA230FDCB3C05CFFE , bda:LGACA16A57883B946D , bda:LGAE7BE7E8D4ED3643 , bda:LGAEA1CE9D921E915E , bda:LGD9C1FC6D62427383 , bda:LGF7813166DEDE7208 ;
+        adm:logEntry        bda:LGA230FDCB3C05CFFE , bda:LGAE7BE7E8D4ED3643 , bda:LGAEA1CE9D921E915E , bda:LGF7813166DEDE7208 , bda:LGIMB5106F8FDA , bda:LGIMB69100E5D9 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG02C328FB2801F420
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T01:25:54.03Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG92985042ECBB7159
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGA230FDCB3C05CFFE
         a                   adm:UpdateData ;
         adm:logDate         "2014-06-06T12:17:11.892Z"^^xsd:dateTime ;
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LGACA16A57883B946D
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T01:25:54.03Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGAE7BE7E8D4ED3643
         a                   adm:InitialDataCreation ;
@@ -58,23 +40,32 @@ bdg:L8LS13795 {
         adm:logMessage      "added type and location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGD9C1FC6D62427383
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGF7813166DEDE7208
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-31T13:01:49.309Z"^^xsd:dateTime ;
         adm:logMessage      "removed note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bdr:CL891EB806C31DB3C0
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  107 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMB69100E5D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T01:25:54.03Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV23951C6B666C270F
         a                   :LineageEvent ;
@@ -88,11 +79,11 @@ bdg:L8LS13795 {
         rdfs:comment        "oral transmission of tara strota" ;
         skos:altLabel       "'jigs chen bcu drug las skyob pa'i ched du sgrol ma la gsol ba 'debs pa mkhas grub dpal ldan don grub kyis mdzad pa'i lung brgyud/"@bo-x-ewts ;
         skos:prefLabel      "sgrol ma'i gsol 'debs kyi lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL891EB806C31DB3C0 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0527D1A7A1C91952 , bdr:LH81A0712D4F254976 , bdr:LH8EAFD605CD02180F ;
         :lineageObject      bdr:T140 , bdr:T619 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT891EB806C31DB3C0 .
     
     bdr:LH0527D1A7A1C91952
         a                   :LineageHolder ;
@@ -107,4 +98,9 @@ bdg:L8LS13795 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV23951C6B666C270F ;
         :lineageWho         bdr:P3510 .
+    
+    bdr:NT891EB806C31DB3C0
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 107" ;
+        :noteSource         bdr:MW1PD107937 .
 }

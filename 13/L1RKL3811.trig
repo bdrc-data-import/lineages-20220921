@@ -19,7 +19,7 @@ bdg:L1RKL3811 {
         adm:gitPath         "13/L1RKL3811.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL3811 ;
-        adm:logEntry        bda:LG14381DB39AC29931 , bda:LG2ABAD173EE71E469 , bda:LG3EE8D26C7458526A , bda:LG400DD7EB42E75673 , bda:LG4834BB7E834233DF , bda:LGA561E884611020F2 , bda:LGAD8ED1ED5FE05141 , bda:LGC22718299D80F437 , bda:LGDE6A5F18D2E99FAA , bda:LGEF6178CDCED75688 ;
+        adm:logEntry        bda:LG14381DB39AC29931 , bda:LG2ABAD173EE71E469 , bda:LG3EE8D26C7458526A , bda:LG4834BB7E834233DF , bda:LGAD8ED1ED5FE05141 , bda:LGC22718299D80F437 , bda:LGDE6A5F18D2E99FAA , bda:LGEF6178CDCED75688 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -39,21 +39,9 @@ bdg:L1RKL3811 {
         adm:logDate         "2014-07-28T12:02:47.699Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG400DD7EB42E75673
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG4834BB7E834233DF
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00023 .
-    
-    bda:LGA561E884611020F2
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGAD8ED1ED5FE05141
         a                   adm:UpdateData ;
@@ -79,12 +67,19 @@ bdg:L1RKL3811 {
         adm:logMessage      "add lin ref"@en ;
         adm:logWho          bdu:U00063 .
     
-    bdr:CL8606E3A255DE623E
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationSide  "44a3ff." ;
-        :contentLocationVolume  "kha" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0CC2262766889797
         a                   :LineageEvent ;
@@ -97,13 +92,12 @@ bdg:L1RKL3811 {
     bdr:L1RKL3811  a        :Lineage ;
         skos:altLabel       "shu ram ga warma'i lugs kyi rnam sras mthing kha zhal pa gsum phyag drug pa lha bco lnga'i rjes gnang/ las mkhan dang bcas pa'i mdung dmar can gtso 'khor gnyis kyi rjes gnang/ gar mkhan mchog ljang khu zhal gcig phyag bco brgyad 'brug zhon gyi rjes gnang/ gar mkhan mchog dmar smug zhal gsum phyag bco brgyad kyi rjes gnang/ dregs byed srin po bzhis bskor ba'i rjes gnang/ dregs byed seng zhon klu brgyad kyis bskor ba'i rjes gnang/ rnam sras dkar po tshe 'phel gyi rjes gnang rnams/"@bo-x-ewts ;
         skos:prefLabel      "rnam sras kyi rjes gnang /"@bo-x-ewts ;
-        :contentLocation    bdr:CL8606E3A255DE623E ;
         :isRoot             true ;
         :lineageHolder      bdr:LH96F3CE9C6A9AAA37 , bdr:LHB9916E1CA4355D81 , bdr:LHF711AAB269E3E34A ;
         :lineageObject      bdr:T197 ;
         :lineageRef         bdr:L1RKL3812 ;
         :lineageType        bdr:LineageRjesGnang ;
-        :note               bdr:NT038204DB985B9548 .
+        :note               bdr:NT038204DB985B9548 , bdr:NT8606E3A255DE623E .
     
     bdr:LH96F3CE9C6A9AAA37
         a                   :LineageHolder ;
@@ -123,4 +117,9 @@ bdg:L1RKL3811 {
     bdr:NT038204DB985B9548
         a                   :Note ;
         :noteText           "alternative lineage: L381b"@en .
+    
+    bdr:NT8606E3A255DE623E
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha" ;
+        :noteSource         bdr:MW29307 .
 }

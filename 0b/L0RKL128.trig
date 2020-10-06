@@ -19,7 +19,7 @@ bdg:L0RKL128 {
         adm:gitPath         "0b/L0RKL128.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L0RKL128 ;
-        adm:logEntry        bda:LG5CC7B281B39F6B01 , bda:LG755F42D3A76B0C8F , bda:LG7E11649BB2DB97A6 , bda:LG97B3FD76EBE2585B , bda:LGA610E654061794FA , bda:LGC04122860DB12683 , bda:LGE2D1036C94DBA55E , bda:LGF4DF530C04490AAB ;
+        adm:logEntry        bda:LG5CC7B281B39F6B01 , bda:LG755F42D3A76B0C8F , bda:LG7E11649BB2DB97A6 , bda:LG97B3FD76EBE2585B , bda:LGA610E654061794FA , bda:LGE2D1036C94DBA55E , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -53,29 +53,25 @@ bdg:L0RKL128 {
         adm:logMessage      "deleted note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGC04122860DB12683
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGE2D1036C94DBA55E
         a                   adm:UpdateData ;
         adm:logDate         "2014-06-10T10:07:18.463Z"^^xsd:dateTime ;
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGF4DF530C04490AAB
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL747FBDC6337A0B5F
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "35a6ff." ;
-        :contentLocationVolume  "kha" .
     
     bdr:EV0AD969FCD71DBEF7
         a                   :LineageEvent ;
@@ -211,11 +207,11 @@ bdg:L0RKL128 {
     
     bdr:L0RKL128  a         :Lineage ;
         skos:prefLabel      "gser sdings pa'i man ngag yig skor phal che ba/"@bo-x-ewts ;
-        :contentLocation    bdr:CL747FBDC6337A0B5F ;
         :isRoot             true ;
         :lineageHolder      bdr:LH01467B707C9E5679 , bdr:LH108DC1E50C0EF3B6 , bdr:LH11D3B4B88FB323AA , bdr:LH1802AC866F11EFBC , bdr:LH1A0C637875E026F8 , bdr:LH203E534B31D31B0E , bdr:LH211BE31281329EAE , bdr:LH249E43FED949B8AF , bdr:LH2814FD8DCEF4C2C3 , bdr:LH370C6700671B6D04 , bdr:LH4588BF9B582E845F , bdr:LH4BDE86B7E6E76213 , bdr:LH54E0A1715EC98EE7 , bdr:LH619579101EB8E58B , bdr:LH6ABB9109DFBA1BD9 , bdr:LH6B9BB896E9690446 , bdr:LH75F157C593132B53 , bdr:LH877DBD0372BD6745 , bdr:LH8C7BF2A7C3A82200 , bdr:LH8F5020DC6D9D0EA3 , bdr:LH916EA65CD330F580 , bdr:LH9A8AAF2A977CA995 , bdr:LH9B36DB57FE1AF82F , bdr:LH9CF7850AF8BE84EA , bdr:LH9E1D0861356BC722 , bdr:LHA05276C321367234 , bdr:LHA327CF8086F9D6BC , bdr:LHA7878CCD0F00E119 , bdr:LHA89D0F2F1491C1D9 , bdr:LHB983478EE30DA466 , bdr:LHD4FECD66B1259A51 , bdr:LHD8C53BA819111C5C , bdr:LHE4538487B0340DC1 , bdr:LHE8D3935B69797E94 ;
         :lineageObject      bdr:T1 , bdr:T417 ;
-        :lineageType        bdr:LineageKhrid .
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NT747FBDC6337A0B5F .
     
     bdr:LH01467B707C9E5679
         a                   :LineageHolder ;
@@ -385,4 +381,9 @@ bdg:L0RKL128 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV3E29FF68E24126DC ;
         :lineageWho         bdr:P791 .
+    
+    bdr:NT747FBDC6337A0B5F
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, 35a6ff." ;
+        :noteSource         bdr:MW1PD107937 .
 }

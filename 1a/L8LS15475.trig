@@ -29,12 +29,6 @@ bdg:L8LS15475 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL61611B34EA4FD7E6
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 93v2-4" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV03BD8D8FD08055B6
         a                   :LineageEvent ;
         :lineageFrom        bdr:P0RK1197 .
@@ -121,11 +115,11 @@ bdg:L8LS15475 {
     
     bdr:L8LS15475  a        :Lineage ;
         skos:prefLabel      "lung a nu yo ga'i skor gyi brgyud pa/ khu byug rol pa'i sgos brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL61611B34EA4FD7E6 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH04CDBAB3DDC5A3CB , bdr:LH31C4B3168DA73BD3 , bdr:LH368B28BAEA735226 , bdr:LH4036043AF1800FD4 , bdr:LH40FFB419AACDA54B , bdr:LH447DF5FF4BA40E17 , bdr:LH465B709E399464FD , bdr:LH4D6B15EB7181A4AF , bdr:LH4EE0F53FE7EBE6A9 , bdr:LH50A0E31DF8696FF4 , bdr:LH6096045B7F19B7B3 , bdr:LH70CB8CFD99C58CC2 , bdr:LH78596C571491D6E3 , bdr:LH7A34D1F245DFFD13 , bdr:LH8484BD63685383EF , bdr:LH98E0DE5AD6339CE9 , bdr:LHA00FAD0B7B6754B9 , bdr:LHA31838A3F327CAAD , bdr:LHA49BCF7E48A4B465 , bdr:LHAEDA0F7CAE221DAC , bdr:LHC5294E8B890A8B6D , bdr:LHCC9BF0E6DBEC7007 ;
         :lineageObject      bdr:T1460 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT61611B34EA4FD7E6 .
     
     bdr:LH04CDBAB3DDC5A3CB
         a                   :LineageHolder ;
@@ -236,4 +230,9 @@ bdg:L8LS15475 {
         :lineageDownFrom    bdr:L8LS15467 ;
         :lineageReceived    bdr:EV422FECE62C1E3CDA ;
         :lineageWho         bdr:P2889 .
+    
+    bdr:NT61611B34EA4FD7E6
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 93v2-4" ;
+        :noteSource         bdr:MW29706 .
 }

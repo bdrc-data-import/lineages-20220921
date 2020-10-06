@@ -19,7 +19,7 @@ bdg:L8LS14471 {
         adm:gitPath         "f1/L8LS14471.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14471 ;
-        adm:logEntry        bda:LG6A2EB2DEA3C6924B , bda:LG7EC4552BC40D0115 , bda:LG8850B6D37A7C2EBC , bda:LG969B6C150EF39EE2 , bda:LGA29A04DD3BB96171 , bda:LGC0CDBACA4700F06D , bda:LGCDF925E5A4572AA8 ;
+        adm:logEntry        bda:LG6A2EB2DEA3C6924B , bda:LG8850B6D37A7C2EBC , bda:LG969B6C150EF39EE2 , bda:LGA29A04DD3BB96171 , bda:LGCDF925E5A4572AA8 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,12 +28,6 @@ bdg:L8LS14471 {
         adm:logDate         "2014-03-05T12:18:59.365Z"^^xsd:dateTime ;
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG7EC4552BC40D0115
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG8850B6D37A7C2EBC
         a                   adm:UpdateData ;
@@ -51,23 +45,25 @@ bdg:L8LS14471 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGC0CDBACA4700F06D
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGCDF925E5A4572AA8
         a                   adm:UpdateData ;
         adm:logDate         "2019-03-05T14:18:21.345Z"^^xsd:dateTime ;
         adm:logMessage      "changed precord"@en ;
         adm:logWho          bdu:U00017 .
     
-    bdr:CL66F1CAD3BCE2BD5E
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  520 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV05097D46D6A2AD87
         a                   :LineageEvent ;
@@ -172,11 +168,11 @@ bdg:L8LS14471 {
     bdr:L8LS14471  a        :Lineage ;
         rdfs:comment        "oral transmission of mahakala panjaranatha text marked as vajra and spear"@en ;
         skos:prefLabel      "nag po chen po'i chos skor las rdo rje dung dang lhan cig gi rtags yod pa'i lung /"@bo-x-ewts ;
-        :contentLocation    bdr:CL66F1CAD3BCE2BD5E ;
         :isRoot             true ;
         :lineageHolder      bdr:LH1D90D03CB7334E85 , bdr:LH27D02689E8D8BE90 , bdr:LH28897EECA1CB9A51 , bdr:LH2898277CB6A319D3 , bdr:LH40B4B7995502A294 , bdr:LH419AC3C1A098710F , bdr:LH47F22451D896BB4E , bdr:LH49E8A192611644BC , bdr:LH5379DB40FE771871 , bdr:LH564394CF988B1D91 , bdr:LH56D91340E900563E , bdr:LH58773205671A471D , bdr:LH5DFF3DDD3DCE35EE , bdr:LH7EE4C2EFA566C50F , bdr:LH9934D74918C82AEF , bdr:LH99AA47473953DDFE , bdr:LHA427243AA3392A19 , bdr:LHA792FCB2EB28FB59 , bdr:LHA8D9A55E94437543 , bdr:LHAA4A9E72F332E1D8 , bdr:LHB3DD9B4DA0BD9D48 , bdr:LHBBDC05FDE0230C92 , bdr:LHCAD67943F2EE78FD , bdr:LHEEAF9139F4C53B8D , bdr:LHF3955404CC6E6E4B , bdr:LHFB55933AFA68AB10 ;
         :lineageObject      bdr:T1599 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT66F1CAD3BCE2BD5E .
     
     bdr:LH1D90D03CB7334E85
         a                   :LineageHolder ;
@@ -306,4 +302,9 @@ bdg:L8LS14471 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV6390D5DFB2989461 ;
         :lineageWho         bdr:P3183 .
+    
+    bdr:NT66F1CAD3BCE2BD5E
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 520" ;
+        :noteSource         bdr:MW1PD107937 .
 }

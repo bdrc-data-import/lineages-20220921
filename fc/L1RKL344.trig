@@ -19,7 +19,7 @@ bdg:L1RKL344 {
         adm:gitPath         "fc/L1RKL344.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL344 ;
-        adm:logEntry        bda:LG1E1AD90FC2C8A89B , bda:LG2D961192D934FFDE , bda:LG339842E85B54DA56 , bda:LG47BEB5ABA848AE3B , bda:LG92F5BB60F9A00A16 , bda:LGADACAEAF9ACB81A4 , bda:LGBB8525E4666820F0 , bda:LGC47BBA37F890264A , bda:LGCF73DF6F23EFC87C , bda:LGD526A62F4474B0A0 , bda:LGDD358354F35F23CB , bda:LGF37CE362B0624E51 , bda:LGF8E9C30F7E47B312 , bda:LGFA6E58A1F24C9BE2 , bda:LGFC59F6418D819DB4 ;
+        adm:logEntry        bda:LG1E1AD90FC2C8A89B , bda:LG339842E85B54DA56 , bda:LG47BEB5ABA848AE3B , bda:LG92F5BB60F9A00A16 , bda:LGADACAEAF9ACB81A4 , bda:LGBB8525E4666820F0 , bda:LGD526A62F4474B0A0 , bda:LGDD358354F35F23CB , bda:LGF37CE362B0624E51 , bda:LGF8E9C30F7E47B312 , bda:LGFA6E58A1F24C9BE2 , bda:LGFC59F6418D819DB4 , bda:LGIMB5106F8FDA , bda:LGIMDE06E8288A , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -27,12 +27,6 @@ bdg:L1RKL344 {
         a                   adm:UpdateData ;
         adm:logDate         "2014-08-22T11:23:05.448Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG2D961192D934FFDE
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:18:50.168Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG339842E85B54DA56
         a                   adm:UpdateData ;
@@ -60,18 +54,6 @@ bdg:L1RKL344 {
     bda:LGBB8525E4666820F0
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00023 .
-    
-    bda:LGC47BBA37F890264A
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LGCF73DF6F23EFC87C
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGD526A62F4474B0A0
         a                   adm:UpdateData ;
@@ -104,12 +86,26 @@ bdg:L1RKL344 {
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
     
-    bdr:CL7043E4D518C2A7C0
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationSide  "2b3f." ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMDE06E8288A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:18:50.168Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV027234A657F9D370
         a                   :LineageEvent ;
@@ -220,15 +216,14 @@ bdg:L1RKL344 {
         :lineageFrom        bdr:P8481 .
     
     bdr:L1RKL344  a         :Lineage ;
-        rdfs:comment        "Initiation into the Cycle of amitAyus with the nine gods of the jetAri tradition"@en ;
         skos:prefLabel      "grub chen dze ta ri'i lugs kyi mgon po tshe dpag med lha dgu'i dkyil 'khor du dbang bskur ba/"@bo-x-ewts ;
-        :contentLocation    bdr:CL7043E4D518C2A7C0 ;
+        :catalogInfo        "Initiation into the Cycle of amitAyus with the nine gods of the jetAri tradition"@en ;
         :isRoot             true ;
         :lineageHolder      bdr:LH06C58035050FE4C1 , bdr:LH11B4AF4AE541AE27 , bdr:LH1FA1B91D8600525B , bdr:LH2679F8BC0FD9D5A5 , bdr:LH2E87DE0044EDDD0E , bdr:LH36C7C97EEABB25FE , bdr:LH38C11085975E5D01 , bdr:LH39EFDD3E6817D2BA , bdr:LH4635DD6D52EA705D , bdr:LH48ECDC65B987F79C , bdr:LH4A7615B3EC624A6B , bdr:LH4AA9EAB462BC7F20 , bdr:LH517B18C9FE94B47A , bdr:LH5E0C76EF536BFFC0 , bdr:LH61B2D78C8EF3D6C7 , bdr:LH6F791C421B87611D , bdr:LH7EA54CA051EAFF29 , bdr:LH83808536FEB1FA02 , bdr:LH8E5F136AC764E3BE , bdr:LH9C957C418A66C3E4 , bdr:LHBEE5F5B8955A538D , bdr:LHBFEA3E3D21822720 , bdr:LHCC77F82D89A1950B , bdr:LHD6DD1B40318DFBE9 , bdr:LHE1956D4EA5F8AB52 , bdr:LHE76F6D1F9F2544CA , bdr:LHE8DA4CD5F7D4D819 , bdr:LHFD482D9C7286FE20 ;
         :lineageObject      bdr:T993 ;
         :lineageRef         bdr:L1RKL341 , bdr:L1RKL342 , bdr:L1RKL343 , bdr:L1RKL345 , bdr:L1RKL346 , bdr:L1RKL347 , bdr:L1RKL348 , bdr:L1RKL349 ;
         :lineageType        bdr:LineageDbang ;
-        :note               bdr:NT0F40B3B0710378EC , bdr:NT588C465A6A55E62E , bdr:NT7AAC06A4EDA8A421 , bdr:NT8D4ECB4BA9A230E4 , bdr:NTA1FA530F1181C1F9 , bdr:NTA56FEF855EA02FA0 , bdr:NTD88FD40C22BDF8BB , bdr:NTDFC156DCB9D26F83 , bdr:NTE04EE7DB045D1EFE , bdr:NTF6B63660814134AA .
+        :note               bdr:NT0F40B3B0710378EC , bdr:NT588C465A6A55E62E , bdr:NT7043E4D518C2A7C0 , bdr:NT7AAC06A4EDA8A421 , bdr:NT8D4ECB4BA9A230E4 , bdr:NTA1FA530F1181C1F9 , bdr:NTA56FEF855EA02FA0 , bdr:NTD88FD40C22BDF8BB , bdr:NTDFC156DCB9D26F83 , bdr:NTE04EE7DB045D1EFE , bdr:NTF6B63660814134AA .
     
     bdr:LH06C58035050FE4C1
         a                   :LineageHolder ;
@@ -376,6 +371,11 @@ bdg:L1RKL344 {
     bdr:NT588C465A6A55E62E
         a                   :Note ;
         :noteText           "alternative lineage: L34c"@en .
+    
+    bdr:NT7043E4D518C2A7C0
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1" ;
+        :noteSource         bdr:MW1PD107937 .
     
     bdr:NT7AAC06A4EDA8A421
         a                   :Note ;

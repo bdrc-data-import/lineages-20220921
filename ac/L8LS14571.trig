@@ -19,7 +19,7 @@ bdg:L8LS14571 {
         adm:gitPath         "ac/L8LS14571.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14571 ;
-        adm:logEntry        bda:LG1D3509465A373F54 , bda:LG35A420B3EB96C301 , bda:LG38DD35289E4D6295 , bda:LG4C5F3F8014136809 , bda:LG7A42BABD2A67EE32 , bda:LG9834FDBBC490D991 ;
+        adm:logEntry        bda:LG1D3509465A373F54 , bda:LG35A420B3EB96C301 , bda:LG38DD35289E4D6295 , bda:LG4C5F3F8014136809 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -46,23 +46,19 @@ bdg:L8LS14571 {
         adm:logMessage      "added location and object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG7A42BABD2A67EE32
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LG9834FDBBC490D991
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL397A010A0AB24811
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  583 ;
-        :contentLocationVolume  1 .
     
     bdr:EV01809E9334543213
         a                   :LineageEvent ;
@@ -187,11 +183,11 @@ bdg:L8LS14571 {
     bdr:L8LS14571  a        :Lineage ;
         rdfs:comment        "anuja transmission of mahakala and oral transmission of text marked as bram"@en ;
         skos:prefLabel      "bram ze nag po mngags gtad kyi rjes gnang dang bram gyi rtags yod pa'i lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL397A010A0AB24811 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH03C0AA4986A3E45E , bdr:LH0A81EB5FC6A0673D , bdr:LH0ABB0AE78B93769E , bdr:LH189287F4D5BA13D7 , bdr:LH1CABCDBE3EE1B5EC , bdr:LH308AB67A2F8ADDBC , bdr:LH3262CFD7FEBB5AEE , bdr:LH377B6D43B33CF07F , bdr:LH3875871BE6BFB97C , bdr:LH3C653EC76370F95B , bdr:LH3E6568D262DDAF83 , bdr:LH4448060E8652C5D9 , bdr:LH56324A231583AA9E , bdr:LH6280032CED31770F , bdr:LH792E07EEEAD9C63F , bdr:LH7A137BD3D8C9A20E , bdr:LH8E7F3F6C6BA0FF47 , bdr:LH9B23A09B83BFB5D9 , bdr:LH9DAD5582BABE4269 , bdr:LHA19EEDC4A69EC752 , bdr:LHA515B2FAB8DF9A7F , bdr:LHA98BD064FDCCD9AB , bdr:LHB75E6E2DC27839DF , bdr:LHCD919ACCC76DE6C3 , bdr:LHD886DC4670EAC55A , bdr:LHD93BF81577B7D036 , bdr:LHD980782ACE50E0B8 , bdr:LHE2671FD35BE544E7 , bdr:LHEE77E4CDADB8DC6E , bdr:LHEFD03E714F2E0EC9 , bdr:LHF81C0E2415349C0F ;
         :lineageObject      bdr:T950 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT397A010A0AB24811 .
     
     bdr:LH03C0AA4986A3E45E
         a                   :LineageHolder ;
@@ -346,4 +342,9 @@ bdg:L8LS14571 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV97CAB24EB3B89105 ;
         :lineageWho         bdr:P2611 .
+    
+    bdr:NT397A010A0AB24811
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 583" ;
+        :noteSource         bdr:MW1PD107937 .
 }

@@ -19,7 +19,7 @@ bdg:L8LS14166 {
         adm:gitPath         "8f/L8LS14166.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14166 ;
-        adm:logEntry        bda:LG5D046C240665511E , bda:LG68BCD33BBB954869 , bda:LG8563F4D122145D7B , bda:LGBB1B75CAFE14B918 , bda:LGBB28E9537A829880 , bda:LGBF9EA24900234B82 ;
+        adm:logEntry        bda:LG5D046C240665511E , bda:LG68BCD33BBB954869 , bda:LG8563F4D122145D7B , bda:LGBB1B75CAFE14B918 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -45,23 +45,19 @@ bdg:L8LS14166 {
         adm:logMessage      "added short title"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGBB28E9537A829880
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LGBF9EA24900234B82
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL873A42BDF64CCB84
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  251 ;
-        :contentLocationVolume  1 .
     
     bdr:EV0976376C0AAB9630
         a                   :LineageEvent ;
@@ -199,11 +195,11 @@ bdg:L8LS14166 {
         rdfs:comment        "initiation transmission of cakrasamvara drawing mandala, balpangna tradition"@en ;
         skos:altLabel       "dpal 'khor lo sdom pa lha drug cu rtsa gnyis kyi ras bris dkyil 'khor du dbang nos pa'i brgyud pa las/ bka babs brgyad pa sbal spang sna lugs kyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "'khor lo sdom pa lha drug cu rtsa gnyis kyi ras bris dkyil 'khor du dbang nos pa'i brgyud pa/ sbal spang sna lugs/"@bo-x-ewts ;
-        :contentLocation    bdr:CL873A42BDF64CCB84 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH041D817A6C9C0497 , bdr:LH0D0243DD362445BB , bdr:LH0E5E918F14E473DA , bdr:LH1D79BCF621AF3514 , bdr:LH1E32B30EB65285F7 , bdr:LH2BFC29B62F88D69B , bdr:LH2C87320983AA606C , bdr:LH2FC73B4E71C4C035 , bdr:LH2FC77ADB3E8EECF0 , bdr:LH3DA0B0E0A9049640 , bdr:LH416F51733246F40A , bdr:LH52183CF34D985DBB , bdr:LH5D33C671F0F1AEDB , bdr:LH6186C7B0C1C36BD2 , bdr:LH6893A3B3BDA2F5A9 , bdr:LH6DF53EF80A6EE54B , bdr:LH721DA31A042FA52D , bdr:LH809F2E79347F3C98 , bdr:LH8C771938AA96FCEB , bdr:LH9370BD78093A9A3E , bdr:LHA577372711BAD7CA , bdr:LHAA409D9C996332B0 , bdr:LHACEFDD8B86348947 , bdr:LHC0E8DEE375EF3A34 , bdr:LHD0814C999EDEB794 , bdr:LHDA00D93DC5ED3513 , bdr:LHDCA3DA04B506F5DB , bdr:LHE065882853561B4E , bdr:LHF47A588A30997691 , bdr:LHFA581BE35D4C7ACF ;
         :lineageObject      bdr:T418 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NT873A42BDF64CCB84 .
     
     bdr:LH041D817A6C9C0497
         a                   :LineageHolder ;
@@ -353,4 +349,9 @@ bdg:L8LS14166 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVB69C67FB7342B02E ;
         :lineageWho         bdr:P4CZ15360 .
+    
+    bdr:NT873A42BDF64CCB84
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 251" ;
+        :noteSource         bdr:MW1PD107937 .
 }

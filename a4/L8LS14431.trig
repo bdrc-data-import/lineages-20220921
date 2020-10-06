@@ -19,7 +19,7 @@ bdg:L8LS14431 {
         adm:gitPath         "a4/L8LS14431.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14431 ;
-        adm:logEntry        bda:LG19B88378B50DF8AD , bda:LG6A0C7E3ED9C1F7B8 , bda:LG7F0B9E0C862E7532 , bda:LG8EBA1CCE8445EBD7 , bda:LGBA5247AD1E346143 , bda:LGD1AF7EF2E32E9A15 , bda:LGEBF9DB577A5C8C23 ;
+        adm:logEntry        bda:LG19B88378B50DF8AD , bda:LG6A0C7E3ED9C1F7B8 , bda:LG7F0B9E0C862E7532 , bda:LG8EBA1CCE8445EBD7 , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -46,29 +46,26 @@ bdg:L8LS14431 {
         adm:logMessage      "added topic and location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGBA5247AD1E346143
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LGD1AF7EF2E32E9A15
+    bda:LGIMD0AA988290
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LGEBF9DB577A5C8C23
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CLDB6B13E9E8F65930
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  412 ;
-        :contentLocationVolume  1 .
     
     bdr:EV36BE087D4189BE2F
         a                   :LineageEvent ;
@@ -94,11 +91,11 @@ bdg:L8LS14431 {
         rdfs:comment        "oral transmission of ganapati instructional text marked as ngag"@en ;
         skos:altLabel       "bde mchog rdo rje mkha' 'gro rgyud nas bshad pa'i dpal lha chen tshogs kyi bdag po khams gsum dbang du mdzad pa'i gdams skor las/ ngag gi rtags yod pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "lha chen tshogs kyi bdag po khams gsum dbang du mdzad pa'i gdams skor gyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLDB6B13E9E8F65930 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH21AF61B3EB639F04 , bdr:LH249854FC990633C4 , bdr:LH69F88B97F73371CA , bdr:LH9B561EC22361E92C , bdr:LH9E145EF23832F289 , bdr:LHF8463F9C61DD399F ;
         :lineageObject      bdr:T1852 , bdr:T613 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTDB6B13E9E8F65930 .
     
     bdr:LH21AF61B3EB639F04
         a                   :LineageHolder ;
@@ -128,4 +125,9 @@ bdg:L8LS14431 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVCA7CB30EE0EE99DE ;
         :lineageWho         bdr:P787 .
+    
+    bdr:NTDB6B13E9E8F65930
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 412" ;
+        :noteSource         bdr:MW1PD107937 .
 }

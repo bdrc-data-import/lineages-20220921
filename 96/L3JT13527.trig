@@ -28,12 +28,6 @@ bdg:L3JT13527 {
         adm:logDate         "2014-08-12T16:10:58.744Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00013 .
     
-    bdr:CL59B13996451C0E05
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W1KG18291 ;
-        :contentLocationSide  "250r-250v" .
-    
     bdr:EV15D40B81021A1993
         a                   :LineageEvent ;
         :lineageFrom        bdr:P2782 .
@@ -108,11 +102,11 @@ bdg:L3JT13527 {
     
     bdr:L3JT13527  a        :Lineage ;
         skos:prefLabel      "bka' srung chos skor la/ gtor dbang bar chad kun sel/ grib sel/ gnad dbab/ bla ma mgon po dbyer med/ mgon dkar yid bzhin nor bu/ gzigs ldan/ mgon ser/ mgon dmar/ mgon ljang / rgyan che chung / lha mo/ 'khor bzhi rnams kyi dgos sgrub/ lha bzhi'i skor/ mkha' spyod gsum phugs/ sha wa ra'i sgrub thabs rtsod bral sogs/ yig rnying dri ma med pa rnams kyi lung thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL59B13996451C0E05 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH04B79065D6577764 , bdr:LH0F5A2816A31A41C5 , bdr:LH0F61B8C246A49E6C , bdr:LH14A02C2BA7BF502D , bdr:LH1D8B60E4BCE80B13 , bdr:LH213DC74CB645AE70 , bdr:LH402A3FE697C365D0 , bdr:LH529FE7FDE39AB380 , bdr:LH5504FF7DED5D8769 , bdr:LH8A1176A54FA3973B , bdr:LH9AEE2D8F5454F188 , bdr:LH9B41D2421EE7B240 , bdr:LHAB4EFD6C44A1DD94 , bdr:LHB3D0FBCD12DFDF13 , bdr:LHB66A647D43678166 , bdr:LHB77B4EC3DB64E5A5 , bdr:LHC5FC5F904D77E818 , bdr:LHE5FA8287F6302F08 , bdr:LHE6FA030EE2694C9D ;
         :lineageObject      bdr:T401 , bdr:T458 , bdr:T950 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT59B13996451C0E05 .
     
     bdr:LH04B79065D6577764
         a                   :LineageHolder ;
@@ -207,4 +201,8 @@ bdg:L3JT13527 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV41966273A3F37089 ;
         :lineageWho         bdr:P2387 .
+    
+    bdr:NT59B13996451C0E05
+        a                   :Note ;
+        :noteSource         bdr:MW1KG18291 .
 }

@@ -19,7 +19,7 @@ bdg:L8LS15163 {
         adm:gitPath         "56/L8LS15163.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS15163 ;
-        adm:logEntry        bda:LG15C6761E6721C505 , bda:LG2E7F8D9E962500DF , bda:LG4767720EF5D96FB4 , bda:LG92757196DFFA60CA , bda:LGAC66E3381684D5F0 , bda:LGC2F0A9CE0B8B9395 , bda:LGCA9D7F3681225448 , bda:LGCEDEEF0DD88DC078 , bda:LGFF01D15576EB4472 ;
+        adm:logEntry        bda:LG15C6761E6721C505 , bda:LG2E7F8D9E962500DF , bda:LG4767720EF5D96FB4 , bda:LG92757196DFFA60CA , bda:LGAC66E3381684D5F0 , bda:LGC2F0A9CE0B8B9395 , bda:LGCEDEEF0DD88DC078 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -58,29 +58,24 @@ bdg:L8LS15163 {
         adm:logMessage      "added short title and location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGCA9D7F3681225448
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGCEDEEF0DD88DC078
         a                   adm:UpdateData ;
         adm:logDate         "2014-02-26T10:27:58.719Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGFF01D15576EB4472
+    bda:LGIM88BD19A8AB
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CLB84C89A0DA173EF8
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationSide  "f. 36v2-4" ;
-        :contentLocationVolume  "e" .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV061EBB5B51B43FBF
         a                   :LineageEvent ;
@@ -177,11 +172,11 @@ bdg:L8LS15163 {
     bdr:L8LS15163  a        :Lineage ;
         skos:altLabel       "gsum pa 'khor lo tha ma'i mdo bzhugs tshogs che ba'i skor la/ phal chen dang dkon brtseg gnyis las/ rgya gar nas bsgyur ba'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "phal chen dang dkon brtseg gnyis rgya gar nas bsgyur ba'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLB84C89A0DA173EF8 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH04C1FD51CD045949 , bdr:LH064D038B6FD8A18C , bdr:LH06B56BFD601CF7E3 , bdr:LH081F7FA69DC6E260 , bdr:LH16B023A7A7F3CCC0 , bdr:LH368BFB5E4D425F6B , bdr:LH43001E08AB6FD5B5 , bdr:LH442BC7F25ED20D99 , bdr:LH501DF8614FA59A26 , bdr:LH5AB05F5954433AB1 , bdr:LH5CF73A1419076EC3 , bdr:LH759C0EE9D35A4AB8 , bdr:LH86A14156E4BBAC71 , bdr:LH8A10C963267C6898 , bdr:LH9935AD9DBEE5E353 , bdr:LH9EC46F1EE60D48AD , bdr:LHA01FF2E7CAEE2BE5 , bdr:LHB039070E840283D5 , bdr:LHD60C4DD5D8D7FE46 , bdr:LHE1FD9A1D2A80C8F1 , bdr:LHE7D25F4BBC8B44C4 , bdr:LHF729E94C92C34FF7 , bdr:LHF9F93D82E1472AED , bdr:LHFABFE0E2AD69BDC5 ;
         :lineageObject      bdr:T00AG0322 , bdr:T2008 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTB84C89A0DA173EF8 .
     
     bdr:LH04C1FD51CD045949
         a                   :LineageHolder ;
@@ -303,4 +298,9 @@ bdg:L8LS15163 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVBEE5E2228D446E3A ;
         :lineageWho         bdr:P155 .
+    
+    bdr:NTB84C89A0DA173EF8
+        a                   :Note ;
+        :contentLocationStatement  "vol. e" ;
+        :noteSource         bdr:MW29706 .
 }

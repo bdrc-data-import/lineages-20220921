@@ -19,7 +19,7 @@ bdg:L8LS15145 {
         adm:gitPath         "b3/L8LS15145.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS15145 ;
-        adm:logEntry        bda:LG0AD42F3824FBCA57 , bda:LG619823C06003F2A9 , bda:LG76144B535B72F55C , bda:LG89CA6F7267D77BB8 , bda:LGA5C789FD9CB9B717 , bda:LGA790264D84815FFF , bda:LGBABF288691A96F25 , bda:LGD8C555F502C36AAF , bda:LGF8B028A637735988 ;
+        adm:logEntry        bda:LG0AD42F3824FBCA57 , bda:LG619823C06003F2A9 , bda:LGA5C789FD9CB9B717 , bda:LGA790264D84815FFF , bda:LGBABF288691A96F25 , bda:LGD8C555F502C36AAF , bda:LGF8B028A637735988 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -33,18 +33,6 @@ bdg:L8LS15145 {
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:19.947Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG76144B535B72F55C
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG89CA6F7267D77BB8
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGA5C789FD9CB9B717
         a                   adm:UpdateData ;
@@ -73,12 +61,19 @@ bdg:L8LS15145 {
         adm:logDate         "2014-06-02T09:24:17.179Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL037AB462344D0000
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationSide  "f. 33r3-4" ;
-        :contentLocationVolume  "e" .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV57B8E834322B458F
         a                   :LineageEvent ;
@@ -95,11 +90,11 @@ bdg:L8LS15145 {
     bdr:L8LS15145  a        :Lineage ;
         skos:altLabel       "shes phyin khri brgyad stong pa bam po drug cu le'u brgyad cu rtsa gnyis pa/ zhes pa chos nyid mi 'gyur ba bstan pa yin gyi/ byams zhus bsdus pa tshigs su bcas pa rtag tu ngu chos 'phags yongs gtad sogs khyon bsdoms bdun cu rtsa bdun 'byung zhing lo tsA ba ban+de ye shes sde sogs kyis bsgyur ba thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "shes phyin khri brgyad stong pa thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL037AB462344D0000 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH1D3775A8C16E190B , bdr:LH4C1E425F7BC2370F , bdr:LH9136479F9539D816 , bdr:LHD30D353E1448ACE3 ;
         :lineageObject      bdr:W4CZ15640 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT037AB462344D0000 .
     
     bdr:LH1D3775A8C16E190B
         a                   :LineageHolder ;
@@ -122,4 +117,9 @@ bdg:L8LS15145 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV9862BACF21B9F563 ;
         :lineageWho         bdr:P4849 .
+    
+    bdr:NT037AB462344D0000
+        a                   :Note ;
+        :contentLocationStatement  "vol. e" ;
+        :noteSource         bdr:MW29706 .
 }

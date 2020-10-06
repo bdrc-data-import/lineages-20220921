@@ -19,7 +19,7 @@ bdg:L0RKL139 {
         adm:gitPath         "ce/L0RKL139.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L0RKL139 ;
-        adm:logEntry        bda:LG17C4214962AC9685 , bda:LG484D30422FFCDBC2 , bda:LG530A6035448130FA , bda:LG928E166052E5E26F , bda:LGAAB92DC4D99E1F47 , bda:LGC4868A69A3373AC4 , bda:LGF3988D64CC5D296C ;
+        adm:logEntry        bda:LG17C4214962AC9685 , bda:LG484D30422FFCDBC2 , bda:LG928E166052E5E26F , bda:LGC4868A69A3373AC4 , bda:LGF3988D64CC5D296C , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,22 +35,10 @@ bdg:L0RKL139 {
         adm:logMessage      "edited according to the gsan yig"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG530A6035448130FA
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG928E166052E5E26F
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-30T08:41:03.332Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LGAAB92DC4D99E1F47
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGC4868A69A3373AC4
         a                   adm:UpdateData ;
@@ -63,11 +51,19 @@ bdg:L0RKL139 {
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
     
-    bdr:CL8ED0734057D5907A
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  77 ;
-        :contentLocationVolume  "kha" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV04DE46E56F3E0C46
         a                   :LineageEvent ;
@@ -140,11 +136,11 @@ bdg:L0RKL139 {
     bdr:L0RKL139  a         :Lineage ;
         skos:altLabel       "ngan song thams cad yongs su sbyongs ba'i rgyud chen po rin chen mchog gi 'gyur/ sa bcad mchan bu spyi don rnams rje btsun chen pos mdzad pa/ kun mkhyen chen pos mdzad pa'i Tikka dang bcas pa'i steng nas bshad bka' lung dang bcas pa thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "ngan song thams cad yongs su sbyongs ba'i rgyud chen Tikka dang bcas pa'i bshad bka' lung dang bcas pa thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL8ED0734057D5907A ;
         :isRoot             true ;
         :lineageHolder      bdr:LH032332FDCC3D4B2F , bdr:LH0F2864B2764DF572 , bdr:LH155DA95034D7ED56 , bdr:LH2E05E1FC87C57735 , bdr:LH32350455BC1DF164 , bdr:LH3B32B53EF2A40CF6 , bdr:LH41D1DCE8E01CA033 , bdr:LH6AF5D036D720DD1D , bdr:LH6F98510ED274F50E , bdr:LH7B034D8EC1EC60E5 , bdr:LH7D8532E04CE10BA1 , bdr:LH80F514631AF0A337 , bdr:LH89916AC7FA5DDA64 , bdr:LHA298C80088F0A242 , bdr:LHAC26EF54574A2AA9 , bdr:LHC4F1CC02CA083888 , bdr:LHC7DB7C80FFCCED3A , bdr:LHF77CE79F24A4DA97 ;
         :lineageObject      bdr:T976 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT8ED0734057D5907A .
     
     bdr:LH032332FDCC3D4B2F
         a                   :LineageHolder ;
@@ -240,4 +236,9 @@ bdg:L0RKL139 {
     bdr:NT47398B6A4F731284
         a                   :Note ;
         :noteText           "<down to rje sa chen (illegible) see L134 ?>"@en .
+    
+    bdr:NT8ED0734057D5907A
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, p. 77" ;
+        :noteSource         bdr:MW29307 .
 }

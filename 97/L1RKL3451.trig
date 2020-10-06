@@ -19,15 +19,9 @@ bdg:L1RKL3451 {
         adm:gitPath         "97/L1RKL3451.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL3451 ;
-        adm:logEntry        bda:LG0019CB4C574E08A0 , bda:LG0747AF994B278838 , bda:LG26668D0335A232D0 , bda:LG3AC8189316BF78AF , bda:LG4248966688BE71BA , bda:LG770C4BE3754238B0 , bda:LG91929456ECA36B93 , bda:LG9FDA549887ADC6B4 , bda:LGF14BB47704F3152B , bda:LGFDB435AD27CBF863 ;
+        adm:logEntry        bda:LG0747AF994B278838 , bda:LG26668D0335A232D0 , bda:LG3AC8189316BF78AF , bda:LG4248966688BE71BA , bda:LG770C4BE3754238B0 , bda:LG91929456ECA36B93 , bda:LG9FDA549887ADC6B4 , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG0019CB4C574E08A0
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG0747AF994B278838
         a                   adm:InitialDataCreation ;
@@ -68,23 +62,26 @@ bdg:L1RKL3451 {
         adm:logMessage      "change name add lin rek"@en ;
         adm:logWho          bdu:U00063 .
     
-    bda:LGF14BB47704F3152B
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LGFDB435AD27CBF863
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CLEB82C325124D28C1
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "419-420" ;
-        :contentLocationVolume  "kha" .
     
     bdr:EV045C4B4494C15F03
         a                   :LineageEvent ;
@@ -165,13 +162,12 @@ bdg:L1RKL3451 {
     bdr:L1RKL3451  a        :Lineage ;
         skos:altLabel       "paN chen shAkya shrI nas brgyud pa'i bde mchog lhan skyes dkar po'i byin rlabs sngon du 'gro ba'i sgo nas khrid zab mo nyams khrid du stsal nas/ de'i rgyab chos khrid kyi nyams len gyi yi ge rnams kyi lung dang bcas pa thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "bde mchog lhan skyes dkar po'i byin rlabs khrid du stsal nas/ de'i rgyab chos khrid kyi lung dang bcas pa thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLEB82C325124D28C1 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH095F12F96CDF0C54 , bdr:LH16CF357911F3A306 , bdr:LH4C4EE55874FC8A4B , bdr:LH5AEF492DCF219586 , bdr:LH5E951252DA6BC19E , bdr:LH6475032A544CB7AF , bdr:LH945E36689C9D7243 , bdr:LHAB6709D13A3A08DC , bdr:LHC3EA27CED14D3EC7 , bdr:LHC926038E26780696 , bdr:LHC9F3BC28B1BE1F38 , bdr:LHCBA3DB843A50869D , bdr:LHDD4626F0C00267AA , bdr:LHDD5C1D7A2DC4284F , bdr:LHE53A14C1FC536CE5 , bdr:LHE5DEF23A604FCFFE , bdr:LHFB312918ED9692A5 , bdr:LHFE0628437C2D010E , bdr:LHFF8B3D9E96F729CC ;
         :lineageObject      bdr:T576 ;
         :lineageRef         bdr:L1RKL3452 ;
         :lineageType        bdr:LineageLung ;
-        :note               bdr:NT6A2CF7CEAF9A1A24 .
+        :note               bdr:NT6A2CF7CEAF9A1A24 , bdr:NTEB82C325124D28C1 .
     
     bdr:LH095F12F96CDF0C54
         a                   :LineageHolder ;
@@ -270,4 +266,9 @@ bdg:L1RKL3451 {
     bdr:NT6A2CF7CEAF9A1A24
         a                   :Note ;
         :noteText           "alternative lineage: L345b"@en .
+    
+    bdr:NTEB82C325124D28C1
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, p. 419-420" ;
+        :noteSource         bdr:MW29307 .
 }

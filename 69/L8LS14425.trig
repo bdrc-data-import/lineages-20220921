@@ -19,7 +19,7 @@ bdg:L8LS14425 {
         adm:gitPath         "69/L8LS14425.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14425 ;
-        adm:logEntry        bda:LG1BC75AEE6575ECB9 , bda:LG6B888270CD816595 , bda:LG6D8FFA0B41294A2D , bda:LG7E49D60999746B16 , bda:LG8A4E0262719DC6BD , bda:LGF50E1A6AA83D865F ;
+        adm:logEntry        bda:LG1BC75AEE6575ECB9 , bda:LG6B888270CD816595 , bda:LG6D8FFA0B41294A2D , bda:LG8A4E0262719DC6BD , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -40,28 +40,24 @@ bdg:L8LS14425 {
         adm:logMessage      "added topic"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG7E49D60999746B16
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG8A4E0262719DC6BD
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-09-06T11:57:43.511Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGF50E1A6AA83D865F
+    bda:LGIM88BD19A8AB
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CLE2EBA0D29A146219
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  400 ;
-        :contentLocationVolume  1 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV096529BEBDD8C50F
         a                   :LineageEvent ;
@@ -159,11 +155,11 @@ bdg:L8LS14425 {
         rdfs:comment        "anuja and oral transmission of the three deity empowerment from the sercho chusum teachings of sakya"@en ;
         skos:altLabel       "gser chos bcu gsum las dbang gyi lha gsum du grags pa'i skor la/ dpal mo gser gyi snying thig can gyi rjes gnang / nor rgyun ma dmar mo'i sku sgoms dang bzlas lung gi rjes gnang / lha lo ti nu'i bdud rtsi sin+d+hu ra'i dril bu la brten pa'i sku gsung thugs kyi rjes gnang gi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "gser chos bcu gsum las dbang gyi lha gsum du grags pa'i rjes gnang dang lung gi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLE2EBA0D29A146219 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0CB7FB00036730B7 , bdr:LH12D99BC1C064A9A0 , bdr:LH23F8B5A5F8906D02 , bdr:LH25536398E1E77482 , bdr:LH288D9DDAD9CBF474 , bdr:LH3243FBD45C33FB8E , bdr:LH5961B88FBE340165 , bdr:LH60BC814D5FCF0859 , bdr:LH640E8C814FA45EA5 , bdr:LH74BE2B95A6DEF26A , bdr:LH7BDDB935C1F0AE97 , bdr:LH7C1D55B30DEAA87A , bdr:LH8A0153CDA0EA51A6 , bdr:LH923B829393FE9377 , bdr:LH95C65B739D725A6F , bdr:LHA1B453385FB59074 , bdr:LHA1BB45366BAF0461 , bdr:LHBD7FB4CB2A354AC0 , bdr:LHC1C7762985A63F9B , bdr:LHCD8CB70624266E87 , bdr:LHCFE656E4F7A83188 , bdr:LHD1748A5818E0F760 , bdr:LHDDD13611B7910397 , bdr:LHF8F30BD281DB540A ;
         :lineageObject      bdr:T2138 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTE2EBA0D29A146219 .
     
     bdr:LH0CB7FB00036730B7
         a                   :LineageHolder ;
@@ -283,4 +279,9 @@ bdg:L8LS14425 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVC4F93E0139D819E7 ;
         :lineageWho         bdr:P0RK1500 .
+    
+    bdr:NTE2EBA0D29A146219
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 400" ;
+        :noteSource         bdr:MW1PD107937 .
 }

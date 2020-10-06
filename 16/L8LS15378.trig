@@ -29,12 +29,6 @@ bdg:L8LS15378 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL73E998EE66192486
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 81r2-3" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV0972F616D423F223
         a                   :LineageEvent ;
         :lineageFrom        bdr:T390 .
@@ -98,11 +92,11 @@ bdg:L8LS15378 {
     bdr:L8LS15378  a        :Lineage ;
         skos:altLabel       "rdo rje lu gu rgyud kyi rtog pa a tul la badzra dang mar pa chos dbang gis bsgyur ba'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "rdo rje lu gu rgyud kyi rtog pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL73E998EE66192486 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0A96FBFCBDAA7B48 , bdr:LH0B07C835638A6443 , bdr:LH17503F137C5BB716 , bdr:LH23338EDB7730CD19 , bdr:LH4EB140BE787C1CB1 , bdr:LH557C88A5EF3FB56A , bdr:LH679EA3A3522AA784 , bdr:LH695FB32E11553216 , bdr:LH7F4C53C2A2003171 , bdr:LH9507EA977D48025C , bdr:LH9AC4FEEB0D694539 , bdr:LHC48B89D4F36F3CBC , bdr:LHD334FE49DA6CA3C4 , bdr:LHDD3448BCB569B404 , bdr:LHE00241DE23AFC2C7 , bdr:LHFF1AF9CA6599843B ;
         :lineageObject      bdr:T2129 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT73E998EE66192486 .
     
     bdr:LH0A96FBFCBDAA7B48
         a                   :LineageHolder ;
@@ -183,4 +177,9 @@ bdg:L8LS15378 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV0972F616D423F223 ;
         :lineageWho         bdr:P0RK1619 .
+    
+    bdr:NT73E998EE66192486
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 81r2-3" ;
+        :noteSource         bdr:MW29706 .
 }

@@ -29,11 +29,6 @@ bdg:L8LS15727 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL79D6055E979705F6
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1KG16278 ;
-        :contentLocationPage  140 .
-    
     bdr:EV04BE3222636FE02E
         a                   :LineageEvent ;
         :lineageFrom        bdr:P3898 .
@@ -109,11 +104,11 @@ bdg:L8LS15727 {
     bdr:L8LS15727  a        :Lineage ;
         skos:altLabel       "pad+ma badz+ras mdzad pa'i kye rdo rje'i b+ha tra ra ga'i bstod pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "kye rdo rje'i b+ha tra ra ga'i bstod pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL79D6055E979705F6 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH2E1F2D44E90A89EC , bdr:LH370FB0D3EEF94798 , bdr:LH375FDEF8B2FAC651 , bdr:LH49EA38EF9EF5025B , bdr:LH4D5A89F2C4F2E8A3 , bdr:LH53911BFEEADCD5DD , bdr:LH836BE5F86DAB1F77 , bdr:LH8E779A96B0D49DCE , bdr:LH96B87A81B956BD5B , bdr:LH96F0B212C1557B91 , bdr:LH997965FEE8CFADF4 , bdr:LHA4867E8E3B0EF904 , bdr:LHB196998F6ED43BEF , bdr:LHC370A6ED51C44B3A , bdr:LHD270FA5770161981 , bdr:LHDE5E01410452AC63 , bdr:LHE96451A42A56C5E6 , bdr:LHF9304165DE69F17C ;
         :lineageObject      bdr:T130 , bdr:T67 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT79D6055E979705F6 .
     
     bdr:LH2E1F2D44E90A89EC
         a                   :LineageHolder ;
@@ -204,4 +199,9 @@ bdg:L8LS15727 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV577EAC25DD4BD80B ;
         :lineageWho         bdr:P990 .
+    
+    bdr:NT79D6055E979705F6
+        a                   :Note ;
+        :contentLocationStatement  "p. 140" ;
+        :noteSource         bdr:MW1KG16278 .
 }

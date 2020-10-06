@@ -19,7 +19,7 @@ bdg:L1RKL2591 {
         adm:gitPath         "c4/L1RKL2591.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL2591 ;
-        adm:logEntry        bda:LG088EEA91759CB31E , bda:LG3EA4C54C9F9BA0B4 , bda:LG6FCDDAC2A393B8CD , bda:LG844E0EEA8604E9CB , bda:LG9130CF33BCC6E185 , bda:LG92FBBB462BA6B761 , bda:LGDFB0C65FE442673B , bda:LGE16B8B7B36C2DE92 , bda:LGE8FD01FBB8F0FC37 ;
+        adm:logEntry        bda:LG088EEA91759CB31E , bda:LG3EA4C54C9F9BA0B4 , bda:LG844E0EEA8604E9CB , bda:LG9130CF33BCC6E185 , bda:LGDFB0C65FE442673B , bda:LGE8FD01FBB8F0FC37 , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -33,12 +33,6 @@ bdg:L1RKL2591 {
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00023 .
     
-    bda:LG6FCDDAC2A393B8CD
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG844E0EEA8604E9CB
         a                   adm:UpdateData ;
         adm:logDate         "2014-06-03T11:17:25.184Z"^^xsd:dateTime ;
@@ -50,23 +44,11 @@ bdg:L1RKL2591 {
         adm:logMessage      "removed note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG92FBBB462BA6B761
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGDFB0C65FE442673B
         a                   adm:InitialDataImport ;
         adm:logDate         "2007-07-12T13:43:07.38Z"^^xsd:dateTime ;
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
-    
-    bda:LGE16B8B7B36C2DE92
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGE8FD01FBB8F0FC37
         a                   adm:UpdateData ;
@@ -74,11 +56,26 @@ bdg:L1RKL2591 {
         adm:logMessage      "change name add lin ref"@en ;
         adm:logWho          bdu:U00063 .
     
-    bdr:CL69CF65AA5DC402C6
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "9b2ff." ;
-        :contentLocationVolume  "kha" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV54C7CE936124B1A9
         a                   :LineageEvent ;
@@ -97,16 +94,15 @@ bdg:L1RKL2591 {
         :lineageFrom        bdr:P0RK1184 .
     
     bdr:L1RKL2591  a        :Lineage ;
-        rdfs:comment        "glo bo mkhan chen's collected works"@en ;
         skos:altLabel       "mkhyen rab kyi dbang phyug mkhan chen bsod nams lhun grub kyi bka' 'bum dkar chag nang bzhin thob pa'i rnam grangs la ... (fols. 9b3-12b7 omitted) ... la ru ba bsod nams seng ge'i rnam thar sogs bka' 'bum dkar chag nang bzhin/"@bo-x-ewts ;
         skos:prefLabel      "mkhan chen bsod nams lhun grub kyi bka' 'bum dkar chag nang bzhin thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL69CF65AA5DC402C6 ;
+        :catalogInfo        "glo bo mkhan chen's collected works"@en ;
         :isRoot             true ;
         :lineageHolder      bdr:LH1176BE0CA921ED5E , bdr:LH20C943BD93AFA185 , bdr:LH39ABD3806DEC8778 , bdr:LH5B1E2D3A660B5B2A , bdr:LH88E70AF5052EF360 ;
         :lineageObject      bdr:T208 ;
         :lineageRef         bdr:L1RKL2592 ;
         :lineageType        bdr:LineageLung ;
-        :note               bdr:NTEE05C87E00EBC381 .
+        :note               bdr:NT69CF65AA5DC402C6 , bdr:NTEE05C87E00EBC381 .
     
     bdr:LH1176BE0CA921ED5E
         a                   :LineageHolder ;
@@ -131,6 +127,11 @@ bdg:L1RKL2591 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV54C7CE936124B1A9 ;
         :lineageWho         bdr:P791 .
+    
+    bdr:NT69CF65AA5DC402C6
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, 9b2ff." ;
+        :noteSource         bdr:MW29307 .
     
     bdr:NTEE05C87E00EBC381
         a                   :Note ;

@@ -19,7 +19,7 @@ bdg:L8LS14727 {
         adm:gitPath         "54/L8LS14727.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14727 ;
-        adm:logEntry        bda:LG2D099D7F14F60398 , bda:LG4439847C6BCDEDC5 , bda:LG4B339B88DD1962BC , bda:LG6AF90794BA0D8637 , bda:LG8B327AC02085FE63 , bda:LGA78B247B2AAC71EF , bda:LGE233B19201144FCB , bda:LGE34EA8BC8F3C6D6A ;
+        adm:logEntry        bda:LG2D099D7F14F60398 , bda:LG4439847C6BCDEDC5 , bda:LG4B339B88DD1962BC , bda:LG6AF90794BA0D8637 , bda:LGE233B19201144FCB , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -47,34 +47,31 @@ bdg:L8LS14727 {
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG8B327AC02085FE63
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LGA78B247B2AAC71EF
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGE233B19201144FCB
         a                   adm:UpdateData ;
         adm:logDate         "2014-08-21T15:29:11.187Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGE34EA8BC8F3C6D6A
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL3EE4033FECBCC43F
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  83 ;
-        :contentLocationVolume  2 .
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV186AC77511081833
         a                   :LineageEvent ;
@@ -111,11 +108,11 @@ bdg:L8LS14727 {
     bdr:L8LS14727  a        :Lineage ;
         skos:altLabel       "rje btsun sa skya pa gong ma lnga'i bka' 'bum lung nos pa las/ gtsang gi rtags yod pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "rje btsun sa skya pa gong ma lnga'i bka' 'bum lung nos pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL3EE4033FECBCC43F ;
         :isRoot             true ;
         :lineageHolder      bdr:LH06122D53D36E807D , bdr:LH130338640D709528 , bdr:LH48040C5C6BBDDDEE , bdr:LH481866144B9D649F , bdr:LH4A3D227E2F608573 , bdr:LHCB6FD7E0639FA0BF , bdr:LHCCBCACCC7482B956 , bdr:LHF3F2872B9B7A3570 , bdr:LHF5A18AE45FA427D3 ;
         :lineageObject      bdr:T1PD108963 , bdr:T208 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT3EE4033FECBCC43F .
     
     bdr:LH06122D53D36E807D
         a                   :LineageHolder ;
@@ -161,4 +158,9 @@ bdg:L8LS14727 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV551BD91FC2C4BEC6 ;
         :lineageWho         bdr:P0RK1250 .
+    
+    bdr:NT3EE4033FECBCC43F
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 83" ;
+        :noteSource         bdr:MW1PD107937 .
 }

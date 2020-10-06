@@ -19,7 +19,7 @@ bdg:L8LS14506 {
         adm:gitPath         "d2/L8LS14506.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14506 ;
-        adm:logEntry        bda:LG0E941048C966FC2A , bda:LG1DD2D993413E9001 , bda:LG4721BDA979746F20 , bda:LG5280D4AF85480898 , bda:LG7F7309C91863F0E9 , bda:LGB412939EE71A72EC , bda:LGB9029F253F799846 ;
+        adm:logEntry        bda:LG0E941048C966FC2A , bda:LG4721BDA979746F20 , bda:LG5280D4AF85480898 , bda:LG7F7309C91863F0E9 , bda:LGB9029F253F799846 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,12 +28,6 @@ bdg:L8LS14506 {
         adm:logDate         "2013-09-17T13:40:12.138Z"^^xsd:dateTime ;
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG1DD2D993413E9001
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG4721BDA979746F20
         a                   adm:UpdateData ;
@@ -51,22 +45,24 @@ bdg:L8LS14506 {
         adm:logDate         "2014-05-20T16:11:22.528Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGB412939EE71A72EC
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGB9029F253F799846
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T14:38:55.891Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL2D8B547585A71B28
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  529 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV06AD57718E9C7A12
         a                   :LineageEvent ;
@@ -139,11 +135,11 @@ bdg:L8LS14506 {
     bdr:L8LS14506  a        :Lineage ;
         rdfs:comment        "anuja transmission of mahakala panjaranath"@en ;
         skos:prefLabel      "mgon po khro bcu'i rjes gnang gyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL2D8B547585A71B28 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH2C4A591820407C28 , bdr:LH45C25F700AFAEEA2 , bdr:LH5C2532AECB816678 , bdr:LH616DB39E8B28BB4F , bdr:LH636B6FD56250D4BD , bdr:LH65C6ADCBA5B183D5 , bdr:LH82C5CDB9D847B44A , bdr:LHA08AC147F9C7F6DF , bdr:LHC5777197608BB6C4 , bdr:LHCE3BB58B30F0A2E6 , bdr:LHCFAEC6DF96578264 , bdr:LHD11B521A41D60BDF , bdr:LHD98389ADE66A9D72 , bdr:LHE19B1DAB7FB7A8DF , bdr:LHE35BCB105D508211 ;
         :lineageObject      bdr:T2108 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NT2D8B547585A71B28 .
     
     bdr:LH2C4A591820407C28
         a                   :LineageHolder ;
@@ -218,4 +214,9 @@ bdg:L8LS14506 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV7A52B12CE2886FC9 ;
         :lineageWho         bdr:P2617 .
+    
+    bdr:NT2D8B547585A71B28
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 529" ;
+        :noteSource         bdr:MW1PD107937 .
 }

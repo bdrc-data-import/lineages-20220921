@@ -19,7 +19,7 @@ bdg:L8LS14824 {
         adm:gitPath         "b5/L8LS14824.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14824 ;
-        adm:logEntry        bda:LG4CC2BEB6893F2C12 , bda:LG51EA6B38A6644E9D , bda:LG83024155C89749A8 , bda:LG925F3B33753A4033 , bda:LGE695C400C5F2E419 , bda:LGF498F28B356E9E89 ;
+        adm:logEntry        bda:LG4CC2BEB6893F2C12 , bda:LG51EA6B38A6644E9D , bda:LG925F3B33753A4033 , bda:LGF498F28B356E9E89 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,23 +35,11 @@ bdg:L8LS14824 {
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG83024155C89749A8
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG925F3B33753A4033
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-22T10:19:48.876Z"^^xsd:dateTime ;
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LGE695C400C5F2E419
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGF498F28B356E9E89
         a                   adm:InitialDataCreation ;
@@ -59,11 +47,19 @@ bdg:L8LS14824 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLDF5718BE5244C92E
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  136 ;
-        :contentLocationVolume  2 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV084948510A91CD6D
         a                   :LineageEvent ;
@@ -163,11 +159,11 @@ bdg:L8LS14824 {
     
     bdr:L8LS14824  a        :Lineage ;
         skos:prefLabel      "'gro mgon zhang g.yu brag pa'i bka' 'bum pod bzhi ma'i steng nas lung nos pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLDF5718BE5244C92E ;
         :isRoot             true ;
         :lineageHolder      bdr:LH19ACD9C39410037B , bdr:LH34C5C1437E87933E , bdr:LH371DB7A25B0D2F2E , bdr:LH44E525648172B33E , bdr:LH5EEB042B20F3385A , bdr:LH681543F1D0C4B53A , bdr:LH68D8F7FD9266AC67 , bdr:LH71FE5CD1160A5080 , bdr:LH74C89CBE7EBA9533 , bdr:LH7D8D9FCC342EC7A8 , bdr:LH7E14C540A319AD68 , bdr:LHA50B514080314830 , bdr:LHB893A9FBD287AB8A , bdr:LHBAF1675632E9C669 , bdr:LHCA102126B8960717 , bdr:LHD26A72A3255A79F3 , bdr:LHD6DF190D5ED4D93A , bdr:LHDE1CBD146CDAC708 , bdr:LHDEF57F587194D89D ;
         :lineageObject      bdr:T208 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTDF5718BE5244C92E .
     
     bdr:LH19ACD9C39410037B
         a                   :LineageHolder ;
@@ -262,4 +258,9 @@ bdg:L8LS14824 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV36548CE1D1662AC1 ;
         :lineageWho         bdr:P8LS14825 .
+    
+    bdr:NTDF5718BE5244C92E
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 136" ;
+        :noteSource         bdr:MW1PD107937 .
 }

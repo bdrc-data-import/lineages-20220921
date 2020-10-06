@@ -19,27 +19,15 @@ bdg:L8LS13958 {
         adm:gitPath         "7b/L8LS13958.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13958 ;
-        adm:logEntry        bda:LG021E02F7C01F320A , bda:LG0292E94261AD5AA3 , bda:LG46E00064F599E831 , bda:LG82E54440885928FE , bda:LGA0476B886298247D , bda:LGCE3694DEC29DA7CA , bda:LGE753A03147CC2F93 ;
+        adm:logEntry        bda:LG0292E94261AD5AA3 , bda:LG82E54440885928FE , bda:LGA0476B886298247D , bda:LGCE3694DEC29DA7CA , bda:LGIMB5106F8FDA , bda:LGIMDE06E8288A , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG021E02F7C01F320A
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:18:50.168Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG0292E94261AD5AA3
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-16T10:40:54.659Z"^^xsd:dateTime ;
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG46E00064F599E831
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG82E54440885928FE
         a                   adm:InitialDataCreation ;
@@ -58,17 +46,26 @@ bdg:L8LS13958 {
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGE753A03147CC2F93
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CLD4FB28DF92281E8B
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  170 ;
-        :contentLocationVolume  1 .
+    bda:LGIMDE06E8288A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:18:50.168Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV01A3C5302FB543BF
         a                   :LineageEvent ;
@@ -90,12 +87,11 @@ bdg:L8LS13958 {
         rdfs:comment        "oral transmission of sarvavid commentary composed by dulzin dakpa gyaltsen"@en ;
         skos:altLabel       "chos rje 'dul ba 'dzin pa grags pa rgyal mtshan gyis mdzad pa'i kun rig TIk chen gyi lung nos pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "kun rig TIk chen gyi lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CLD4FB28DF92281E8B ;
         :isRoot             true ;
         :lineageHolder      bdr:LH061AA2B937CEF566 , bdr:LH3B5B1B8F5B486FFC , bdr:LH76E39B011A1533F0 , bdr:LHDAD2BD8948CC6E98 , bdr:LHDCB3F6A8E9E5B4A7 , bdr:LHE49B2C622B76A860 ;
         :lineageObject      bdr:T132 , bdr:T976 ;
         :lineageType        bdr:LineageLung ;
-        :note               bdr:NTF172BB8F53B7C8F6 .
+        :note               bdr:NTD4FB28DF92281E8B , bdr:NTF172BB8F53B7C8F6 .
     
     bdr:LH061AA2B937CEF566
         a                   :LineageHolder ;
@@ -124,6 +120,11 @@ bdg:L8LS13958 {
     bdr:LHE49B2C622B76A860
         a                   :LineageHolder ;
         :lineageWho         bdr:P1591 .
+    
+    bdr:NTD4FB28DF92281E8B
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 170" ;
+        :noteSource         bdr:MW1PD107937 .
     
     bdr:NTF172BB8F53B7C8F6
         a                   :Note ;

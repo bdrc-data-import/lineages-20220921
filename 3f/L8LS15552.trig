@@ -29,12 +29,6 @@ bdg:L8LS15552 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL1E4D4F2F626E93A1
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 96r6-96v1" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV0A34A7BF4FEB97CA
         a                   :LineageEvent ;
         :lineageFrom        bdr:P2JM106 .
@@ -85,11 +79,11 @@ bdg:L8LS15552 {
     
     bdr:L8LS15552  a        :Lineage ;
         skos:prefLabel      "thabs zhags kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL1E4D4F2F626E93A1 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH06B0E92D5494C1D0 , bdr:LH1136B5F98A894592 , bdr:LH201842855B360E90 , bdr:LH33A369EC0E475C25 , bdr:LH6EF12672C501C5ED , bdr:LH87914E22CDC89A8B , bdr:LHB2ECC590B64F91C8 , bdr:LHBB70F9C2933A45AA , bdr:LHBF2344073C46BA3B , bdr:LHD097955E555B1AA6 , bdr:LHDE59A6DFA5B4B218 , bdr:LHF88550C6671831F1 , bdr:LHFCC347F8AE67DE1D ;
         :lineageObject      bdr:T2129 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT1E4D4F2F626E93A1 .
     
     bdr:LH06B0E92D5494C1D0
         a                   :LineageHolder ;
@@ -156,4 +150,9 @@ bdg:L8LS15552 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV72F118935DE9A8DD ;
         :lineageWho         bdr:P8LS15553 .
+    
+    bdr:NT1E4D4F2F626E93A1
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 96r6-96v1" ;
+        :noteSource         bdr:MW29706 .
 }

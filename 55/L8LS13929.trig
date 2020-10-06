@@ -19,7 +19,7 @@ bdg:L8LS13929 {
         adm:gitPath         "55/L8LS13929.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13929 ;
-        adm:logEntry        bda:LG21089C1FECE3286B , bda:LG33D3F741FED0BD6B , bda:LG3A8F2D8D86B65E03 , bda:LG4E59F2E34C9A2703 , bda:LG5A23C9C4D97AA27A , bda:LG79C0E78B6E03049A , bda:LG968541CBC583895B , bda:LGDE0969EC16DE9A92 , bda:LGEFE7AEACB91BA8E0 ;
+        adm:logEntry        bda:LG21089C1FECE3286B , bda:LG33D3F741FED0BD6B , bda:LG4E59F2E34C9A2703 , bda:LG79C0E78B6E03049A , bda:LG968541CBC583895B , bda:LGDE0969EC16DE9A92 , bda:LGEFE7AEACB91BA8E0 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,23 +34,11 @@ bdg:L8LS13929 {
         adm:logMessage      "changed T number"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG3A8F2D8D86B65E03
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG4E59F2E34C9A2703
         a                   adm:UpdateData ;
         adm:logDate         "2018-09-27T11:02:32.382Z"^^xsd:dateTime ;
         adm:logMessage      "replaced with the correct Topic (P7326) Associated Lineages"@en ;
         adm:logWho          bdu:U00017 .
-    
-    bda:LG5A23C9C4D97AA27A
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG79C0E78B6E03049A
         a                   adm:UpdateData ;
@@ -74,11 +62,19 @@ bdg:L8LS13929 {
         adm:logDate         "2013-06-06T10:30:07.952Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL8C00AFBCA96644DD
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  160 ;
-        :contentLocationVolume  1 .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV002A5BB849F03F2E
         a                   :LineageEvent ;
@@ -231,11 +227,11 @@ bdg:L8LS13929 {
     bdr:L8LS13929  a        :Lineage ;
         rdfs:comment        "instructional transmission of shakyamuni, one of four deity of kadampa"@en ;
         skos:prefLabel      "bka' gdams lha bzh'i nang gi thub pa'i dbang po'i lha khrid nos pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL8C00AFBCA96644DD ;
         :isRoot             true ;
         :lineageHolder      bdr:LH07F20B2933978B68 , bdr:LH09A4BCD7F0E48569 , bdr:LH11676B40D7F47C87 , bdr:LH173EA568A491813D , bdr:LH1B04350B27D73EA1 , bdr:LH20086B616D841093 , bdr:LH25A78E4B9CCA9149 , bdr:LH295311CD4FF40BF0 , bdr:LH31A07872F816A286 , bdr:LH3AD45503D189F438 , bdr:LH3C2057CD0C8EE8C0 , bdr:LH564BFB627A0BBC6E , bdr:LH5BD33B76F8E33FF1 , bdr:LH5BD4A062A5028FFD , bdr:LH63FA8300621CBD55 , bdr:LH6A61966E5E74AB10 , bdr:LH7AC67A82FF3EF65D , bdr:LH86136FDB9B599F31 , bdr:LH8861C295CB7E0354 , bdr:LH8BF9396393440197 , bdr:LH8D71C97B2E4CA3D8 , bdr:LH9406D8A40590F162 , bdr:LH941E4874F11365E5 , bdr:LH99953478891A076C , bdr:LH9F01F2E89531D635 , bdr:LHA944038E551D9D03 , bdr:LHAFF71A94849E9078 , bdr:LHB0878A2F564C32DB , bdr:LHC35688BEFDE6F438 , bdr:LHC379E6ACF3E7D62D , bdr:LHCFF8C0FBAFBEF752 , bdr:LHD14A2BAE9C58C0DA , bdr:LHDC68FD58C1047A1B , bdr:LHDDB7BE5ECA92C75F , bdr:LHDF814937EDD588A1 , bdr:LHED21D9483C96D278 , bdr:LHED96FC1688E052F8 , bdr:LHF338173A8CC72775 ;
         :lineageObject      bdr:T567 ;
-        :lineageType        bdr:LineageKhrid .
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NT8C00AFBCA96644DD .
     
     bdr:LH07F20B2933978B68
         a                   :LineageHolder ;
@@ -425,4 +421,9 @@ bdg:L8LS13929 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV1B4318E1FDD73A21 ;
         :lineageWho         bdr:P0RK750 .
+    
+    bdr:NT8C00AFBCA96644DD
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 160" ;
+        :noteSource         bdr:MW1PD107937 .
 }

@@ -19,7 +19,7 @@ bdg:L8LS14557 {
         adm:gitPath         "8c/L8LS14557.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14557 ;
-        adm:logEntry        bda:LG07985E9E6AB73D1D , bda:LG2A080AC3983643DD , bda:LG30F0D742EAA6903D , bda:LG5ACFBB09812CF07A , bda:LGA7EABFDFC29F34A9 , bda:LGD57D6C27EDC19F40 ;
+        adm:logEntry        bda:LG07985E9E6AB73D1D , bda:LG30F0D742EAA6903D , bda:LG5ACFBB09812CF07A , bda:LGA7EABFDFC29F34A9 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,12 +28,6 @@ bdg:L8LS14557 {
         adm:logDate         "2013-09-20T12:00:12.392Z"^^xsd:dateTime ;
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG2A080AC3983643DD
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG30F0D742EAA6903D
         a                   adm:UpdateData ;
@@ -52,17 +46,19 @@ bdg:L8LS14557 {
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGD57D6C27EDC19F40
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL09DDE7E4D091D22F
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  581 ;
-        :contentLocationVolume  1 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV07A2196E1EA5794B
         a                   :LineageEvent ;
@@ -147,11 +143,11 @@ bdg:L8LS14557 {
     bdr:L8LS14557  a        :Lineage ;
         rdfs:comment        "anuja transmission of prosperity ritual"@en ;
         skos:prefLabel      "nor sgrub ser po gtso 'khor dgu pa'i rjes gnang gi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL09DDE7E4D091D22F ;
         :isRoot             true ;
         :lineageHolder      bdr:LH144005F8F4A9161E , bdr:LH1DE8EEAFB62FC1D4 , bdr:LH223F3A9358CF16E2 , bdr:LH24BBDB0B3ED71EC3 , bdr:LH3ED9AB4DD4A8E10C , bdr:LH560B4AD0DD40AA17 , bdr:LH68F5C50731455C4A , bdr:LH7826D891FD81C90A , bdr:LH785E130A2DF445AE , bdr:LH842BD54C353F3FF9 , bdr:LHA34385974EF0FBE1 , bdr:LHB22F066A3D08FAA8 , bdr:LHBD79E89E96CA1FA0 , bdr:LHC5F5AFC35DD50A86 , bdr:LHC6173F7B6EBD3E52 , bdr:LHC65E6BBE935E4830 , bdr:LHC7F4FAE222C443BE , bdr:LHD596281164AF46A2 , bdr:LHE66E38EA0B3741B6 , bdr:LHF2DCDA19313087C0 , bdr:LHF9CF987E61533017 ;
         :lineageObject      bdr:T22 , bdr:T924 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NT09DDE7E4D091D22F .
     
     bdr:LH144005F8F4A9161E
         a                   :LineageHolder ;
@@ -256,4 +252,9 @@ bdg:L8LS14557 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV4A06E69C3CD625C6 ;
         :lineageWho         bdr:P3256 .
+    
+    bdr:NT09DDE7E4D091D22F
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 581" ;
+        :noteSource         bdr:MW1PD107937 .
 }

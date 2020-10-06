@@ -29,12 +29,6 @@ bdg:L8LS15373 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL103EF9C6CE7CD981
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 78r4-5" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV041322365B8085E1
         a                   :LineageEvent ;
         :lineageFrom        bdr:P6160 .
@@ -102,11 +96,11 @@ bdg:L8LS15373 {
     bdr:L8LS15373  a        :Lineage ;
         skos:altLabel       "rdo rje sa 'og gi rgyud sa paN gyis bsgyur ba'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "rdo rje sa 'og gi rgyud kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL103EF9C6CE7CD981 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH3450EAB8207229B4 , bdr:LH35B3B960DA59D2F7 , bdr:LH39ED45F985535D87 , bdr:LH4B16F0FCE9A4C03B , bdr:LH6BAB80796D88CE15 , bdr:LH6E735C855CF92CAA , bdr:LH8227C4C59DACC499 , bdr:LH879F685DEB9B018F , bdr:LH87B9F7B0AD537E1E , bdr:LH94B8393B7D8B1978 , bdr:LH94DE2C517A70971B , bdr:LHB158BD6622CBF4F1 , bdr:LHDE86EE31BC50B3ED , bdr:LHE2B345E0A9E67FB4 , bdr:LHF348B78E3942D169 , bdr:LHF5D0C15905C33A96 , bdr:LHF8B31F7880C1C245 ;
         :lineageObject      bdr:T2129 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT103EF9C6CE7CD981 .
     
     bdr:LH3450EAB8207229B4
         a                   :LineageHolder ;
@@ -192,4 +186,9 @@ bdg:L8LS15373 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVF770FDE0B647FDED ;
         :lineageWho         bdr:P3213 .
+    
+    bdr:NT103EF9C6CE7CD981
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 78r4-5" ;
+        :noteSource         bdr:MW29706 .
 }

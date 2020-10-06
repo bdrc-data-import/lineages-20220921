@@ -29,11 +29,6 @@ bdg:L8LS15706 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL1814D5E22EB24946
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1KG16278 ;
-        :contentLocationPage  136 .
-    
     bdr:EV16947E54791AC51B
         a                   :LineageEvent ;
         :lineageFrom        bdr:P22 .
@@ -44,11 +39,11 @@ bdg:L8LS15706 {
     
     bdr:L8LS15706  a        :Lineage ;
         skos:prefLabel      "dbu ma la 'jug pa'i rang 'grel gyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL1814D5E22EB24946 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH04EF824D236BEBF5 , bdr:LH429DD95B5E4C45F1 , bdr:LHC45AB332792763A0 ;
         :lineageObject      bdr:T4JW5424 , bdr:W19458 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT1814D5E22EB24946 .
     
     bdr:LH04EF824D236BEBF5
         a                   :LineageHolder ;
@@ -64,4 +59,9 @@ bdg:L8LS15706 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV6E434764C8647727 ;
         :lineageWho         bdr:P264 .
+    
+    bdr:NT1814D5E22EB24946
+        a                   :Note ;
+        :contentLocationStatement  "p. 136" ;
+        :noteSource         bdr:MW1KG16278 .
 }

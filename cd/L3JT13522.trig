@@ -28,12 +28,6 @@ bdg:L3JT13522 {
         adm:logDate         "2014-08-12T16:10:58.244Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00013 .
     
-    bdr:CL95A86FAEEF1B6A5C
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W1KG18291 ;
-        :contentLocationSide  "50r" .
-    
     bdr:EV0F34C006DC2CF717
         a                   :LineageEvent ;
         :lineageFrom        bdr:P0RK719 .
@@ -108,11 +102,11 @@ bdg:L3JT13522 {
     
     bdr:L3JT13522  a        :Lineage ;
         skos:prefLabel      "rta mgrin gsang sgrub rnams kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL95A86FAEEF1B6A5C ;
         :isRoot             true ;
         :lineageHolder      bdr:LH003918E346CB30E5 , bdr:LH0520B0EE41F64414 , bdr:LH0AE1D1ECD81FB973 , bdr:LH0D46E1C943B326D2 , bdr:LH0F08E1D67BE9B33D , bdr:LH3CE26CDF117ABF1A , bdr:LH41F851680C821447 , bdr:LH4A8FE8EA43D64217 , bdr:LH5DB7EB2998964B96 , bdr:LH5F85C812163472C0 , bdr:LH6CE71F2F39721C1B , bdr:LH884977ACAB140F4C , bdr:LHB4D1FB84875A352D , bdr:LHBB96264FD2003016 , bdr:LHC272DA07A614F346 , bdr:LHD5238928F6BA3A93 , bdr:LHDCBEEFE1F00C7764 , bdr:LHDCC10113D5724DFE , bdr:LHEEC8510A8A980AA7 ;
         :lineageObject      bdr:T2044 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NT95A86FAEEF1B6A5C .
     
     bdr:LH003918E346CB30E5
         a                   :LineageHolder ;
@@ -207,4 +201,8 @@ bdg:L3JT13522 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVE127ED85AEEEC177 ;
         :lineageWho         bdr:P1783 .
+    
+    bdr:NT95A86FAEEF1B6A5C
+        a                   :Note ;
+        :noteSource         bdr:MW1KG18291 .
 }

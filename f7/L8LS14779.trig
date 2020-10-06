@@ -19,7 +19,7 @@ bdg:L8LS14779 {
         adm:gitPath         "f7/L8LS14779.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14779 ;
-        adm:logEntry        bda:LG428682CF2399C156 , bda:LGA1201CE3E2766AC4 , bda:LGA22649FE30C56B1E , bda:LGC82C14572221B7FB , bda:LGC9497B2E7BDB1637 , bda:LGCB5F5EB955C76705 ;
+        adm:logEntry        bda:LG428682CF2399C156 , bda:LGA1201CE3E2766AC4 , bda:LGA22649FE30C56B1E , bda:LGC82C14572221B7FB , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -47,23 +47,19 @@ bdg:L8LS14779 {
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGC9497B2E7BDB1637
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LGCB5F5EB955C76705
+    bda:LGIM88BD19A8AB
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL9DE5BE059083C445
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  93 ;
-        :contentLocationVolume  2 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0FAE61B1E76135C3
         a                   :LineageEvent ;
@@ -111,11 +107,11 @@ bdg:L8LS14779 {
     
     bdr:L8LS14779  a        :Lineage ;
         skos:prefLabel      "chos rje paN+Di ta'i gsung rab las/ tsa'i rtags yod pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL9DE5BE059083C445 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0A6C04988DCED162 , bdr:LH45759C1CCF9262F5 , bdr:LH520448D6756439C8 , bdr:LH5319438DCBBA83E3 , bdr:LH53D889117266C862 , bdr:LH6945914B5E153234 , bdr:LH81F7DBB8F7539BDC , bdr:LH8D5270105A4E5830 , bdr:LH8EBC79368385D51C , bdr:LHAEFD3DF37172C5E9 , bdr:LHB7D59AAC305D83AC , bdr:LHD40E0F5DAD64357E ;
         :lineageObject      bdr:T208 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT9DE5BE059083C445 .
     
     bdr:LH0A6C04988DCED162
         a                   :LineageHolder ;
@@ -175,4 +171,9 @@ bdg:L8LS14779 {
     bdr:LHD40E0F5DAD64357E
         a                   :LineageHolder ;
         :lineageWho         bdr:P3092 .
+    
+    bdr:NT9DE5BE059083C445
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 93" ;
+        :noteSource         bdr:MW1PD107937 .
 }

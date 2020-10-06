@@ -19,7 +19,7 @@ bdg:L2RKL8710 {
         adm:gitPath         "2c/L2RKL8710.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L2RKL8710 ;
-        adm:logEntry        bda:LG1AE9D1A36EDE3285 , bda:LG227622D5FFA80AD5 , bda:LG28141B59683CBC98 , bda:LG363E2CCC3E9BF3F7 , bda:LG58A35D5E0046875B , bda:LG5BC33E070C9C50D7 , bda:LGB19F5F0C909089B5 , bda:LGBA3E429CBC7FAF5E , bda:LGE596D1F89756C098 ;
+        adm:logEntry        bda:LG1AE9D1A36EDE3285 , bda:LG227622D5FFA80AD5 , bda:LG58A35D5E0046875B , bda:LG5BC33E070C9C50D7 , bda:LGBA3E429CBC7FAF5E , bda:LGE596D1F89756C098 , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,18 +34,6 @@ bdg:L2RKL8710 {
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LG28141B59683CBC98
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG363E2CCC3E9BF3F7
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG58A35D5E0046875B
         a                   adm:UpdateData ;
         adm:logDate         "2013-09-23T15:00:53.243Z"^^xsd:dateTime ;
@@ -58,12 +46,6 @@ bdg:L2RKL8710 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGB19F5F0C909089B5
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGBA3E429CBC7FAF5E
         a                   adm:UpdateData ;
         adm:logDate         "2013-12-23T14:41:57.325Z"^^xsd:dateTime ;
@@ -75,11 +57,26 @@ bdg:L2RKL8710 {
         adm:logDate         "2014-05-09T12:00:08.206Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL54096BEBFE483A8E
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  21 ;
-        :contentLocationVolume  "kha," .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV03B0E60018BBC147
         a                   :LineageEvent ;
@@ -124,13 +121,12 @@ bdg:L2RKL8710 {
     bdr:L2RKL8710  a        :Lineage ;
         skos:altLabel       "dpal kye rdo rje man ngag lugs kyi dkyil 'khor du dbang gi mngon par rtogs pa brgyad dang ldan pa'i sgo nas/ rgyud ma smin pa smin par byed pa rgyu dus kyi dbang bskur ba mtshan nyid dang ldan pa legs par thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "dbang byin rlabs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL54096BEBFE483A8E ;
         :isRoot             true ;
         :lineageHolder      bdr:LH01DDE34B7E4983FC , bdr:LH1A26EDC180A7ECB7 , bdr:LH24632589608BDBE8 , bdr:LH5F34046DB5D15247 , bdr:LH87106B375E12A616 , bdr:LH88049721ED145FE4 , bdr:LH9248F4DBC4A62077 , bdr:LHA3E030C1AC071842 , bdr:LHD9833E6BAC12A429 ;
         :lineageObject      bdr:T130 ;
         :lineageRef         bdr:L2RKL871 ;
         :lineageType        bdr:LineageDbang ;
-        :note               bdr:NT146776897D835C77 , bdr:NT18CCA53FB88B6935 , bdr:NT1E8FB276560C535C , bdr:NT1FDD7EE0FC9BD7CC , bdr:NT29F7B254FFB1FA66 , bdr:NT38DE4E629809DCBB , bdr:NT3A58786E31D7641E , bdr:NT3AFE689D00C0EDAB , bdr:NT4751A9918DD6B839 , bdr:NT4D035BAE6D148BFB , bdr:NT5AB4E256E5B9190E , bdr:NT69CDBAB35D197193 , bdr:NT709AB5F9457507D8 , bdr:NT75CEEC1BCB46A0E0 , bdr:NT807E173055F5434A , bdr:NT815C080E37603B67 , bdr:NT8451CFB9B975C383 , bdr:NT8A03304411906183 , bdr:NTC3D5BE550449500F , bdr:NTCA23BEFE27C64F1E , bdr:NTDA337CDA1AC17BE1 , bdr:NTF0549037CFA0DFCA , bdr:NTF775D2FB592E79C0 , bdr:NTFA3331D11C153D0D , bdr:NTFE5587FB3481D0B7 , bdr:NTFF78EA2FCC3BEAA3 , bdr:NTFFC3030E34C1A4DD .
+        :note               bdr:NT146776897D835C77 , bdr:NT18CCA53FB88B6935 , bdr:NT1E8FB276560C535C , bdr:NT1FDD7EE0FC9BD7CC , bdr:NT29F7B254FFB1FA66 , bdr:NT38DE4E629809DCBB , bdr:NT3A58786E31D7641E , bdr:NT3AFE689D00C0EDAB , bdr:NT4751A9918DD6B839 , bdr:NT4D035BAE6D148BFB , bdr:NT54096BEBFE483A8E , bdr:NT5AB4E256E5B9190E , bdr:NT69CDBAB35D197193 , bdr:NT709AB5F9457507D8 , bdr:NT75CEEC1BCB46A0E0 , bdr:NT807E173055F5434A , bdr:NT815C080E37603B67 , bdr:NT8451CFB9B975C383 , bdr:NT8A03304411906183 , bdr:NTC3D5BE550449500F , bdr:NTCA23BEFE27C64F1E , bdr:NTDA337CDA1AC17BE1 , bdr:NTF0549037CFA0DFCA , bdr:NTF775D2FB592E79C0 , bdr:NTFA3331D11C153D0D , bdr:NTFE5587FB3481D0B7 , bdr:NTFF78EA2FCC3BEAA3 , bdr:NTFFC3030E34C1A4DD .
     
     bdr:LH01DDE34B7E4983FC
         a                   :LineageHolder ;
@@ -215,6 +211,11 @@ bdg:L2RKL8710 {
     bdr:NT4D035BAE6D148BFB
         a                   :Note ;
         :noteText           "alternative lineage: L87b"@en .
+    
+    bdr:NT54096BEBFE483A8E
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, p. 21" ;
+        :noteSource         bdr:MW29307 .
     
     bdr:NT5AB4E256E5B9190E
         a                   :Note ;

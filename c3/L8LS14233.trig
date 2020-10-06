@@ -19,7 +19,7 @@ bdg:L8LS14233 {
         adm:gitPath         "c3/L8LS14233.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14233 ;
-        adm:logEntry        bda:LG074DEC616AC07AC9 , bda:LG1ACF27CEB3D80068 , bda:LG30D1ADE11918A0FE , bda:LG3844A395A7B8052B , bda:LG3C14D8DA0F716F49 , bda:LG3C6A23AC087BF7D9 , bda:LGA7A84C40789EF8E9 ;
+        adm:logEntry        bda:LG074DEC616AC07AC9 , bda:LG1ACF27CEB3D80068 , bda:LG30D1ADE11918A0FE , bda:LG3844A395A7B8052B , bda:LG3C14D8DA0F716F49 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -51,23 +51,19 @@ bdg:L8LS14233 {
         adm:logDate         "2014-07-29T08:43:45.462Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG3C6A23AC087BF7D9
+    bda:LGIM88BD19A8AB
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LGA7A84C40789EF8E9
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL60A9795925E636C7
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  284 ;
-        :contentLocationVolume  1 .
     
     bdr:EV0396CA165C9A9605
         a                   :LineageEvent ;
@@ -140,11 +136,11 @@ bdg:L8LS14233 {
     bdr:L8LS14233  a        :Lineage ;
         rdfs:comment        "anuja transmission of simhamukha dakini"@en ;
         skos:prefLabel      "mkha' 'gro ma seng ge'i gdong pa can dmar mo'i rjes gnang gi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL60A9795925E636C7 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH007FC4059E7D5C3F , bdr:LH034B0667325A7489 , bdr:LH0DB6B714CE756D53 , bdr:LH0EBE9F2EA0502401 , bdr:LH1ACAEECA558F5C82 , bdr:LH1B3589BF95F8A21A , bdr:LH1ECAF05B2AF3A7C1 , bdr:LH24589B35BD7259D6 , bdr:LH2D2F66866909ACE6 , bdr:LH2FEF9FE23B6F8C4B , bdr:LH33F724A90FE9D33A , bdr:LH5716FB51B42C2066 , bdr:LH581B56179560B760 , bdr:LH79BFDDD93095D71D , bdr:LH82A9FE33852E3144 , bdr:LH9B31973AA2A9F240 , bdr:LHEEB77EA2E7D06D5F , bdr:LHF2AFE8C4F2A2EA41 ;
         :lineageObject      bdr:T400 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NT60A9795925E636C7 .
     
     bdr:LH007FC4059E7D5C3F
         a                   :LineageHolder ;
@@ -234,4 +230,9 @@ bdg:L8LS14233 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV63DC7BF8AD636E3C ;
         :lineageWho         bdr:P0RK217 .
+    
+    bdr:NT60A9795925E636C7
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 284" ;
+        :noteSource         bdr:MW1PD107937 .
 }

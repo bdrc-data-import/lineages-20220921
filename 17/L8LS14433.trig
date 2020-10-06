@@ -19,7 +19,7 @@ bdg:L8LS14433 {
         adm:gitPath         "17/L8LS14433.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14433 ;
-        adm:logEntry        bda:LG347870B9D5DEA30D , bda:LG48A5ECF707CFDD45 , bda:LG526ADEC5CA1F229D , bda:LG68995B1B5364586D , bda:LG9416821EE7191396 , bda:LG9C22A4507E090E9E ;
+        adm:logEntry        bda:LG347870B9D5DEA30D , bda:LG48A5ECF707CFDD45 , bda:LG526ADEC5CA1F229D , bda:LG9416821EE7191396 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -41,28 +41,24 @@ bdg:L8LS14433 {
         adm:logMessage      "added short title and location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG68995B1B5364586D
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG9416821EE7191396
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-09-09T09:49:31.343Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG9C22A4507E090E9E
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL51EC282B62FBAF32
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  412 ;
-        :contentLocationVolume  1 .
     
     bdr:EV241808799E4403D8
         a                   :LineageEvent ;
@@ -108,11 +104,11 @@ bdg:L8LS14433 {
         rdfs:comment        "oral transmission of ganapati instructional text marked as mam"@en ;
         skos:altLabel       "bde mchog rdo rje mkha' 'gro rgyud nas bshad pa'i dpal lha chen tshogs kyi bdag po khams gsum dbang du mdzad pa'i gdams skor las/ maM gyi rtags yod pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "dpal lha chen tshogs kyi bdag po khams gsum dbang du mdzad pa'i gdams skor gyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL51EC282B62FBAF32 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0CD3431F81BD78BB , bdr:LH1DFE8CA93EB15F86 , bdr:LH225102DD3285FB26 , bdr:LH42317B7782A9E82F , bdr:LH5D158BBA851CA442 , bdr:LH8276AAC0E0DE8CF0 , bdr:LH8F5DC3A7FA700FE9 , bdr:LHA6A4ECBE32F0F95B , bdr:LHB1AD7DF32627C6C9 , bdr:LHE7DC550D5B13CD33 , bdr:LHFC4AC2C1FADF4278 ;
         :lineageObject      bdr:T10MS11187 , bdr:T1852 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT51EC282B62FBAF32 .
     
     bdr:LH0CD3431F81BD78BB
         a                   :LineageHolder ;
@@ -167,4 +163,9 @@ bdg:L8LS14433 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVDF1AA483CB412650 ;
         :lineageWho         bdr:P792 .
+    
+    bdr:NT51EC282B62FBAF32
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 412" ;
+        :noteSource         bdr:MW1PD107937 .
 }

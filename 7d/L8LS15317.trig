@@ -29,12 +29,6 @@ bdg:L8LS15317 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL41A0755B4E861825
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 69r5-7" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV09F47A26D1C498A2
         a                   :LineageEvent ;
         :lineageFrom        bdr:T69 .
@@ -102,11 +96,11 @@ bdg:L8LS15317 {
     bdr:L8LS15317  a        :Lineage ;
         skos:altLabel       "khro bo'i rgyal po mi g.yo ba'i stobs dpag tu med pa brtul phod pa zhes bya ba'i rtogs pa u pa sha mark+Sh ta dang glan dar ma blo gros kyis bsgyur ba'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "khro bo'i rgyal po mi g.yo ba'i stobs dpag tu med pa brtul phod pa zhes bya ba'i rtogs pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL41A0755B4E861825 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0777566B8C12A3A8 , bdr:LH2771A0EB0C709E7C , bdr:LH4D943880096A6464 , bdr:LH583B9F81AAB91EAA , bdr:LH588085E98BC450B2 , bdr:LH7619CD06E08E414F , bdr:LH7A1DC5A25541DCD9 , bdr:LH81D8407BEAB4F7FD , bdr:LH95D95EDCA9667939 , bdr:LH96B2C906232D923A , bdr:LHAAB4E2BFC218457E , bdr:LHBFE5461023ECF147 , bdr:LHC3C12C93B7C1324B , bdr:LHC9BB080963195E93 , bdr:LHDE7FA65A1CE6B5F5 , bdr:LHEAA2BEDA7421D354 , bdr:LHFC81EF40E3853573 ;
         :lineageObject      bdr:T2186 , bdr:T618 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT41A0755B4E861825 .
     
     bdr:LH0777566B8C12A3A8
         a                   :LineageHolder ;
@@ -192,4 +186,9 @@ bdg:L8LS15317 {
     bdr:LHFC81EF40E3853573
         a                   :LineageHolder ;
         :lineageWho         bdr:T386 .
+    
+    bdr:NT41A0755B4E861825
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 69r5-7" ;
+        :noteSource         bdr:MW29706 .
 }

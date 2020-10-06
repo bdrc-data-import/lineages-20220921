@@ -19,7 +19,7 @@ bdg:L8LS14305 {
         adm:gitPath         "6d/L8LS14305.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14305 ;
-        adm:logEntry        bda:LG0ECE7D9A46D10C69 , bda:LG10E3BD09EBAA2F5F , bda:LG2D65FD4DB00C0866 , bda:LG5883F2701C2A213E , bda:LG94DF7FB894EF1907 , bda:LGB008F5CF5A7A375D , bda:LGC2AF694D3277BFF6 ;
+        adm:logEntry        bda:LG0ECE7D9A46D10C69 , bda:LG10E3BD09EBAA2F5F , bda:LG2D65FD4DB00C0866 , bda:LG5883F2701C2A213E , bda:LGB008F5CF5A7A375D , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -45,28 +45,24 @@ bdg:L8LS14305 {
         adm:logDate         "2020-01-14T14:30:19.562Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG94DF7FB894EF1907
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGB008F5CF5A7A375D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-08-14T11:04:08.802Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGC2AF694D3277BFF6
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL39EB9C7B96C1C372
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  355 ;
-        :contentLocationVolume  1 .
     
     bdr:EV0AA305CB4A012C8B
         a                   :LineageEvent ;
@@ -192,11 +188,11 @@ bdg:L8LS14305 {
         rdfs:comment        "initiation and instructional transmission of guruyoga, zongpa tradition"@en ;
         skos:altLabel       "rje sa paN gyis mdzad pa'i ling chu tse gab thar chags su ston pa'i byin rlabs dang 'khrid nyis chod kyi brgyud pa rdzong lugs/"@bo-x-ewts ;
         skos:prefLabel      "ling chu tse gab thar chags su ston pa'i byin rlabs dang 'khrid nyis chod kyi brgyud pa rdzong lugs/"@bo-x-ewts ;
-        :contentLocation    bdr:CL39EB9C7B96C1C372 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH018F87C1CBECADB7 , bdr:LH14ECB3B91CB8D1BA , bdr:LH30388A1383BAD6F7 , bdr:LH3BA19FD134476381 , bdr:LH4EE3D9DA0AF5EFDD , bdr:LH5143AF47FF4AFD96 , bdr:LH5693DC6A1A61E0F0 , bdr:LH59A5B852E5D4B67F , bdr:LH5A56693E0406B739 , bdr:LH5DA6BA401C99BAB5 , bdr:LH6CA2C86BE11F8AA5 , bdr:LH6F17BF354387B7E6 , bdr:LH6F7ACBDD5310793E , bdr:LH760BFB0D7D1EC0F3 , bdr:LH7F4254BFCD3C3CD5 , bdr:LH8CC4BB1AB3907F39 , bdr:LH8CECFBB6AD53ABEC , bdr:LH905E8E143E5AEE4E , bdr:LH913F9AC622F321ED , bdr:LHA3603EF8A94AF4B4 , bdr:LHB1C416E1D150980D , bdr:LHBA6067F839D5C671 , bdr:LHC3D637A2FADAAB30 , bdr:LHCA2AB77E61647417 , bdr:LHCC3F8CA5F9CDA218 , bdr:LHD44E93BFDC4CA353 , bdr:LHD51800E63231E40C , bdr:LHE01CBFCE4927A653 , bdr:LHF218F2EF849BB4B2 , bdr:LHF5352C8C4CE878C6 , bdr:LHF75FEBD516886809 ;
         :lineageObject      bdr:T4 ;
-        :lineageType        bdr:LineageKhrid .
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NT39EB9C7B96C1C372 .
     
     bdr:LH018F87C1CBECADB7
         a                   :LineageHolder ;
@@ -351,4 +347,9 @@ bdg:L8LS14305 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV252BEABF27B6D084 ;
         :lineageWho         bdr:P3293 .
+    
+    bdr:NT39EB9C7B96C1C372
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 355" ;
+        :noteSource         bdr:MW1PD107937 .
 }

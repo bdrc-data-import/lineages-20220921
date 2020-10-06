@@ -19,7 +19,7 @@ bdg:L8LS15113 {
         adm:gitPath         "b8/L8LS15113.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS15113 ;
-        adm:logEntry        bda:LG1F0A23DA9ADA751A , bda:LG5129613DD42AC2A5 , bda:LG5B6DBDA0F5405B82 , bda:LG77389A74E98FAC8F , bda:LGB74475A9BF929F44 , bda:LGD65358A5DDC5658A , bda:LGE70701D2C756C7FA ;
+        adm:logEntry        bda:LG1F0A23DA9ADA751A , bda:LG5B6DBDA0F5405B82 , bda:LG77389A74E98FAC8F , bda:LGB74475A9BF929F44 , bda:LGD65358A5DDC5658A , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,12 +28,6 @@ bdg:L8LS15113 {
         adm:logDate         "2014-05-28T14:16:28.395Z"^^xsd:dateTime ;
         adm:logMessage      "added topic"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG5129613DD42AC2A5
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG5B6DBDA0F5405B82
         a                   adm:UpdateData ;
@@ -58,18 +52,19 @@ bdg:L8LS15113 {
         adm:logDate         "2014-03-12T09:44:38.722Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGE70701D2C756C7FA
+    bda:LGIM88BD19A8AB
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CLCA4182264EBEA061
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationSide  "f. 30v4-31r1" ;
-        :contentLocationVolume  "e" .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV07210656973BD109
         a                   :LineageEvent ;
@@ -186,11 +181,11 @@ bdg:L8LS15113 {
     bdr:L8LS15113  a        :Lineage ;
         skos:altLabel       "gsum pa bstan pa'i 'byung khungs rgyal ba'i gsung rab rin po che sde snod rgyud sde dang bcas pa ji ltar thob pa'i tshul las/ dge slong ma'i so thar gyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "dge slong ma'i so thar gyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLCA4182264EBEA061 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0EDD4E45325F4F2C , bdr:LH2D77E137C2AEF4BD , bdr:LH40F0517439FEEF09 , bdr:LH51F2D236D136165A , bdr:LH5664912414A46247 , bdr:LH5C2F8BFCBCAA7122 , bdr:LH5D5E8E1367705C5E , bdr:LH6A1B7A1ECCF5D064 , bdr:LH6B61812628C4A3C3 , bdr:LH7231B9DE27FE9A98 , bdr:LH7ED9B2334C30D754 , bdr:LH7F4BB26D120C5E16 , bdr:LH81B331022A4DFD0C , bdr:LH853B1D76ED0BD30E , bdr:LH92002BA5130109C4 , bdr:LH982F538C1107D29C , bdr:LHACA44D8CD5431ECC , bdr:LHACB12F06E89F2297 , bdr:LHB250BF8E37561A87 , bdr:LHBE79C693AE7CD376 , bdr:LHC8969347A91113BF , bdr:LHCC9ADEEADB3EE766 , bdr:LHDC745A58C6F05927 , bdr:LHDF9E4A9F0EBB446C , bdr:LHED585B9F09261F9C , bdr:LHEECE82779A6D1DF2 , bdr:LHEF507DB4B997C140 , bdr:LHFA63140B08293A8D , bdr:LHFF9FFAE108F1E227 ;
         :lineageObject      bdr:T2GS983 , bdr:T82 ;
-        :lineageType        bdr:LineageSdomBrgyud .
+        :lineageType        bdr:LineageSdomBrgyud ;
+        :note               bdr:NTCA4182264EBEA061 .
     
     bdr:LH0EDD4E45325F4F2C
         a                   :LineageHolder ;
@@ -340,4 +335,9 @@ bdg:L8LS15113 {
     bdr:NT1E3726FD3612A939
         a                   :Note ;
         :noteText           "yid bzhin legs grub rrtsis 'dul ba dbu nas glegs bam gsum kun dga' dar rgyas la gsan/ de phyin pad+ma 'gyur med rgya mtsho la gsan pa'i brgyud pa 'di ltar yin/"@en .
+    
+    bdr:NTCA4182264EBEA061
+        a                   :Note ;
+        :contentLocationStatement  "vol. e" ;
+        :noteSource         bdr:MW29706 .
 }

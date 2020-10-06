@@ -19,15 +19,9 @@ bdg:L8LS14167 {
         adm:gitPath         "6b/L8LS14167.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14167 ;
-        adm:logEntry        bda:LG1E645E59307DBD00 , bda:LG915D800D3050569E , bda:LGA1A4F4BA35839B68 , bda:LGBF77AFA2E81BDBEC , bda:LGCD586F74DC86C7D9 , bda:LGF83636B31F967D2D ;
+        adm:logEntry        bda:LG915D800D3050569E , bda:LGA1A4F4BA35839B68 , bda:LGBF77AFA2E81BDBEC , bda:LGF83636B31F967D2D , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG1E645E59307DBD00
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG915D800D3050569E
         a                   adm:UpdateData ;
@@ -45,22 +39,24 @@ bdg:L8LS14167 {
         adm:logDate         "2014-05-27T11:11:57.701Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGCD586F74DC86C7D9
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGF83636B31F967D2D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-07-24T11:53:27.873Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL1E447223621565B8
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "251-252" ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV034BEFA54D26D35F
         a                   :LineageEvent ;
@@ -206,11 +202,11 @@ bdg:L8LS14167 {
         rdfs:comment        "initiation transmission of cakrasamvara drawing mandala, nyos tradition"@en ;
         skos:altLabel       "dpal 'khor lo sdom pa lha drug cu rtsa gnyis kyi ras bris dkyil 'khor du dbang nos pa'i brgyud pa las/ bka' babs dgu pa gnyos lugs kyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "'khor lo sdom pa lha drug cu rtsa gnyis kyi ras bris dkyil 'khor du dbang nos pa'i brgyud pa/ gnyos lugs/"@bo-x-ewts ;
-        :contentLocation    bdr:CL1E447223621565B8 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0204C97274803036 , bdr:LH0E997B6FCFE07DCA , bdr:LH174B9598EE5BD25B , bdr:LH18655C0BCE9B10B0 , bdr:LH23BAAF8AD77E0021 , bdr:LH28DDE3E346CFD359 , bdr:LH3299526B5EFEDB96 , bdr:LH34AADC7C73FCD402 , bdr:LH3B6A31489DFAC7F1 , bdr:LH424E95165FBF34AA , bdr:LH466C0D71715553EA , bdr:LH498316AB23DB8DB3 , bdr:LH49FB064B299FE65F , bdr:LH4C3BDF88ED53A64F , bdr:LH4C52B26ACCD6B7A6 , bdr:LH4FA1A66D547C8F5F , bdr:LH535F44397421F971 , bdr:LH6EA78B7EC5E911BD , bdr:LH81CCB8AF7555D552 , bdr:LH8534EC8B72491CDA , bdr:LH86C64EF49EF65FBE , bdr:LH9E5967BCD0D44DAD , bdr:LHA485A2630581B4EE , bdr:LHAEC9A26E47CB8DA4 , bdr:LHAEF496DB3968EE44 , bdr:LHBBC09ECB42742C2F , bdr:LHBCA6D9EB810C560F , bdr:LHC5B3C4D0BE94C8CA , bdr:LHC62FE0FBEDEE5D49 , bdr:LHE1BB4722F4BD5506 , bdr:LHE773456962C8A5E9 , bdr:LHEDE2E9E7D988841A , bdr:LHF3BB72E98099A649 , bdr:LHF4F752DDDFCCD528 ;
         :lineageObject      bdr:T418 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NT1E447223621565B8 .
     
     bdr:LH0204C97274803036
         a                   :LineageHolder ;
@@ -380,4 +376,9 @@ bdg:L8LS14167 {
     bdr:LHF4F752DDDFCCD528
         a                   :LineageHolder ;
         :lineageWho         bdr:T1987 .
+    
+    bdr:NT1E447223621565B8
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 251-252" ;
+        :noteSource         bdr:MW1PD107937 .
 }

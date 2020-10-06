@@ -19,7 +19,7 @@ bdg:L8LS14531 {
         adm:gitPath         "7f/L8LS14531.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14531 ;
-        adm:logEntry        bda:LG162AA8D99F799E2F , bda:LG3DBC48C628967398 , bda:LG549A0DB713E5A300 , bda:LG64DE86AE1B4E6770 , bda:LGB39EC766D11F15A6 , bda:LGBF09E3BEC10AB40E ;
+        adm:logEntry        bda:LG162AA8D99F799E2F , bda:LG3DBC48C628967398 , bda:LG549A0DB713E5A300 , bda:LGB39EC766D11F15A6 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -39,29 +39,25 @@ bdg:L8LS14531 {
         adm:logDate         "2014-05-28T15:28:59.594Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG64DE86AE1B4E6770
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGB39EC766D11F15A6
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-12T11:49:09.663Z"^^xsd:dateTime ;
         adm:logMessage      "added location and short title"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGBF09E3BEC10AB40E
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CLB3FB37157FCA5DF4
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  573 ;
-        :contentLocationVolume  1 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV2736F6BF4BD7487C
         a                   :LineageEvent ;
@@ -99,11 +95,11 @@ bdg:L8LS14531 {
         rdfs:comment        "oral transmission of four faced mahakala text marked as glo and g.yung drung"@en ;
         skos:altLabel       "bstan pa'i stobs 'phrog nag po chen po gdong bzhi pa'am drag po gzi ldan dbang phyug gyi chos skor las/ glo g.yung drung can gyi lung brgyud lugs gcig"@bo-x-ewts ;
         skos:prefLabel      "drag po gzi ldan dbang phyug gyi chos skor lung brgyud lugs gcig"@bo-x-ewts ;
-        :contentLocation    bdr:CLB3FB37157FCA5DF4 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH023130BC07BA3943 , bdr:LH31D1645E33527A8A , bdr:LH47B6D8DAC9E037A1 , bdr:LH49A02FEEFDBDB3AD , bdr:LH5F9A5128F1F9098C , bdr:LH74CB26BA0DE8F3EF , bdr:LHEC37C33B3175D078 , bdr:LHF88DD7F601CDD7B0 , bdr:LHFA5B32AD94CE2147 ;
         :lineageObject      bdr:T924 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTB3FB37157FCA5DF4 .
     
     bdr:LH023130BC07BA3943
         a                   :LineageHolder ;
@@ -148,4 +144,9 @@ bdg:L8LS14531 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV2736F6BF4BD7487C ;
         :lineageWho         bdr:P37 .
+    
+    bdr:NTB3FB37157FCA5DF4
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 573" ;
+        :noteSource         bdr:MW1PD107937 .
 }

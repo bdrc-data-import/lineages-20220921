@@ -19,7 +19,7 @@ bdg:L8LS13665 {
         adm:gitPath         "0b/L8LS13665.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13665 ;
-        adm:logEntry        bda:LG21FD14B566AABE31 , bda:LG4C47A22D24B5E9ED , bda:LG6AE244BA2BE652BF , bda:LG8562E023C0503E9F , bda:LG89280F62AD260970 , bda:LG8C700E2B621802A6 , bda:LGF6D8EC0365AF941D , bda:LGF886398C9C77BF6C ;
+        adm:logEntry        bda:LG21FD14B566AABE31 , bda:LG4C47A22D24B5E9ED , bda:LG6AE244BA2BE652BF , bda:LG8C700E2B621802A6 , bda:LGF886398C9C77BF6C , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -41,28 +41,10 @@ bdg:L8LS13665 {
         adm:logMessage      "added type and location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG8562E023C0503E9F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG89280F62AD260970
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG8C700E2B621802A6
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-05-06T16:07:22.478Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LGF6D8EC0365AF941D
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGF886398C9C77BF6C
         a                   adm:UpdateData ;
@@ -70,11 +52,26 @@ bdg:L8LS13665 {
         adm:logMessage      "removed note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bdr:CLF5B045972E63FC64
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "70-71" ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV062F26767A3C0071
         a                   :LineageEvent ;
@@ -96,12 +93,11 @@ bdg:L8LS13665 {
         rdfs:comment        "oral transmission of commentary on bodhipradipada composed by rtses and las chen kun dga' rgyal mtshan" ;
         skos:altLabel       "bka' gdams kyi bstan pa'i gsal byed chen po rtses dang las chen kun dga' rgyal mtshan gyi mdzad pa'i byang chub lam gyi sgron me'i 'grel pa'i lung thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "byang chub lam gyi sgron me'i 'grel pa'i lung thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLF5B045972E63FC64 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH7B59DAAC7F500AAF , bdr:LHC01A2A8B919BE1F3 , bdr:LHCA6A87E49DA1312D , bdr:LHCD44D69046F3046B , bdr:LHDA2D22B3BB3C8515 , bdr:LHEC5868CD66BEC582 ;
         :lineageObject      bdr:T238 ;
         :lineageType        bdr:LineageLung ;
-        :note               bdr:NT76CE6D98EEF9586B .
+        :note               bdr:NT76CE6D98EEF9586B , bdr:NTF5B045972E63FC64 .
     
     bdr:LH7B59DAAC7F500AAF
         a                   :LineageHolder ;
@@ -137,4 +133,9 @@ bdg:L8LS13665 {
         :contentLocationStatement  "vol. 1, p. 70-71" ;
         :noteSource         bdr:MW1PD107937 ;
         :noteText           "one or two lineage holders are missing between las chen (P4271) and panchen bsod nams grags pa (P101)."@en .
+    
+    bdr:NTF5B045972E63FC64
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 70-71" ;
+        :noteSource         bdr:MW1PD107937 .
 }

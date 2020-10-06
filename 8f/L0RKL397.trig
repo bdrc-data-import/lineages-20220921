@@ -19,7 +19,7 @@ bdg:L0RKL397 {
         adm:gitPath         "8f/L0RKL397.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L0RKL397 ;
-        adm:logEntry        bda:LG32CFEAB67DFDEB7E , bda:LG4B8B2F7A69D37540 , bda:LG65BF39F7D1941A74 , bda:LG99F68049E320C7E4 , bda:LGCF608C9D0CFFAB98 , bda:LGD7D4973D7A76D5C8 , bda:LGD97604045C66FA47 , bda:LGDCFAC0EF3001F2B2 , bda:LGDD4609F6B12A843E ;
+        adm:logEntry        bda:LG32CFEAB67DFDEB7E , bda:LG99F68049E320C7E4 , bda:LGD7D4973D7A76D5C8 , bda:LGD97604045C66FA47 , bda:LGDCFAC0EF3001F2B2 , bda:LGDD4609F6B12A843E , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,29 +29,11 @@ bdg:L0RKL397 {
         adm:logMessage      "P0RK1080 changed to P5471"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG4B8B2F7A69D37540
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG65BF39F7D1941A74
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG99F68049E320C7E4
         a                   adm:UpdateData ;
         adm:logDate         "2014-08-15T15:22:34.014Z"^^xsd:dateTime ;
         adm:logMessage      "changed person to topic"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LGCF608C9D0CFFAB98
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGD7D4973D7A76D5C8
         a                   adm:UpdateData ;
@@ -77,11 +59,26 @@ bdg:L0RKL397 {
         adm:logMessage      "added type, object and location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLF2518D441BBF46DD
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "54b4ff." ;
-        :contentLocationVolume  "kha" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV1E44E5BC566C7ED0
         a                   :LineageEvent ;
@@ -146,11 +143,11 @@ bdg:L0RKL397 {
     bdr:L0RKL397  a         :Lineage ;
         skos:altLabel       "dpal mgon bram nag gshan pa drug skor nag po dom mchong su grags pa'i rjes gnang/ de'i man ngag gi yi ge rnams kyi lung dang bcas pa/"@bo-x-ewts ;
         skos:prefLabel      "dpal mgon bram nag gshan pa drug skor rjes gnang/ de'i man ngag gi lung dang bcas pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLF2518D441BBF46DD ;
         :isRoot             true ;
         :lineageHolder      bdr:LH15777DF5A43DB921 , bdr:LH1A0C25A65F6365E7 , bdr:LH24C94CD217FD72F3 , bdr:LH2E3A54ECF9471C1F , bdr:LH431FC809AD4F53EB , bdr:LH44D701D51A5BDF25 , bdr:LH4F34200839B8AD80 , bdr:LH626454B6E47A0BF7 , bdr:LH6765CCA8D70C77C4 , bdr:LH948830B91217AFFD , bdr:LH9ED28684DCE8A226 , bdr:LHAACCCE507C93F325 , bdr:LHDCF3C235C54E84F3 , bdr:LHEFD59ED257D5B990 , bdr:LHF8115B272666033D , bdr:LHFE31AD61255A6B09 ;
         :lineageObject      bdr:T1GS147819 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTF2518D441BBF46DD .
     
     bdr:LH15777DF5A43DB921
         a                   :LineageHolder ;
@@ -230,4 +227,9 @@ bdg:L0RKL397 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVA51287EDB32E8B69 ;
         :lineageWho         bdr:P4954 .
+    
+    bdr:NTF2518D441BBF46DD
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, 54b4ff." ;
+        :noteSource         bdr:MW1PD107937 .
 }

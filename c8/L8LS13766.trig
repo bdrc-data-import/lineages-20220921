@@ -19,7 +19,7 @@ bdg:L8LS13766 {
         adm:gitPath         "c8/L8LS13766.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13766 ;
-        adm:logEntry        bda:LG0C4DB228006F6F29 , bda:LG7F2E9D096F1B396E , bda:LGA0D79171777B31F1 , bda:LGAD59B81E4840891D , bda:LGB2EEDAFE5B85E649 , bda:LGE7017DD7B9F8DF8D , bda:LGFA7964F2E63DD4BA ;
+        adm:logEntry        bda:LG0C4DB228006F6F29 , bda:LGA0D79171777B31F1 , bda:LGB2EEDAFE5B85E649 , bda:LGE7017DD7B9F8DF8D , bda:LGFA7964F2E63DD4BA , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,23 +28,11 @@ bdg:L8LS13766 {
         adm:logDate         "2014-05-22T09:34:55.443Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG7F2E9D096F1B396E
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGA0D79171777B31F1
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T09:32:03.393Z"^^xsd:dateTime ;
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LGAD59B81E4840891D
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGB2EEDAFE5B85E649
         a                   adm:UpdateData ;
@@ -62,11 +50,19 @@ bdg:L8LS13766 {
         adm:logDate         "2013-05-17T09:04:48.827Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLEE90BFAF0474EEFA
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "98-99" ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV11825DAD850DF078
         a                   :LineageEvent ;
@@ -128,11 +124,11 @@ bdg:L8LS13766 {
         rdfs:comment        "oral transmission of long life based on kavera" ;
         skos:altLabel       "sgra mi snyan pa'i tshe sgrub de bzhin gshegs pa shAkya thub pa'i sgom bzlas dang bcas yod pa'i sgom lung thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "sgra mi snyan pa'i tshe sgrub kyi lung thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLEE90BFAF0474EEFA ;
         :isRoot             true ;
         :lineageHolder      bdr:LH2582D90229580375 , bdr:LH2FFEBD53D009CE2C , bdr:LH3242CB3263C1855E , bdr:LH4310A66A36E0EA21 , bdr:LH484BB59EEDB4C3E1 , bdr:LH5370346AC110BE31 , bdr:LH558B564D32A8555A , bdr:LH6C8185D050F46016 , bdr:LH729B9923D6C66FCC , bdr:LH9FD984D363882CAE , bdr:LHA5107595028CB98E , bdr:LHA629E5FF0A50AB3B , bdr:LHB10C149B3863FDC5 , bdr:LHBEB8C1AEB1098ECC , bdr:LHC21709683377BAE3 , bdr:LHCB7CBBC434D033CB ;
         :lineageObject      bdr:T27 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTEE90BFAF0474EEFA .
     
     bdr:LH2582D90229580375
         a                   :LineageHolder ;
@@ -216,4 +212,9 @@ bdg:L8LS13766 {
     bdr:NTCA270C40DAA2CD32
         a                   :Note ;
         :noteText           "bar 'dir bla ma 'ga' zhig ma rnyed/"@bo-x-ewts .
+    
+    bdr:NTEE90BFAF0474EEFA
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 98-99" ;
+        :noteSource         bdr:MW1PD107937 .
 }

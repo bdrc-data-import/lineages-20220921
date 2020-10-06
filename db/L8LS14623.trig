@@ -19,7 +19,7 @@ bdg:L8LS14623 {
         adm:gitPath         "db/L8LS14623.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14623 ;
-        adm:logEntry        bda:LG1D2054009C5A72FF , bda:LG263B2D052C2FCFF5 , bda:LG493E805758150601 , bda:LG68E68F08ECE36CB1 , bda:LG97B4729C882FD7B2 , bda:LG9AA1157BDC8DBB83 , bda:LGFBED6CEE9969B10D ;
+        adm:logEntry        bda:LG1D2054009C5A72FF , bda:LG263B2D052C2FCFF5 , bda:LG97B4729C882FD7B2 , bda:LGFBED6CEE9969B10D , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,39 +35,36 @@ bdg:L8LS14623 {
         adm:logMessage      "added location and type topic"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG493E805758150601
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG68E68F08ECE36CB1
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG97B4729C882FD7B2
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-28T12:32:02.441Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG9AA1157BDC8DBB83
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGFBED6CEE9969B10D
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T11:54:29.965Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLF1B3C219684B66CB
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  9 ;
-        :contentLocationVolume  2 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV2929F3CF1E504FB4
         a                   :LineageEvent ;
@@ -95,11 +92,11 @@ bdg:L8LS14623 {
     
     bdr:L8LS14623  a        :Lineage ;
         skos:prefLabel      "rdo rje'i tsher ma 'brum nad kyi gnyen po bcom ldan 'das ma sna tshogs yum gyi rjes gnang gi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLF1B3C219684B66CB ;
         :isRoot             true ;
         :lineageHolder      bdr:LH529B39218F9EEC75 , bdr:LH5FBB8CAA3808A6EC , bdr:LH61E6869083BE8D61 , bdr:LH91640D516B4BF03D , bdr:LH991834CD9ACDC9E0 , bdr:LHAA03710BEAB5A52F , bdr:LHC4D7F6F7C1070C11 ;
         :lineageObject      bdr:T701 , bdr:T74 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NTF1B3C219684B66CB .
     
     bdr:LH529B39218F9EEC75
         a                   :LineageHolder ;
@@ -135,4 +132,9 @@ bdg:L8LS14623 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVA84922E66A258383 ;
         :lineageWho         bdr:P207 .
+    
+    bdr:NTF1B3C219684B66CB
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 9" ;
+        :noteSource         bdr:MW1PD107937 .
 }

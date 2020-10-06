@@ -41,12 +41,6 @@ bdg:L8LS15562 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL25C611705C5A6D8B
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 98r4-6" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV0DC4E4EBD61D4090
         a                   :LineageEvent ;
         :lineageFrom        bdr:P8LS15505 .
@@ -157,11 +151,11 @@ bdg:L8LS15562 {
     
     bdr:L8LS15562  a        :Lineage ;
         skos:prefLabel      "rta mgrin skor gyi brgyud pa/ spyi brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL25C611705C5A6D8B ;
         :isRoot             true ;
         :lineageHolder      bdr:LH082CEE7DD141EE71 , bdr:LH10C4079AA2807354 , bdr:LH12AF13CBD1D978FC , bdr:LH1ADDD6FC3D232DFD , bdr:LH2D6F4A7C07C298C3 , bdr:LH328AD7778E494D3A , bdr:LH4D04B83FB0A2C200 , bdr:LH4FA26CD6ED9F6EC5 , bdr:LH5428135181609FF3 , bdr:LH6A80FBC92DAE86B1 , bdr:LH707F6F55317F0955 , bdr:LH70C03E69D1D78D3A , bdr:LH8E7DFBED037EB4AE , bdr:LH93FBF0BF86EC3DF9 , bdr:LH963CDE92A890DD3B , bdr:LH9DFBB51468B8EC96 , bdr:LHA326E039652A49D1 , bdr:LHAC23C7DA6B531E80 , bdr:LHAE4D11992ED8E4D4 , bdr:LHC9AE5B1CAAE4B39B , bdr:LHCCED388374238593 , bdr:LHCDF85A35AA2958A1 , bdr:LHD8FEF0C8ACD4B50F , bdr:LHDE59D6E0C188E51F , bdr:LHE141B8490A355C44 , bdr:LHE9B822E22CC7CDD3 , bdr:LHFA0FC873CD36CC90 ;
         :lineageObject      bdr:T2044 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT25C611705C5A6D8B .
     
     bdr:LH082CEE7DD141EE71
         a                   :LineageHolder ;
@@ -297,4 +291,9 @@ bdg:L8LS15562 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV2EDFBCF1DAA6323A ;
         :lineageWho         bdr:P2JM18 .
+    
+    bdr:NT25C611705C5A6D8B
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 98r4-6" ;
+        :noteSource         bdr:MW29706 .
 }

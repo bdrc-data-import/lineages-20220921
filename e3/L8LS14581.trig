@@ -19,7 +19,7 @@ bdg:L8LS14581 {
         adm:gitPath         "e3/L8LS14581.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14581 ;
-        adm:logEntry        bda:LG255AB061ADA78F6B , bda:LG42E4C2DFA37D3C07 , bda:LG653BCDD39E2F6F16 , bda:LG6F8617CC75C2C306 , bda:LG773E2639C19BC428 , bda:LG7CBA9A80F19CA8A0 ;
+        adm:logEntry        bda:LG255AB061ADA78F6B , bda:LG42E4C2DFA37D3C07 , bda:LG6F8617CC75C2C306 , bda:LG773E2639C19BC428 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -33,12 +33,6 @@ bdg:L8LS14581 {
         adm:logDate         "2014-07-29T11:13:40.838Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG653BCDD39E2F6F16
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG6F8617CC75C2C306
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-10-23T11:15:51.996Z"^^xsd:dateTime ;
@@ -51,17 +45,19 @@ bdg:L8LS14581 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG7CBA9A80F19CA8A0
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL5871938BFAF6A65E
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  3 ;
-        :contentLocationVolume  2 .
     
     bdr:EV10555442DA66A717
         a                   :LineageEvent ;
@@ -102,11 +98,11 @@ bdg:L8LS14581 {
     bdr:L8LS14581  a        :Lineage ;
         rdfs:comment        "initiation transmission of kalacakra tantra according to buston tradition"@en ;
         skos:prefLabel      "dus kyi 'khor lo bu lugs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL5871938BFAF6A65E ;
         :isRoot             true ;
         :lineageHolder      bdr:LH21F834D1F3718E9B , bdr:LH3F1B7CCE89424DF5 , bdr:LH5000CC81F0949A99 , bdr:LH7B5411C1EDB1AC6D , bdr:LHABCB2D4045AB6F31 , bdr:LHB1FC3F4FBF76FA34 , bdr:LHB95D6CFAE5C95808 , bdr:LHCA1F417F0D8B7552 , bdr:LHD6B24A84200F0B64 , bdr:LHE1620A46C0294C1E ;
         :lineageObject      bdr:T74 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NT5871938BFAF6A65E .
     
     bdr:LH21F834D1F3718E9B
         a                   :LineageHolder ;
@@ -158,4 +154,9 @@ bdg:L8LS14581 {
         a                   :LineageHolder ;
         :lineageDownTo      bdr:L8LS14582 ;
         :lineageWho         bdr:P1511 .
+    
+    bdr:NT5871938BFAF6A65E
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 3" ;
+        :noteSource         bdr:MW1PD107937 .
 }

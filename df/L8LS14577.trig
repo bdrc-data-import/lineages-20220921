@@ -19,7 +19,7 @@ bdg:L8LS14577 {
         adm:gitPath         "df/L8LS14577.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14577 ;
-        adm:logEntry        bda:LG1C5104AA5F70FEF6 , bda:LG2DF980C10B041ECA , bda:LGA5C9D8956B76BA0B , bda:LGC710E024393018DE , bda:LGE4B4252CCA4F5B3F , bda:LGEE9C3ACBB84D972E ;
+        adm:logEntry        bda:LG1C5104AA5F70FEF6 , bda:LG2DF980C10B041ECA , bda:LGA5C9D8956B76BA0B , bda:LGC710E024393018DE , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -45,23 +45,19 @@ bdg:L8LS14577 {
         adm:logDate         "2014-07-29T09:44:15.696Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGE4B4252CCA4F5B3F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LGEE9C3ACBB84D972E
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL86C60907795A4A1C
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  533 ;
-        :contentLocationVolume  1 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV078A58BD9229B3DE
         a                   :LineageEvent ;
@@ -118,11 +114,11 @@ bdg:L8LS14577 {
     bdr:L8LS14577  a        :Lineage ;
         rdfs:comment        "oral transmission of rediscovered teachings, gnubs tradition"@en ;
         skos:prefLabel      "gnubs lugs gter ma'i lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL86C60907795A4A1C ;
         :isRoot             true ;
         :lineageHolder      bdr:LH05F29B266EEE1044 , bdr:LH0CABB65BA2C7A180 , bdr:LH176190806BBBF2B0 , bdr:LH2E4B57E4F8FAA820 , bdr:LH47840B2C7755A9DA , bdr:LH66CF59FB378E2952 , bdr:LH755E7C526291642A , bdr:LH807F03ED6B233E3A , bdr:LHA38A70131ADA37AD , bdr:LHAB316EC423676C1C , bdr:LHDAC765CC26403C4A , bdr:LHE8DCD37B48DBCAE9 , bdr:LHF57EC42B722E2041 , bdr:LHFADF48D4658C1814 ;
         :lineageObject      bdr:T448 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT86C60907795A4A1C .
     
     bdr:LH05F29B266EEE1044
         a                   :LineageHolder ;
@@ -192,4 +188,9 @@ bdg:L8LS14577 {
     bdr:LHFADF48D4658C1814
         a                   :LineageHolder ;
         :lineageWho         bdr:T720 .
+    
+    bdr:NT86C60907795A4A1C
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 533" ;
+        :noteSource         bdr:MW1PD107937 .
 }

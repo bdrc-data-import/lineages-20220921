@@ -40,11 +40,6 @@ bdg:L3JT13494 {
         adm:logMessage      "changed associated lineages"@en ;
         adm:logWho          bdu:U00017 .
     
-    bdr:CL65A9BE9DFAFF635B
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationSide  "245r (ge)" .
-    
     bdr:EV1AE7193A2814486B
         a                   :LineageEvent ;
         :lineageFrom        bdr:P0RK153 .
@@ -88,12 +83,12 @@ bdg:L3JT13494 {
     bdr:L3JT13494  a        :Lineage ;
         skos:altLabel       "rgyud sde lnga'i byin brlabs nye ba'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "byin brlabs nye ba'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL65A9BE9DFAFF635B ;
         :isRoot             true ;
         :lineageHolder      bdr:LH081232CC190EF660 , bdr:LH220DEAE8DD26E778 , bdr:LH3D2F295BF1D1842E , bdr:LH5AA6282248E0B229 , bdr:LH6356D80ABAE4A926 , bdr:LH66A9515A7C6FE72A , bdr:LH6DDE7ADA3A0A0F97 , bdr:LH960C2029B979E74A , bdr:LH9A59492AC7ACACEA , bdr:LHA8D0574404EE811D , bdr:LHCE344B38D7F8B194 ;
         :lineageObject      bdr:T1824 ;
         :lineageRef         bdr:L3JT13493 ;
-        :lineageType        bdr:LineageNyeBrgyud .
+        :lineageType        bdr:LineageNyeBrgyud ;
+        :note               bdr:NT65A9BE9DFAFF635B .
     
     bdr:LH081232CC190EF660
         a                   :LineageHolder ;
@@ -148,4 +143,7 @@ bdg:L3JT13494 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVC537FE7AFF902B0C ;
         :lineageWho         bdr:P49 .
+    
+    bdr:NT65A9BE9DFAFF635B
+        a                   :Note .
 }

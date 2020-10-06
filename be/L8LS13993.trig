@@ -19,7 +19,7 @@ bdg:L8LS13993 {
         adm:gitPath         "be/L8LS13993.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13993 ;
-        adm:logEntry        bda:LG0219E94C1BC4AB81 , bda:LG20CC80982B9A1E75 , bda:LG504BDE098ABAC5CE , bda:LG700D8042181BF0AC , bda:LG887ED56532F6D75E , bda:LG9E48BA1D0B7D2FA1 , bda:LGA6F4DE4901F5D7BF , bda:LGC8AE7381C4FEB9BE , bda:LGEDCFC6143B5BFCB2 , bda:LGEFCB6638B32064E6 , bda:LGF9966270A30F8A5D ;
+        adm:logEntry        bda:LG0219E94C1BC4AB81 , bda:LG20CC80982B9A1E75 , bda:LG504BDE098ABAC5CE , bda:LG700D8042181BF0AC , bda:LGA6F4DE4901F5D7BF , bda:LGC8AE7381C4FEB9BE , bda:LGEDCFC6143B5BFCB2 , bda:LGF9966270A30F8A5D , bda:LGIMB5106F8FDA , bda:LGIMDE06E8288A , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -44,18 +44,6 @@ bdg:L8LS13993 {
         adm:logMessage      "P normalized and dlms edited"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG887ED56532F6D75E
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:18:50.168Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG9E48BA1D0B7D2FA1
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGA6F4DE4901F5D7BF
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-13T15:54:06.365Z"^^xsd:dateTime ;
@@ -73,22 +61,31 @@ bdg:L8LS13993 {
         adm:logDate         "2014-07-29T15:52:30.091Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGEFCB6638B32064E6
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGF9966270A30F8A5D
         a                   adm:UpdateData ;
         adm:logDate         "2014-08-21T15:58:04.754Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL944580B35DCB78E2
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  187 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMDE06E8288A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:18:50.168Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV088F7B0BC278AFBD
         a                   :LineageEvent ;
@@ -163,14 +160,14 @@ bdg:L8LS13993 {
         :lineageFrom        bdr:P0RK1502 .
     
     bdr:L8LS13993  a        :Lineage ;
-        rdfs:comment        "initiation transmission of 19 deity guhyasamaja manjushri vajra, khache pachen tradition"@en ;
         skos:altLabel       "bka' babs drug pa kha che lugs kyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "gsang ba 'dus pa 'jam dpal rdo rje lha bcu dgu'i dbang gi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL944580B35DCB78E2 ;
+        :catalogInfo        "initiation transmission of 19 deity guhyasamaja manjushri vajra, khache pachen tradition"@en ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0586F773F6BE5501 , bdr:LH0ABE22969D9586F3 , bdr:LH0F725A8B2849BA52 , bdr:LH37C3BF4A48666016 , bdr:LH3F51C57FFA633C5B , bdr:LH64D2AC774ACCFE0D , bdr:LH74E48B1E23FD0888 , bdr:LH7F4514E054FECCF9 , bdr:LH83DCDEDC4E3201F1 , bdr:LH8D634CF21292E1E6 , bdr:LH933E3E3F3D987743 , bdr:LHA1C4F8967B108259 , bdr:LHB41E8CC2153C51C6 , bdr:LHBFFB3D026E32A915 , bdr:LHC0242431260D0D89 , bdr:LHCBF8D7BDE577CB2A , bdr:LHE0FE29632F5B1A86 , bdr:LHE9EC073DA51689F0 , bdr:LHED58872DCB3D2CBB ;
         :lineageObject      bdr:T984 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NT944580B35DCB78E2 .
     
     bdr:LH0586F773F6BE5501
         a                   :LineageHolder ;
@@ -265,4 +262,9 @@ bdg:L8LS13993 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV099C02ECEE8CACB2 ;
         :lineageWho         bdr:P0RK1502 .
+    
+    bdr:NT944580B35DCB78E2
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 187" ;
+        :noteSource         bdr:MW1PD107937 .
 }

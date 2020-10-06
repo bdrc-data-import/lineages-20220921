@@ -19,7 +19,7 @@ bdg:L1RKL102 {
         adm:gitPath         "ad/L1RKL102.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL102 ;
-        adm:logEntry        bda:LG20005926D340554E , bda:LG24E270F181233A61 , bda:LG7DFBCC1AFDB30872 , bda:LG7E234DFE92434785 , bda:LG827D46ACC15437C4 , bda:LG90CAB2803F54F9E8 , bda:LGB211E1463141B73F , bda:LGC1CC43CAF092ED74 , bda:LGD7D82C17C12FA5B5 , bda:LGD8A057C50C155CC1 ;
+        adm:logEntry        bda:LG20005926D340554E , bda:LG7DFBCC1AFDB30872 , bda:LG7E234DFE92434785 , bda:LG827D46ACC15437C4 , bda:LGB211E1463141B73F , bda:LGC1CC43CAF092ED74 , bda:LGD7D82C17C12FA5B5 , bda:LGD8A057C50C155CC1 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,12 +28,6 @@ bdg:L1RKL102 {
         adm:logDate         "2013-09-12T17:20:51.558Z"^^xsd:dateTime ;
         adm:logMessage      "added lin ref"@en ;
         adm:logWho          bdu:U00020 .
-    
-    bda:LG24E270F181233A61
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG7DFBCC1AFDB30872
         a                   adm:UpdateData ;
@@ -51,12 +45,6 @@ bdg:L1RKL102 {
         adm:logDate         "2013-12-04T15:07:34.299Z"^^xsd:dateTime ;
         adm:logMessage      "edited according to gsan yig"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG90CAB2803F54F9E8
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGB211E1463141B73F
         a                   adm:UpdateData ;
@@ -79,11 +67,19 @@ bdg:L1RKL102 {
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00023 .
     
-    bdr:CL65CD6A7AD14A3DBA
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  575 ;
-        :contentLocationVolume  "ka" .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV1539FBFE3CECC53C
         a                   :LineageEvent ;
@@ -111,11 +107,11 @@ bdg:L1RKL102 {
     
     bdr:L1RKL102  a         :Lineage ;
         skos:prefLabel      "bsgrub pa'i lung sbyin nyams len man ngag gi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL65CD6A7AD14A3DBA ;
         :isRoot             true ;
         :lineageHolder      bdr:LH081D8EDB2040C6E2 , bdr:LH7BE1C978CCAAD88E , bdr:LH80AF696E298A94D3 , bdr:LHE1DD68CEC4F4FDC0 , bdr:LHE602A912170A81DB , bdr:LHF48E479FF5419012 , bdr:LHF9D804FA8009B004 ;
         :lineageObject      bdr:T1248 ;
-        :lineageType        bdr:LineageKhrid .
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NT65CD6A7AD14A3DBA .
     
     bdr:LH081D8EDB2040C6E2
         a                   :LineageHolder ;
@@ -150,4 +146,9 @@ bdg:L1RKL102 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVB8BC4D650F811992 ;
         :lineageWho         bdr:P1027 .
+    
+    bdr:NT65CD6A7AD14A3DBA
+        a                   :Note ;
+        :contentLocationStatement  "vol. ka, p. 575" ;
+        :noteSource         bdr:MW29307 .
 }

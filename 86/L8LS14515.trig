@@ -19,7 +19,7 @@ bdg:L8LS14515 {
         adm:gitPath         "86/L8LS14515.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14515 ;
-        adm:logEntry        bda:LG17D548405485797F , bda:LG274FF13026ACD3BC , bda:LG594826CF25099E5A , bda:LG88BF4C04B10EE9DF , bda:LG8B135F4CB3BB840F , bda:LG8EF2D3FF2A3518D1 , bda:LGB30CD6298B3F2005 ;
+        adm:logEntry        bda:LG17D548405485797F , bda:LG594826CF25099E5A , bda:LG8B135F4CB3BB840F , bda:LG8EF2D3FF2A3518D1 , bda:LGB30CD6298B3F2005 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,23 +29,11 @@ bdg:L8LS14515 {
         adm:logMessage      "added topic"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG274FF13026ACD3BC
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG594826CF25099E5A
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-25T14:05:26.088Z"^^xsd:dateTime ;
         adm:logMessage      "added type and deleted note"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG88BF4C04B10EE9DF
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG8B135F4CB3BB840F
         a                   adm:UpdateData ;
@@ -65,11 +53,19 @@ bdg:L8LS14515 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL320C396631F64B30
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  532 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV02AC705C2D89EAF6
         a                   :LineageEvent ;
@@ -183,11 +179,11 @@ bdg:L8LS14515 {
         rdfs:comment        "anuja transmission of puta mingsing and yamantaka also oral transmission of those terma text marked as lha"@en ;
         skos:altLabel       "gsang ba'i las mkhan pu tra ming sring phyi nor srung gnod sbyin pho mo'i tshul dang / nang gsang ba gshin rje pho mo'i tshul du sgrub pa'i rjes gnang dang lha'i rtags yod pa'i lung brgyud la rgya gar gter ma/"@bo-x-ewts ;
         skos:prefLabel      "pu tra ming sring dang gshin rje pho mo'i tshul du sgrub pa'i rjes gnang dang lha'i rtags yod pa'i lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL320C396631F64B30 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH1AA0C7C7C320686A , bdr:LH25244404CD50F5ED , bdr:LH2E753D68C6BCAD3A , bdr:LH366F5EE382967A4D , bdr:LH39BDA3B8301B6D91 , bdr:LH4C051723F133D9D6 , bdr:LH56E0936A5269B7B6 , bdr:LH6481790DCB0C59CE , bdr:LH6E2E4A37D8601588 , bdr:LH795979248F495AAD , bdr:LH7F86C82A4B0CC053 , bdr:LH8567EE3D2C0E0672 , bdr:LH92B71791539483C1 , bdr:LHAC2142A920698281 , bdr:LHB4C843450E7DF977 , bdr:LHB79F7B17A9B0EA1B , bdr:LHC1808D5F2BDE3F9B , bdr:LHC21D4E1F1DA3DAA1 , bdr:LHC3F174B61D0EB2F5 , bdr:LHC6DE3DD0642A88C6 , bdr:LHCAAA1EB6D7D731EF , bdr:LHD0EE383B4C5D585E , bdr:LHD7931FD5009422C2 , bdr:LHE61EB37EA875DA36 , bdr:LHECADE5DD5D91D8FD , bdr:LHFB565D71F134889E , bdr:LHFDFDAF56A06E0D08 ;
         :lineageObject      bdr:T00KG02744 , bdr:T1734 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NT320C396631F64B30 .
     
     bdr:LH1AA0C7C7C320686A
         a                   :LineageHolder ;
@@ -322,4 +318,9 @@ bdg:L8LS14515 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV545D31A531397E77 ;
         :lineageWho         bdr:P5908 .
+    
+    bdr:NT320C396631F64B30
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 532" ;
+        :noteSource         bdr:MW1PD107937 .
 }

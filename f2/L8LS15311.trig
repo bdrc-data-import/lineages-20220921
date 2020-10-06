@@ -34,12 +34,6 @@ bdg:L8LS15311 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL34EBE93B064174BA
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 67v4-5" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV00D74FBC9321D3C7
         a                   :LineageEvent ;
         :lineageFrom        bdr:P2JM103 .
@@ -91,11 +85,11 @@ bdg:L8LS15311 {
     bdr:L8LS15311  a        :Lineage ;
         skos:altLabel       "bshad rgyud rdo rje rtse mo rtog pa bcu pa las phyed dang lnga ma tshang ba las kyi rdo rje dang gzhon nu tshul khrims kyis bsgyur ba'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "bshad rgyud rdo rje rtse mo rtog pa bcu pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL34EBE93B064174BA ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0C5FD20AD7323FE7 , bdr:LH56361AD37FD1FBAD , bdr:LH652309E974BF0025 , bdr:LH679A9B56232B3731 , bdr:LH6AD6F96BB62E251B , bdr:LH6DCFF9FACE1E6934 , bdr:LH71ED901C2EEF5756 , bdr:LH73D092D4E6304F9E , bdr:LH7ADEF15FEB7EE90B , bdr:LHB4BD6E561AFDDDAF , bdr:LHB7FF3163C472FBB0 , bdr:LHE8D660787412B2EE , bdr:LHFC437955578474E0 ;
         :lineageObject      bdr:T2129 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT34EBE93B064174BA .
     
     bdr:LH0C5FD20AD7323FE7
         a                   :LineageHolder ;
@@ -161,4 +155,9 @@ bdg:L8LS15311 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV71D5F679C64358BD ;
         :lineageWho         bdr:P2097 .
+    
+    bdr:NT34EBE93B064174BA
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 67v4-5" ;
+        :noteSource         bdr:MW29706 .
 }

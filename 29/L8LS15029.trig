@@ -19,7 +19,7 @@ bdg:L8LS15029 {
         adm:gitPath         "29/L8LS15029.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS15029 ;
-        adm:logEntry        bda:LG1B8BABE4421A90A3 , bda:LG68F04D2C9604AF7C , bda:LG79BBFF39638E421C , bda:LG82BC8B5ACDF9C7D7 , bda:LG85F16F7C954CC9CB , bda:LGC171FDD3579F6E70 , bda:LGE6AF8D9432947255 ;
+        adm:logEntry        bda:LG1B8BABE4421A90A3 , bda:LG79BBFF39638E421C , bda:LG85F16F7C954CC9CB , bda:LGC171FDD3579F6E70 , bda:LGE6AF8D9432947255 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -29,23 +29,11 @@ bdg:L8LS15029 {
         adm:logMessage      "added short title"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG68F04D2C9604AF7C
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG79BBFF39638E421C
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-01-22T12:25:38.646Z"^^xsd:dateTime ;
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG82BC8B5ACDF9C7D7
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG85F16F7C954CC9CB
         a                   adm:UpdateData ;
@@ -63,12 +51,19 @@ bdg:L8LS15029 {
         adm:logMessage      "added short title and location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL926D428590376B35
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationSide  "f. 20v2-3" ;
-        :contentLocationVolume  "e" .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV252BD7404B90371B
         a                   :LineageEvent ;
@@ -93,11 +88,11 @@ bdg:L8LS15029 {
     bdr:L8LS15029  a        :Lineage ;
         skos:altLabel       "gso ba rig pa'i skor las/ man ngag lhan thabs gzhung rtsa ba/ sde srid rang gis mdzad pa'i sman ming gi ngo sprod lag len gces pa'i bu yig /bu yig rgyas pa 'phyong rgyas pa ngag dbang dpal bzang gis sde srid kyi gsung bzhin bris pa mkha' 'gro gtad rgya'i rgya mdud nang gses le tshan bzhi pa cha tshang bcas bshad lung gyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "man ngag lhan thabs gzhung rtsa ba dang mkha' 'gro gtad rgya'i rgya mdud bcas bshad lung gyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL926D428590376B35 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH13102B3EDC9AD093 , bdr:LH55FA9220DC31491F , bdr:LH7345DA0876061B2F , bdr:LH8117D1CE75F30E6F , bdr:LHCAE8E90E5EB0EFBB , bdr:LHD7DDC0A8E1BFA7EA , bdr:LHE97D86C0DA92B691 ;
         :lineageObject      bdr:T10MS14651 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT926D428590376B35 .
     
     bdr:LH13102B3EDC9AD093
         a                   :LineageHolder ;
@@ -136,4 +131,9 @@ bdg:L8LS15029 {
     bdr:NT5A4D5C6E8955B327
         a                   :Note ;
         :noteText           "rim par brgyud pa a mdo bkra shis 'khyil grwa tshang khag bzhi'i sman pa grwa tshang  las/"@bo-x-ewts .
+    
+    bdr:NT926D428590376B35
+        a                   :Note ;
+        :contentLocationStatement  "vol. e" ;
+        :noteSource         bdr:MW29706 .
 }

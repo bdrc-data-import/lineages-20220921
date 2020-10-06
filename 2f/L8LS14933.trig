@@ -19,7 +19,7 @@ bdg:L8LS14933 {
         adm:gitPath         "2f/L8LS14933.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14933 ;
-        adm:logEntry        bda:LG0DEAC6DBF3B76B1A , bda:LG1661597CBF9770A2 , bda:LG29E21AE247E02C38 , bda:LG6F8BE165F7E8FAEC , bda:LGC4EA54FA2512C1EC , bda:LGDB87A3C3B5ACD37D , bda:LGF6BA64A05F0E556B ;
+        adm:logEntry        bda:LG0DEAC6DBF3B76B1A , bda:LG1661597CBF9770A2 , bda:LGC4EA54FA2512C1EC , bda:LGDB87A3C3B5ACD37D , bda:LGF6BA64A05F0E556B , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,18 +34,6 @@ bdg:L8LS14933 {
         adm:logDate         "2014-02-27T14:28:20.367Z"^^xsd:dateTime ;
         adm:logMessage      "added location and short title"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG29E21AE247E02C38
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG6F8BE165F7E8FAEC
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGC4EA54FA2512C1EC
         a                   adm:InitialDataCreation ;
@@ -63,11 +51,19 @@ bdg:L8LS14933 {
         adm:logDate         "2014-05-09T11:20:34.886Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLB6CAA99695B028A5
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  200 ;
-        :contentLocationVolume  2 .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV32E613C8772726B3
         a                   :LineageEvent ;
@@ -96,11 +92,11 @@ bdg:L8LS14933 {
     bdr:L8LS14933  a        :Lineage ;
         skos:altLabel       "rje btsun kun dga' grol mchog gyis dka' ba brgya phrag du ma'i sgo nas btsal ba'i 'khrid brgya'i skor nos pa la/ sangs rgyas sgom pas glang ri thang pa'i gdan sa bshes gnyen zhang la gsan nas 'phel ba'i thub pa'i zhi gnas sems 'dzin/ spyan ras gzigs kyi snying rje mkha' khyab/ mi g.yo ba'i gtum po bgegs bsrung / sgrol ma'i mngon shes lung ston te bka' gdams lha bzhi'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "sgrol ma'i mngon shes lung ston te bka' gdams lha bzhi'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLB6CAA99695B028A5 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH13C98C1F3B729D9F , bdr:LH1C6C2A7AAFDD2DE6 , bdr:LH26748931397A1553 , bdr:LH4C1C1A0AEA07845A , bdr:LHB4D62CA55FDBF664 , bdr:LHBEB4D0319F39A6B8 , bdr:LHF841BF5206E7259F ;
         :lineageObject      bdr:T1253 , bdr:T414 ;
-        :lineageType        bdr:LineageKhrid .
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NTB6CAA99695B028A5 .
     
     bdr:LH13C98C1F3B729D9F
         a                   :LineageHolder ;
@@ -136,4 +132,9 @@ bdg:L8LS14933 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVA7EE82A96C6F68F0 ;
         :lineageWho         bdr:P3379 .
+    
+    bdr:NTB6CAA99695B028A5
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 200" ;
+        :noteSource         bdr:MW1PD107937 .
 }

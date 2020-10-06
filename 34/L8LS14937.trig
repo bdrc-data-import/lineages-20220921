@@ -19,7 +19,7 @@ bdg:L8LS14937 {
         adm:gitPath         "34/L8LS14937.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14937 ;
-        adm:logEntry        bda:LG456BC960FA3E1914 , bda:LG9DACC9179750A896 , bda:LGBF54F9972A0903F8 , bda:LGD79DD4CFCF0F02E5 , bda:LGD92168F1953BDBAD , bda:LGDF805569869B0438 ;
+        adm:logEntry        bda:LG456BC960FA3E1914 , bda:LG9DACC9179750A896 , bda:LGBF54F9972A0903F8 , bda:LGD92168F1953BDBAD , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -40,28 +40,24 @@ bdg:L8LS14937 {
         adm:logDate         "2014-07-25T15:27:58.879Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGD79DD4CFCF0F02E5
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGD92168F1953BDBAD
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-09T10:58:59.07Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGDF805569869B0438
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL16A2C617684D4008
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  201 ;
-        :contentLocationVolume  2 .
     
     bdr:EV0BD824E2011AB89A
         a                   :LineageEvent ;
@@ -94,11 +90,11 @@ bdg:L8LS14937 {
     bdr:L8LS14937  a        :Lineage ;
         skos:altLabel       "rje btsun kun dga' grol mchog gyis dka' ba brgya phrag du ma'i sgo nas btsal ba'i 'khrid brgya'i skor nos pa la/ nyams len byin rlabs kyi brgyud pa'i lag rjes mdo sngags ma lus pa bstan thog gcig tu hril gyis bsgril nas snying gi thig ler 'chang rgyu thig le bcu drug gi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "thig le bcu drug gi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL16A2C617684D4008 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0F5B1182F873A734 , bdr:LH0F8DE4068868C922 , bdr:LH3697EA1DDFF09770 , bdr:LH52FBFF34E0A2F6BA , bdr:LH9CFBC5AC16185456 , bdr:LHBF65DCF595846CB7 , bdr:LHC455DDC819EB9217 , bdr:LHD73D4CA25D8D3B5B ;
         :lineageObject      bdr:T1253 , bdr:T1349 ;
-        :lineageType        bdr:LineageKhrid .
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NT16A2C617684D4008 .
     
     bdr:LH0F5B1182F873A734
         a                   :LineageHolder ;
@@ -139,4 +135,9 @@ bdg:L8LS14937 {
     bdr:LHD73D4CA25D8D3B5B
         a                   :LineageHolder ;
         :lineageWho         bdr:P0RK773 .
+    
+    bdr:NT16A2C617684D4008
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 201" ;
+        :noteSource         bdr:MW1PD107937 .
 }

@@ -19,7 +19,7 @@ bdg:L8LS14385 {
         adm:gitPath         "40/L8LS14385.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14385 ;
-        adm:logEntry        bda:LG0E5A0AC2EC9EEC55 , bda:LG441AC4C21AADC4F9 , bda:LG4E4F57D7DE3C76F4 , bda:LG68031662C86D1FC1 , bda:LG73C51EB6E8ED7678 , bda:LGA2FB49648B44D0A9 ;
+        adm:logEntry        bda:LG0E5A0AC2EC9EEC55 , bda:LG441AC4C21AADC4F9 , bda:LG4E4F57D7DE3C76F4 , bda:LG68031662C86D1FC1 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -46,23 +46,19 @@ bdg:L8LS14385 {
         adm:logMessage      "deleted note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG73C51EB6E8ED7678
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LGA2FB49648B44D0A9
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL6930E6D9BF719B3B
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "381-382" ;
-        :contentLocationVolume  1 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV200D1F7C4F7A44B9
         a                   :LineageEvent ;
@@ -71,11 +67,11 @@ bdg:L8LS14385 {
     bdr:L8LS14385  a        :Lineage ;
         rdfs:comment        "oral transmission of sindhura blessing"@en ;
         skos:prefLabel      "sin+d+hu ra'i byin rlabs dang / de'i yi ge tshar chen gyi mdzad pa'i lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL6930E6D9BF719B3B ;
         :isRoot             true ;
         :lineageHolder      bdr:LH8DD02E1BAB19375B , bdr:LHBBC77E7C3B9CB97C ;
         :lineageObject      bdr:T1302 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT6930E6D9BF719B3B .
     
     bdr:LH8DD02E1BAB19375B
         a                   :LineageHolder ;
@@ -85,4 +81,9 @@ bdg:L8LS14385 {
     bdr:LHBBC77E7C3B9CB97C
         a                   :LineageHolder ;
         :lineageWho         bdr:P3256 .
+    
+    bdr:NT6930E6D9BF719B3B
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 381-382" ;
+        :noteSource         bdr:MW1PD107937 .
 }

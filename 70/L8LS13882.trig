@@ -19,7 +19,7 @@ bdg:L8LS13882 {
         adm:gitPath         "70/L8LS13882.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13882 ;
-        adm:logEntry        bda:LG33FBB8FF11973A23 , bda:LG801D26A05815C0B1 , bda:LG829D66DD7A641B10 , bda:LGA2CA5685F962AC9D , bda:LGBFDCED7D77B80628 , bda:LGD39EA2147555088B , bda:LGDEA4E98CC85C9C60 , bda:LGE45E9FA138F31B50 ;
+        adm:logEntry        bda:LG33FBB8FF11973A23 , bda:LG801D26A05815C0B1 , bda:LG829D66DD7A641B10 , bda:LGA2CA5685F962AC9D , bda:LGBFDCED7D77B80628 , bda:LGD39EA2147555088B , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -57,23 +57,19 @@ bdg:L8LS13882 {
         adm:logMessage      "added object and location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGDEA4E98CC85C9C60
+    bda:LGIM88BD19A8AB
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bda:LGE45E9FA138F31B50
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CLDFD9E559EF769370
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  153 ;
-        :contentLocationVolume  1 .
     
     bdr:EV01F6D8E1587832A5
         a                   :LineageEvent ;
@@ -167,11 +163,11 @@ bdg:L8LS13882 {
         rdfs:comment        "anuja transmission of nine deity yellow vaisravana, kyormo lung tradition"@en ;
         skos:altLabel       "skyor mo lung pa'i phyag len ltar thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "rnam sras ser po lha dgu'i rjes gnang /"@bo-x-ewts ;
-        :contentLocation    bdr:CLDFD9E559EF769370 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH1006A5EDB22E8DF2 , bdr:LH10B1ABE7E0D959BA , bdr:LH1AA7A6B147C7BACA , bdr:LH1EDA587AA2A9A42A , bdr:LH20B5D6EE44649D95 , bdr:LH240E6B6B404ADC6C , bdr:LH2E7EF2D3C7389387 , bdr:LH398B3B8BDDC58D4D , bdr:LH467BB30DE26556C5 , bdr:LH690B6454DD8E3F74 , bdr:LH6B001B20666DEF3B , bdr:LH6D4F1B6C9D8CC942 , bdr:LH73C2FC078F7A6E39 , bdr:LH8205E693A2F2EDF6 , bdr:LH87E3495A61FA6C41 , bdr:LH942D4FAAC09BAEDF , bdr:LHA9F14B9F7B6D4DEA , bdr:LHAB025A9F26970E80 , bdr:LHB7D653C5792A8071 , bdr:LHC005F030A75C1F4E , bdr:LHDC60AFF9784860BF , bdr:LHE7FC59767CE599D6 ;
         :lineageObject      bdr:T112 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NTDFD9E559EF769370 .
     
     bdr:LH1006A5EDB22E8DF2
         a                   :LineageHolder ;
@@ -281,4 +277,9 @@ bdg:L8LS13882 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV413F293C18981E1C , bdr:EVEB5BDE929F584EAB ;
         :lineageWho         bdr:P0RK1656 .
+    
+    bdr:NTDFD9E559EF769370
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 153" ;
+        :noteSource         bdr:MW1PD107937 .
 }

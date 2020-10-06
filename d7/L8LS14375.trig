@@ -19,7 +19,7 @@ bdg:L8LS14375 {
         adm:gitPath         "d7/L8LS14375.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14375 ;
-        adm:logEntry        bda:LG05AB1409084193B2 , bda:LG37DFEE57E7156EC1 , bda:LG5651C9A9706E00DB , bda:LGA109EBF53413C8EF , bda:LGA80F10DC01E8D036 , bda:LGCAD87A35306843B8 ;
+        adm:logEntry        bda:LG05AB1409084193B2 , bda:LG5651C9A9706E00DB , bda:LGA109EBF53413C8EF , bda:LGA80F10DC01E8D036 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -27,12 +27,6 @@ bdg:L8LS14375 {
         a                   adm:UpdateData ;
         adm:logDate         "2014-06-09T14:34:43.426Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG37DFEE57E7156EC1
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG5651C9A9706E00DB
         a                   adm:UpdateData ;
@@ -51,17 +45,19 @@ bdg:L8LS14375 {
         adm:logMessage      "added type gdams ngag and deleted note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGCAD87A35306843B8
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CLD53808DF3D8BDEFE
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  371 ;
-        :contentLocationVolume  "1," .
     
     bdr:EV0B0256E65390611D
         a                   :LineageEvent ;
@@ -183,11 +179,11 @@ bdg:L8LS14375 {
         rdfs:comment        "instructional transmission of vasantatilaka"@en ;
         skos:altLabel       "slob dpon u tsi ta 'chi ba med pas/ dpyid kyi thig le'i rtsa'i sdom nyams su len pa yon po bsrang ba 'khor ba lu gu rgyud du gcod pa'i gdams pa nag po pa'i gsung bzhin rje btsun chen pos mdzad pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "dpyid kyi thig le'i rtsa'i sdom nyams su len tshul gyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLD53808DF3D8BDEFE ;
         :isRoot             true ;
         :lineageHolder      bdr:LH140B69FFFD66B908 , bdr:LH15B7BC2CC293EDAD , bdr:LH1CF20BA59D16F294 , bdr:LH1D40D20D9FC028A8 , bdr:LH27BDF49073E7BA7A , bdr:LH3FE42C8CA57303FA , bdr:LH41188D754498F4CD , bdr:LH46AA87AE9751921C , bdr:LH5679CCEC148B26EB , bdr:LH5CE8A6B16A164DAB , bdr:LH6B1FCEBC220CCBB4 , bdr:LH77FBB1602B8362A7 , bdr:LH7ADD67001A494681 , bdr:LH7F29E6DE29B8E179 , bdr:LH82544E9087EF8DBA , bdr:LH97F65955CCDA6343 , bdr:LHAAECB5D9EC2B7B17 , bdr:LHAC8FF2334E86214C , bdr:LHB6287D3FAA1FDF93 , bdr:LHBB2722428A4BB5F1 , bdr:LHCB9F73C1E77AEF9D , bdr:LHCDB47C82690D7D40 , bdr:LHD58EE91EDC0675E7 , bdr:LHD6F60B29DF0625B3 , bdr:LHD8BE878E2811D331 , bdr:LHDC06080AF12C3B11 , bdr:LHDC88C756A0F8A825 , bdr:LHE51FC8BF7BDDCFE9 , bdr:LHF952E9ADB97C5058 , bdr:LHFD69EEA7C951C468 ;
         :lineageObject      bdr:T1858 ;
-        :lineageType        bdr:LineageGdamsNgag .
+        :lineageType        bdr:LineageGdamsNgag ;
+        :note               bdr:NTD53808DF3D8BDEFE .
     
     bdr:LH140B69FFFD66B908
         a                   :LineageHolder ;
@@ -337,4 +333,9 @@ bdg:L8LS14375 {
     bdr:LHFD69EEA7C951C468
         a                   :LineageHolder ;
         :lineageWho         bdr:T1987 .
+    
+    bdr:NTD53808DF3D8BDEFE
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 371" ;
+        :noteSource         bdr:MW1PD107937 .
 }

@@ -29,11 +29,6 @@ bdg:L8LS15668 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL43098312EAA51799
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1KG16278 ;
-        :contentLocationPage  125 .
-    
     bdr:EV089F1F534EC718B0
         a                   :LineageEvent ;
         :lineageFrom        bdr:P1244 .
@@ -96,11 +91,11 @@ bdg:L8LS15668 {
     
     bdr:L8LS15668  a        :Lineage ;
         skos:prefLabel      "ma mo mkha' 'gro spyi 'dus kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL43098312EAA51799 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH000D45E56575B659 , bdr:LH0469648A5879584B , bdr:LH054C0DFCF0040ABE , bdr:LH257FACD1A5301E45 , bdr:LH25DF44D8214CB8E2 , bdr:LH2DD829060472F5EC , bdr:LH3578A37AFED4A0B9 , bdr:LH63030B628A7206F6 , bdr:LH6C40D56BB170E62C , bdr:LH6DBBA0F50812D46D , bdr:LH856F2618E39A7758 , bdr:LH8855958CCAA0BB9F , bdr:LH8F64C1FE5CED2A25 , bdr:LH9663EADF5E981DD6 , bdr:LHB2B6E637AF1CD114 , bdr:LHF8D317C4296A553A ;
         :lineageObject      bdr:T2129 , bdr:T97 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT43098312EAA51799 .
     
     bdr:LH000D45E56575B659
         a                   :LineageHolder ;
@@ -181,4 +176,9 @@ bdg:L8LS15668 {
         :lineageDownFrom    bdr:L8LS15562 ;
         :lineageReceived    bdr:EVC490D5B5723B90B4 ;
         :lineageWho         bdr:P2JM36 .
+    
+    bdr:NT43098312EAA51799
+        a                   :Note ;
+        :contentLocationStatement  "p. 125" ;
+        :noteSource         bdr:MW1KG16278 .
 }

@@ -19,15 +19,9 @@ bdg:L8LS14299 {
         adm:gitPath         "02/L8LS14299.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14299 ;
-        adm:logEntry        bda:LG451D9AAE8B8AA8E9 , bda:LG4D674772E667E602 , bda:LGA29AD7A91F6C7E14 , bda:LGB25CD7AFDC6EAD6B , bda:LGD4EFA64A153E023D , bda:LGD7987F5CEC0626DA , bda:LGE118605C7D386666 , bda:LGF8E9D9FE84CC119B ;
+        adm:logEntry        bda:LG4D674772E667E602 , bda:LGA29AD7A91F6C7E14 , bda:LGB25CD7AFDC6EAD6B , bda:LGD7987F5CEC0626DA , bda:LGE118605C7D386666 , bda:LGF8E9D9FE84CC119B , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG451D9AAE8B8AA8E9
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG4D674772E667E602
         a                   adm:UpdateData ;
@@ -45,12 +39,6 @@ bdg:L8LS14299 {
         adm:logDate         "2014-05-27T15:53:05.44Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGD4EFA64A153E023D
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGD7987F5CEC0626DA
         a                   adm:UpdateData ;
         adm:logDate         "2019-01-10T11:53:04.185Z"^^xsd:dateTime ;
@@ -67,11 +55,19 @@ bdg:L8LS14299 {
         adm:logDate         "2014-07-29T10:22:41.643Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLB2D157559087953C
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "352-353" ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0D483FA5DA634533
         a                   :LineageEvent ;
@@ -132,11 +128,11 @@ bdg:L8LS14299 {
     bdr:L8LS14299  a        :Lineage ;
         rdfs:comment        "initiation transmission of body mandala"@en ;
         skos:prefLabel      "rdo rje slob dpon gyi lus kyi dkyil 'khor du lam dus kyi dbang thob pa rje btsun sgo rum pa nas brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLB2D157559087953C ;
         :isRoot             true ;
         :lineageHolder      bdr:LH201151ACBF2F9A4C , bdr:LH2578DBC833BFE4CF , bdr:LH39B20CEAD44563FF , bdr:LH6E48A3878DA4CC35 , bdr:LH7746516A695BAE5B , bdr:LH79B49F2DC71A660C , bdr:LH93C524970FC02D85 , bdr:LHB06936D86E6268AB , bdr:LHB442569E65B3296E , bdr:LHB452ED59C89505EC , bdr:LHBA5C454BE61FDA3B , bdr:LHD27C63550046BEB9 , bdr:LHE5DB85B99D536094 , bdr:LHF3F0FEFCBA78EEA5 , bdr:LHF8E243765EEA3054 ;
         :lineageObject      bdr:T552 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NTB2D157559087953C .
     
     bdr:LH201151ACBF2F9A4C
         a                   :LineageHolder ;
@@ -211,4 +207,9 @@ bdg:L8LS14299 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV818C3C08E0AA7046 ;
         :lineageWho         bdr:P1090 .
+    
+    bdr:NTB2D157559087953C
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 352-353" ;
+        :noteSource         bdr:MW1PD107937 .
 }

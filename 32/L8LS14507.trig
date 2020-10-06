@@ -19,7 +19,7 @@ bdg:L8LS14507 {
         adm:gitPath         "32/L8LS14507.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14507 ;
-        adm:logEntry        bda:LG03B393F0122685DE , bda:LG0542AFF6A3B5B001 , bda:LG3D6692BDA1CFF81B , bda:LGA71DBDB22DB8838B , bda:LGC97B7A23B2CDA28B , bda:LGD20A02B76C751929 , bda:LGDF3DF04A1DB5BC95 ;
+        adm:logEntry        bda:LG03B393F0122685DE , bda:LG0542AFF6A3B5B001 , bda:LGA71DBDB22DB8838B , bda:LGC97B7A23B2CDA28B , bda:LGD20A02B76C751929 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,12 +34,6 @@ bdg:L8LS14507 {
         adm:logDate         "2014-05-08T09:42:02.006Z"^^xsd:dateTime ;
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG3D6692BDA1CFF81B
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGA71DBDB22DB8838B
         a                   adm:UpdateData ;
@@ -58,17 +52,19 @@ bdg:L8LS14507 {
         adm:logMessage      "added type and deleted note"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGDF3DF04A1DB5BC95
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CLBA17DAD5581A8961
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  529 ;
-        :contentLocationVolume  1 .
     
     bdr:EV1CA2AFAD8D542536
         a                   :LineageEvent ;
@@ -125,11 +121,11 @@ bdg:L8LS14507 {
     bdr:L8LS14507  a        :Lineage ;
         rdfs:comment        "anuja transmission of nine deity mahakala guhyasadhana"@en ;
         skos:prefLabel      "mgon po gsang sgrub lha dgu'i rjes gnang gi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLBA17DAD5581A8961 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH474B2148AA906EC4 , bdr:LH47AB5A957CB9871A , bdr:LH5199D837051C781D , bdr:LH5409EABF714A6454 , bdr:LH569ADEE749C23B56 , bdr:LH86270AD1E88EFF4F , bdr:LH8D2E0FA8AFF317BA , bdr:LH8E7FFC3779AA7E87 , bdr:LH994543C2A8DFEC5A , bdr:LHB59BA2210E30C086 , bdr:LHCA40E5ADCE1C2D28 , bdr:LHEA5417F3B44AEC03 , bdr:LHEB419974D016F97E , bdr:LHF1990C8BB4C56769 ;
         :lineageObject      bdr:T00KG02743 , bdr:T1465 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NTBA17DAD5581A8961 .
     
     bdr:LH474B2148AA906EC4
         a                   :LineageHolder ;
@@ -199,4 +195,9 @@ bdg:L8LS14507 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVE7817ADBB75CC62A ;
         :lineageWho         bdr:P1090 .
+    
+    bdr:NTBA17DAD5581A8961
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 529" ;
+        :noteSource         bdr:MW1PD107937 .
 }

@@ -41,12 +41,6 @@ bdg:L8LS15385 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL8F37AC49B0AA3FB0
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 85r4-85v3" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV0788B4DF61AB082F
         a                   :LineageEvent ;
         :lineageFrom        bdr:T8LS14945 .
@@ -214,11 +208,11 @@ bdg:L8LS15385 {
     bdr:L8LS15385  a        :Lineage ;
         skos:altLabel       "rdzogs chen a ti yo ga las/ thog mar sems sde'i skor gyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "sems sde'i skor gyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL8F37AC49B0AA3FB0 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH1071AF4CF1FEC9A9 , bdr:LH120EB9982B619A8C , bdr:LH13A17A1592D93BA0 , bdr:LH168F27C107C3F837 , bdr:LH1DD44819F4EC453E , bdr:LH2282BE0B2459C51D , bdr:LH262C8FA153822FF5 , bdr:LH268554EE844DDA40 , bdr:LH2C599E9AC4DDA2EA , bdr:LH2CD314E787507207 , bdr:LH2E39C8919596E2C9 , bdr:LH3281019C326A3251 , bdr:LH3B2A7E7CB8602571 , bdr:LH425B37ED8AB085C8 , bdr:LH4EA7FAC4C58B4C94 , bdr:LH527FD23924CF0757 , bdr:LH53322B1A41FE95B2 , bdr:LH5CC5C7546C5C3693 , bdr:LH62ADFCE8D23501EB , bdr:LH67EF3C592010BC1E , bdr:LH7040D8AD7B6937B8 , bdr:LH721B4DD6561375FA , bdr:LH77DECB5BE9E59558 , bdr:LH83341AF5F1E75637 , bdr:LH8BD54EFF1D94C078 , bdr:LH905721EFE1B518DA , bdr:LH9277DBD7686E9276 , bdr:LHA9F2B6DC8EA72065 , bdr:LHABF61E1DEF90417A , bdr:LHAD87D29C0CF3C4EC , bdr:LHB2FFC298F32890AA , bdr:LHB4BF2C450AE0AC0B , bdr:LHC261D02AEF434DD4 , bdr:LHC79C11C27CB9AA87 , bdr:LHCDFD2962D837CC9C , bdr:LHCFEE461D567614B3 , bdr:LHD0239E58037EA110 , bdr:LHD9A172350CB3E403 , bdr:LHDFD0DFDEEE0719AB , bdr:LHEEB4C17EBF7612A2 , bdr:LHF0D4739797D907B2 , bdr:LHF2D2B3CD3F4A2C6F ;
         :lineageObject      bdr:T1294 , bdr:T354 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT8F37AC49B0AA3FB0 .
     
     bdr:LH1071AF4CF1FEC9A9
         a                   :LineageHolder ;
@@ -428,4 +422,9 @@ bdg:L8LS15385 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV79AFB35CA4FB2D7C ;
         :lineageWho         bdr:P5321 .
+    
+    bdr:NT8F37AC49B0AA3FB0
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 85r4-85v3" ;
+        :noteSource         bdr:MW29706 .
 }

@@ -19,7 +19,7 @@ bdg:L0RKL236 {
         adm:gitPath         "82/L0RKL236.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L0RKL236 ;
-        adm:logEntry        bda:LG0E12536C8D251D86 , bda:LG1BE6658F2BE1E1AB , bda:LG3E0859B2CDFE1E55 , bda:LG4599156F50437C79 , bda:LG53922E9076FC43E7 , bda:LG82CB2292CB598945 , bda:LG919BA40ACE25EA09 , bda:LGB04A1CB9669BA0C0 , bda:LGE7B79B14D1D6E309 ;
+        adm:logEntry        bda:LG0E12536C8D251D86 , bda:LG1BE6658F2BE1E1AB , bda:LG3E0859B2CDFE1E55 , bda:LG4599156F50437C79 , bda:LG53922E9076FC43E7 , bda:LG82CB2292CB598945 , bda:LG919BA40ACE25EA09 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -65,23 +65,19 @@ bdg:L0RKL236 {
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LGB04A1CB9669BA0C0
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LGE7B79B14D1D6E309
+    bda:LGIMB5106F8FDA
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL308A578621DBF34E
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "2b3ff." ;
-        :contentLocationVolume  "kha" .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0E8EDBE0B1DF0870
         a                   :LineageEvent ;
@@ -182,11 +178,11 @@ bdg:L0RKL236 {
     bdr:L0RKL236  a         :Lineage ;
         skos:altLabel       "tshogs bdag dmar chen gyi rjes gnang 'phags pa rin po che'i mngon rtogs tshigs bcad ma'i steng nas thob pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "tshogs bdag dmar chen gyi rjes gnang brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL308A578621DBF34E ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0F9204C98A0CF2F8 , bdr:LH13F879DC7F91F4F2 , bdr:LH1818BCE4FC14DC7E , bdr:LH184336DC6ED1F46E , bdr:LH3D46AC381DCDB428 , bdr:LH41485BE5EE2E3C1A , bdr:LH4B10114ADC2C746E , bdr:LH536DEEC4F1079AF1 , bdr:LH72D66135A723150F , bdr:LH7EECD76F4866DBE4 , bdr:LH869DF14A496097E2 , bdr:LH8D65CCC28E8263F9 , bdr:LH9F79275212C72837 , bdr:LHA4491B8860BE9E35 , bdr:LHAB13816884E60990 , bdr:LHAF74CDEB1279F951 , bdr:LHB16AB8B158625304 , bdr:LHB6383DACA7E7EF8B , bdr:LHBFE9F9039D2823EB , bdr:LHD7FAA5CFFA044693 , bdr:LHDC9F8034248827C3 , bdr:LHE016C74569778B01 , bdr:LHED2FD036A5AAB94B , bdr:LHF6821E8F226B00EB , bdr:LHFA5BE49F4CF31D08 ;
         :lineageObject      bdr:T562 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NT308A578621DBF34E .
     
     bdr:LH0F9204C98A0CF2F8
         a                   :LineageHolder ;
@@ -311,4 +307,9 @@ bdg:L0RKL236 {
     bdr:LHFA5BE49F4CF31D08
         a                   :LineageHolder ;
         :lineageWho         bdr:T1987 .
+    
+    bdr:NT308A578621DBF34E
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, 2b3ff." ;
+        :noteSource         bdr:MW29307 .
 }

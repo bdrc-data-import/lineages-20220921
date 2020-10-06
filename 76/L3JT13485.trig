@@ -28,12 +28,6 @@ bdg:L3JT13485 {
         adm:logDate         "2014-08-12T16:10:56.555Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00013 .
     
-    bdr:CL6B0547ED607911C5
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W1KG18291 ;
-        :contentLocationSide  "244r-244v" .
-    
     bdr:EV13985A8D92FCB695
         a                   :LineageEvent ;
         :lineageFrom        bdr:P7401 .
@@ -80,12 +74,12 @@ bdg:L3JT13485 {
     
     bdr:L3JT13485  a        :Lineage ;
         skos:prefLabel      "dgyes mdzad rdo rje'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL6B0547ED607911C5 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH10A2F73671DC0D4B , bdr:LH2D48D5AD06F1C7A4 , bdr:LH5259A71BF807FDA9 , bdr:LH685A83AD108B7A24 , bdr:LH7D8C7AEF3FB61114 , bdr:LH87BB0A2A1BF48FA2 , bdr:LHAE28E46285E83CF3 , bdr:LHBA3727F220576495 , bdr:LHDCA8BED33A586793 , bdr:LHE5E4C5BE75504757 , bdr:LHF22EBEA06BF54AAD , bdr:LHF66B070915694D93 ;
         :lineageObject      bdr:T130 ;
         :lineageRef         bdr:L3JT13485 , bdr:L3JT13487 , bdr:L3JT13491 , bdr:L3JT13492 ;
-        :lineageType        bdr:LineageRingBrgyud .
+        :lineageType        bdr:LineageRingBrgyud ;
+        :note               bdr:NT6B0547ED607911C5 .
     
     bdr:LH10A2F73671DC0D4B
         a                   :LineageHolder ;
@@ -145,4 +139,8 @@ bdg:L3JT13485 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV75A1449221ECF3FF ;
         :lineageWho         bdr:P00KG02663 .
+    
+    bdr:NT6B0547ED607911C5
+        a                   :Note ;
+        :noteSource         bdr:MW1KG18291 .
 }

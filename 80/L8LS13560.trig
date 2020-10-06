@@ -19,7 +19,7 @@ bdg:L8LS13560 {
         adm:gitPath         "80/L8LS13560.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13560 ;
-        adm:logEntry        bda:LG124E623D2F457B78 , bda:LG238152855BA5941E , bda:LG24E89747C159AE5C , bda:LG434086754C82D053 , bda:LG546AF449C3A0F92B , bda:LG7202609D3F2F1CED , bda:LG74AB8570047A0F88 , bda:LG8D8CF51478C35E53 , bda:LG96D3860348106526 , bda:LG9D0FF761BB4B654D , bda:LG9FDA438E3DE1A1CE , bda:LGAF38884F0B8F4EAE , bda:LGBECE3DE62D83A5CB , bda:LGD7BD77C87DACDE41 , bda:LGDACCB2E904760B4C , bda:LGED0882306913763D ;
+        adm:logEntry        bda:LG124E623D2F457B78 , bda:LG238152855BA5941E , bda:LG24E89747C159AE5C , bda:LG546AF449C3A0F92B , bda:LG7202609D3F2F1CED , bda:LG74AB8570047A0F88 , bda:LG96D3860348106526 , bda:LG9D0FF761BB4B654D , bda:LG9FDA438E3DE1A1CE , bda:LGBECE3DE62D83A5CB , bda:LGD7BD77C87DACDE41 , bda:LGDACCB2E904760B4C , bda:LGED0882306913763D , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -40,12 +40,6 @@ bdg:L8LS13560 {
         adm:logMessage      "changed P records"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LG434086754C82D053
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG546AF449C3A0F92B
         a                   adm:UpdateData ;
         adm:logDate         "2014-09-02T15:40:06.318Z"^^xsd:dateTime ;
@@ -61,12 +55,6 @@ bdg:L8LS13560 {
         adm:logDate         "2014-07-31T15:40:12.381Z"^^xsd:dateTime ;
         adm:logMessage      "removed note"@en ;
         adm:logWho          bdu:U00013 .
-    
-    bda:LG8D8CF51478C35E53
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG96D3860348106526
         a                   adm:UpdateData ;
@@ -85,12 +73,6 @@ bdg:L8LS13560 {
         adm:logDate         "2014-08-26T09:10:43.319Z"^^xsd:dateTime ;
         adm:logMessage      "changed person to topic"@en ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LGAF38884F0B8F4EAE
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGBECE3DE62D83A5CB
         a                   adm:InitialDataCreation ;
@@ -115,11 +97,26 @@ bdg:L8LS13560 {
         adm:logMessage      "holder name edited"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLE3F27A55774E2EB0
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  37 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV007BBCEAEE1AE620
         a                   :LineageEvent ;
@@ -267,11 +264,11 @@ bdg:L8LS13560 {
     
     bdr:L8LS13560  a        :Lineage ;
         skos:prefLabel      "theg pa chen po mdo sde rgyan dang dbus mtha' rnam 'byed gnyis kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLE3F27A55774E2EB0 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH03CBEF6BE7935707 , bdr:LH1AD295202A76FE03 , bdr:LH1B41DD3F91D8414F , bdr:LH1F271B83836236FA , bdr:LH227A3988025BCE99 , bdr:LH236282C619BEA6BF , bdr:LH28284538C23D6CCE , bdr:LH2870904743807494 , bdr:LH317379B4DA1E1BF4 , bdr:LH3680D921F235B54C , bdr:LH4372994CB87F3757 , bdr:LH4427E54B23745F9D , bdr:LH50A4C8A2B67EDE2D , bdr:LH60F09F0FBFE16831 , bdr:LH6F2D33A5DC5DD052 , bdr:LH737C9A54ED7A7012 , bdr:LH740760696ED38F92 , bdr:LH76324001FEF06641 , bdr:LH7661E1C935DD74FF , bdr:LH7DD128CFEAEC4460 , bdr:LH964C0154DDA804EB , bdr:LH98D6B8D802590A6E , bdr:LHB30F0C31C7CB863E , bdr:LHB39343A681841E74 , bdr:LHB6776AAB6E8D9462 , bdr:LHBB788FB3466936DD , bdr:LHBE2CFFAF346D6344 , bdr:LHC3BF910627380B8F , bdr:LHD8A5CA7E13243B01 , bdr:LHDC67D4721D4E7CEB , bdr:LHE7732B70E70AB707 , bdr:LHE8CC39BDB0722F75 , bdr:LHE8E6CAA7C76B9735 , bdr:LHE953BCFBC48C5165 , bdr:LHEEB6BE60246A237F , bdr:LHF42E7CB0953BCFE8 , bdr:LHFB082014B566BC19 ;
         :lineageObject      bdr:W1GS6339 , bdr:W4CZ16802 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTE3F27A55774E2EB0 .
     
     bdr:LH03CBEF6BE7935707
         a                   :LineageHolder ;
@@ -456,4 +453,9 @@ bdg:L8LS13560 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV948E926D34CF070D ;
         :lineageWho         bdr:P4CZ15517 .
+    
+    bdr:NTE3F27A55774E2EB0
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 37" ;
+        :noteSource         bdr:MW1PD107937 .
 }

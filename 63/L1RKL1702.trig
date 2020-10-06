@@ -19,7 +19,7 @@ bdg:L1RKL1702 {
         adm:gitPath         "63/L1RKL1702.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL1702 ;
-        adm:logEntry        bda:LG0896091EA4B675BA , bda:LG10C9D38087A9967B , bda:LG171BDE951924779E , bda:LG2BD6AC202C0D0769 , bda:LG429DE27F7E0E3E27 , bda:LG57051386E6C9912E , bda:LG5CA0342347225714 , bda:LG5E254E2EBE2F0327 , bda:LG650085B117964D8B , bda:LG8405903576BEF3F8 , bda:LG92D6196E0BDD3BDC , bda:LGA695253FA55A1825 , bda:LGBFB89D56D5C30827 , bda:LGC0B3976962327710 , bda:LGC78101CAECB645DE , bda:LGF77BF0250FD733E2 ;
+        adm:logEntry        bda:LG0896091EA4B675BA , bda:LG171BDE951924779E , bda:LG2BD6AC202C0D0769 , bda:LG429DE27F7E0E3E27 , bda:LG57051386E6C9912E , bda:LG5CA0342347225714 , bda:LG5E254E2EBE2F0327 , bda:LG92D6196E0BDD3BDC , bda:LGA695253FA55A1825 , bda:LGBFB89D56D5C30827 , bda:LGC0B3976962327710 , bda:LGC78101CAECB645DE , bda:LGF77BF0250FD733E2 , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -27,12 +27,6 @@ bdg:L1RKL1702 {
         a                   adm:UpdateData ;
         adm:logDate         "2014-08-26T09:01:13.289Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG10C9D38087A9967B
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG171BDE951924779E
         a                   adm:UpdateData ;
@@ -70,18 +64,6 @@ bdg:L1RKL1702 {
         adm:logMessage      "added object and location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG650085B117964D8B
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG8405903576BEF3F8
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG92D6196E0BDD3BDC
         a                   adm:UpdateData ;
         adm:logDate         "2018-09-27T11:02:26.254Z"^^xsd:dateTime ;
@@ -113,11 +95,26 @@ bdg:L1RKL1702 {
         adm:logDate         "2014-09-02T15:31:36.465Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL23B2BD0F89AF1452
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "45b7f." ;
-        :contentLocationVolume  "kha" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV67E89EC0DDE63642
         a                   :LineageEvent ;
@@ -137,13 +134,12 @@ bdg:L1RKL1702 {
     
     bdr:L1RKL1702  a        :Lineage ;
         skos:prefLabel      "shes rab kyi pha rol tu phyin pa'i nyams len gcod skor khrid brgyud/ pho brgyud chung ba/"@bo-x-ewts ;
-        :contentLocation    bdr:CL23B2BD0F89AF1452 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH044DDF0BDCBA203A , bdr:LHA2076FD9F9C87453 , bdr:LHBC1A2CA187CB4EFD , bdr:LHE65AC6BDBEEB2BA1 , bdr:LHF01B7E7CB197F617 ;
         :lineageObject      bdr:T194 ;
         :lineageRef         bdr:L1RKL1701 , bdr:L1RKL1703 ;
         :lineageType        bdr:LineageKhrid ;
-        :note               bdr:NT493C0FDA0BAD6A8B .
+        :note               bdr:NT23B2BD0F89AF1452 , bdr:NT493C0FDA0BAD6A8B .
     
     bdr:LH044DDF0BDCBA203A
         a                   :LineageHolder ;
@@ -168,6 +164,11 @@ bdg:L1RKL1702 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV67E89EC0DDE63642 ;
         :lineageWho         bdr:T681 .
+    
+    bdr:NT23B2BD0F89AF1452
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, 45b7f." ;
+        :noteSource         bdr:MW29307 .
     
     bdr:NT493C0FDA0BAD6A8B
         a                   :Note ;

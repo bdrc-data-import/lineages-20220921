@@ -35,12 +35,6 @@ bdg:L8LS15371 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL8F442D033F5409DD
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 78r4-5" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV060F0DBE8605F9D9
         a                   :LineageEvent ;
         :lineageFrom        bdr:P1614 .
@@ -100,11 +94,11 @@ bdg:L8LS15371 {
     bdr:L8LS15371  a        :Lineage ;
         skos:altLabel       "don yod zhags pa'i phar phyin drug rdzogs par byed pa'i gzungs man+dzu shrI war+ma dang blo ldan shes rab kyi 'gyur/ gong gsal don yod zhags pa'i snying por dang / snying po'i gzungs phyin drug rdzogs byed bcas gsum gyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "don yod zhags pa snying po'i phar phyin drug gi gzungs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL8F442D033F5409DD ;
         :isRoot             true ;
         :lineageHolder      bdr:LH01AD34516EEF995D , bdr:LH15422BD1992B85EF , bdr:LH296B521BD73AB3A0 , bdr:LH5709FF7578E3BA9C , bdr:LH592651CBB8441147 , bdr:LH64D01A9E21AEE5BE , bdr:LH65065C3FCF6C1038 , bdr:LH690BD0F5221E6843 , bdr:LH8B15135A3BD74ECA , bdr:LHB0A43DA03F5E3BDE , bdr:LHC553DE1F0D203360 , bdr:LHC900FC4888ECE50A , bdr:LHCE8784ED2269BF55 , bdr:LHD90B6E5C63ACCB31 , bdr:LHDB5353DA25D300E0 ;
         :lineageObject      bdr:T36 , bdr:T821 , bdr:T933 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT8F442D033F5409DD .
     
     bdr:LH01AD34516EEF995D
         a                   :LineageHolder ;
@@ -180,4 +174,9 @@ bdg:L8LS15371 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVD3F96693FC6BB80E ;
         :lineageWho         bdr:P3731 .
+    
+    bdr:NT8F442D033F5409DD
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 78r4-5" ;
+        :noteSource         bdr:MW29706 .
 }

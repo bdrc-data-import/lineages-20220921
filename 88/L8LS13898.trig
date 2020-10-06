@@ -19,7 +19,7 @@ bdg:L8LS13898 {
         adm:gitPath         "88/L8LS13898.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13898 ;
-        adm:logEntry        bda:LG03B92CF1D0FC4975 , bda:LG23EED1FD9A74444F , bda:LG2AAFBEF2984F5048 , bda:LG3E0DB766F5C323CD , bda:LG62882EC51A6E6C9D , bda:LG7E83DD5DC849BBB7 , bda:LGAE5C141689A255D5 , bda:LGD029F84E76FAFF85 ;
+        adm:logEntry        bda:LG03B92CF1D0FC4975 , bda:LG3E0DB766F5C323CD , bda:LG62882EC51A6E6C9D , bda:LG7E83DD5DC849BBB7 , bda:LGD029F84E76FAFF85 , bda:LGIMB5106F8FDA , bda:LGIMDE06E8288A , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -28,18 +28,6 @@ bdg:L8LS13898 {
         adm:logDate         "2014-07-31T10:20:07.345Z"^^xsd:dateTime ;
         adm:logMessage      "changed type and removed note"@en ;
         adm:logWho          bdu:U00013 .
-    
-    bda:LG23EED1FD9A74444F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG2AAFBEF2984F5048
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:18:50.168Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG3E0DB766F5C323CD
         a                   adm:UpdateData ;
@@ -58,22 +46,31 @@ bdg:L8LS13898 {
         adm:logDate         "2014-06-09T08:41:45.811Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGAE5C141689A255D5
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGD029F84E76FAFF85
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-06-04T09:15:34.02Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLDACD922D396990F2
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  154 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMDE06E8288A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:18:50.168Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV05D36B545D58B564
         a                   :LineageEvent ;
@@ -143,11 +140,11 @@ bdg:L8LS13898 {
         rdfs:comment        "anuja transmission of yellow vaisravana"@en ;
         skos:altLabel       "drag po dang ma 'brel ba'i rnam sras ser chen smad lugs kyi rjes gnang gi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "rnam sras ser chen smad lugs kyi rjes gnang brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLDACD922D396990F2 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH02767F66374F029A , bdr:LH0FA171AB08C5AC2D , bdr:LH1BD3D31077BA13F3 , bdr:LH2017516BF8C9D3BD , bdr:LH29B881B964FA8407 , bdr:LH3854CC56308917AA , bdr:LH3D9051D593EE776E , bdr:LH3DAABD7D087AABF7 , bdr:LH4AA256E63E7C4D51 , bdr:LH5009A2B611C4DF5C , bdr:LH53A31EC3180CD02C , bdr:LHAECA60F765AAFB76 , bdr:LHB3E33DBABBEE4CAC , bdr:LHBAFEB172C40B9953 , bdr:LHC318C920486F911A , bdr:LHE003711FD8B8CA9E , bdr:LHE88BEE2CB2D063A3 ;
         :lineageObject      bdr:T1926 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NTDACD922D396990F2 .
     
     bdr:LH02767F66374F029A
         a                   :LineageHolder ;
@@ -232,4 +229,9 @@ bdg:L8LS13898 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV7EF02D5DE3B3093F ;
         :lineageWho         bdr:P37 .
+    
+    bdr:NTDACD922D396990F2
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 154" ;
+        :noteSource         bdr:MW1PD107937 .
 }

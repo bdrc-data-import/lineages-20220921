@@ -19,7 +19,7 @@ bdg:L8LS14055 {
         adm:gitPath         "7b/L8LS14055.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14055 ;
-        adm:logEntry        bda:LG08067E5B5048CE30 , bda:LG0ED644E73DDFA831 , bda:LG651DE7D3996D5943 , bda:LG65F7C36622A187D2 , bda:LG8C3269075C65B457 , bda:LGA15629F1C8B0F8CA , bda:LGC3337103D05FDFB7 , bda:LGD86F5A5E6008103A ;
+        adm:logEntry        bda:LG08067E5B5048CE30 , bda:LG0ED644E73DDFA831 , bda:LG651DE7D3996D5943 , bda:LGA15629F1C8B0F8CA , bda:LGC3337103D05FDFB7 , bda:LGD86F5A5E6008103A , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -38,18 +38,6 @@ bdg:L8LS14055 {
         adm:logDate         "2014-08-19T14:57:54.128Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG65F7C36622A187D2
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG8C3269075C65B457
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGA15629F1C8B0F8CA
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-08T14:32:53.15Z"^^xsd:dateTime ;
@@ -67,11 +55,19 @@ bdg:L8LS14055 {
         adm:logMessage      "deleted note"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL7A3055CCE78E66A8
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "218-219" ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV038454AE899845C4
         a                   :LineageEvent ;
@@ -159,11 +155,11 @@ bdg:L8LS14055 {
     
     bdr:L8LS14055  a        :Lineage ;
         skos:prefLabel      "rdo rje 'jigs byed rwa lugs chos skor las/ rdo rje'i rtags yod pa'i lung brgyud lug gcig"@bo-x-ewts ;
-        :contentLocation    bdr:CL7A3055CCE78E66A8 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0AD34E85AB1FD998 , bdr:LH28B1704EF3E65E6D , bdr:LH6B0B5FC41B0C4A0D , bdr:LH7B2B520E3B8615EE , bdr:LH828DC739274AB492 , bdr:LH8510262715FA53DA , bdr:LH8705BBDB3770B25D , bdr:LH8E559D12815BDAAA , bdr:LH94B7C947D282BF55 , bdr:LH965F5A938A446F1B , bdr:LH9C0CE3641FF821D8 , bdr:LH9EF7D0C6A8BEB3AC , bdr:LHA3FE54D14BE14C0D , bdr:LHAC2BC5090E0DD819 , bdr:LHC1497F8914F5DF26 , bdr:LHC2E44C6E67552CBA , bdr:LHCCF12AB4A972BFD0 , bdr:LHD0B3841335061865 , bdr:LHECA760C67531F9FC , bdr:LHF3D36777B4972408 , bdr:LHF5D80D0DDAF8B097 , bdr:LHFA2353DF92307275 ;
         :lineageObject      bdr:T104 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT7A3055CCE78E66A8 .
     
     bdr:LH0AD34E85AB1FD998
         a                   :LineageHolder ;
@@ -273,4 +269,9 @@ bdg:L8LS14055 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV6F1E1680A4D4DFBE ;
         :lineageWho         bdr:P3509 .
+    
+    bdr:NT7A3055CCE78E66A8
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 218-219" ;
+        :noteSource         bdr:MW1PD107937 .
 }

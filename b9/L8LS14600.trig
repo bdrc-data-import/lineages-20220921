@@ -19,7 +19,7 @@ bdg:L8LS14600 {
         adm:gitPath         "b9/L8LS14600.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14600 ;
-        adm:logEntry        bda:LG1911DEB742A25AFE , bda:LG1A3F8EC0D6D37DE0 , bda:LG2B385487FBE3CC0F , bda:LG455E8643E5BE8C2C , bda:LGA002622A1888502B , bda:LGFFB7A558AAC778C2 ;
+        adm:logEntry        bda:LG1911DEB742A25AFE , bda:LG1A3F8EC0D6D37DE0 , bda:LG455E8643E5BE8C2C , bda:LGA002622A1888502B , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -33,12 +33,6 @@ bdg:L8LS14600 {
         adm:logDate         "2014-07-29T11:31:45.397Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG2B385487FBE3CC0F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG455E8643E5BE8C2C
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-11T14:41:51.568Z"^^xsd:dateTime ;
@@ -51,17 +45,19 @@ bdg:L8LS14600 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGFFB7A558AAC778C2
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CLB63E2A0A122001BF
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  4 ;
-        :contentLocationVolume  2 .
     
     bdr:EV70F17058E01DD76F
         a                   :LineageEvent ;
@@ -85,11 +81,11 @@ bdg:L8LS14600 {
     
     bdr:L8LS14600  a        :Lineage ;
         skos:prefLabel      "dus kyi 'khor lo shong lugs kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLB63E2A0A122001BF ;
         :isRoot             true ;
         :lineageHolder      bdr:LH5FF68F8CC735A62D , bdr:LH64678D70B639CAFB , bdr:LH83643A358E346526 , bdr:LH939D2A3BC952234F , bdr:LHD701CD7A61BEE041 , bdr:LHFAF4428DE78C7517 ;
         :lineageObject      bdr:T74 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NTB63E2A0A122001BF .
     
     bdr:LH5FF68F8CC735A62D
         a                   :LineageHolder ;
@@ -120,4 +116,9 @@ bdg:L8LS14600 {
         :lineageDownFrom    bdr:L8LS14582 ;
         :lineageReceived    bdr:EV7B161F243E15C462 ;
         :lineageWho         bdr:P3183 .
+    
+    bdr:NTB63E2A0A122001BF
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 4" ;
+        :noteSource         bdr:MW1PD107937 .
 }

@@ -28,12 +28,6 @@ bdg:L3JT13492 {
         adm:logDate         "2014-08-12T16:10:56.887Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00013 .
     
-    bdr:CL62F10D0D7E3D69CC
-        a                   :ContentLocation ;
-        :contentLocationByFolio  true ;
-        :contentLocationInstance  bdr:W1KG18291 ;
-        :contentLocationSide  "244v-245r" .
-    
     bdr:EV069B3C9D4544B77C
         a                   :LineageEvent ;
         :lineageFrom        bdr:P47 .
@@ -69,12 +63,12 @@ bdg:L3JT13492 {
     bdr:L3JT13492  a        :Lineage ;
         skos:altLabel       "rdo rje 'jigs byed kyi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "rdo rje 'jigs byed kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL62F10D0D7E3D69CC ;
         :isRoot             true ;
         :lineageHolder      bdr:LH22C076141868AB19 , bdr:LH3B89F2CF48D0606A , bdr:LH3FC138437DBA68CF , bdr:LH69D5E3DD0EF5DDEB , bdr:LHA6728BA749F752EA , bdr:LHAFC59C2E1591DFBF , bdr:LHB4B570E4E82EF653 , bdr:LHF75F04F5813F6106 , bdr:LHFA17FA43D5ADA424 ;
         :lineageObject      bdr:T104 ;
         :lineageRef         bdr:L3JT13485 , bdr:L3JT13487 , bdr:L3JT13489 , bdr:L3JT13491 , bdr:L3JT13492 ;
-        :lineageType        bdr:LineageRingBrgyud .
+        :lineageType        bdr:LineageRingBrgyud ;
+        :note               bdr:NT62F10D0D7E3D69CC .
     
     bdr:LH22C076141868AB19
         a                   :LineageHolder ;
@@ -119,4 +113,8 @@ bdg:L3JT13492 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV447F18BC56D701EF ;
         :lineageWho         bdr:T1373 .
+    
+    bdr:NT62F10D0D7E3D69CC
+        a                   :Note ;
+        :noteSource         bdr:MW1KG18291 .
 }

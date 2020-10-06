@@ -19,7 +19,7 @@ bdg:L8LS14936 {
         adm:gitPath         "8e/L8LS14936.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14936 ;
-        adm:logEntry        bda:LG0E946AEEC8E73A47 , bda:LG1D022969755C55DB , bda:LG2339C746621F1870 , bda:LG29F5DF6B7D785CD4 , bda:LG445D819535CBFE28 , bda:LG936AD84CCBAF2049 , bda:LG99574DA2E6853A1F , bda:LGA3D5FA8D3CCB4746 , bda:LGB7288C1E6FFF4B85 , bda:LGC6A3A1DF16A4EC71 ;
+        adm:logEntry        bda:LG0E946AEEC8E73A47 , bda:LG1D022969755C55DB , bda:LG29F5DF6B7D785CD4 , bda:LG445D819535CBFE28 , bda:LGA3D5FA8D3CCB4746 , bda:LGB7288C1E6FFF4B85 , bda:LGC6A3A1DF16A4EC71 , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,12 +34,6 @@ bdg:L8LS14936 {
         adm:logDate         "2014-09-02T10:31:00.381Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG2339C746621F1870
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG29F5DF6B7D785CD4
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-11-22T10:13:09.392Z"^^xsd:dateTime ;
@@ -50,18 +44,6 @@ bdg:L8LS14936 {
         a                   adm:UpdateData ;
         adm:logDate         "2019-02-21T10:17:04.218Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LG936AD84CCBAF2049
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG99574DA2E6853A1F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGA3D5FA8D3CCB4746
         a                   adm:UpdateData ;
@@ -80,11 +62,26 @@ bdg:L8LS14936 {
         adm:logMessage      "replaced with the correct Topic (P7326) Associated Lineages"@en ;
         adm:logWho          bdu:U00017 .
     
-    bdr:CL2B6B9C203B15C18D
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "200-201" ;
-        :contentLocationVolume  2 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0C0E2DE500D0A703
         a                   :LineageEvent ;
@@ -173,11 +170,11 @@ bdg:L8LS14936 {
     bdr:L8LS14936  a        :Lineage ;
         skos:altLabel       "rje btsun kun dga' grol mchog gyis dka' ba brgya phrag du ma'i sgo nas btsal ba'i 'khrid brgya'i skor nos pa la/ nyams len byin rlabs kyi brgyud pa'i lag rjes mdo sngags ma lus pa bstan thog gcig tu hril gyis bsgril nas snying gi thig ler 'chang rgyu thig le bcu drug gi brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "thig le bcu drug gi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL2B6B9C203B15C18D ;
         :isRoot             true ;
         :lineageHolder      bdr:LH01C8D841B728DC2A , bdr:LH1F7B3133E9E8E10F , bdr:LH2041981D71D0D980 , bdr:LH417C6F73CD41E38D , bdr:LH5E4362FC4356CA48 , bdr:LH62349E6521F1E41F , bdr:LH6BAD5A45FB37BDCB , bdr:LH77555C9070E3569B , bdr:LH787B4F310B98AD15 , bdr:LH8099600FEF2410F7 , bdr:LH83BE151EE48066EF , bdr:LH8D9251371D97AB46 , bdr:LHA01364A0FCD7D140 , bdr:LHB7B9097616316C39 , bdr:LHC5E8F62CB831E0E4 , bdr:LHD96E99DFE3A74315 , bdr:LHE44842635159168C , bdr:LHED7580F4A24D7B0E , bdr:LHEEA5247FF59CB3F5 , bdr:LHF8AF55BB914111C2 , bdr:LHF9DAB550851F4B70 , bdr:LHFF4F6CFACD637923 ;
         :lineageObject      bdr:T1253 , bdr:T1349 ;
-        :lineageType        bdr:LineageKhrid .
+        :lineageType        bdr:LineageKhrid ;
+        :note               bdr:NT2B6B9C203B15C18D .
     
     bdr:LH01C8D841B728DC2A
         a                   :LineageHolder ;
@@ -288,4 +285,9 @@ bdg:L8LS14936 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVDD10A221AEB950FD ;
         :lineageWho         bdr:P0RK778 .
+    
+    bdr:NT2B6B9C203B15C18D
+        a                   :Note ;
+        :contentLocationStatement  "vol. 2, p. 200-201" ;
+        :noteSource         bdr:MW1PD107937 .
 }

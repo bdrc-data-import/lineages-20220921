@@ -19,7 +19,7 @@ bdg:L0RKL387 {
         adm:gitPath         "41/L0RKL387.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L0RKL387 ;
-        adm:logEntry        bda:LG01C52B042AF06AD7 , bda:LG2A3EF2985BFA61A5 , bda:LG2A41A5DA3A8B1E6E , bda:LG3B45CC0C096313BA , bda:LG4AD06C7CC2E3C8D8 , bda:LG6A537575570FDFF9 , bda:LG8884A433AF5E1057 , bda:LGA7C54E15E22C3C3C , bda:LGB8E019F07D50A292 , bda:LGF37C1F927A88C4E1 ;
+        adm:logEntry        bda:LG01C52B042AF06AD7 , bda:LG2A3EF2985BFA61A5 , bda:LG2A41A5DA3A8B1E6E , bda:LG4AD06C7CC2E3C8D8 , bda:LG6A537575570FDFF9 , bda:LG8884A433AF5E1057 , bda:LGA7C54E15E22C3C3C , bda:LGF37C1F927A88C4E1 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -40,12 +40,6 @@ bdg:L0RKL387 {
         adm:logDate         "2019-03-14T16:38:57.747Z"^^xsd:dateTime ;
         adm:logMessage      "changed p#"@en ;
         adm:logWho          bdu:U00007 .
-    
-    bda:LG3B45CC0C096313BA
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG4AD06C7CC2E3C8D8
         a                   adm:UpdateData ;
@@ -70,23 +64,25 @@ bdg:L0RKL387 {
         adm:logMessage      "chenged leneage"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGB8E019F07D50A292
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGF37C1F927A88C4E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-25T08:32:20.807Z"^^xsd:dateTime ;
         adm:logMessage      "added type, object and location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL2F7F5BC24463ADDD
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "52a7f." ;
-        :contentLocationVolume  "kha" .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV035FB313594D0940
         a                   :LineageEvent ;
@@ -186,11 +182,11 @@ bdg:L0RKL387 {
     
     bdr:L0RKL387  a         :Lineage ;
         skos:prefLabel      "ngag dbang grags pa'i phyag rgya chen po yi ge med pa'i lung /"@bo-x-ewts ;
-        :contentLocation    bdr:CL2F7F5BC24463ADDD ;
         :isRoot             true ;
         :lineageHolder      bdr:LH1F23190EA931C432 , bdr:LH1FCC5F86DBD46487 , bdr:LH2179EF195E91392C , bdr:LH2201678BB411D4C0 , bdr:LH23AE85320CD6BCD0 , bdr:LH259B85DF00ABAAE8 , bdr:LH3F1433C69CAF9C69 , bdr:LH4715E210467308A9 , bdr:LH695099D5009B3A13 , bdr:LH7A9DA254B0C02A58 , bdr:LH82604C3F43A665B1 , bdr:LH826A74859768B176 , bdr:LH8C9A32CC5F7BC5F6 , bdr:LH96C42358C12165D8 , bdr:LHAE21685A23BB3005 , bdr:LHB29D5A89DC6E1C71 , bdr:LHB33DB8042FF6FEE5 , bdr:LHB5EE31B7326B97DD , bdr:LHB638AF03C4A907B8 , bdr:LHB7335A1AA4D53414 , bdr:LHCA156FE15EC19DC2 , bdr:LHCDE32BBE34D94151 , bdr:LHDAFE4DA8148A0CA7 , bdr:LHEFBC207B65843850 , bdr:LHF2541B1611D84EA1 ;
         :lineageObject      bdr:T199 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT2F7F5BC24463ADDD .
     
     bdr:LH1F23190EA931C432
         a                   :LineageHolder ;
@@ -315,4 +311,9 @@ bdg:L0RKL387 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV035FB313594D0940 ;
         :lineageWho         bdr:P0RK164 .
+    
+    bdr:NT2F7F5BC24463ADDD
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, 52a7f." ;
+        :noteSource         bdr:MW29307 .
 }

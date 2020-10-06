@@ -19,7 +19,7 @@ bdg:L0RKL52 {
         adm:gitPath         "b4/L0RKL52.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L0RKL52 ;
-        adm:logEntry        bda:LG04F1FA2F5943C998 , bda:LG1ABD922B27B40829 , bda:LG33CCDFB0DD9E0E7B , bda:LG399915B8771DEF9F , bda:LG7D09AB8C3386A576 , bda:LG9FFF405F79ACAC12 , bda:LGFE8CE363C3201146 ;
+        adm:logEntry        bda:LG04F1FA2F5943C998 , bda:LG1ABD922B27B40829 , bda:LG399915B8771DEF9F , bda:LG7D09AB8C3386A576 , bda:LGFE8CE363C3201146 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,12 +35,6 @@ bdg:L0RKL52 {
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LG33CCDFB0DD9E0E7B
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG399915B8771DEF9F
         a                   adm:UpdateData ;
         adm:logDate         "2014-06-11T15:32:34.313Z"^^xsd:dateTime ;
@@ -53,23 +47,25 @@ bdg:L0RKL52 {
         adm:logMessage      "chenged type and deleted note"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG9FFF405F79ACAC12
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGFE8CE363C3201146
         a                   adm:UpdateData ;
         adm:logDate         "2019-03-14T12:21:28.29Z"^^xsd:dateTime ;
         adm:logMessage      "changed Lineages"@en ;
         adm:logWho          bdu:U00017 .
     
-    bdr:CLE5EBB78BB0926856
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "10a1ff." ;
-        :contentLocationVolume  "ka" .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0C13EBA15C6CD14D
         a                   :LineageEvent ;
@@ -177,12 +173,11 @@ bdg:L0RKL52 {
     
     bdr:L0RKL52  a          :Lineage ;
         skos:prefLabel      "'phrin las rab tu myur pa'i dam can pu tra chen po'i rjes gnang zur bka'"@bo-x-ewts ;
-        :contentLocation    bdr:CLE5EBB78BB0926856 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0CFB310BCB0FBBB0 , bdr:LH12B153B8ED78E059 , bdr:LH3872AF92DF89CA0C , bdr:LH4193B12934886934 , bdr:LH4AC320213ADEA8EE , bdr:LH4EFCA82999C63B86 , bdr:LH53F0A18D1D3D7291 , bdr:LH5665C98B64958716 , bdr:LH616F7D11396CCFD8 , bdr:LH67FEBEAAD2E3C1CA , bdr:LH69BED639864AB949 , bdr:LH73D4808F457F0D14 , bdr:LH80A5E3CADA764193 , bdr:LH80EDE93048CA19F6 , bdr:LH83B7BB80C06F1374 , bdr:LH8E44CA191F43CBC0 , bdr:LH916E82AA05471E40 , bdr:LH91B13AF303CF5E92 , bdr:LH9E1D461A40D87581 , bdr:LHA633B83F3AF74B0A , bdr:LHB30BA49406FB3228 , bdr:LHCECA0300032B990C , bdr:LHD0A42A2D318003DD , bdr:LHD557C104BF9DA1AC , bdr:LHE2AE086959F23875 , bdr:LHE510545BDF0F465D , bdr:LHFACA6777B98AA537 ;
         :lineageObject      bdr:T00KG02744 ;
         :lineageType        bdr:LineageRjesGnang ;
-        :note               bdr:NT20121D858D554B12 , bdr:NTA4EDCE2818A2A148 .
+        :note               bdr:NT20121D858D554B12 , bdr:NTA4EDCE2818A2A148 , bdr:NTE5EBB78BB0926856 .
     
     bdr:LH0CFB310BCB0FBBB0
         a                   :LineageHolder ;
@@ -325,4 +320,9 @@ bdg:L0RKL52 {
     bdr:NTA4EDCE2818A2A148
         a                   :Note ;
         :noteText           "GB 10a1ff."@en .
+    
+    bdr:NTE5EBB78BB0926856
+        a                   :Note ;
+        :contentLocationStatement  "vol. ka, 10a1ff." ;
+        :noteSource         bdr:MW29307 .
 }

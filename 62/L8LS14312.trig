@@ -19,7 +19,7 @@ bdg:L8LS14312 {
         adm:gitPath         "62/L8LS14312.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14312 ;
-        adm:logEntry        bda:LG129EFBA076181BC4 , bda:LG4251E5857984AC60 , bda:LG4F219E739BE6A96D , bda:LG68EA656A8ABB97DB , bda:LGD231923C054554E0 , bda:LGE3A0409910A2E263 , bda:LGF961C907294C2BE4 ;
+        adm:logEntry        bda:LG129EFBA076181BC4 , bda:LG4251E5857984AC60 , bda:LG4F219E739BE6A96D , bda:LG68EA656A8ABB97DB , bda:LGE3A0409910A2E263 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -46,28 +46,24 @@ bdg:L8LS14312 {
         adm:logDate         "2020-01-13T16:27:22.697Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGD231923C054554E0
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGE3A0409910A2E263
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-08-15T11:01:40.156Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGF961C907294C2BE4
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CLE1703F15FCD3F627
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "356-357" ;
-        :contentLocationVolume  1 .
     
     bdr:EV24FA68D20833514D
         a                   :LineageEvent ;
@@ -192,11 +188,11 @@ bdg:L8LS14312 {
     bdr:L8LS14312  a        :Lineage ;
         rdfs:comment        "extensive oral transmission of birwa pa's bsrung ba"@en ;
         skos:prefLabel      "rnal 'byor dbang phyug gi bsrung ba nang ma'i byin rlabs rgyas par thob pa'i brgyud pa rdzong lugs/"@bo-x-ewts ;
-        :contentLocation    bdr:CLE1703F15FCD3F627 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH061F532298B3EBE7 , bdr:LH10836C1E88AE9556 , bdr:LH23BBEB6ABBC72D3B , bdr:LH24AE4DD499226818 , bdr:LH48F3111E63F77249 , bdr:LH51D06516460628E6 , bdr:LH53A5640C99141224 , bdr:LH6BC2A85BE4646EB1 , bdr:LH710BF7E1C866F061 , bdr:LH81F5D1A8BACED163 , bdr:LH84ABBB6A44305739 , bdr:LH92D5D66EEE21A0DA , bdr:LH94DF4EAA91A1B1E6 , bdr:LHA324C10024ADF0EE , bdr:LHA432512C3AB9CCA4 , bdr:LHA442B639408BDF7C , bdr:LHA8EEB01877F84052 , bdr:LHAA609A3100617406 , bdr:LHB3CF48374D9EF6CE , bdr:LHB961FAAD8419FF16 , bdr:LHBA8376E03FCDBF25 , bdr:LHC2047DE622CE8FFA , bdr:LHC8160D4D2A8F6253 , bdr:LHCAC1916D4501AA8B , bdr:LHD1E60DE5FF7FC512 , bdr:LHD8AE898DED30AA90 , bdr:LHE12E644F6A2E53E1 , bdr:LHEA57048CBDF05F23 , bdr:LHEE7B271E361BEA46 , bdr:LHF0F6ED93258EB80C , bdr:LHF20791CC2F51B5D3 ;
         :lineageObject      bdr:T1408 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NTE1703F15FCD3F627 .
     
     bdr:LH061F532298B3EBE7
         a                   :LineageHolder ;
@@ -351,4 +347,9 @@ bdg:L8LS14312 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVE811D0950832CADF ;
         :lineageWho         bdr:T624 .
+    
+    bdr:NTE1703F15FCD3F627
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 356-357" ;
+        :noteSource         bdr:MW1PD107937 .
 }

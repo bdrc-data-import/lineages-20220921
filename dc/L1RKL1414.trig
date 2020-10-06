@@ -19,7 +19,7 @@ bdg:L1RKL1414 {
         adm:gitPath         "dc/L1RKL1414.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L1RKL1414 ;
-        adm:logEntry        bda:LG148FA146C029A21B , bda:LG3B985D7311C9C01F , bda:LG529FA45A5074C859 , bda:LG5AF61DDC831DEF0F , bda:LG6EF7E96DAF56004C , bda:LG75BFBD4CBDA53996 , bda:LGAE0177BAFBCAAA8E , bda:LGB803702E118AA69E , bda:LGC96AF00AD60F980C , bda:LGCD8DECC7D059AE37 ;
+        adm:logEntry        bda:LG148FA146C029A21B , bda:LG3B985D7311C9C01F , bda:LG6EF7E96DAF56004C , bda:LG75BFBD4CBDA53996 , bda:LGAE0177BAFBCAAA8E , bda:LGB803702E118AA69E , bda:LGC96AF00AD60F980C , bda:LGCD8DECC7D059AE37 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,18 +34,6 @@ bdg:L1RKL1414 {
         adm:logDate         "2015-09-22T14:46:56.881Z"^^xsd:dateTime ;
         adm:logMessage      "T# changed to CW#"@en ;
         adm:logWho          bdu:U00007 .
-    
-    bda:LG529FA45A5074C859
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG5AF61DDC831DEF0F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG6EF7E96DAF56004C
         a                   adm:UpdateData ;
@@ -79,11 +67,19 @@ bdg:L1RKL1414 {
         adm:logMessage      "edited name, added lin ref"@en ;
         adm:logWho          bdu:U00020 .
     
-    bdr:CL83E1D7451F0FC299
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  79 ;
-        :contentLocationVolume  "kha" .
+    bda:LGIM88BD19A8AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV1940E4B2DABACD64
         a                   :LineageEvent ;
@@ -131,12 +127,11 @@ bdg:L1RKL1414 {
     
     bdr:L1RKL1414  a        :Lineage ;
         skos:prefLabel      "theg pa chen po'i blo sbyongs don bdun mar grags pa'i khrid thob pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL83E1D7451F0FC299 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH08C21B30EE1BB0E7 , bdr:LH2D472E202B6C5CD4 , bdr:LH2DD465BF338CC83E , bdr:LH66E180C78F86743F , bdr:LH729C1975035C26BF , bdr:LH7F6E4D288F548891 , bdr:LHA18EABC5E1E08C2B , bdr:LHA6AB29D82EABE641 , bdr:LHAE16A1286AEAA875 , bdr:LHC933825EF325F429 , bdr:LHCA9BF68F43254472 ;
         :lineageObject      bdr:W15433 ;
         :lineageType        bdr:LineageKhrid ;
-        :note               bdr:NT81E9334C95AA5703 , bdr:NT9B0FE620FD03ED1F , bdr:NTDAD2FD25D25B1C60 .
+        :note               bdr:NT81E9334C95AA5703 , bdr:NT83E1D7451F0FC299 , bdr:NT9B0FE620FD03ED1F , bdr:NTDAD2FD25D25B1C60 .
     
     bdr:LH08C21B30EE1BB0E7
         a                   :LineageHolder ;
@@ -195,6 +190,11 @@ bdg:L1RKL1414 {
     bdr:NT81E9334C95AA5703
         a                   :Note ;
         :noteText           "alternative lineage: 141c"@en .
+    
+    bdr:NT83E1D7451F0FC299
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, p. 79" ;
+        :noteSource         bdr:MW29307 .
     
     bdr:NT9B0FE620FD03ED1F
         a                   :Note ;

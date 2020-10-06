@@ -29,12 +29,6 @@ bdg:L8LS15313 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLB31F93F0EA409A7B
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 68r2" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV055CBA8972B82437
         a                   :LineageEvent ;
         :lineageFrom        bdr:P1064 .
@@ -66,11 +60,11 @@ bdg:L8LS15313 {
     bdr:L8LS15313  a        :Lineage ;
         skos:altLabel       "'jig rten gsum las rnam par rgyal ba'i rtog pa rgyud phyi ma dang bcas pa rma dge blos bsgyur ba'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "'jig rten gsum las rnam par rgyal ba'i rtog pa rgyud phyi ma dang bcas pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLB31F93F0EA409A7B ;
         :isRoot             true ;
         :lineageHolder      bdr:LH4971B40BF134AEEB , bdr:LH5F669DD4BC284973 , bdr:LH8F70114CF642BFD4 , bdr:LH9881B268F6BB13C7 , bdr:LHA19118C3D913178D , bdr:LHED2E9E2D1CD348FA , bdr:LHF7527A260FFBF822 , bdr:LHF7610C81D2702680 ;
         :lineageObject      bdr:T2129 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTB31F93F0EA409A7B .
     
     bdr:LH4971B40BF134AEEB
         a                   :LineageHolder ;
@@ -112,4 +106,9 @@ bdg:L8LS15313 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV7FE4C7C8E2DF5A0D ;
         :lineageWho         bdr:P3278 .
+    
+    bdr:NTB31F93F0EA409A7B
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 68r2" ;
+        :noteSource         bdr:MW29706 .
 }

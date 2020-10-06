@@ -19,7 +19,7 @@ bdg:L8LS14081 {
         adm:gitPath         "a3/L8LS14081.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14081 ;
-        adm:logEntry        bda:LG357D736DFD91EC95 , bda:LG45CEB837D508BA86 , bda:LG4E61972D45ACE18B , bda:LG5B4C272B82503A78 , bda:LG6ABCA4D456BFD3B1 , bda:LG72EE844FFAA42888 , bda:LG762A0B679EE3B9F8 ;
+        adm:logEntry        bda:LG357D736DFD91EC95 , bda:LG45CEB837D508BA86 , bda:LG4E61972D45ACE18B , bda:LG5B4C272B82503A78 , bda:LG6ABCA4D456BFD3B1 , bda:LGIM88BD19A8AB , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -50,23 +50,19 @@ bdg:L8LS14081 {
         adm:logMessage      "P0RK247 changed to P4CZ10578"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG72EE844FFAA42888
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LG762A0B679EE3B9F8
+    bda:LGIM88BD19A8AB
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-29T20:49:23.894Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
-    bdr:CL0699E25767BF2359
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  223 ;
-        :contentLocationVolume  1 .
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV05657852D5ADE8DF
         a                   :LineageEvent ;
@@ -196,11 +192,11 @@ bdg:L8LS14081 {
         rdfs:comment        "initiation transmission of drawing mandala of 13 deity manjushri krishna yamari"@en ;
         skos:altLabel       "bcom ldan 'das gshin rje gshed dgra nag zhang lugs lha bcu gsum gyi ras bris kyi dkyil 'khor du dbang nos pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "gshin rje gshed dgra nag lha bcu gsum dkyil 'khor du dbang nos pa'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL0699E25767BF2359 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0A2B4083401071C4 , bdr:LH0D81CC244012142E , bdr:LH0DBC880ED317121E , bdr:LH128E7CB939B7FD59 , bdr:LH30EED0FACB57DE90 , bdr:LH3D5665D976BFA353 , bdr:LH3DE8BBCF5565C754 , bdr:LH43444C75E3EE710F , bdr:LH4A759EF91C074678 , bdr:LH520E833DC603FA6A , bdr:LH5663EB3DD321491D , bdr:LH57758066CEE42049 , bdr:LH5F067DA4937DCD72 , bdr:LH6B97E1681DEDD1C4 , bdr:LH6D2DE22A0CEC0006 , bdr:LH6DFE1D058C82D57B , bdr:LH6F940F28F31A5771 , bdr:LH708BA9F2819FFD85 , bdr:LH7AF3A491AB2A590D , bdr:LH806C501D9E828343 , bdr:LH89A197B4E17CFB3C , bdr:LH96471CC3C4AE7149 , bdr:LHAE3C5F60D2AE12FB , bdr:LHAFF08677E0E8D7A9 , bdr:LHB87BACE83608BFFD , bdr:LHC246C6AA92D7D4A2 , bdr:LHCA96315CBDE33241 , bdr:LHD03B3863DA30B853 , bdr:LHD5577D017EDFD7EC , bdr:LHEBAF5F2A5B509388 , bdr:LHF2176A46BE754D46 , bdr:LHF218577DBD228286 ;
         :lineageObject      bdr:T927 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NT0699E25767BF2359 .
     
     bdr:LH0A2B4083401071C4
         a                   :LineageHolder ;
@@ -360,4 +356,9 @@ bdg:L8LS14081 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVE408517DEC036FA8 ;
         :lineageWho         bdr:P4CZ15088 .
+    
+    bdr:NT0699E25767BF2359
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 223" ;
+        :noteSource         bdr:MW1PD107937 .
 }

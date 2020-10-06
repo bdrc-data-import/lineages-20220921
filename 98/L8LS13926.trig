@@ -19,7 +19,7 @@ bdg:L8LS13926 {
         adm:gitPath         "98/L8LS13926.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS13926 ;
-        adm:logEntry        bda:LG09734167E29CAA71 , bda:LG1A303A759612403B , bda:LG52DC134C944C5F6D , bda:LG54E3B0A9D75D03BB , bda:LG92E6A1B5398B142D , bda:LGA6BEA50C630A7F4F , bda:LGEB0ACC3A2C883389 , bda:LGEB572E9740E49DAD , bda:LGEC444DDA0AACE7F0 , bda:LGF07D8A890C1A29C4 ;
+        adm:logEntry        bda:LG09734167E29CAA71 , bda:LG1A303A759612403B , bda:LG54E3B0A9D75D03BB , bda:LG92E6A1B5398B142D , bda:LGEB0ACC3A2C883389 , bda:LGEB572E9740E49DAD , bda:LGF07D8A890C1A29C4 , bda:LGIMB5106F8FDA , bda:LGIMDE06E8288A , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,12 +35,6 @@ bdg:L8LS13926 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG52DC134C944C5F6D
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LG54E3B0A9D75D03BB
         a                   adm:UpdateData ;
         adm:logDate         "2018-09-27T11:02:32.07Z"^^xsd:dateTime ;
@@ -51,12 +45,6 @@ bdg:L8LS13926 {
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-06-05T12:53:47.616Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
-    
-    bda:LGA6BEA50C630A7F4F
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:18:50.168Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGEB0ACC3A2C883389
         a                   adm:UpdateData ;
@@ -69,23 +57,32 @@ bdg:L8LS13926 {
         adm:logDate         "2014-07-29T12:46:30.71Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGEC444DDA0AACE7F0
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGF07D8A890C1A29C4
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-28T14:23:24.266Z"^^xsd:dateTime ;
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL0653C53FFDADEACA
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  159 ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMDE06E8288A
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:18:50.168Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV6F95E34282A2C0C3
         a                   :LineageEvent ;
@@ -115,11 +112,11 @@ bdg:L8LS13926 {
         rdfs:comment        "oral transmission of text for building stupa of rigsum gonpo"@en ;
         skos:altLabel       "slob dpon chen po tsan+dra go mis mdzad pa'i rigs gsum mgon po'i mchod rten bzhengs thabs kyi yig cha'i lung brgyud/"@bo-x-ewts ;
         skos:prefLabel      "rigs gsum mgon po'i mchod rten bzhengs thabs kyi yig cha'i lung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL0653C53FFDADEACA ;
         :isRoot             true ;
         :lineageHolder      bdr:LH0EF2D20C68DA37FF , bdr:LH1267B00D0C72C72D , bdr:LH662765E09499BDD3 , bdr:LHB4AB28671D86405D , bdr:LHB5EE0C857A3D9467 , bdr:LHEAF978A3010A3AFE , bdr:LHF5D7D91FA2E7803F ;
         :lineageObject      bdr:T818 , bdr:T824 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT0653C53FFDADEACA .
     
     bdr:LH0EF2D20C68DA37FF
         a                   :LineageHolder ;
@@ -154,4 +151,9 @@ bdg:L8LS13926 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV9D37037120193A5B ;
         :lineageWho         bdr:P2668 .
+    
+    bdr:NT0653C53FFDADEACA
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 159" ;
+        :noteSource         bdr:MW1PD107937 .
 }

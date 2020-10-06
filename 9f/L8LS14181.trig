@@ -19,15 +19,9 @@ bdg:L8LS14181 {
         adm:gitPath         "9f/L8LS14181.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14181 ;
-        adm:logEntry        bda:LG147F6F526BF028A8 , bda:LG33920B4DC7D8E2F2 , bda:LG4E12DDCB624F5876 , bda:LG65D014E17A1AB3AD , bda:LG6E9E2B6D2B699DEE , bda:LGAAD794D1ECD9D105 ;
+        adm:logEntry        bda:LG33920B4DC7D8E2F2 , bda:LG4E12DDCB624F5876 , bda:LG65D014E17A1AB3AD , bda:LG6E9E2B6D2B699DEE , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG147F6F526BF028A8
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG33920B4DC7D8E2F2
         a                   adm:UpdateData ;
@@ -50,17 +44,19 @@ bdg:L8LS14181 {
         adm:logMessage      "added location"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGAAD794D1ECD9D105
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
         adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
-    
-    bdr:CL81EA2CD4D38B3ABE
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  256 ;
-        :contentLocationVolume  1 .
     
     bdr:EV1AD0878852A4D8CE
         a                   :LineageEvent ;
@@ -153,11 +149,11 @@ bdg:L8LS14181 {
     bdr:L8LS14181  a        :Lineage ;
         rdfs:comment        "short initiation transmission of body mandala of cakrasamvara"@en ;
         skos:prefLabel      "'khor lo bde mchog lus dkyil kyi dbang bzhi legs par nos pa las thung brgyud/"@bo-x-ewts ;
-        :contentLocation    bdr:CL81EA2CD4D38B3ABE ;
         :isRoot             true ;
         :lineageHolder      bdr:LH09AAC1B649E41DE4 , bdr:LH0EB4CAE260666743 , bdr:LH0FBA0B2ABBD0A6FA , bdr:LH15B83B826C40FCB9 , bdr:LH190CDCC3F683F617 , bdr:LH2AEAA2F9E68028A9 , bdr:LH2C0E2E1F1D017614 , bdr:LH41EDB6225C8A15BC , bdr:LH4E5FD0253072DC13 , bdr:LH6FF61064CA0AE047 , bdr:LH7203E271F3661C04 , bdr:LH90BB31DFFC65CF32 , bdr:LH94D7A256B1EB5D78 , bdr:LH98FA022883414099 , bdr:LHB2028FBF565549FA , bdr:LHB5D5D88757C7FDFD , bdr:LHBB852FDEF08C5AFE , bdr:LHC99B7CBD582B14F4 , bdr:LHDAA29AA76C60E31C , bdr:LHDF94EF794F402943 , bdr:LHE4880C530952864C , bdr:LHE8020D3C8DBF239C ;
         :lineageObject      bdr:T423 , bdr:T552 ;
-        :lineageType        bdr:LineageDbang .
+        :lineageType        bdr:LineageDbang ;
+        :note               bdr:NT81EA2CD4D38B3ABE .
     
     bdr:LH09AAC1B649E41DE4
         a                   :LineageHolder ;
@@ -267,4 +263,9 @@ bdg:L8LS14181 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV70CB1C6627352065 ;
         :lineageWho         bdr:P1518 .
+    
+    bdr:NT81EA2CD4D38B3ABE
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 256" ;
+        :noteSource         bdr:MW1PD107937 .
 }

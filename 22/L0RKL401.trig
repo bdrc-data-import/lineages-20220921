@@ -19,7 +19,7 @@ bdg:L0RKL401 {
         adm:gitPath         "22/L0RKL401.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L0RKL401 ;
-        adm:logEntry        bda:LG2BFAE071D582DA1A , bda:LG37557B9DE9372D51 , bda:LG41B5BE206D600039 , bda:LG5B0C60485A80288B , bda:LG96151DEAB9177834 , bda:LGB05C56E13B88E51D , bda:LGC409B85D624C5CAB , bda:LGCDD3619C63C57F67 , bda:LGF2CE109BD2DED1D4 ;
+        adm:logEntry        bda:LG2BFAE071D582DA1A , bda:LG37557B9DE9372D51 , bda:LG41B5BE206D600039 , bda:LG5B0C60485A80288B , bda:LGC409B85D624C5CAB , bda:LGF2CE109BD2DED1D4 , bda:LGIMB5106F8FDA , bda:LGIMD0AA988290 , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -47,29 +47,11 @@ bdg:L0RKL401 {
         adm:logMessage      "first post to dlms"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LG96151DEAB9177834
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LGB05C56E13B88E51D
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGC409B85D624C5CAB
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-30T09:20:59.274Z"^^xsd:dateTime ;
         adm:logMessage      "deleted note"@en ;
         adm:logWho          bdu:U00013 .
-    
-    bda:LGCDD3619C63C57F67
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LGF2CE109BD2DED1D4
         a                   adm:UpdateData ;
@@ -77,11 +59,26 @@ bdg:L0RKL401 {
         adm:logMessage      "P3630 changed to P1865"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL8C641EFFD4F23C60
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29307 ;
-        :contentLocationPage  "55b5ff." ;
-        :contentLocationVolume  "kha" .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIMD0AA988290
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T22:06:14.547Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - for real this time"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV322EE731ADCFFBA5
         a                   :LineageEvent ;
@@ -150,11 +147,11 @@ bdg:L0RKL401 {
     bdr:L0RKL401  a         :Lineage ;
         skos:altLabel       "snyan ngag la sogs pa thun mongs gi rig gnas kyi skor dang/ mdo phyogs kyi pod chen drug gi bshad lung sogs thob pa'i tshul ni/ thog mar bdag nyid chen po sa skya paNDi tas mdzad pa'i bstan bcos chen po mkhas pa 'jug sgo nyid/ glo bo mkhan chen pas mdzad pa'i rgyas 'grel dang sbyar ba'i steng/ rje nyid kyis mdzad pa'i sa bcad mkhas pa'i rna rgyan/ rnam bshad blo gsal mgrin pa'i dpal yon/ spyi don legs bshad nor bu'i phreng mdzes rnams kyis gsal byed kyi rgyan du mdzad nas dsung bshad rgyas shing dka' gnas kyi mtha' chod pa dang/ de las 'phros nas snyan ngag gi bstan bcos me long gi gzhung la mkhas pa snga ma rnams kyis mdzad pa'i 'grel pa so so las brtsams te dogs slong gi dri ba dang/ de'i rang lan rje nyid kyis mdzad pa'i bstan bcos khyad par can nyan ngag me long las brtsams pa'i dri ba dbyangs can mgrin pa'i nga ro'i rang lan dbyangs gsum rnam gzhag skal bzang bcud thigs zhes bya ba'i steng nas bshad pa/"@bo-x-ewts ;
         skos:prefLabel      "snyan ngag la sogs pa thun mongs gi rig gnas kyi skor dang/ mdo phyogs kyi pod chen drug gi bshad lung sogs thob pa'i tshul ni/"@bo-x-ewts ;
-        :contentLocation    bdr:CL8C641EFFD4F23C60 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH1AF33C0207E25D79 , bdr:LH26415ADC1A579693 , bdr:LH30BCFC432FC1A870 , bdr:LH3A950373CC449034 , bdr:LH42ADCBE94276D6A1 , bdr:LH509F3C2C502146D1 , bdr:LH80D11B672D3BA058 , bdr:LH98C61457E77666FA , bdr:LHC1E5E0B65EEAF5F8 , bdr:LHCC5F6BB40793062C , bdr:LHCF12E93BC02E44C8 , bdr:LHCF4E0637E284AA72 , bdr:LHD26F897415C46254 , bdr:LHDD8DBB192EDCC4B0 , bdr:LHEC91CF1B291662A3 , bdr:LHF6F600C9B6CBAEA6 , bdr:LHFF4DF4953B7A27A6 ;
         :lineageObject      bdr:T229 , bdr:T769 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT8C641EFFD4F23C60 .
     
     bdr:LH1AF33C0207E25D79
         a                   :LineageHolder ;
@@ -239,4 +236,9 @@ bdg:L0RKL401 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV4D3ED7CCF3691DD3 ;
         :lineageWho         bdr:P1048 .
+    
+    bdr:NT8C641EFFD4F23C60
+        a                   :Note ;
+        :contentLocationStatement  "vol. kha, 55b5ff." ;
+        :noteSource         bdr:MW29307 .
 }

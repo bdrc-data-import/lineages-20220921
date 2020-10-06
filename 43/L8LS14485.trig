@@ -19,15 +19,9 @@ bdg:L8LS14485 {
         adm:gitPath         "43/L8LS14485.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14485 ;
-        adm:logEntry        bda:LG0817D347599F9D0E , bda:LG772A502DE47D99FA , bda:LGB59915A72093C89D , bda:LGBDA36E0A84382817 , bda:LGD6A55037532883F7 , bda:LGF1038577446B0400 ;
+        adm:logEntry        bda:LG772A502DE47D99FA , bda:LGB59915A72093C89D , bda:LGBDA36E0A84382817 , bda:LGF1038577446B0400 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bda:LG0817D347599F9D0E
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
     
     bda:LG772A502DE47D99FA
         a                   adm:UpdateData ;
@@ -47,23 +41,25 @@ bdg:L8LS14485 {
         adm:logMessage      "added object"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGD6A55037532883F7
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGF1038577446B0400
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-09-16T11:44:03.593Z"^^xsd:dateTime ;
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLE723C5E91E8D7322
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "524-525" ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV0CDB9CCA8A726459
         a                   :LineageEvent ;
@@ -112,11 +108,11 @@ bdg:L8LS14485 {
     bdr:L8LS14485  a        :Lineage ;
         rdfs:comment        "anuja transmission of three deity mahakala panjaranatha brother and sister"@en ;
         skos:prefLabel      "lcam dral lha gsum gyi thun mong ba'i rjes gnang rjes 'brang gi slob ma nas 'ongs pa'i thor bu'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLE723C5E91E8D7322 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH2D53AA5E07209A2B , bdr:LH3FE2D1245FDA7F33 , bdr:LH4819841C91EF7FE9 , bdr:LH622A94148F50C4E8 , bdr:LH69F9879AA7F8F79E , bdr:LH8FEBBBB1C97D1722 , bdr:LHCE0662EC3C09E6C3 , bdr:LHDBA73D269DA4E57A , bdr:LHE788CF7C25128F84 , bdr:LHF2CF462D3FFF31CA , bdr:LHF879714E5C4871F7 , bdr:LHFBC9EF1358953F52 ;
         :lineageObject      bdr:T2GS1226 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NTE723C5E91E8D7322 .
     
     bdr:LH2D53AA5E07209A2B
         a                   :LineageHolder ;
@@ -176,4 +172,9 @@ bdg:L8LS14485 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVA15016099176D4A3 ;
         :lineageWho         bdr:P8LS14487 .
+    
+    bdr:NTE723C5E91E8D7322
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 524-525" ;
+        :noteSource         bdr:MW1PD107937 .
 }

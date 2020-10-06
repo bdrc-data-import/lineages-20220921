@@ -19,7 +19,7 @@ bdg:L8LS14545 {
         adm:gitPath         "fb/L8LS14545.trig" ;
         adm:gitRepo         bda:GR0004 ;
         adm:graphId         bdg:L8LS14545 ;
-        adm:logEntry        bda:LG8796D32E4DA2A44A , bda:LGB4F2681E2BA24EC7 , bda:LGC54F99CF883D8273 , bda:LGC973BD99925725CC , bda:LGCE55C9BCEAD4ED6A , bda:LGF0F33FF2D868E21B , bda:LGF6D365D36952F2F9 ;
+        adm:logEntry        bda:LG8796D32E4DA2A44A , bda:LGB4F2681E2BA24EC7 , bda:LGC54F99CF883D8273 , bda:LGC973BD99925725CC , bda:LGF6D365D36952F2F9 , bda:LGIMB5106F8FDA , bda:LGIME87E5875E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -47,28 +47,24 @@ bdg:L8LS14545 {
         adm:logMessage      "added location, object and short title"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGCE55C9BCEAD4ED6A
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
-        adm:logWho          bdu:U00006 .
-    
-    bda:LGF0F33FF2D868E21B
-        a                   adm:UpdateData ;
-        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
-        adm:logMessage      "normalized names of who and received elements"@en ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGF6D365D36952F2F9
         a                   adm:UpdateData ;
         adm:logDate         "2020-01-14T15:10:52.773Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL44D29166D9221546
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W1PD107937 ;
-        :contentLocationPage  "578-579" ;
-        :contentLocationVolume  1 .
+    bda:LGIMB5106F8FDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-29T16:42:13.479Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements - yet again"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIME87E5875E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-07-28T21:20:44.974Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized names of who and received elements"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
     
     bdr:EV181BF1D5A68E6195
         a                   :LineageEvent ;
@@ -198,11 +194,11 @@ bdg:L8LS14545 {
         rdfs:comment        "anuja transmission of guhya sadhana of four faced mahakala"@en ;
         skos:altLabel       "bstan pa'i stobs 'phrog nag po chen po gdong bzhi pa'am drag po gzi ldan dbang phyug gyi chos skor las/ nang zhing skyong ltar sgrub pa'm gsang sgrub kyi rjes gnang /"@bo-x-ewts ;
         skos:prefLabel      "bstan pa'i stobs 'phrog nag po chen po gdong bzhi gsang sgrub kyi rjes gnang /"@bo-x-ewts ;
-        :contentLocation    bdr:CL44D29166D9221546 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH00213C9283B48B78 , bdr:LH00E8AF680C97DF18 , bdr:LH20350E2A6AA93011 , bdr:LH22CF259EDE835BEE , bdr:LH26EC2F8E486A8D78 , bdr:LH28C9B4757BB0C4F0 , bdr:LH2E5506FDBBB97ADC , bdr:LH2EF20CB4D0EA6AA6 , bdr:LH41C7C2F5891C8808 , bdr:LH47D1579AEF5951E3 , bdr:LH53959E6AAC471810 , bdr:LH5F8FD18CC904605B , bdr:LH787A75A3355F8271 , bdr:LH9A2DD801BA36D3B7 , bdr:LH9E9AA1493C91260C , bdr:LH9FEAD54F21ED9A1A , bdr:LHA822F6C8B6265A5E , bdr:LHAF05823EF3A2EE1C , bdr:LHC45B17933283942A , bdr:LHC8611310B223B425 , bdr:LHC9518463D0FF3297 , bdr:LHD97BF82AA74B5B48 , bdr:LHDB6121987D010C50 , bdr:LHDC0DAEF6C6C4EEFE , bdr:LHE29748D2B532D8B2 , bdr:LHE5FE63A736B518E4 , bdr:LHE789F550E85EDC86 , bdr:LHED9565566B9104DD , bdr:LHEEF81F39C5A8A919 , bdr:LHF57294013F8F41A5 , bdr:LHF6FA672277D94CB8 , bdr:LHF78D7BA9AB320C81 ;
         :lineageObject      bdr:T1 , bdr:T924 ;
-        :lineageType        bdr:LineageRjesGnang .
+        :lineageType        bdr:LineageRjesGnang ;
+        :note               bdr:NT44D29166D9221546 .
     
     bdr:LH00213C9283B48B78
         a                   :LineageHolder ;
@@ -362,4 +358,9 @@ bdg:L8LS14545 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVFAEBFD67C7F2D713 ;
         :lineageWho         bdr:P00KG02663 .
+    
+    bdr:NT44D29166D9221546
+        a                   :Note ;
+        :contentLocationStatement  "vol. 1, p. 578-579" ;
+        :noteSource         bdr:MW1PD107937 .
 }

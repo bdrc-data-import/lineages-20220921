@@ -40,12 +40,6 @@ bdg:L8LS15370 {
         adm:logDate         "2019-01-30T15:21:53.898Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CLBF74C975F5C0721B
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 78r2-3" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV0916BA67AE543A29
         a                   :LineageEvent ;
         :lineageFrom        bdr:T390 .
@@ -101,11 +95,11 @@ bdg:L8LS15370 {
     bdr:L8LS15370  a        :Lineage ;
         skos:altLabel       "don yod zhags pa'i snying po zhes bya ba a mo g+h badzra dang ba ri lo tsA'i 'gyur/ don yod zhags pa'i snying po zhes bya ba'i gzungs 'gyur byang ma 'khod pa/ don yod zhags pa'i cho ga zhib mo 'gyur 'phros bam po nyer bzhi pa hor khongs rnams bsabs shing 'phros bu ston rin po ches bsgyur ba ste bam po nyer lnga pa yan pa la de'i 'phros yongs su rdzogs pa tshang bar zhugs pa'i brgyud pa/"@bo-x-ewts ;
         skos:prefLabel      "don yod zhags pa'i snying po'i gzungs dang cho ga'i brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CLBF74C975F5C0721B ;
         :isRoot             true ;
         :lineageHolder      bdr:LH00DA0B6F274E43FC , bdr:LH286D2FD335EBACF9 , bdr:LH353D8DF9A2419033 , bdr:LH3B08CCE76BBBA2E1 , bdr:LH3D3853A5737F3C19 , bdr:LH6398C1E443C56C21 , bdr:LH6C6B929B6D10B00B , bdr:LH770D9F9779844747 , bdr:LH7FCBBB6FB7D0994E , bdr:LH931F0D50E2A8DFEA , bdr:LH95BFED91352D0595 , bdr:LH9F668D4FFFD94D25 , bdr:LHD4DBDB1C50DA1799 , bdr:LHDFF558FE2BC04A3B ;
         :lineageObject      bdr:T821 , bdr:T933 , bdr:T977 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NTBF74C975F5C0721B .
     
     bdr:LH00DA0B6F274E43FC
         a                   :LineageHolder ;
@@ -176,4 +170,9 @@ bdg:L8LS15370 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EV9810257154BE4F05 ;
         :lineageWho         bdr:P8224 .
+    
+    bdr:NTBF74C975F5C0721B
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 78r2-3" ;
+        :noteSource         bdr:MW29706 .
 }

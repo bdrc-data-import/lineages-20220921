@@ -41,12 +41,6 @@ bdg:L8LS15610 {
         adm:logMessage      "created new lineage"@en ;
         adm:logWho          bdu:U00019 .
     
-    bdr:CL45F74F5D1F9D42B1
-        a                   :ContentLocation ;
-        :contentLocationInstance  bdr:W29706 ;
-        :contentLocationPage  "f. 100v7-101r2" ;
-        :contentLocationVolume  "e" .
-    
     bdr:EV00ED8EE736AADABE
         a                   :LineageEvent ;
         :lineageFrom        bdr:P4956 .
@@ -165,11 +159,11 @@ bdg:L8LS15610 {
     
     bdr:L8LS15610  a        :Lineage ;
         skos:prefLabel      "phur pa phrin las kyi brgyud pa/"@bo-x-ewts ;
-        :contentLocation    bdr:CL45F74F5D1F9D42B1 ;
         :isRoot             true ;
         :lineageHolder      bdr:LH098231591821690A , bdr:LH1F57CF4B994EAB2E , bdr:LH209E51DBC00A6FC4 , bdr:LH361E9D7B431825E9 , bdr:LH364FBABB765D9814 , bdr:LH3B0348CC678E30BF , bdr:LH41D650944AF74A0B , bdr:LH42F6E28F74E5CFFB , bdr:LH4ADABC7B17C5CB10 , bdr:LH586ED6AAA79BD8AF , bdr:LH592A2C0F95ECD42A , bdr:LH5BB40FBC7DCDFC3C , bdr:LH5C6118B9C61E85BE , bdr:LH61C15DA4DC714E7C , bdr:LH768E1DAD69D0A985 , bdr:LH8EDBB96B31979786 , bdr:LH9782CEDBAA312A65 , bdr:LH9AE3391858C48B0B , bdr:LH9B80FABAD2B1F693 , bdr:LHA6DDDCC59C0D31B7 , bdr:LHB0CC8F8DF0909B7E , bdr:LHB894683C69C4411E , bdr:LHBEF7E69C71E45FEC , bdr:LHCA182D41DCC335BA , bdr:LHCF56F30EC0CF9060 , bdr:LHCF83D8A0985FF132 , bdr:LHDF23915A336481B1 , bdr:LHF5C2DE71C31BE31A , bdr:LHFBBCDD01FA4E2CBB , bdr:LHFF6D2CA6E60B46F7 ;
         :lineageObject      bdr:T1786 , bdr:T2129 ;
-        :lineageType        bdr:LineageLung .
+        :lineageType        bdr:LineageLung ;
+        :note               bdr:NT45F74F5D1F9D42B1 .
     
     bdr:LH098231591821690A
         a                   :LineageHolder ;
@@ -320,4 +314,9 @@ bdg:L8LS15610 {
         a                   :LineageHolder ;
         :lineageReceived    bdr:EVF4E4CB0509A80102 ;
         :lineageWho         bdr:P1018 .
+    
+    bdr:NT45F74F5D1F9D42B1
+        a                   :Note ;
+        :contentLocationStatement  "vol. e, f. 100v7-101r2" ;
+        :noteSource         bdr:MW29706 .
 }
